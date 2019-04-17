@@ -1,0 +1,125 @@
+.container {
+	width: 1200px;
+	max-width: 95%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#filters {
+	list-style: none;
+	margin: 0 auto 40px auto;
+	width: 100%;
+}
+#filters li {
+	font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #00274c;
+}
+#filters li span {
+	display: block;
+	padding: 5px 20px;
+	text-decoration: none;
+	cursor: pointer;
+}
+#filters li span.active {
+	background: #f57517;
+	color: #fff;
+	border-radius: 3px;
+}
+#portfoliolist .portfolio {
+	width: 22%;
+	margin: 5px;
+	display: none;
+	float: left;
+	overflow: hidden;
+}
+#portfoliolist .portfolio:first-child{
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+}
+.portfolio-wrapper {
+	overflow: hidden;
+	position: relative !important;
+	cursor: pointer;
+}
+.portfolio img {
+	width: 100%;
+	top: 0;
+}
+.portfolio .text-category {
+	display: block;
+}
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.container {
+	width: 920px;
+}
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+#portfoliolist .portfolio {
+	width: 45%;
+	margin: 1%;
+}
+#ads {
+	display: none;
+}
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {
+	width: 95%;
+}
+#ads {
+	display: none;
+}
+
+}
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.row:after, .clearfix:after {
+	clear: both;
+}
+.row, .clearfix {
+	zoom: 1;
+}
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+}
+

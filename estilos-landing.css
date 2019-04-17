@@ -1,0 +1,246 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	background: url(cabecera.jpg) no-repeat;
+	background-size: cover;
+	height: 500px;
+	margin-bottom: 30px;
+	padding-top: 20px;
+}
+h1 {
+	font-size: 50px;
+	color: #fff;
+	font-family: 'Rock Salt', cursive;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #00274c;
+	text-align: center;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+	line-height: 20px;
+	font-size: 13px;
+	text-align: center;
+}
+.contenedor {
+	max-width: 1120px;
+	width: 95%;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+.galeria {
+	background: #f2f2f2;
+	padding: 40px 0;
+	margin-top: 30px;
+}
+.galeria ul {
+	margin: 30px auto;
+	padding: 0;
+	list-style: none;
+	width: 91%;
+}
+.galeria ul li {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.galeria ul li img {
+	padding: 5px;
+	border: 1px solid #c5c5c5;
+	background: #fff;
+}
+form {
+	margin-top: 50px;
+}
+form input, form textarea {
+	border: 1px solid #aeadae;
+	border-radius: 3px;
+	background: transparent;
+	width: 95%;
+	padding: 10px;
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 15px;
+}
+label {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #00274c;
+	font-weight: bold;
+	margin-bottom: 10px;
+	display: block;
+}
+textarea {
+	height: 120px;
+	resize: none;
+}
+.izq {
+	width: 47%;
+	float: left;
+}
+.der {
+	float: right;
+	width: 47%;
+}
+form .btn {
+	width: 40%;
+	border-radius: 3px;
+	background: #f57517;
+	padding: 10px 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	float: right;
+	margin-right: 2%;
+	border: none;
+}
+form .btn:hover {
+	background: #ff8932;
+}
+footer {
+	background: #00274c;
+	padding: 40px 0;
+}
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 40%;
+}
+footer ul li {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+footer ul li a {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+}
+.logo-footer {
+	float: left;
+	margin-right: 5%;
+}
+footer .newsletter {
+	float: right;
+	width: 30%;
+	position: relative;
+}
+.newsletter input {
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 5px;
+	margin-top: 15px;
+	width: 96%;
+}
+.newsletter .btn {
+	position: absolute;
+	right: 0;
+	top: 19px;
+	width: 20%;
+	background: #f57517;
+	padding: 5px 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border: none;
+}
+.newsletter .btn:hover {
+	background: #ff8932;
+}
+.texto {
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.logo-header{
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+.izq {
+	width: 100%;
+	float: none;
+}
+.der {
+	float: none;
+	width: 100%;
+}
+form input, form textarea {
+	width: 94%;
+}
+form .btn {
+	width: 100%;
+	margin-right: 0;
+}
+.logo-footer {
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+footer ul {
+	padding: 0;
+	list-style: none;
+	width: 90%;
+	margin: 30px auto 0 auto;
+	float: none;
+}
+footer .newsletter {
+	float: none;
+	width: 90%;
+	position: relative;
+	margin: 30px auto 0 auto;
+}
+h1 {
+	line-height: 67px;
+}
+.galeria ul {
+	width: 76%;
+}
+header{
+	margin-bottom: 0;
+	height: 350px;
+}
+}

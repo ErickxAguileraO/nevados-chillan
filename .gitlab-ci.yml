@@ -1,0 +1,16 @@
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/plain-html
+pages:
+  stage: deploy
+  script:
+#  - rsync -qr --exclude='*application/config/database.php' --exclude='ws.php'  --exclude='/index.php' --exclude='/admin/index.php' --exclude='/maqueta/index.php' . /home/nevadosaeurus/public_html/
+  - rsync -qr . /home/nevadosaeurus/public_html/
+  
+  
+  - chown -fR nevadosaeurus /home/nevadosaeurus/public_html
+  - chgrp -fR nevadosaeurus /home/nevadosaeurus/public_html
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
