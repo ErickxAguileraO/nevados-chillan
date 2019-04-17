@@ -22,8 +22,8 @@
 	define('ENVIRONMENT', 'production');
 
 	#URL ADMINISTRACION
-	define('URL_ADMINISTRACION', 'http://adminnevadosdechillan.com');
-    define('URL_SITIO', 'https://www.nevadosdechillan.com');
+	define('URL_ADMINISTRACION', 'http://admin.nevados.aeurus.cl');
+    define('URL_SITIO', 'https://nevados.aeurus.cl');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
