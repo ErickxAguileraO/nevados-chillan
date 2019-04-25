@@ -7,7 +7,7 @@ class Layout {
     private $title = '';
     private $titleDefault = '';
     private $css_list = array(), $js_list = array();
-	private $metas = '';
+	private $metas = array();
 	private $navegacion = array();
 	public $current = '';
 
@@ -18,17 +18,20 @@ class Layout {
         $this->layout_view = "layout/default.php";
 
 		#css
-		$this->css('https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet');
+		$this->css('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet');
+		$this->css('/css/hoja-estilos.css');
+		#$this->css('https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet');
 
 
 		#css
-		$this->css('https://fonts.googleapis.com/css?family=Raleway');
-		$this->css('https://fonts.googleapis.com/css?family=Rock+Salt');
-		$this->css('https://fonts.googleapis.com/css?family=Amiko:400,700');
-		$this->css('/css/hoja-estilos.css');
+		#$this->css('https://fonts.googleapis.com/css?family=Raleway');
+		#$this->css('https://fonts.googleapis.com/css?family=Rock+Salt');
+		#$this->css('https://fonts.googleapis.com/css?family=Amiko:400,700');
+		#$this->css('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 		#js
 		$this->js('/js/jquery/1.11.1/jquery-1.11.1.min.js');
+		$this->js('https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js');
 		$this->js('/js/jquery/scrollto/jquery.goup.js');
 		$this->js('/js/jquery/ui/1.12.1/jquery-ui-1.12.1.custom.js');
 		$this->js('/js/jquery/ui/1.10.4/jquery.ui.datepicker-es.js');
@@ -36,9 +39,9 @@ class Layout {
 		
 
 
-		/*#Menu responsive
+		#Menu responsive
 		$this->css('/js/jquery/responsive-nav/responsive-nav.css');
-		$this->js('/js/jquery/responsive-nav/responsive-nav.js');*/
+		$this->js('/js/jquery/responsive-nav/responsive-nav.js');
 
 		#datepicker
 		#$this->css('/js/jquery/ui/1.10.4/smoothness/jquery-ui-1.10.4.custom.min.css');

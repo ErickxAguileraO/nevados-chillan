@@ -1,31 +1,93 @@
-<footer>
+<footer> 
+  <!-- Inicio Auspiciadores -->
+  <?php if(count($auspiciadores)>0){ ?>
+  <section class="auspiciadores">
+    <h1>PARTNERS</h1>
+    <div class="auspiciadores-background">
+      <div class="carrusel partners-responsive">
+        <?php foreach($auspiciadores as $item): ?>
+        <div><figure><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" /></figure></div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+  <?php } ?>
+  <!-- Fin Auspiciadores -->
   <div class="center">
     <div class="newsletter">
       <form id="new-newsletter" method="POST" action="#">
-        <h3>Suscríbete a nuestro newsletter</h3>
-        <p>Recibe información sobre el centro y sus actividades</p>
-        <input class="input" placeholder="Nombre" type="text" name="nombre" style="margin: 0;" />
-        <input class="input" placeholder="E-MAIL" type="text" name="email" />
-        <input type="submit" value="Enviar" class="btn" />
-        <div class="clear"></div>
-        <ul>
-          <li>
-            <input type="checkbox" name="intereses[]" value="Ofertas Hoteleras">
-            Ofertas Hoteleras</li>
-          <li>
-            <input type="checkbox" name="intereses[]" value="Promociones de Verano">
-            Promociones de Verano</li>
-          <li>
-            <input type="checkbox" name="intereses[]" value="Promociones de Invierno">
-            Promociones de Invierno</li>
-        </ul>
+        <h3>Newsletter</h3>
+        <fieldset>
+          <input class="input" placeholder="Nombre..." type="text" name="nombre" style="margin: 0;" />
+          </li>
+          <input class="input" placeholder="Email..." type="text" name="email" />
+          <input type="submit" value="Enviar" class="btn" />
+          <ul class="clear">
+            <li>
+              <input type="checkbox" name="intereses[]" id="alojamiento" value="Ofertas Hoteleras" />
+              <label for="alojamiento"><span></span> Alojamiento</label>
+            </li>
+            <li>
+              <input type="checkbox" name="intereses[]" id="ski" value="Promociones de Verano" />
+              <label for="ski"><span></span> Ski</label>
+            </li>
+            <li>
+              <input type="checkbox" name="intereses[]" id="bike" value="Promociones de Invierno" />
+              <label for="bike"><span></span> Bike</label>
+            </li>
+          </ul>
+        </fieldset>
       </form>
-      <div class="clear"></div>
     </div>
-    <div class="logos-footer float-left"> <img src="/imagenes/template/logo-footer.png"> </div>
+    <div class="newsletter-auspiciadores">
+      <figure><img src="/imagenes/template/chile-travel.png" width="171" height="199" class="chile-travel" /></figure>
+      <figure><img src="/imagenes/template/trip-advisor.png" width="283" height="199" class="trip-logo" /></figure>
+      <figure><img src="/imagenes/template/chile-best.png" width="207" height="199" class="chile-best" /></figure>
+    </div>
     <div class="informacion">
-      <h3>Información y horarios</h3>
-      <p><strong>Reservas: </strong> <a href="tel:<?=$generales->reserva_telefono?>">
+      <div class="coll-footer">
+        <h4>Oficina Concepción</h4>
+        <ul>
+          <li><a href="tel:<?=$generales->concepcion_telefono?>">
+            <?=$generales->concepcion_telefono?>
+            </a></li>
+          <li><strong><a href="mailto:<?=$generales->concepcion_email?>">
+            <?=$generales->concepcion_email?>
+            </a></strong></li>
+          <li>
+            <?=$generales->concepcion_horario?>
+          </li>
+        </ul>
+      </div>
+      <div class="coll-footer">
+        <h4>Oficina Santiago</h4>
+        <ul>
+          <li><a href="tel:<?=$generales->santiago_telefono?>">
+            <?=$generales->santiago_telefono?>
+            </a></li>
+          <li><strong><a href="mailto:<?=$generales->santiago_email?>">
+            <?=$generales->santiago_email?>
+            </a></strong></li>
+          <li>
+            <?=$generales->santiago_horario?>
+          </li>
+        </ul>
+      </div>
+      <div class="coll-footer">
+        <h4>Oficina Chillán</h4>
+        <ul>
+          <li><a href="tel:<?=$generales->chillan_telefono?>">
+            <?=$generales->chillan_telefono?>
+            </a></li>
+          <li><strong><a href="mailto:<?=$generales->chillan_email?>">
+            <?=$generales->chillan_email?>
+            </a></strong></li>
+          <li>
+            <?=$generales->chillan_horario?>
+          </li>
+        </ul>
+      </div>
+      <?php /*?><p><strong>Reservas: </strong> <a href="tel:<?=$generales->reserva_telefono?>">
         <?=$generales->reserva_telefono?>
         </a>
         <?php if(@$generales->reserva_telefono_extranejero){
@@ -34,58 +96,19 @@
         <br />
         <a href="mailto:<?=$generales->reserva_email?>">
         <?=$generales->reserva_email?>
-        </a> <br />
-        <br />
-        <strong>Oficina Chillán: </strong> <a href="tel:<?=$generales->chillan_telefono?>">
-        <?=$generales->chillan_telefono?>
-        </a><br />
-        <a href="mailto:<?=$generales->chillan_email?>">
-        <?=$generales->chillan_email?>
-        </a><br />
-        <?=$generales->chillan_horario?>
-        <br />
-        <br />
-        <strong>Oficina Concepción:</strong> <a href="tel:<?=$generales->concepcion_telefono?>">
-        <?=$generales->concepcion_telefono?>
-        </a><br />
-        <a href="mailto:<?=$generales->concepcion_email?>">
-        <?=$generales->concepcion_email?>
-        </a><br />
-        <?=$generales->concepcion_horario?>
-        <br /><br />
-        <strong>Oficina Santiago:</strong> <a href="tel:<?=$generales->santiago_telefono?>">
-        <?=$generales->santiago_telefono?>
-        </a><br />
-        <a href="mailto:<?=$generales->santiago_email?>"><?=$generales->santiago_email?>
-        </a><br />
-        <?=$generales->santiago_horario?>
-      </p>
-      <div class="clear"></div>
-      <span class="last"> <img src="/imagenes/template/mapa-sitio-icono.png" class="icono"/> <a href="/mapa-del-sitio/">Mapa de sitio</a></span> 
-      <span><img src="/imagenes/template/prensa-icono.png" class="icono" /> <a href="/noticias/prensa/">Información prensa</a></span> 
-      <br/><br/>
-      <span class="span-inline"><a href="https://play.google.com/store/apps/details?id=com.skitude.NevadosDeChillan&hl=es" target="_blank"><img src="/imagenes/template/android.png"></a></span>
-      <span class="span-inline"><a href="https://itunes.apple.com/us/app/nevados-de-chill%C3%A1n-app/id1217403552?mt=8" target="_blank"><img src="/imagenes/template/apple.png"></a></span>
+        </a></p><?php */?>
+      <div class="grid-footer-2">
+        <ul>
+          <li><a href="/mapa-del-sitio/">Mapa de sitio</a></li>
+          <li><a href="/noticias/prensa/">Información prensa</a></li>
+        </ul>
+      </div>
+      <div class="grid-footer-2">
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=com.skitude.NevadosDeChillan&hl=es" target="_blank"><img src="/imagenes/template/android.png" width="176" height="60" /></a></li>
+          <li><a href="https://itunes.apple.com/us/app/nevados-de-chill%C3%A1n-app/id1217403552?mt=8" target="_blank"><img src="/imagenes/template/apple.png" width="176" height="60" /></a></li>
+        </ul>
+      </div>
     </div>
-    
-    <div class="newsletter-auspiciadores"> 
-      <img src="/imagenes/template/trip-advisor.png" class="trip-logo" /> 
-      <img src="/imagenes/template/chile-travel.png" class="chile-travel" /> 
-      <img src="/imagenes/template/chile-best.png" class="chile-best">
-    </div>
-    <div class="clear"></div>
-    <!-- Inicio Auspiciadores -->
-    <?php if(count($auspiciadores)>0){ ?>
-    <div class="auspiciadores">
-      <h3>Auspician:</h3>
-      <ul>
-        <?php foreach($auspiciadores as $item): ?>
-        <li><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" /></li>
-        <?php endforeach; ?>
-      </ul>
-    </div>
-    <?php } ?>
-    <!-- Fin Auspiciadores --> 
   </div>
-  <div class="clear"></div>
 </footer>

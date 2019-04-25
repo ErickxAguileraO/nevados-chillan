@@ -32,6 +32,7 @@ class Inicio extends CI_Controller {
 
 		#WebFont
 		$this->layout->css('/css/webfont/stylesheet.css');
+		$this->layout->js('/js/sistema/portada/index.js');
 
 
 		#flexslider
@@ -43,6 +44,11 @@ class Inicio extends CI_Controller {
 		$this->layout->js('/js/jquery/carousel/slick.min.js');
 		$this->layout->js('/js/jquery/carousel/scripts.js');
 
+		#Animacion
+		$this->layout->css('/js/jquery/wow/animate.css');
+		$this->layout->js('/js/jquery/wow/wow.js');
+		$this->layout->js('/js/jquery/wow/wow-init.js');
+
 		//Contenido
 	  //slider
 	  $this->ws->order('sli_orden ASC');
@@ -50,7 +56,7 @@ class Inicio extends CI_Controller {
 
 		//Noticias
 	  $this->ws->order('not_fecha_publicacion DESC');
-		$this->ws->limit(4);
+		$this->ws->limit(6);
 		#$this->ws->joinLeft(38,"not_codigo = noti_noticia");
 	  $data['noticias'] = $this->ws->listar(37,'not_estado = 1');
 

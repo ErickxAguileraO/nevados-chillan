@@ -50,11 +50,11 @@ $active_record = TRUE;
 
 #config base de datos
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'pymebasev3';
-$db['default']['password'] = 'chile.2011';
-$db['default']['database'] = 'pyme_pyme_base_codeigniter';
+$db['default']['username'] = '';
+$db['default']['password'] = '';
+$db['default']['database'] = '';
 
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
