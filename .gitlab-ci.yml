@@ -9,6 +9,8 @@ pages:
   
   - chown -fR nevadosaeurus /home/nevadosaeurus/public_html
   - chgrp -fR nevadosaeurus /home/nevadosaeurus/public_html
+  - /home/ivera/carga-sql.sh nevadosaeurus nevadosa_site
+
   artifacts:
     paths:
     - public
