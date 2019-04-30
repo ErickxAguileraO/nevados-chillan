@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Layout {
@@ -7,7 +7,7 @@ class Layout {
     private $title = '';
     private $titleDefault = 'Administración';
     private $css_list = array(), $js_list = array();
-	private $metas = '';
+	private $metas = array();
 	private $navegacion = array();
 	public $current = '';
 

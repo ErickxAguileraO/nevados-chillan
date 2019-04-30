@@ -25,7 +25,7 @@ class Api extends REST_Controller
     
     public function listado_post(){
 
-        $key = $this->input->get_request_header('x-api-key');
+        $key = $this->input->get_request_header('X-Api-Key');
         if($usuario = $this->objUsuario->get_user($key)){
            if(!is_numeric($this->post('tabla'))){
                 $response = array(
@@ -453,7 +453,7 @@ class Api extends REST_Controller
     
     public function obtener_post(){
 
-        $key = $this->input->get_request_header('x-api-key');
+        $key = $this->input->get_request_header('X-Api-Key');
         if($usuario = $this->objUsuario->get_user($key)){
 
            if(!is_numeric($this->post('tabla'))){
@@ -810,7 +810,7 @@ class Api extends REST_Controller
     }
     
     public function insertar_post(){
-        $key = $this->input->get_request_header('x-api-key');
+        $key = $this->input->get_request_header('X-Api-Key');
         if($usuario = $this->objUsuario->get_user($key)){
 
             if(!is_numeric($this->post('tabla'))){
@@ -881,7 +881,7 @@ class Api extends REST_Controller
     
     public function actualizar_post(){
         
-        $key = $this->input->get_request_header('x-api-key');
+        $key = $this->input->get_request_header('X-Api-Key');
         if($usuario = $this->objUsuario->get_user($key)){
 
            if(!is_numeric($this->post('tabla'))){
@@ -957,7 +957,7 @@ class Api extends REST_Controller
     
     public function eliminar_post(){
         
-        $key = $this->input->get_request_header('x-api-key');
+        $key = $this->input->get_request_header('X-Api-Key');
         if($usuario = $this->objUsuario->get_user($key)){
 
            if(!is_numeric($this->post('tabla'))){
