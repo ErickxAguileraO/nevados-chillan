@@ -1482,7 +1482,7 @@ footer .informacion  .grid-footer-2{
 	float: left;
 }
 .valores-seccion {
-	background-image: url("/imagenes/template/valores-fondo.jpg") !important;
+	/*background-image: url("/imagenes/template/valores-fondo.jpg") !important;*/
 	padding: 50px 0 100px 0;
 	text-align: center;
 }
