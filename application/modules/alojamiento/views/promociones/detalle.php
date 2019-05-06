@@ -4,7 +4,6 @@
         $https = 'https://';
     $url = $https.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 ?>
-
 <?php /*?><!-- inicio Slider -->
 <div class="flexslider">
 <?php if(count($sliders)>0){ ?>
@@ -47,13 +46,13 @@
 <?php }?>
 </div>
 <!-- Fin Slider --><?php */?>
+
 <div class="center">
   <?=$this->layout->getNav();?>
-  <div class="imagen-detalle float-left" style="height:auto;"><img src="<?=URL_ADMINISTRACION.$promocion->imagen_adjunta_detalle?>" alt="Diseñados y construidos para trabajo pesado" />
-  
-  <div class="formulario-reserva" style="float:none; width:auto; padding-top:40px;">
-    <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
-      <ul>
+  <div class="imagen-detalle float-left" style="height:auto;"><img class="img-rounded" src="<?=URL_ADMINISTRACION.$promocion->imagen_adjunta_detalle?>" alt="<?=$promocion->nombre?>" />
+    <div class="formulario-reserva" style="float:none; width:auto; padding-top:1px;">
+      <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
+        <?php /*?><ul>
         <li>
           <label for="calendario">Fecha llegada</label>
           <br />
@@ -80,15 +79,14 @@
           <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" />
         </li>
       </ul>
-      <img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" />
-      <input type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" />
-    </form>
+      <img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
+        <input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" />
+      </form>
+    </div>
   </div>
-  </div>
-  
   <div class="texto-detalle float-right">
-    <h2><?=$promocion->nombre?></h2>
-    <div class="social-media">
+    <h2 style="font-size:40px; margin-top:0;"><?=$promocion->nombre?></h2>
+    <?php /*?><div class="social-media">
       <ul>
         <li>Compartir en:</li>
         <li>
@@ -113,27 +111,38 @@
         </li>
       </ul>
       <div class="clear"></div>
+    </div><?php */?>
+    <div class="block-dscto">
+      <ul class="dcto img-rounded">
+        <li>20% dcto</li>
+        <li>40% dcto</li>
+        <li>50% dcto</li>
+      </ul>
+      <div class="valor-promocion">$100.000</div>
+      <ul class="footer-dscto">
+        <li><i>CÓDIGO XXXXXX</i></li>
+        <li>Antes 200.000</li>
+      </ul>
+      <p>condiciones de promoción desde el XX al XX del XXXX . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
     </div>
-     <?php ?>
+  </div>
+  
+  <div class="texto-detalle" style="clear:both; width:auto; padding-top:10px;">    
+    <?php ?>
     <?php
     $promocion->descripcion = str_replace('&lt;','<',$promocion->descripcion);
     $promocion->descripcion = str_replace('&gt;','>',$promocion->descripcion);
     echo $promocion->descripcion = str_replace('/imagenes/ckfinder','/admin/imagenes/ckfinder/',$promocion->descripcion)?>
     <?php if($archivos){?>
-      <?php foreach($archivos as $item): ?>
+    <?php foreach($archivos as $item): ?>
     <span class="cond-span"><img src="/imagenes/template/arrow.png" class="arrow" /><a href="/alojamiento/promocion/descargar_archivo/<?php echo $item->codigo?>">Ver condiciones de esta promoción</a></span>
-  <?php endforeach; ?>
+    <?php endforeach; ?>
     <?php } ?>
   </div>
-  
-  
-  
-<div style="clear:both; padding-top:20px;">
-<h2>Promociones relacionadas</h2>
-
-<div id="portfoliolist">
-    
-    <?php  foreach($promociones as $item){
+  <div style="clear:both; padding-top:20px;">
+    <h2>Promociones relacionadas</h2>
+    <div id="portfoliolist">
+      <?php  foreach($promociones as $item){
     
     
       $class = null;
@@ -155,26 +164,13 @@
       
        }
       ?>
-      
-     <div class="portfolio<?=$class?>" data-cat="">
-  
-    
-      <div class="portfolio-wrapper"> <a href="/alojamiento/promocion/<?=$item->url?>"><img src="<?=URL_ADMINISTRACION.$item->imagen_adjunta_banner?>" alt="" /></a> </div>
+      <div class="portfolio<?=$class?>" data-cat="">
+        <div class="portfolio-wrapper"> <a href="/alojamiento/promocion/<?=$item->url?>"><img src="<?=URL_ADMINISTRACION.$item->imagen_adjunta_banner?>" alt="" /></a> </div>
+      </div>
+      <?php } ?>
     </div>
-    
-  <?php } ?>
-  
-  
-  
-  </div>  
-     
- </div>
-  
+  </div>
 </div>
-
-
-
-
 <script type="text/javascript">
     $(window).load(function(){
       $('.flexslider').flexslider({
@@ -184,10 +180,9 @@
       });
 });
 
-</script>
+</script> 
 
-
-<!-- Selector promociones -->
+<!-- Selector promociones --> 
 <script type="text/javascript">
 	$(function () {
 		var filterList = {
@@ -221,4 +216,3 @@
 <style type="text/css">
 #header{ position:relative !important;}
 </style>
-
