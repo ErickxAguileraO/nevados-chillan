@@ -1074,10 +1074,22 @@ footer .informacion .coll-footer ul li:last-child{
 footer .informacion  .grid-footer-2{
 	vertical-align: top;
 	text-align:center;
-	display:inline-block;
+	display: block;
 	width: 50%;
-	padding: 50px 10px;
+	padding: 20px 10px;
+	margin:0 auto;
 }
+footer .informacion  .grid-footer-2.color{
+	background-color: #cdd8e2;
+	padding: 20px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+
 footer .informacion  .grid-footer-2 ul{}
 footer .informacion  .grid-footer-2 li{
 	font-size: 2.4em;
@@ -1087,7 +1099,7 @@ footer .informacion  .grid-footer-2 li{
 	display: inline-block;
 	margin:0 10px;
 }
-footer .informacion  .grid-footer-2 li img{ vertical-align: top; margin-top: -10px;}
+footer .informacion  .grid-footer-2 li img{ vertical-align: top;}
 footer .informacion  .grid-footer-2{
 }
 #aeurus{ text-align:right; padding:8px 10px 5px;}
@@ -1292,9 +1304,8 @@ footer .informacion  .grid-footer-2{
 	background-image: url("/imagenes/template/bikepark-fondo.jpg") !important;
 }
 .intro {
-	width: 70%;
+	width: 100%;
 	margin-bottom: 50px;
-	float: left;
 }
 .intro p {
 	font-size: 1.6em;

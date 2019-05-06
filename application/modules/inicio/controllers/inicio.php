@@ -38,9 +38,9 @@ class Inicio extends CI_Controller {
 		$this->layout->js('/js/jquery/wow/wow-init.js');
 
 		#Carrousel
-		#$this->layout->css('/js/jquery/carousel/slick.css');
-		#$this->layout->js('/js/jquery/carousel/slick.min.js');
-		#$this->layout->js('/js/jquery/carousel/scripts.js');
+		$this->layout->css('/js/jquery/carousel/slick.css');
+		$this->layout->js('/js/jquery/carousel/slick.min.js');
+		$this->layout->js('/js/jquery/carousel/scripts.js');
 		
 
 	//Contenido

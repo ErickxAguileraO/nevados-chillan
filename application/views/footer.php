@@ -1,17 +1,4 @@
 <footer> 
-  <!-- Inicio Auspiciadores -->
-  <?php if(count($auspiciadores)>0){ ?>
-  <section class="auspiciadores">
-    <h1>PARTNERS</h1>
-    <div class="auspiciadores-background">
-      <div class="carrusel partners-responsive">
-        <?php foreach($auspiciadores as $item): ?>
-        <div><figure><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" /></figure></div>
-        <?php endforeach; ?>
-      </div>
-    </div>
-  </section>
-  <?php } ?>
   <!-- Fin Auspiciadores -->
   <div class="center">
     <div class="newsletter">
@@ -39,9 +26,9 @@
       </form>
     </div>
     <div class="newsletter-auspiciadores">
-      <figure><img src="/imagenes/template/chile-travel.png" width="171" height="199" class="chile-travel" /></figure>
-      <figure><img src="/imagenes/template/trip-advisor.png" width="283" height="199" class="trip-logo" /></figure>
-      <figure><img src="/imagenes/template/chile-best.png" width="207" height="199" class="chile-best" /></figure>
+      <figure><img src="/imagenes/template/chile-travel.png" width="128" height="150" class="chile-travel" /></figure>
+      <figure><img src="/imagenes/template/trip-advisor.png" width="212" height="150" class="trip-logo" /></figure>
+      <figure><img src="/imagenes/template/chile-best.png" width="155" height="150" class="chile-best" /></figure>
     </div>
     <div class="informacion">
       <div class="coll-footer">
@@ -96,16 +83,17 @@
         <a href="mailto:<?=$generales->reserva_email?>">
         <?=$generales->reserva_email?>
         </a></p><?php */?>
-      <div class="grid-footer-2">
+      <div class="grid-footer-2 color">
         <ul>
-          <li><a href="/mapa-del-sitio/">Mapa de sitio</a></li>
-          <li><a href="/noticias/prensa/">Información prensa</a></li>
+          <li><a href="#" target="_blank"><img src="/imagenes/template/skinpass.png" width="63" height="60" /></a></li>
+          <li><a href="https://itunes.apple.com/us/app/nevados-de-chill%C3%A1n-app/id1217403552?mt=8" target="_blank"><img src="/imagenes/template/apple.png" width="176" height="60" /></a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.skitude.NevadosDeChillan&hl=es" target="_blank"><img src="/imagenes/template/android.png" width="176" height="60" /></a></li>
         </ul>
       </div>
       <div class="grid-footer-2">
         <ul>
-          <li><a href="https://play.google.com/store/apps/details?id=com.skitude.NevadosDeChillan&hl=es" target="_blank"><img src="/imagenes/template/android.png" width="176" height="60" /></a></li>
-          <li><a href="https://itunes.apple.com/us/app/nevados-de-chill%C3%A1n-app/id1217403552?mt=8" target="_blank"><img src="/imagenes/template/apple.png" width="176" height="60" /></a></li>
+          <li><a href="/mapa-del-sitio/">Mapa de sitio</a></li>
+          <li><a href="/noticias/prensa/">Información prensa</a></li>
         </ul>
       </div>
     </div>

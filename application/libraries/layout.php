@@ -41,11 +41,6 @@ class Layout {
 		$this->css('/js/jquery/responsive-nav/responsive-nav.css');
 		$this->js('/js/jquery/responsive-nav/responsive-nav.js');
 
-		#Carrousel
-		$this->css('/js/jquery/carousel/slick.css');
-		$this->js('/js/jquery/carousel/slick.min.js');
-		$this->js('/js/jquery/carousel/scripts.js');
-
 		#datepicker
 		#$this->css('/js/jquery/ui/1.10.4/smoothness/jquery-ui-1.10.4.custom.min.css');
 		#$this->js('/js/jquery/ui/1.10.4/jquery-ui-1.10.4.custom.min.js');

@@ -214,6 +214,19 @@ endforeach;
 </div>
 <!-- Fin Noticias --> 
 
+  <!-- Inicio Auspiciadores -->
+  <?php if(count($auspiciadores)>0){ ?>
+  <section class="auspiciadores">
+    <h1>PARTNERS</h1>
+    <div class="auspiciadores-background">
+      <div class="carrusel partners-responsive">
+        <?php foreach($auspiciadores as $item): ?>
+        <div><figure><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" /></figure></div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+  <?php } ?>
 <!-- fin contenedor -->
 
 <style>
