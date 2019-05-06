@@ -185,15 +185,15 @@
 <div class="background-reserva-header">
   <div class="center">
     <div class="top-figure">      
-          <figure><a href="#"><img src="/imagenes/sitio/infonieve.png" width="64" height="46" alt="Infonieve" />
+          <figure><a href="/invierno/infonieve"><img src="/imagenes/sitio/infonieve.png" width="64" height="46" alt="Infonieve" />
             <figcaption>Infonieve</figcaption></a>
           </figure>
        
-          <figure><a href="#"><img src="/imagenes/sitio/skipass.png" width="64" height="46" alt="SKIPASS" />
+          <figure><a href="https://www.skipassnevadosdechillan.com/" target="_blank"><img src="/imagenes/sitio/skipass.png" width="64" height="46" alt="SKIPASS" />
             <figcaption>SKIPASS</figcaption></a>
           </figure>
      
-          <figure><a href="#"><img src="/imagenes/sitio/promociones.png" width="64" height="46" alt="Promociones" />
+          <figure><a href="/alojamiento/promociones/"><img src="/imagenes/sitio/promociones.png" width="64" height="46" alt="Promociones" />
             <figcaption>Promociones</figcaption></a>
           </figure>
     
