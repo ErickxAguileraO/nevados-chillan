@@ -66,7 +66,7 @@ body {
 
 
 /***** CONTENIDO *****/
-.clear, #portfoliolist{ clear: both;}
+.clear, #portfoliolist, .borrar{ clear: both;}
 .last { margin-right: 0 !important;}
 .float-right { float: right !important;}
 .float-left { float: left !important;}
@@ -1495,6 +1495,49 @@ footer .informacion  .grid-footer-2{
 	width: 100%;
 	list-style: none;
 }
+.block-table{
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	background-color: #033e6c;
+	text-align: left;
+	padding:10px 0;
+	clear: both;
+}
+.block-table .center{
+	font-size:0;
+}
+.block-table .block-tr{ margin:0 -2%;}
+.block-table .block-th, .block-td{
+	color:#FFF;
+	font-weight:bold;
+	vertical-align: top;
+	display:inline-block;
+	padding:15px 2%;
+}
+.block-table .block-th{
+	text-align:right;
+	width:34%;
+}
+.block-table .block-td{
+	width: 22%;
+}
+.block-table .block-th h3{
+	font-size: 46px;
+	font-weight:900;
+	line-height: 50px;
+}
+.block-table li{
+	font-size: 18px;
+	margin-bottom: 2px;
+}
+.block-table .block-td h4{
+	font-size:21px;
+}
+.block-table .block-td .valor{ font-size:40px; display:block;}
+.block-table .block-td .condiciones{ font-size:18px; font-weight:500; display:block;}
+
+
+/***** Borrar valores*****/
 .valores-seccion table {
 	width: 32%;
 	float: left;
@@ -1528,6 +1571,8 @@ footer .informacion  .grid-footer-2{
 	display: block;
 	text-align: center;
 }
+/****Fin Borrar valores******/
+
 .precio {
 	font-size: 18px;
 	font-weight: bold;
@@ -2877,6 +2922,16 @@ footer .informacion .coll-footer ul li:last-child {
 .pistas .col2{
 	width: 33%;
 }
+.block-table .block-th h3{ font-size:40px;}
+.block-table li, .block-table .block-td .condiciones{ font-size:16px;}
+.block-table .block-td h4 {
+    font-size: 18px;
+}
+.block-table .block-td .valor {
+    font-size: 34px;
+    display: block;
+}
+
 }
 @media screen and (max-width: 1024px) {
 .lower {
@@ -2931,7 +2986,6 @@ footer .informacion .coll-footer ul li:last-child {
     padding: 2px 10px;
 }
 
-
 .img-izq {
 	width: 49% !important;
 	float: left !important;
@@ -2965,6 +3019,12 @@ footer {
 .etiquetas {
 	display: none;
 }
+
+.block-table .block-th h3{ font-size:36px; line-height:38px;}
+.block-table li, .block-table .block-td .condiciones{ font-size:14px;}
+.block-table .block-td h4 { font-size: 16px;}
+.block-table .block-td .valor { font-size: 30px;}
+
 }
 
 @media screen and (max-width: 959px) {
@@ -3175,6 +3235,12 @@ figure.effect-sadie:hover h3 {
 .formulario .btn a {
 	width: 60%;
 }
+.block-table .block-th{ text-align:left; display:block; width:auto; padding-bottom:5px;}
+.block-table .block-td{ width:33.33%;}
+.block-table .block-th h3{ font-size:30px; line-height:30px;}
+.block-table li, .block-table .block-td .condiciones{ font-size:13px;}
+.block-table .block-td h4 { font-size: 15px;}
+.block-table .block-td .valor { font-size: 28px;}
 }
 @media screen and (max-width: 770px) {
 footer .informacion .coll-footer{ width:100%; padding: 15px 5px; border-bottom: 1px solid #719abe;}
@@ -3697,6 +3763,10 @@ figure.effect-sadie:hover h3 {
 	display: initial;
 	margin-right: 0;
 }
+
+.block-table .block-td{ display:block; width:auto;}
+.block-table .block-tr { border-bottom: 1px solid #003; margin:0;}
+.block-table .block-tr:last-child{ border-bottom: none;}
 }
 @media screen and (max-width: 400px) {
 

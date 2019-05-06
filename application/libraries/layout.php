@@ -19,9 +19,9 @@ class Layout {
 
 		#css
 		$this->css('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet');
+		$this->css('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet');
 		$this->css('/css/hoja-estilos.css');
 		#$this->css('https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet');
-
 
 		#css
 		#$this->css('https://fonts.googleapis.com/css?family=Raleway');
@@ -36,12 +36,15 @@ class Layout {
 		$this->js('/js/jquery/ui/1.12.1/jquery-ui-1.12.1.custom.js');
 		$this->js('/js/jquery/ui/1.10.4/jquery.ui.datepicker-es.js');
 		$this->js('/js/sistema/template/index.js');
-		
-
 
 		#Menu responsive
 		$this->css('/js/jquery/responsive-nav/responsive-nav.css');
 		$this->js('/js/jquery/responsive-nav/responsive-nav.js');
+
+		#Carrousel
+		$this->css('/js/jquery/carousel/slick.css');
+		$this->js('/js/jquery/carousel/slick.min.js');
+		$this->js('/js/jquery/carousel/scripts.js');
 
 		#datepicker
 		#$this->css('/js/jquery/ui/1.10.4/smoothness/jquery-ui-1.10.4.custom.min.css');
@@ -53,6 +56,7 @@ class Layout {
         $this->css('/js/jquery/validation-engine/css/validationEngine.jquery.css');
         $this->js('/js/jquery/validation-engine/js/jquery.validationEngine.js');
         $this->js('/js/jquery/validation-engine/js/languages/jquery.validationEngine-es.js');
+		
         #NEWSLETTER
         $this->js('/js/sistema/newsletter/index.js');
         
@@ -61,7 +65,6 @@ class Layout {
         #layout
         if(isset($this->obj->layout_view))
 			$this->layout_view = $this->obj->layout_view;
-
     }
 
     function view($view, $data = null, $return = false) {
@@ -93,6 +96,7 @@ class Layout {
         return $output;
     }
 
+
     /**
      * Agregar title a la pagina actual
      *
@@ -113,6 +117,7 @@ class Layout {
         return $this->title;
 	}
 
+
     /**
      * Agregar Javascript a la pagina actual
      * @param $item
@@ -131,6 +136,7 @@ class Layout {
 		}
 		return $js;
     }
+
 
     /**
      * Agregar CSS a la pagina actual
@@ -151,6 +157,7 @@ class Layout {
 		return $css;
     }
 
+
 	/**
      * Agregar Metas a la pagina actual
      * @param $name, $content
@@ -159,11 +166,10 @@ class Layout {
         $meta->name = $name;
         $meta->content = $content;
         #$this->metas[] = $meta;
-
     }
 
 	function headMeta() {
-		$metas = '';
+	$metas = '';
     #Información Top y Footer
     $this->obj->load->library("ws");
     #Datos generales
@@ -188,7 +194,8 @@ class Layout {
 		}
         return $metas;
     }
-
+	
+	
 	/**
      * Agregar Navegacion a la pagina actual
      * @param $nav
@@ -211,10 +218,8 @@ class Layout {
 				$html .= ($i==count($this->navegacion))? '<span>'.$nombre.'</span>':'<a href="'.$ruta_master.'">'.$nombre.'</a> &gt; ';
 				$i++;
 			}
-
 			 $html .='</nav>';
 		}
 		return $html;
 	}
-
 }

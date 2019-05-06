@@ -1,8 +1,8 @@
 <?php if($this->uri->segment(1) == "verano"){?>
     <style>
-        .valores-seccion{
+        /*.valores-seccion{
             background-image: url("<?=base_url('/imagenes/template/valores-fondo2.jpg')?>") !important;
-        }
+        }*/
     </style>
 <?php }?>
 
@@ -225,11 +225,75 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
   <?php } ?>
   <!--Fin Servicios asociados -->
 </div>
+
+  
+  
 <!-- inicio Seccion Valores -->
 <div class="seccion-fondo valores-seccion" id="valores">
+    <div class="block-table">
+      <div class="center">
+      <div class="block-tr">
+        <div class="block-th">
+          <h3>TIT SERVICIO</h3>
+          <ul>
+            <li>TEXTO DE BAJADA SERVICIO 1</li>
+            <li>TEXTO DE BAJADA SERVICIO 2</li>
+          </ul>
+        </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+          </div>
+      <div class="block-tr">
+        <div class="block-th">
+          <h3>TIT SERVICIO</h3>
+          <ul>
+            <li>TEXTO DE BAJADA SERVICIO 1</li>
+            <li>TEXTO DE BAJADA SERVICIO 2</li>
+          </ul>
+        </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+          </div>
+      <div class="block-tr">
+        <div class="block-th">
+          <h3>TIT SERVICIO</h3>
+          <ul>
+            <li>TEXTO DE BAJADA SERVICIO 1</li>
+            <li>TEXTO DE BAJADA SERVICIO 2</li>
+          </ul>
+        </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+        <div class="block-td">
+          <h4>OPCIÓN SERVICIO</h4>
+          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+          </div>
+      </div>
+    </div>
+  
   <h2 style="font-size: 25px !important;">Valores tickets</h2>
 
   <div class="center valores">
+ 
+  
     <?php $cant = explode("<table",$valores->contenido); $cant = count($cant)-1;
     if($cant == 1){
       echo '<style>
@@ -254,9 +318,7 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
 <!-- Fin Valores -->
 <?php if(count($promociones)>0){?>
 <div class="center ofertas" id="promociones">
-  <h2>
-  Tenemos ofertas para ti
-  </h2>
+  <h2>Tenemos ofertas para ti</h2>
   <div id="portfoliolist">
     <?php foreach($promociones as $item): ?>
     <div class="portfolio logo" data-cat="logo">

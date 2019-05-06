@@ -19,10 +19,9 @@
         <h3>Newsletter</h3>
         <fieldset>
           <input class="input" placeholder="Nombre..." type="text" name="nombre" style="margin: 0;" />
-          </li>
           <input class="input" placeholder="Email..." type="text" name="email" />
           <input type="submit" value="Enviar" class="btn" />
-          <ul class="clear">
+          <ul class="borrar">
             <li>
               <input type="checkbox" name="intereses[]" id="alojamiento" value="Ofertas Hoteleras" />
               <label for="alojamiento"><span></span> Alojamiento</label>

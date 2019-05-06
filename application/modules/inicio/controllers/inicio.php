@@ -24,32 +24,26 @@ class Inicio extends CI_Controller {
 
 		$data['home_indicador'] = true;
 
-		/*#Nivoslider 3.2
-		$this->layout->css('/js/jquery/nivoslider/3.2/nivo-slider.css');
-		$this->layout->css('/js/jquery/nivoslider/3.2/nivoslider_custom.css');
-		$this->layout->js('/js/jquery/nivoslider/3.2/jquery.nivo.slider.pack.js');
-		$this->layout->js('/js/jquery/nivoslider/3.2/nivoslider_init.js');*/
-
 		#WebFont
 		$this->layout->css('/css/webfont/stylesheet.css');
 		$this->layout->js('/js/sistema/portada/index.js');
 
-
 		#flexslider
 		$this->layout->css('/js/jquery/flexslider/flexslider.css');
 		$this->layout->js('/js/jquery/flexslider/jquery.flexslider.js');
-
-		#Carrousel
-		$this->layout->css('/js/jquery/carousel/slick.css');
-		$this->layout->js('/js/jquery/carousel/slick.min.js');
-		$this->layout->js('/js/jquery/carousel/scripts.js');
 
 		#Animacion
 		$this->layout->css('/js/jquery/wow/animate.css');
 		$this->layout->js('/js/jquery/wow/wow.js');
 		$this->layout->js('/js/jquery/wow/wow-init.js');
 
-		//Contenido
+		#Carrousel
+		#$this->layout->css('/js/jquery/carousel/slick.css');
+		#$this->layout->js('/js/jquery/carousel/slick.min.js');
+		#$this->layout->js('/js/jquery/carousel/scripts.js');
+		
+
+	//Contenido
 	  //slider
 	  $this->ws->order('sli_orden ASC');
 	  $data['sliders'] = $this->ws->listar(13,'sli_tipo_seccion = 4 and sli_estado = 1');
@@ -73,12 +67,12 @@ class Inicio extends CI_Controller {
 	  $this->ws->order('calg_fecha_inicio ASC');
 		$this->ws->limit(3);
 	  $data['calendarios'] = $this->ws->listar(35,'calg_estado = 1 and calg_fecha_inicio >= "'.date('Y-m-d').'"');
-        		#Nav
-		$this->layout->nav(array("¿Necesitas ayuda?: Cómo llegar"=>"/"));
+	  
+      #Nav
+	  $this->layout->nav(array("¿Necesitas ayuda?: Cómo llegar"=>"/"));
 		//print_array($data['noticias']);die;
 		$this->layout->view('inicio',$data);
         
-
 	}
 
 	public function login(){

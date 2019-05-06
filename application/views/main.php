@@ -13,13 +13,13 @@
     <div class="nav" id="nav">
       <ul>
         <li><a href="/descubrenos/" title="Descúbrenos: Tecla de Acceso 1" accesskey="1">Descúbrenos</a></li>
-        <li><a href="/descubrenos/" title="Programas: Tecla de Acceso 1" accesskey="1">Programas</a></li>
-        <li><a href="/descubrenos/#hoteles">Hoteles</a></li>
-        <li><a href="/valle-hermoso/">Valle Hermoso</a></li>
-        <li><a href="/parque-de-agua/" title="Productos: Tecla de Acceso 3" accesskey="3">Parque de agua</a></li>
-        <li><a href="/invierno/" title="Productos: Tecla de Acceso 3" accesskey="3">Actividades de invierno</a></li>
-        <li><a href="/verano/" title="Productos: Tecla de Acceso 3" accesskey="3">Actividades de verano</a></li>
-        <li><a href="/necesitas-ayuda/faqs/" title="Productos: Tecla de Acceso 3" accesskey="3">Preguntas frecuentes</a></li>
+        <li><a href="/descubrenos/" title="Programas: Tecla de Acceso 2" accesskey="2">Programas</a></li>
+        <li><a href="/descubrenos/#hoteles" title="Hoteles: Tecla de Acceso 3" accesskey="3">Hoteles</a></li>
+        <li><a href="/valle-hermoso/" title="Valle Hermoso: Tecla de Acceso 4" accesskey="4">Valle Hermoso</a></li>
+        <li><a href="/parque-de-agua/" title="Parque de agua: Tecla de Acceso 5" accesskey="5">Parque de agua</a></li>
+        <li><a href="/invierno/" title="Actividades de invierno: Tecla de Acceso 6" accesskey="6">Actividades de invierno</a></li>
+        <li><a href="/verano/" title="Actividades de verano: Tecla de Acceso 7" accesskey="7">Actividades de verano</a></li>
+        <li><a href="/necesitas-ayuda/faqs/" title="Preguntas frecuentes: Tecla de Acceso 8" accesskey="8">Preguntas frecuentes</a></li>
       </ul>
     </div>
     <?php /*?><div class="nav" id="nav">
