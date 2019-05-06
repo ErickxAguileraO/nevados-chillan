@@ -127,7 +127,7 @@
     </div>
   </div>
   
-  <div class="texto-detalle" style="clear:both; width:auto; padding-top:10px;">    
+  <div class="texto-detalle" style="clear:both; width:auto; padding-top:30px;">    
     <?php ?>
     <?php
     $promocion->descripcion = str_replace('&lt;','<',$promocion->descripcion);
