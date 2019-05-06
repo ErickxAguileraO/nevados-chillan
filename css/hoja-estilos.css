@@ -2909,9 +2909,9 @@ footer .informacion .coll-footer ul li:last-child {
 	text-transform: uppercase;
 	font-weight: bold;
 }*/
-.texto-habitaciones {
-	padding-top: 70px;
-}
+.texto-habitaciones { padding-top: 70px;}
+.block-dscto .dcto li{ font-size:34px;}
+.block-dscto .valor-promocion{ font-size:100px;}
 }
 @media screen and (max-width: 1050px) {
 .texto-reserva {
@@ -2999,6 +2999,7 @@ footer .informacion .coll-footer ul li:last-child {
     font-size: 34px;
     display: block;
 }
+h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 { font-size: 60px;}
 
 }
 @media screen and (max-width: 1024px) {
@@ -3134,11 +3135,6 @@ footer {
 .formulario-reserva{ display:none;}
 
 
-
-
-
-
-
 #header .center{ height:auto;}
 
 #logo{
@@ -3146,6 +3142,11 @@ footer {
 	top:auto;
 	margin:0 auto;
 }
+
+.block-dscto .dcto li{ font-size:30px;}
+.block-dscto .valor-promocion{ font-size:80px;}
+
+h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 { font-size: 50px;}
 }
 
 @media screen and (max-width: 900px) {
@@ -3213,11 +3214,7 @@ footer {
 @media screen and (max-width: 870px) {
 footer .informacion .grid-footer-2:last-child li{ width:50%; margin:0; padding:0 1%; }
 footer .informacion .grid-footer-2:last-child img{ width:100%; height:auto; }		
-	
-	
-	
-	
-	
+
 figure.effect-sadie:hover h2 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -100px, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -100px, 0);
@@ -3405,22 +3402,16 @@ figure.effect-sadie:hover h2 {
 	width: 100%;
 	overflow: hidden;
 }
-footer {
-	margin-top: 50px;
-}
-footer h3 {
-	font-size: 15px;
-}
+footer { margin-top: 50px;}
+footer h3 { font-size: 15px;}
 .input-newsletter {
 	width: 66%;
 	margin-right: 10px;
 }
-.formulario-reserva ul li {
-	margin-bottom: 15px;
-}
+.formulario-reserva ul li { margin-bottom: 15px;}
 .btn-enviar {
-	float: right;
 	width: 40%;
+	float: right;
 }
 .btn-enviar a {
 	border-radius: 3px;
@@ -3714,8 +3705,6 @@ footer .newsletter ul li {
 
 }
 
-
-
 .btn-enviar {
 	float: none;
  width: 100%%;
@@ -3791,13 +3780,8 @@ hr {
 }
 @media screen and (max-width: 460px) {
 footer .informacion .grid-footer-2{ width:100%; padding:20px 10px;}
-footer .informacion .grid-footer-2 li img {
-    margin-top: 0;
+footer .informacion .grid-footer-2 li img { margin-top: 0;}	
 
-}	
-	
-	
-	
 figure.effect-sadie:hover h3 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -90%, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -90px, 0);
@@ -3835,6 +3819,15 @@ figure.effect-sadie:hover h3 {
 .block-table .block-td{ display:block; width:auto;}
 .block-table .block-tr { border-bottom: 1px solid #003; margin:0;}
 .block-table .block-tr:last-child{ border-bottom: none;}
+
+.block-dscto .dcto li{ font-size:26px;}
+.block-dscto .valor-promocion{ font-size:68px;}
+.block-dscto .footer-dscto li {
+    font-size: 17px !important;
+}
+
+h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 { font-size: 30px;}
+
 }
 @media screen and (max-width: 400px) {
 

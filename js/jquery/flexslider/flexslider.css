@@ -65,8 +65,8 @@ html[xmlns] .slides {
 .flexslider {
 	position: relative;
 	zoom: 1;
-	height: 600px;
-	margin-bottom: 100px;
+	/*height: 600px;
+	margin-bottom: 100px;*/
 	z-index:0;
 }
 .flexslider ul li{

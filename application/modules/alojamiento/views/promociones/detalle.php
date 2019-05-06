@@ -121,7 +121,7 @@
       <div class="valor-promocion">$100.000</div>
       <ul class="footer-dscto">
         <li><i>CÓDIGO XXXXXX</i></li>
-        <li>Antes 200.000</li>
+        <li style="text-align: right;">Antes 200.000</li>
       </ul>
       <p>condiciones de promoción desde el XX al XX del XXXX . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
     </div>
