@@ -3099,7 +3099,7 @@ footer {
 @media screen and (max-width: 959px) {
 #top{
 	width: 100%;
-	padding:10px 0;
+	padding:6px 0;
 	position: fixed;
 	bottom: 0;
 	z-index: 3;
@@ -3597,6 +3597,10 @@ figure.effect-sadie:hover h2 {
 
 }
 @media screen and (max-width: 600px) {
+#logo { width: 180px;}
+.background-reserva-header { height: 90px;}
+.top-figure figure img{ width:auto; height: 40px;}
+
 .formulario-reserva ul li {
 	width: 25%;
 	margin: 7px 0;

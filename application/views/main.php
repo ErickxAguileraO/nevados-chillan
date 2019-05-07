@@ -11,14 +11,32 @@
     <!-- [MENU] -->
     
     <div class="nav" id="nav">
-      <ul>
+      <ul class="menu">
         <li><a href="/descubrenos/" title="Descúbrenos: Tecla de Acceso 1" accesskey="1">Descúbrenos</a></li>
         <li><a href="/descubrenos/" title="Programas: Tecla de Acceso 2" accesskey="2">Programas</a></li>
-        <li><a href="/descubrenos/#hoteles" title="Hoteles: Tecla de Acceso 3" accesskey="3">Hoteles</a></li>
+        <li><a href="/descubrenos/#hoteles" title="Hoteles: Tecla de Acceso 3" accesskey="3">Hoteles</a>
+          <ul class="submenu">
+            <li><a href="/alojamiento/hotel-nevados">Hotel Nevados</a></li>
+            <li><a href="/alojamiento/hotel-alto-nevados">Hotel Alto Nevados</a></li>
+          </ul>
+        </li>
         <li><a href="/valle-hermoso/" title="Valle Hermoso: Tecla de Acceso 4" accesskey="4">Valle Hermoso</a></li>
         <li><a href="/parque-de-agua/" title="Parque de agua: Tecla de Acceso 5" accesskey="5">Parque de agua</a></li>
-        <li><a href="/invierno/" title="Actividades de invierno: Tecla de Acceso 6" accesskey="6">Actividades de invierno</a></li>
-        <li><a href="/verano/" title="Actividades de verano: Tecla de Acceso 7" accesskey="7">Actividades de verano</a></li>
+        <li><a href="/invierno/" title="Actividades de invierno: Tecla de Acceso 6" accesskey="6">Actividades de invierno</a>
+          <ul class="submenu">
+            <li><a href="/invierno/escuela/#clases-de-ski-snowboard">Ski & Snowboard</a></li>
+            <li><a href="/invierno/mapa-de-pistas">Mapa de pistas</a></li>
+            <li><a href="/invierno/infonieve">Infonieve</a></li>
+            <li><a href="/invierno/escuela/">Escuela Ski</a></li>
+            <li><a href="/invierno/backcountry">Backcountry</a></li>
+          </ul>
+        </li>
+        <li><a href="/verano/" title="Actividades de verano: Tecla de Acceso 7" accesskey="7">Actividades de verano</a>
+          <ul class="submenu">
+            <li><a href="/bikepark">BikePark Nevados</a></li>
+            <li><a href="/calendario">Outdoor</a></li>
+          </ul>
+        </li>
         <li><a href="/necesitas-ayuda/faqs/" title="Preguntas frecuentes: Tecla de Acceso 8" accesskey="8">Preguntas frecuentes</a></li>
       </ul>
     </div>
@@ -184,19 +202,16 @@
 </script>
 <div class="background-reserva-header">
   <div class="center">
-    <div class="top-figure">      
-          <figure><a href="/invierno/infonieve"><img src="/imagenes/sitio/infonieve.png" width="64" height="46" alt="Infonieve" />
-            <figcaption>Infonieve</figcaption></a>
-          </figure>
-       
-          <figure><a href="https://www.skipassnevadosdechillan.com/" target="_blank"><img src="/imagenes/sitio/skipass.png" width="64" height="46" alt="SKIPASS" />
-            <figcaption>SKIPASS</figcaption></a>
-          </figure>
-     
-          <figure><a href="/alojamiento/promociones/"><img src="/imagenes/sitio/promociones.png" width="64" height="46" alt="Promociones" />
-            <figcaption>Promociones</figcaption></a>
-          </figure>
-    
+    <div class="top-figure">
+      <figure><a href="/invierno/infonieve"><img src="/imagenes/sitio/infonieve.png" width="64" height="46" alt="Infonieve" />
+        <figcaption>Infonieve</figcaption>
+        </a> </figure>
+      <figure><a href="https://www.skipassnevadosdechillan.com/" target="_blank"><img src="/imagenes/sitio/skipass.png" width="64" height="46" alt="SKIPASS" />
+        <figcaption>SKIPASS</figcaption>
+        </a> </figure>
+      <figure><a href="/alojamiento/promociones/"><img src="/imagenes/sitio/promociones.png" width="64" height="46" alt="Promociones" />
+        <figcaption>Promociones</figcaption>
+        </a> </figure>
     </div>
     <div class="formulario-reserva">
       <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
