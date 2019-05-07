@@ -64,10 +64,10 @@ sus tres volcanes Volcán Nevado, Volcán Viejo y Volcán Nuevo.</p>
     <figure class="effect-sadie" style="background-image: url(<?=URL_ADMINISTRACION.$hoteles[0]->imagen_adjunta?>) !important;">
       <figcaption>
       <div class="block-bottom">
-        <h3><?=$hoteles[0]->titulo?></h3>
-        <p><?=$hoteles[0]->bajada?><br />
+        <h3><a href="<?=$hoteles[0]->link?>"><?=$hoteles[0]->titulo?></a></h3>
+        <?php /*?><p><?=$hoteles[0]->bajada?><br />
           <br />
-          <span><img src="../../imagenes/template/arrow.png" class="arrow" /><a href="<?=$hoteles[0]->link?>">Más Información</a></span></p></div>
+          <span><img src="../../imagenes/template/arrow.png" class="arrow" />Más Información</span></p><?php */?></div>
       </figcaption>
     </figure>
   </div>
@@ -76,10 +76,10 @@ sus tres volcanes Volcán Nevado, Volcán Viejo y Volcán Nuevo.</p>
     <figure class="effect-sadie" style="background-image: url(<?=URL_ADMINISTRACION.$hoteles[1]->imagen_adjunta?>) !important;">
       <figcaption>
       <div class="block-bottom">
-        <h3><?=$hoteles[1]->titulo?></h3>
-        <p><?=$hoteles[1]->bajada?><br />
+        <h3><a href="<?=$hoteles[1]->link?>"><?=$hoteles[1]->titulo?></a></h3>
+        <?php /*?><p><?=$hoteles[1]->bajada?><br />
           <br />
-          <span><img src="../../imagenes/template/arrow.png" class="arrow" /><a href="<?=$hoteles[1]->link?>">Más Información</a></span></p></div>
+          <span><img src="../../imagenes/template/arrow.png" class="arrow" /><a href="<?=$hoteles[1]->link?>">Más Información</span></p><?php */?></div>
       </figcaption>
     </figure>
   </div>

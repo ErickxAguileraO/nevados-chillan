@@ -2160,7 +2160,7 @@ nav#navigation  a{
 }
 
 .slider-habitacion li {
-	background: #FFFFFF;
+	/*background: #FFFFFF;*/
 }
 
 .slider-testimonio .flex-control-nav {
@@ -2169,15 +2169,15 @@ nav#navigation  a{
 }
 .slider-habitacion .flex-control-paging li a, .slider-testimonio .flex-control-paging li a, .instalacion .flex-control-paging li a {
 	background: #fff;
-	background: rgba(255, 255, 255, 0.5);
+	/*background: rgba(255, 255, 255, 0.5);*/
 }
 .slider-habitacion .flex-control-paging li a.flex-active, .slider-testimonio .flex-control-paging li a.flex-active, .instalacion .flex-control-paging li a.flex-active {
-	background: #fff;
-	background: rgba(255,255,255,0.9);
+	background: #fe8302;
+	/*background: rgba(255,255,255,0.9);*/
 }
 .slider-habitacion .flex-control-paging li a:hover, .slider-testimonio .flex-control-paging li a:hover, .instalacion .flex-control-paging li a:hover {
-	background: #fff;
-	background: rgba(255,255,255,0.7);
+	background: #964d00;
+	/*background: rgba(255,255,255,0.7);*/
 }
 .eventos-corporativos img {
 	width: 49%;
