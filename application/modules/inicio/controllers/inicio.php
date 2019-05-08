@@ -31,6 +31,7 @@ class Inicio extends CI_Controller {
 		#flexslider
 		$this->layout->css('/js/jquery/flexslider/flexslider.css');
 		$this->layout->js('/js/jquery/flexslider/jquery.flexslider.js');
+		$this->layout->js('/js/jquery/flexslider/jquery.flexslider_init.js');
 
 		#Animacion
 		$this->layout->css('/js/jquery/wow/animate.css');

@@ -1,5 +1,5 @@
 <!-- inicio Slider -->
-<div class="flexslider">
+<div class="flexslider" style="margin-bottom:100px;">
   <?php if(count($sliders)>0){ ?>
   <ul class="slides">
     <?php foreach($sliders as $item): ?>
@@ -228,9 +228,8 @@ endforeach;
   </section>
   <?php } ?>
 <!-- fin contenedor -->
-
-<style>
+<?php /*?><style>
 .wow:first-child {
 	visibility: hidden;
 }
-</style>
+</style><?php */?>
