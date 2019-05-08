@@ -1,4 +1,4 @@
-﻿<?php if ( ! defined('BASEPATH')) exit('No puede acceder a este archivo');
+<?php if ( ! defined('BASEPATH')) exit('No puede acceder a este archivo');
 
 class Slider extends CI_Controller {
 	    
