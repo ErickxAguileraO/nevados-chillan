@@ -32,11 +32,11 @@ class Imagen extends CI_Model{
         $this->upload_dir = $config->upload_dir;
     }
     
-    public function cargar_imagen($_FILES){
+    public function cargar_imagen($files){
 
-		if($_FILES['img']['name'] != ''){
+		if($files['img']['name'] != ''){
 			
-            $imagen = $_FILES['img'];
+            $imagen = $files['img'];
             if(!$imagen['error']){
                 
     			$extension = strtolower((array_pop(explode(".",$imagen['name']))));
@@ -104,10 +104,10 @@ class Imagen extends CI_Model{
 		return $response;
 	}
 	
-	public function cortar_imagen($_POST){
+	public function cortar_imagen($post){
 
 		#IMAGEN TAMAÑO INTERNA
-		$ruta_grande = $imgUrl = $_POST['imgUrl'];
+		$ruta_grande = $imgUrl = $post['imgUrl'];
         
         #obtiene la ruta donde se caga la imagen
 		$uploads_dir = explode('/',$imgUrl);
@@ -118,23 +118,23 @@ class Imagen extends CI_Model{
         $extension = array_pop(explode('.',$imgUrl));
         
 		// original sizes
-		$imgInitW = $_POST['imgInitW'];
-		$imgInitH = $_POST['imgInitH'];
+		$imgInitW = $post['imgInitW'];
+		$imgInitH = $post['imgInitH'];
 		
 		// resized sizes
-		$imgW = $_POST['imgW'] * $this->img->razon;
-		$imgH = $_POST['imgH'] * $this->img->razon;
+		$imgW = $post['imgW'] * $this->img->razon;
+		$imgH = $post['imgH'] * $this->img->razon;
 		
 		// offsets
-		$imgY1 = $_POST['imgY1'] * $this->img->razon;
-		$imgX1 = $_POST['imgX1'] * $this->img->razon;
+		$imgY1 = $post['imgY1'] * $this->img->razon;
+		$imgX1 = $post['imgX1'] * $this->img->razon;
         
 		// crop box
-		$cropW = $_POST['cropW'] * $this->img->razon;
-		$cropH = $_POST['cropH'] * $this->img->razon;
+		$cropW = $post['cropW'] * $this->img->razon;
+		$cropH = $post['cropH'] * $this->img->razon;
 		
 		// rotation angle
-		$angle = $_POST['rotation'];
+		$angle = $post['rotation'];
 		$jpeg_quality = 100;
 		$output_filename = $uploads_dir.'/interna_'.time().'.'.$extension;
 
