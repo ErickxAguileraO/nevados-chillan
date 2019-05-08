@@ -4,7 +4,6 @@ pages:
   stage: deploy
   script:
   - rsync -qr --exclude='*application/config/database.php' --exclude='ws.php'  --exclude='/index.php' --exclude='/admin/index.php' --exclude='/maqueta/index.php' . /home/nevadosaeurus/public_html/
-#  - rsync -qr . /home/nevadosaeurus/public_html/
   
   
   - chown -fR nevadosaeurus /home/nevadosaeurus/public_html
