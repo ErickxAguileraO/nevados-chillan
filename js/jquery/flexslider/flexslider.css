@@ -25,6 +25,7 @@
 .flexslider {
 	margin: 0;
 	padding: 0;
+	margin-top: -16px;
 }
 .flexslider .slides > li {
 	display: none;
@@ -65,9 +66,8 @@ html[xmlns] .slides {
 .flexslider {
 	position: relative;
 	zoom: 1;
-	/*height: 600px;
-	margin-bottom: 100px;*/
-	z-index:0;
+	height: 600px;
+	margin-bottom: 100px;
 }
 .flexslider ul li{
 	width: 100%;
