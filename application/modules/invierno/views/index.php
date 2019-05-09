@@ -268,14 +268,23 @@ Desde la cafetería en las alturas Buena Vista hasta la más familiar Quincho ta
 </div>
 <!-- Fin Valores -->
 <div class="center ofertas" id="promociones">
+
   <h2>Tenemos ofertas para ti</h2>
+
   <div id="portfoliolist">
+
     <?php foreach($promociones as $item): ?>
+
     <div class="portfolio logo" data-cat="logo">
+
       <div class="portfolio-wrapper"> <a href="/alojamiento/promocion/<?=$item->url?>"><img src="<?=URL_ADMINISTRACION.$item->imagen_adjunta_banner?>" alt="" /></a> </div>
+
     </div>
+
   <?php endforeach; ?>
+
   </div>
+
 </div>
 <style type="text/css">
 .valores-seccion h2 {

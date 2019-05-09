@@ -29,14 +29,14 @@ class Promociones extends CI_Controller
         $this->layout->css('/css/webfont/stylesheet.css');
 
         #flexslider
-        $this->layout->css('/js/jquery/flexslider/flexslider.css');
-        $this->layout->js('/js/jquery/flexslider/jquery.flexslider.js');
+        #$this->layout->css('/js/jquery/flexslider/flexslider.css');
+        #$this->layout->js('/js/jquery/flexslider/jquery.flexslider.js');
 
         #Nivoslider 3.2
-        $this->layout->css('/js/jquery/nivoslider/3.2/nivo-slider.css');
-        $this->layout->css('/js/jquery/nivoslider/3.2/nivoslider_custom.css');
-        $this->layout->js('/js/jquery/nivoslider/3.2/jquery.nivo.slider.pack.js');
-        $this->layout->js('/js/jquery/nivoslider/3.2/nivoslider_init.js');
+        #$this->layout->css('/js/jquery/nivoslider/3.2/nivo-slider.css');
+        #$this->layout->css('/js/jquery/nivoslider/3.2/nivoslider_custom.css');
+        #$this->layout->js('/js/jquery/nivoslider/3.2/jquery.nivo.slider.pack.js');
+        #$this->layout->js('/js/jquery/nivoslider/3.2/nivoslider_init.js');
 
         #Selector promociones
         $this->layout->js('/js/jquery/promociones/jquery.mixitup.min.js');

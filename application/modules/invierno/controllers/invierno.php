@@ -1,44 +1,42 @@
 <?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
 
-class Invierno extends CI_Controller
-{
+class Invierno extends CI_Controller {
 
-    function __construct()
-    {
+    function __construct() {
 
         parent::__construct();
 
-#current
+	#current
         $this->layout->current = 5;
     }
 
-    public function index()
-    {
+    public function index() {
+		
         $tipo_seccion = 9;
 
-#Title
-        $this->layout->title('Actividades Invierno');
+	#Title
+    $this->layout->title('Actividades Invierno');
+	
+	#Metas
+    $this->layout->setMeta('title', 'Descúbrenos');
+    $this->layout->setMeta('description', 'Descúbrenos');
+    $this->layout->setMeta('keywords', 'Descúbrenos');
 
-#Metas
-        $this->layout->setMeta('title', 'Descúbrenos');
-        $this->layout->setMeta('description', 'Descúbrenos');
-        $this->layout->setMeta('keywords', 'Descúbrenos');
+	#flexslider
+    $this->layout->css('/js/jquery/flexslider/flexslider.css');
+    $this->layout->js('/js/jquery/flexslider/jquery.flexslider.js');
 
-#flexslider
-        $this->layout->css('/js/jquery/flexslider/flexslider.css');
-        $this->layout->js('/js/jquery/flexslider/jquery.flexslider.js');
+	#WebFont
+    $this->layout->css('/css/webfont/stylesheet.css');
 
-#WebFont
-        $this->layout->css('/css/webfont/stylesheet.css');
-
-#Venobox
-        $this->layout->css('/js/jquery/venobox/venobox.css');
-        $this->layout->js('/js/jquery/venobox/venobox.min.js');
+	#Venobox
+    $this->layout->css('/js/jquery/venobox/venobox.css');
+    $this->layout->js('/js/jquery/venobox/venobox.min.js');
 
 
-#Layout promociones
-        $this->layout->js('/js/jquery/promociones/jquery.mixitup.min.js');
-        $this->layout->css('/js/jquery/promociones/layout.css');
+	#Layout promociones
+    $this->layout->js('/js/jquery/promociones/jquery.mixitup.min.js');
+    $this->layout->css('/js/jquery/promociones/layout.css');
 
 //Contenido
 //slider
