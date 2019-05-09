@@ -3732,12 +3732,8 @@ footer .newsletter ul li {
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-.cont-testimonio {
-	width: 80%;
-}
-.logos-footer {
-	width: 100%;
-}
+.cont-testimonio { width: 80%;}
+.logos-footer { width: 100%;}
 .logos-footer img {
 	width: 50%;
 	float: left;
@@ -3781,6 +3777,10 @@ hr {
 	width: 100% !important;
 	margin-bottom: 20px;
 }
+footer .informacion .grid-footer-2{ margin-top:30px; width:auto;}
+footer .informacion .grid-footer-2 li{ margin:0 5px;}
+footer .informacion .grid-footer-2 li img{ height: 40px; width:auto;}
+footer .informacion .grid-footer-2.color{ padding:15px 5px;}
 }
 @media screen and (max-width: 460px) {
 footer .informacion .grid-footer-2{ width:100%; padding:20px 10px;}
@@ -3906,7 +3906,7 @@ figure.effect-sadie:hover h3 {
 .btn-exportar {
     top: 53px;
 }
- @media screen and (max-width: 320px) {
+ @media screen and (max-width: 330px) {
 .texto-reserva p {
  font-size: 25px;
 }
@@ -3928,4 +3928,7 @@ figure.effect-sadie:hover h3 {
 .texto span {
  margin-left: 24%;
 }
+footer .informacion .grid-footer-2.color{ padding:10px 4px;}
+footer .informacion .grid-footer-2 li{ margin:4px;}
+footer .informacion .grid-footer-2 li img { height: 35px;}
 }
