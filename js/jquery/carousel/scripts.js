@@ -1,12 +1,24 @@
 $(document).ready(function() {
     $('.responsive').slick({
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         responsive: [{
-            breakpoint: 770,
+            breakpoint: 890,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
+            }
+        }, {
+            breakpoint: 760,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        }, {
+            breakpoint: 590,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
@@ -16,7 +28,7 @@ $(document).ready(function() {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
-            }
+			}
         }]
     });
 });
