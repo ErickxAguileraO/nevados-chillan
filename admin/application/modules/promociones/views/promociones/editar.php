@@ -3,6 +3,7 @@
         <h1>Editar Promoción</h1>
     </div>
     
+  
     <form action="#" method="post" id="form-editar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
@@ -12,6 +13,52 @@
                 <label>Descripción</label>
                 <textarea class="form-control" rows="3"  id="descripcion" name="descripcion"><?php echo $promocion->descripcion; ?></textarea>
                 
+
+
+                <label>Descuento 1 (*) </label>
+                <input type="text" class="form-control"  onkeyup="this.value=descuento(this.value)" name="descuento_uno"  value="<?php echo $promocion->descuento_uno; ?>" />
+                <label>Monto 1 (*) </label>
+                <input type="text" class="form-control" onkeyup="this.value=monto(this.value)" name="monto_uno"  value="<?php echo $promocion->monto_uno; ?>" />
+
+                <label>Descuento 2 (*) </label>
+                <input type="text" class="form-control"  onkeyup="this.value=descuento(this.value)" name="descuento_dos"  value="<?php echo $promocion->descuento_dos; ?>" />
+                <label>Monto 2 (*) </label>
+                <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_dos"  value="<?php echo $promocion->monto_dos; ?>" />
+
+
+                <label>Descuento 3 (*) </label>
+                <input type="text" class="form-control"  onkeyup="this.value=descuento(this.value)" name="descuento_tres"  value="<?php echo $promocion->descuento_tres; ?>" />
+                <label>Monto 3 (*) </label>
+                <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_tres"  value="<?php echo $promocion->monto_tres; ?>" />
+
+                <label>Código (*) </label>
+                <input type="text" class="form-control" name="codigo_promocion"  value="<?php echo $promocion->codigo_promocion; ?>" />
+
+                <label>Precio anterior (*) </label>
+                <input type="text" class="form-control" name="precio_anterior"  value="<?php echo $promocion->precio_anterior; ?>" />
+
+                <label>Resumen (*) </label>
+                <textarea class="form-control" rows="3"  id="resumen" name="resumen"> <?php echo $promocion->resumen; ?> </textarea>
+
+                <script>
+                    function descuento(string){
+                    var out = '';
+                    var filtro = '01234567890.%';
+                    for (var i=0; i<string.length; i++)
+                        if (filtro.indexOf(string.charAt(i)) != -1)
+                        out += string.charAt(i);
+                    return out;
+                }
+                function monto(string){
+                    var out = '';
+                    var filtro = '01234567890.';
+                    for (var i=0; i<string.length; i++)
+                        if (filtro.indexOf(string.charAt(i)) != -1)
+                        out += string.charAt(i);
+                    return out;
+                }
+                    </script>
+
                 <label>Adjuntar imagen banner tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
                     <div style="display:none;" id="replicar-1" class="box">

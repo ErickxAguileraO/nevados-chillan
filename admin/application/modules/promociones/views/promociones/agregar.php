@@ -12,6 +12,51 @@
                 <label>Descripción</label>
                 <textarea class="form-control" rows="3"  id="descripcion" name="descripcion"></textarea>
                 
+
+                <label>Descuento 1 (*) </label>
+                <input type="text" class="form-control" onkeyup="this.value=descuento(this.value)" name="descuento_uno" />
+                <label>Monto 1 (*) </label>
+                <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_uno" />
+
+                <label>Descuento 2 (*) </label>
+                <input type="text" class="form-control" onkeyup="this.value=descuento(this.value)" name="descuento_dos" />
+                <label>Monto 2 (*) </label>
+                <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_dos" />
+
+
+                <label>Descuento 3 (*) </label>
+                <input type="text" class="form-control" onkeyup="this.value=descuento(this.value)" name="descuento_tres" />
+                <label>Monto 3 (*) </label>
+                <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_tres" />
+
+                <label>Código (*) </label>
+                <input type="text" class="form-control" name="codigo_promocion" />
+
+                <label>Precio anterior (*) </label>
+                <input type="text" class="form-control" name="precio_anterior" />
+
+                <label>Resumen (*) </label>
+                <textarea class="form-control" rows="3"  id="descripcion" name="descripcion"></textarea>
+
+
+                <script>
+                    function descuento(string){
+                    var out = '';
+                    var filtro = '01234567890.%';
+                    for (var i=0; i<string.length; i++)
+                        if (filtro.indexOf(string.charAt(i)) != -1)
+                        out += string.charAt(i);
+                    return out;
+                }
+                function monto(string){
+                    var out = '';
+                    var filtro = '01234567890.';
+                    for (var i=0; i<string.length; i++)
+                        if (filtro.indexOf(string.charAt(i)) != -1)
+                        out += string.charAt(i);
+                    return out;
+                }
+                    </script>
                 <label>Adjuntar imagen banner tamaño mínimo <?php echo $this->img->recorte_ancho_1; ?>px x <?php echo $this->img->recorte_alto_1; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
                     <div style="display:none;" id="replicar-1" class="box">

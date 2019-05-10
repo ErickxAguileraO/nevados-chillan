@@ -107,9 +107,50 @@ class Promociones extends CI_Controller {
             $datos['pro_orden'] = $this->input->post('orden');
             $datos['pro_url'] = slug($this->input->post('nombre'));
             
-            $datos['pro_invierno'] = $this->input->post('invierno');
-            $datos['pro_verano'] = $this->input->post('verano');
+            $datos['pro_descuento_uno'] = $this->input->post('descuento_uno');
+            $datos['pro_monto_uno'] = $this->input->post('monto_uno');
+
+            $datos['pro_descuento_dos'] = $this->input->post('descuento_dos');
+            $datos['pro_monto_dos'] = $this->input->post('monto_dos');
+
+            $datos['pro_descuento_tres'] = $this->input->post('descuento_tres');
+            $datos['pro_monto_tres'] = $this->input->post('monto_tres');
+
+            $datos['pro_codigo_promocion'] = $this->input->post('codigo_promocion');
+            $datos['pro_precio_anterior'] = $this->input->post('precio_anterior');
+
+
+            $datos['pro_resumen'] = $this->input->post('resumen');
+          
+         
+
+
+
             
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
             $datos['pro_evento'] = $this->input->post('evento');
 
             $datos['pro_estado'] = $this->input->post('estado');
@@ -240,6 +281,21 @@ class Promociones extends CI_Controller {
             $datos['pro_descripcion'] = $this->input->post('descripcion');
             $datos['pro_orden'] = $this->input->post('orden');
             $datos['pro_url'] = slug($this->input->post('nombre'));
+
+            $datos['pro_descuento_uno'] = $this->input->post('descuento_uno');
+            $datos['pro_monto_uno'] = $this->input->post('monto_uno');
+
+            $datos['pro_descuento_dos'] = $this->input->post('descuento_dos');
+            $datos['pro_monto_dos'] = $this->input->post('monto_dos');
+
+            $datos['pro_descuento_tres'] = $this->input->post('descuento_tres');
+            $datos['pro_monto_tres'] = $this->input->post('monto_tres');
+
+            $datos['pro_codigo_promocion'] = $this->input->post('codigo_promocion');
+            $datos['pro_precio_anterior'] = $this->input->post('precio_anterior');
+
+
+            $datos['pro_resumen'] = $this->input->post('resumen');
 
             if(!$this->input->post('invierno')){
                  $datos['pro_invierno'] =  0; 

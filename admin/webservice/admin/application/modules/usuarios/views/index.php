@@ -24,7 +24,7 @@
 			<tr>
 				<th scope="col">Nombre</th>
 				<th scope="col">Exportar</th>
-				<th scope="col" class="last"></th>
+				<th colspan="2" scope="col" class="last"></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -35,9 +35,10 @@
 						<td>
 							<a href="<?php echo base_url(); ?>/usuarios/exportar_pdf/<?php echo $aux->codigo; ?>/"><button title="Exportar PDF" type="button" class="btn btn-success btn-sm">Documentación PDF</button></a>
 						</td>
-                        <td class="editar">
-							<a href="<?php echo base_url(); ?>/usuarios/editar/<?php echo $aux->codigo; ?>/"><button title="Editar" type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></a>
-							<button title="Eliminar" type="button" rel="<?php echo $aux->codigo; ?>" class="btn btn-danger btn-sm eliminar"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                        <td colspan="2" class="editar ">
+							<a href="<?php echo base_url(); ?>/usuarios/editar/<?php echo $aux->codigo; ?>/"><button title="Editar" type="button" class="btn btn-link btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button></a>
+							<button title="Asignar todos los permisos" type="button" rel="<?php echo $aux->codigo; ?>" class="btn btn-link btn-sm super"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></button>
+						    <button title="Eliminar" type="button" rel="<?php echo $aux->codigo; ?>" class="btn btn-link btn-sm eliminar"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 						</td>
 					</tr>
 				<?php } ?>

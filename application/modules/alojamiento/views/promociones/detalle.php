@@ -112,21 +112,77 @@
       </ul>
       <div class="clear"></div>
     </div><?php */?>
+
+
+<!--
+
+   [descuento_uno] => 50%
+    [descuento_dos] => 20%
+    [descuento_tres] => 10%
+    [monto_uno] => 50.000
+    [monto_dos] => 80.000
+    [monto_tres] => 90.000
+    [codigo_promocion] => PRCX921
+    [precio_anterior] => 100.000
+    [resumen] =>   RESUMEN DE PROMOCION
+-->
+<style>
+.li_blue_promocion{
+  background: #004f8d !important;
+}
+
+</style>
+    
+<?php if($promocion->descuento_uno!="" or $promocion->descuento_dos!="" or $promocion->descuento_tres!="" or $promocion->monto_uno!="" or  $promocion->monto_dos!="" or  $promocion->monto_tres !="" or   $promocion->codigo_promocion !="" or  $promocion->resumen !="" or  $promocion->precio_anterior!="" ) { ?>
     <div class="block-dscto">
       <ul class="dcto img-rounded">
-        <li>20% dcto</li>
-        <li>40% dcto</li>
-        <li>50% dcto</li>
+        <?php if($promocion->descuento_uno != "") { ?>
+          <li style="cursor:pointer;" class="li_blue_promocion li_promocion" id="descuento_uno"><?=$promocion->descuento_uno?> dcto</li>
+        <?php } ?>
+        <?php if($promocion->descuento_dos != "") { ?>
+        <li  style="cursor:pointer;" class="li_promocion" id="descuento_dos"><?=$promocion->descuento_dos?> dcto</li>
+        <?php } ?>
+        <?php if($promocion->descuento_tres != "") { ?>
+        <li style="cursor:pointer;"  class="li_promocion" id="descuento_tres"><?=$promocion->descuento_tres?> dcto</li>
+        <?php } ?>
       </ul>
-      <div class="valor-promocion">$100.000</div>
+        <?php if($promocion->descuento_uno != "") { ?>
+          <div class="valor-promocion" id="monto_uno">$<?=$promocion->monto_uno?> </div>
+        <?php } ?>
+        <?php if($promocion->descuento_dos != "") { ?>
+          <div style="display:none;"  id="monto_dos" class="valor-promocion">$<?=$promocion->monto_dos?> </div>
+        <?php } ?>
+        <?php if($promocion->descuento_tres != "") { ?>
+          <div style="display:none;"  id="monto_tres" class="valor-promocion">$<?=$promocion->monto_tres?> </div>
+        <?php } ?>
       <ul class="footer-dscto">
-        <li><i>CÓDIGO XXXXXX</i></li>
-        <li style="text-align: right;">Antes 200.000</li>
+      <?php if($promocion->codigo_promocion!="") { ?>
+        <li><i><?=$promocion->codigo_promocion?></i></li>
+      <?php } ?>
+
+      <?php if($promocion->precio_anterior!="") { ?>
+        <li style="text-align: right;">Antes $<?=$promocion->precio_anterior?></li>
+
+      <?php } ?>
       </ul>
-      <p>condiciones de promoción desde el XX al XX del XXXX . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+      <p><?=$promocion->resumen?></p>
     </div>
   </div>
   
+
+      <?php } ?>
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="texto-detalle" style="clear:both; width:auto; padding-top:30px;">    
     <?php ?>
     <?php
@@ -216,3 +272,27 @@
 <style type="text/css">
 #header{ position:relative !important;}
 </style>
+
+<script>
+              $("#descuento_uno").click(function(){
+                $(".li_promocion").removeClass("li_blue_promocion");
+                $("#descuento_uno").addClass("li_blue_promocion");
+                $('#monto_uno').show();
+                $('#monto_dos').hide();
+                $('#monto_tres').hide();
+              });
+              $("#descuento_dos").click(function(){
+                $(".li_promocion").removeClass("li_blue_promocion");
+                $("#descuento_dos").addClass("li_blue_promocion");
+                $('#monto_uno').hide();
+                $('#monto_dos').show();
+                $('#monto_tres').hide();
+              });
+              $("#descuento_tres").click(function(){
+                $(".li_promocion").removeClass("li_blue_promocion");
+                $("#descuento_tres").addClass("li_blue_promocion");
+                $('#monto_uno').hide();
+                $('#monto_dos').hide();
+                $('#monto_tres').show();
+              });
+          </script>
