@@ -63,6 +63,57 @@ class Usuarios extends CI_Controller {
 		$this->layout->view('index',$contenido);
            
     }
+
+
+    public function permiso_super(){
+        
+        if($this->input->post()){
+            
+            $codigo_usuario = $this->input->post('codigo_usuario');
+            
+            #$this->objUsuario->eliminar_permiso_campo(array("usua_codigo"=>$codigo_usuario));
+            #$this->objUsuario->eliminar_permiso_tabla(array("usua_codigo"=>$codigo_usuario));die;
+            
+            $inicio_tabla = 13;
+            $inicio_campos = 1;
+            
+            #Obtener más recientes
+            
+            $hasta_tablas = $this->objTabla->nextId()-1;
+            $hasta_campos = $this->objCampo->nextId()-1;
+                        
+            #ELIMINAR PERMISOS TABLA
+            $this->objUsuario->eliminar_permiso_tabla(array("usua_codigo"=>$codigo_usuario));
+            #guarda los permisos de los campos
+            for($i = $inicio_tabla; $i <= $hasta_tablas; $i++ ){
+                #guarda los permisos de las tablas
+                for($j=1; $j<=4; $j++){
+                    unset($datos);
+                    $datos['perm_codigo'] = $j;
+                    $datos['usua_codigo'] = $codigo_usuario;
+                    $datos['tab_codigo'] = $i;
+                    $this->objUsuario->agregar_permiso_tabla($datos);
+                }
+            }
+            
+            #ELIMINAR PERMISOS CAMPO
+            $this->objUsuario->eliminar_permiso_campo(array("usua_codigo"=>$codigo_usuario));
+            #guarda los permisos de los campos
+            for($i = $inicio_campos; $i <= $hasta_campos; $i++ ){
+                #guarda los permisos de las campos
+                for($j=1; $j<=4; $j++){
+                    unset($datos);
+                    $datos['perm_codigo'] = $j;
+                    $datos['usua_codigo'] = $codigo_usuario;
+                    $datos['cam_codigo'] = $i;
+                    $this->objUsuario->agregar_permiso_campo($datos);
+                }
+            } 
+            
+            echo json_encode(array("result"=>true,"msg"=>"Permisos asignados con exito"));
+        }
+    }        
+    
     
     public function crear(){
         
