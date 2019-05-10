@@ -3,6 +3,7 @@
         <h1>Editar Promoción</h1>
     </div>
     
+    <?php print_array($promocion)?>
     <form action="#" method="post" id="form-editar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-5">
