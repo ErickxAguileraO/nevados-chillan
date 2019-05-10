@@ -240,7 +240,56 @@ Desde la cafetería en las alturas Buena Vista hasta la más familiar Quincho ta
   <?php } ?>
   <!--Fin Servicios asociados -->
 </div>
+
+
+
 <!-- inicio Seccion Valores -->
+
+  
+  
+<!-- inicio Seccion Valores -->
+<div class="valores-seccion" id="valores">
+    <div class="block-table">
+      <div class="center">
+        <?php if($programas){ 
+          
+            foreach($programas as $pro) { 
+          
+          ?>
+          <div class="block-tr">
+            <div class="block-th">
+              <h3><?=$pro->titulo?></h3>
+              <ul>
+                <li><?=$pro->bajada_uno?></li>
+                <li><?=$pro->bajada_dos?></li>
+              </ul>
+            </div>
+
+              <?php foreach($pro->opciones as $op ){ ?>
+            <div class="block-td">
+              <h4><?=$op->nombre?></h4>
+              <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
+            </div>
+              <?php } ?>
+
+          </div>
+          <?php
+            }
+          }
+          
+          ?>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+<!--
 <div class="seccion-fondo valores-seccion" id="valores">
   <h2 style="font-size: 25px !important;">Valores tickets</h2>
 
@@ -266,6 +315,22 @@ Desde la cafetería en las alturas Buena Vista hasta la más familiar Quincho ta
     <div class="clear"></div>
   </div>
 </div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Fin Valores -->
 <div class="center ofertas" id="promociones">
 

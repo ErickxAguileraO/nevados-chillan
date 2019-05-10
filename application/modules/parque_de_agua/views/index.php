@@ -73,6 +73,44 @@
   <?php } ?>
   <!--Fin Servicios asociados -->
 </div>
+
+
+<div class="valores-seccion" id="valores">
+    <div class="block-table">
+      <div class="center">
+        <?php if($programas){ 
+          
+            foreach($programas as $pro) { 
+          
+          ?>
+          <div class="block-tr">
+            <div class="block-th">
+              <h3><?=$pro->titulo?></h3>
+              <ul>
+                <li><?=$pro->bajada_uno?></li>
+                <li><?=$pro->bajada_dos?></li>
+              </ul>
+            </div>
+
+              <?php foreach($pro->opciones as $op ){ ?>
+            <div class="block-td">
+              <h4><?=$op->nombre?></h4>
+              <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
+            </div>
+              <?php } ?>
+
+          </div>
+          <?php
+            }
+          }
+          
+          ?>
+
+      </div>
+    </div>
+  
+
+<!--
 <div class="seccion-fondo valores-seccion" style="background: none !important;" id="valores">
   <h2 style="color: #00274c;">Programas y valores</h2>
   <div class="center">
@@ -97,7 +135,7 @@
   <div class="clear"></div>
   </div>
 </div>
-
+-->
 <!-- inicio secciones -->
 <?php if(count($secciones)>0){ ?>
     <?php foreach($secciones as $item): ?>

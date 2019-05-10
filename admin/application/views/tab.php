@@ -156,7 +156,8 @@ foreach($secciones_menu as $aux){
     			<ul>
     				<li><a href="/parque-agua/slider/">Slider</a></li>
                     <li><a href="/parque-agua/introduccion/">Introducción</a></li>
-    				<li><a href="/parque-agua/programas-valores/">Programas y Valores</a></li>
+    				<!--<li><a href="/parque-agua/programas-valores/">Programas y Valores</a></li>-->
+                    <li><a href="/parque-agua/programas/">Programas y Valores</a></li>
                     <li><a href="/parque-agua/secciones/">Secciones</a></li>
                     <li><a href="/parque-agua/banners/">Banners</a></li>
     			</ul>
@@ -171,8 +172,9 @@ foreach($secciones_menu as $aux){
                     <li><a href="/invierno/introduccion/">Introducción</a></li>
             		<li><a href="/invierno/secciones/">Secciones</a></li>
             		<li><a href="/invierno/cafeterias/">Cafeterías</a></li>
-            		<li><a href="/invierno/programas-valores/">Programas y Valores</a></li>
+            		<!--<li><a href="/invierno/programas-valores/">Programas y Valores</a></li>-->
             		<li><a href="/invierno/mapa-pistas/">Mapa de Pistas</a></li>
+                    <li><a href="/invierno/programas/">Programas y Valores</a></li>
             	</ul>
             </li>
         
@@ -213,7 +215,8 @@ foreach($secciones_menu as $aux){
                     <li><a href="/verano/introduccion/">Introducción</a></li>
                     <li><a href="/verano/secciones/">Secciones</a></li>
                     <!--<li><a href="/verano/calendario">Calendario</a></li>-->
-                    <li><a href="/verano/programas-valores/">Programas y Valores</a></li>
+                    <!--<li><a href="/verano/programas-valores/">Programas y Valores</a></li>-->
+                    <li><a href="/verano/programas/">Programas y Valores</a></li>
                 </ul>
             </li>
             <li>
@@ -222,7 +225,8 @@ foreach($secciones_menu as $aux){
             		<li><a href="/bike-park/slider/">Slider</a></li>
                     <li><a href="/bike-park/">Bike Park</a></li>
             		<li><a href="/bike-park/secciones/">Secciones</a></li>
-            		<li><a href="/bike-park/programas-valores/">Programas y Valores</a></li>
+            		<!--<li><a href="/bike-park/programas-valores/">Programas y Valores</a></li>-->
+                    <li><a href="/bike-park/programas/">Programas y Valores</a></li>
             	</ul>
             </li>
             <li><a style="background: #FFF;"></a></li>

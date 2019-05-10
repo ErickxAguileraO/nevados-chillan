@@ -67,6 +67,15 @@ class Invierno extends CI_Controller {
         $data['introduccion'] = $this->ws->obtener(69, 'int_tipo_seccion = ' . $tipo_seccion . ' and int_visible = 1');
 
 
+        $this->ws->order('prog_orden ASC');
+        $programas = $this->ws->listar(72,'prog_estado = 1 and prog_tipo = "invierno"');
+        foreach($programas as $pro){
+                $this->ws->order('opc_orden ASC');
+                $pro->opciones = $this->ws->listar(73, "opc_programa_verano = ".$pro->codigo);
+        }
+
+        $data["programas"] = $programas;
+
 #Nav
         $this->layout->nav(array("Invierno" => "/"));
 

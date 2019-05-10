@@ -231,62 +231,49 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
 <div class="valores-seccion" id="valores">
     <div class="block-table">
       <div class="center">
-      <div class="block-tr">
-        <div class="block-th">
-          <h3>TIT SERVICIO</h3>
-          <ul>
-            <li>TEXTO DE BAJADA SERVICIO 1</li>
-            <li>TEXTO DE BAJADA SERVICIO 2</li>
-          </ul>
-        </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
+        <?php if($programas){ 
+          
+            foreach($programas as $pro) { 
+          
+          ?>
+          <div class="block-tr">
+            <div class="block-th">
+              <h3><?=$pro->titulo?></h3>
+              <ul>
+                <li><?=$pro->bajada_uno?></li>
+                <li><?=$pro->bajada_dos?></li>
+              </ul>
+            </div>
+
+              <?php foreach($pro->opciones as $op ){ ?>
+            <div class="block-td">
+              <h4><?=$op->nombre?></h4>
+              <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
+            </div>
+              <?php } ?>
+
           </div>
-      <div class="block-tr">
-        <div class="block-th">
-          <h3>TIT SERVICIO</h3>
-          <ul>
-            <li>TEXTO DE BAJADA SERVICIO 1</li>
-            <li>TEXTO DE BAJADA SERVICIO 2</li>
-          </ul>
-        </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
-          </div>
-      <div class="block-tr">
-        <div class="block-th">
-          <h3>TIT SERVICIO</h3>
-          <ul>
-            <li>TEXTO DE BAJADA SERVICIO 1</li>
-            <li>TEXTO DE BAJADA SERVICIO 2</li>
-          </ul>
-        </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
-        <div class="block-td">
-          <h4>OPCIÓN SERVICIO</h4>
-          <span class="valor">$XXX.000</span> <span class="condiciones">CONDICIONES VALOR</span> </div>
-          </div>
+          <?php
+            }
+          }
+          
+          ?>
+
       </div>
     </div>
+  
+
+
+
+
+
+
+
+
+
+
+<!--
+
   
   <h2 style="font-size: 25px !important;">Valores tickets</h2>
 
@@ -314,6 +301,10 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
     <div class="clear"></div>
   </div>
 </div>
+
+-->
+
+
 <!-- Fin Valores -->
 <?php if(count($promociones)>0){?>
 <div class="center ofertas" id="promociones">

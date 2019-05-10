@@ -141,6 +141,14 @@ $route['parque-agua/slider/cargar-imagen']      = "parque_agua/slider/cargar_ima
 $route['parque-agua/slider/cortar-imagen']      = "parque_agua/slider/cortar_imagen";
 $route['parque-agua/slider/eliminar-imagen']    = "parque_agua/slider/eliminar_imagen";
 
+
+
+$route['parque-agua/programas']                  = "parque_agua/programas";
+$route['parque-agua/programas/(:num)']           = "parque_agua/programas";
+$route['parque-agua/programas/agregar']          = "parque_agua/programas/agregar";
+$route['parque-agua/programas/editar/(:num)']    = "parque_agua/programas/editar/$1";
+$route['parque-agua/programas/eliminar']         = "parque_agua /programas/eliminar";
+
 #introduccion
 $route['parque-agua/introduccion']                  = "parque_agua/introduccion";
 $route['parque-agua/introduccion/agregar']          = "parque_agua/introduccion/agregar";
@@ -513,6 +521,15 @@ $route['verano/slider/cargar-imagen']    = "verano/slider/cargar_imagen";
 $route['verano/slider/cortar-imagen']    = "verano/slider/cortar_imagen";
 $route['verano/slider/eliminar-imagen']  = "verano/slider/eliminar_imagen";
 
+
+#programas
+$route['verano/programas']                  = "verano/programas";
+$route['verano/programas/(:num)']           = "verano/programas";
+$route['verano/programas/agregar']          = "verano/programas/agregar";
+$route['verano/programas/editar/(:num)']    = "verano/programas/editar/$1";
+$route['verano/programas/eliminar']         = "verano/programas/eliminar";
+
+
 #introduccion
 $route['verano/introduccion']                  = "verano/introduccion";
 $route['verano/introduccion/agregar']          = "verano/introduccion/agregar";
@@ -593,6 +610,16 @@ $route['escuela/programas-valores/agregar']  = "escuela/programas_valores/agrega
 
 
 #INVIERNO
+#programas
+$route['invierno/programas']                  = "invierno/programas";
+$route['invierno/programas/(:num)']           = "invierno/programas";
+$route['invierno/programas/agregar']          = "invierno/programas/agregar";
+$route['invierno/programas/editar/(:num)']    = "invierno/programas/editar/$1";
+$route['invierno/programas/eliminar']         = "invierno/programas/eliminar";
+
+
+
+
 
 #slider
 $route['bike-park/slider']                  = "bike_park/slider";
@@ -603,6 +630,15 @@ $route['bike-park/slider/eliminar']         = "bike_park/slider/eliminar";
 $route['bike-park/slider/cargar-imagen']    = "bike_park/slider/cargar_imagen";
 $route['bike-park/slider/cortar-imagen']    = "bike_park/slider/cortar_imagen";
 $route['bike-park/slider/eliminar-imagen']  = "bike_park/slider/eliminar_imagen";
+
+
+
+$route['bike-park/programas']                  = "bike_park/programas";
+$route['bike-park/programas/(:num)']           = "bike_park/programas";
+$route['bike-park/programas/agregar']          = "bike_park/programas/agregar";
+$route['bike-park/programas/editar/(:num)']    = "bike_park/programas/editar/$1";
+$route['bike-park/programas/eliminar']         = "bike_park/programas/eliminar";
+
 
 #secciones
 $route['bike-park/secciones']                  = "bike_park/secciones";

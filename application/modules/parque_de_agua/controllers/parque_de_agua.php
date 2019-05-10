@@ -59,6 +59,17 @@ class Parque_de_agua extends CI_Controller
         $this->ws->order('bann_orden ASC');
         $data['banners'] = $this->ws->listar(70,'bann_tipo_seccion = ' . $seccion . ' and bann_estado = 1');
 
+
+
+        $this->ws->order('prog_orden ASC');
+        $programas = $this->ws->listar(72,'prog_estado = 1 and prog_tipo = "parque-agua"');
+        foreach($programas as $pro){
+                $this->ws->order('opc_orden ASC');
+                $pro->opciones = $this->ws->listar(73, "opc_programa_verano = ".$pro->codigo);
+        }
+
+
+        $data["programas"] = $programas;
         #Nav
         $this->layout->nav(array("Parque de Agua" => "/"));
 

@@ -60,7 +60,46 @@
   <div class="clear"></div>
 </div>
 
+
+
+<div class="valores-seccion" id="valores">
+    <div class="block-table">
+      <div class="center">
+        <?php if($programas){ 
+          
+            foreach($programas as $pro) { 
+          
+          ?>
+          <div class="block-tr">
+            <div class="block-th">
+              <h3><?=$pro->titulo?></h3>
+              <ul>
+                <li><?=$pro->bajada_uno?></li>
+                <li><?=$pro->bajada_dos?></li>
+              </ul>
+            </div>
+
+              <?php foreach($pro->opciones as $op ){ ?>
+            <div class="block-td">
+              <h4><?=$op->nombre?></h4>
+              <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
+            </div>
+              <?php } ?>
+
+          </div>
+          <?php
+            }
+          }
+          
+          ?>
+
+      </div>
+    </div>
+  
+
 <!-- inicio Seccion Valores -->
+
+<!--
 <div class="seccion-fondo valores-seccion" id="valores">
   <h2>Programas y valores</h2>
   <div class="center valores">
@@ -102,7 +141,7 @@
   </div>
 </div>
 <div class="clear"></div>
-
+-->
 <!-- Inicio Mapa de pistas -->
 <div class="center wow fadeInLeft pistas-bikepark" id="tabs-container">
   <ul class="tabs-menu">
