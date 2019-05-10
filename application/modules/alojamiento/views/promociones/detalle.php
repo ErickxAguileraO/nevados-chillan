@@ -133,6 +133,7 @@
 
 </style>
     
+<?php if($promocion->descuento_uno!="" or $promocion->descuento_dos!="" or $promocion->descuento_tres!="" or $promocion->monto_uno!="" or  $promocion->monto_dos!="" or  $promocion->monto_tres !="" or   $promocion->codigo_promocion !="" or  $promocion->resumen !="" or  $promocion->precio_anterior!="" ) { ?>
     <div class="block-dscto">
       <ul class="dcto img-rounded">
         <?php if($promocion->descuento_uno != "") { ?>
@@ -144,12 +145,7 @@
         <?php if($promocion->descuento_tres != "") { ?>
         <li style="cursor:pointer;"  class="li_promocion" id="descuento_tres"><?=$promocion->descuento_tres?> dcto</li>
         <?php } ?>
-
-
       </ul>
-
-
-
         <?php if($promocion->descuento_uno != "") { ?>
           <div class="valor-promocion" id="monto_uno">$<?=$promocion->monto_uno?> </div>
         <?php } ?>
@@ -159,49 +155,13 @@
         <?php if($promocion->descuento_tres != "") { ?>
           <div style="display:none;"  id="monto_tres" class="valor-promocion">$<?=$promocion->monto_tres?> </div>
         <?php } ?>
-
-
-
-
-          <script>
-              $("#descuento_uno").click(function(){
-
-                $(".li_promocion").removeClass("li_blue_promocion");
-
-                $("#descuento_uno").addClass("li_blue_promocion");
-
-                $('#monto_uno').show();
-                $('#monto_dos').hide();
-                $('#monto_tres').hide();
-              });
-              $("#descuento_dos").click(function(){
-                $(".li_promocion").removeClass("li_blue_promocion");
-                $("#descuento_dos").addClass("li_blue_promocion");
-                $('#monto_uno').hide();
-                $('#monto_dos').show();
-                $('#monto_tres').hide();
-              });
-              $("#descuento_tres").click(function(){
-                $(".li_promocion").removeClass("li_blue_promocion");
-                $("#descuento_tres").addClass("li_blue_promocion");
-                $('#monto_uno').hide();
-                $('#monto_dos').hide();
-                $('#monto_tres').show();
-              });
-
-          </script>
-
-
-
-
-
       <ul class="footer-dscto">
       <?php if($promocion->codigo_promocion!="") { ?>
         <li><i><?=$promocion->codigo_promocion?></i></li>
       <?php } ?>
 
       <?php if($promocion->precio_anterior!="") { ?>
-        <li style="text-align: right;">Antes <?=$promocion->precio_anterior?></li>
+        <li style="text-align: right;">Antes $<?=$promocion->precio_anterior?></li>
 
       <?php } ?>
       </ul>
@@ -210,7 +170,7 @@
   </div>
   
 
-
+      <?php } ?>
 
 
 
@@ -312,3 +272,27 @@
 <style type="text/css">
 #header{ position:relative !important;}
 </style>
+
+<script>
+              $("#descuento_uno").click(function(){
+                $(".li_promocion").removeClass("li_blue_promocion");
+                $("#descuento_uno").addClass("li_blue_promocion");
+                $('#monto_uno').show();
+                $('#monto_dos').hide();
+                $('#monto_tres').hide();
+              });
+              $("#descuento_dos").click(function(){
+                $(".li_promocion").removeClass("li_blue_promocion");
+                $("#descuento_dos").addClass("li_blue_promocion");
+                $('#monto_uno').hide();
+                $('#monto_dos').show();
+                $('#monto_tres').hide();
+              });
+              $("#descuento_tres").click(function(){
+                $(".li_promocion").removeClass("li_blue_promocion");
+                $("#descuento_tres").addClass("li_blue_promocion");
+                $('#monto_uno').hide();
+                $('#monto_dos').hide();
+                $('#monto_tres').show();
+              });
+          </script>
