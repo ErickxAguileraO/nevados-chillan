@@ -1,11 +1,11 @@
 ﻿<div class="col-sm-10 text-left marg-fix">
   	<div class="titulo-btn">
-        <h1>Programas</h1>
+        <h1>Programas y valores</h1>
     </div>
     
   	<div class="subtitulo-btn">
     	<h2>&nbsp;</h2>
-        <a class="btn btn-default" href="/parque-agua/programas/agregar/">Agregar programa</a>
+        <a class="btn btn-default" href="/parque-agua/programas/agregar/">Agregar programa y valores</a>
     </div>
   
     <table class="table table-bordered">

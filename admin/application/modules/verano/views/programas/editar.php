@@ -1,6 +1,6 @@
 <div class="col-sm-10 text-left marg-fix">
   	<div class="titulo-btn">
-        <h1>Editar programa</h1>
+        <h1>Editar programa y valores</h1>
     </div>
     
     <form action="#" method="post" id="form-editar" >
@@ -41,16 +41,31 @@
                 <label>Nombre (*) </label>
                 <input type="text"  class="form-control validate[required]" name="editar_nombre[]" value="<?=$op->nombre?>"/>
                 <label>Monto (*) </label>
-                <input type="text"   class="form-control validate[required]" name="editar_monto[]" value="<?=$op->monto?>"/>
+                <input type="text"  onkeyup="this.value=monto(this.value)"   class="form-control validate[required]" name="editar_monto[]" value="<?=$op->monto?>"/>
                 <label>Resumen (*) </label>
                 <textarea   class="form-control" name="editar_resumen[]" rows="3" ><?=$op->resumen?></textarea>
                 <label>Orden</label>
-                <input type="number"   name="editar_orden[]" min="0" class="form-control validate[numeric]"  value="<?=$op->orden?>"/>
+                <input type="number"  onkeyup="this.value=monto(this.value)"  name="editar_orden[]" min="0" class="form-control validate[numeric]"  value="<?=$op->orden?>"/>
                 <button rel="<?=$op->codigo?>" class="btn btn-primary eliminar">Eliminar opcion</button>
                 </div>
 
 
-                <?php } } ?>
+                <?php } }else{ ?>
+
+
+                <label>Nombre (*) </label>
+                <input type="text" class="form-control validate[required]" name="nombre_opcion[]" />
+                <label>Monto (*) </label>
+                <input type="text" class="form-control validate[required]" name="monto_opcion[]" />
+                <label>Resumen (*) </label>
+                <textarea class="form-control" rows="3"   name="resumen_opcion[]"></textarea>
+                <label>Orden</label>
+                <input type="number" min="0" class="form-control validate[numeric]" name="orden_opcion[]" />
+
+
+
+
+                <?php } ?>
 
 
 
@@ -77,13 +92,13 @@
                     var contenido = '<br/><br/><label>Nombre (*) </label>';
                         contenido+= '<input type="text" class="form-control validate[required]" name="nombre_opcion[]" />'
                         contenido+= '<label>Monto (*) </label>'
-                        contenido+= '<input type="text" class="form-control validate[required]" name="monto_opcion[]" />'
+                        contenido+= '<input type="text"  onkeyup="this.value=monto(this.value)"  class="form-control validate[required]" name="monto_opcion[]" />'
                         contenido+= '<label>Resumen (*) </label>'
                         contenido+= '<textarea class="form-control" rows="3"   name="resumen_opcion[]"></textarea>'
                     
                         contenido+= '<label>Orden</label>'
                     
-                        contenido+= ' <input type="number" min="0" class="form-control validate[numeric]" name="orden_opcion[]" />'
+                        contenido+= ' <input  onkeyup="this.value=monto(this.value)"  type="number" min="0" class="form-control validate[numeric]" name="orden_opcion[]" />'
                     
                     $("#opciones").append(contenido);
                     
@@ -208,4 +223,18 @@ $(function(){
 	});
 	
 });
+
+</script>
+<script>
+
+
+
+function monto(string){
+                    var out = '';
+                    var filtro = '01234567890.';
+                    for (var i=0; i<string.length; i++)
+                        if (filtro.indexOf(string.charAt(i)) != -1)
+                        out += string.charAt(i);
+                    return out;
+                }
 </script>
