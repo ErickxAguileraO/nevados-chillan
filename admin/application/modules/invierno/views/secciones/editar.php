@@ -57,6 +57,15 @@
 				    <option value="2" <?php if($seccion->tipo_de_imagen == 2) echo 'selected'; ?>>Lateral</option>
 				</select>
                 
+
+
+                <label>Video</label>
+                <input type="url" class="form-control" name="video" value="<?php echo $seccion->video; ?>" />
+
+
+             
+
+
                 <label>Link</label>
                 <input type="text" class="form-control" name="link" value="<?php echo $seccion->link; ?>" />
                 
@@ -179,3 +188,4 @@
 	width: 100%;
 }
 </style>
+

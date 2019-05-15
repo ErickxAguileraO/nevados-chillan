@@ -61,6 +61,7 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
   </div>
 </div>
 <!-- inicio secciones -->
+
 <a name="servicios"></a>
 <?php if(count($secciones)>0){ ?>
 <?php $i = 0; foreach($secciones as $item):
@@ -91,7 +92,7 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
     <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
     <?php } ?>
   </div>
-  <img src="<?=URL_ADMINISTRACION.$item->imagen_adjunta_lateral?>" class="wow fadeInRight" />
+  <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
   <div class="clear"></div>
 </div>
 <?php }else{ ?>

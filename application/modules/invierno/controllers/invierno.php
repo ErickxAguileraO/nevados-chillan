@@ -45,8 +45,12 @@ class Invierno extends CI_Controller {
 
 //Secciones
         $this->ws->order('secc_orden ASC');
-        $data['secciones'] = $this->ws->listar(19, 'secc_tipo_seccion = 9 and secc_estado = 1');
-
+        $secciones = $this->ws->listar(19, 'secc_tipo_seccion = 9 and secc_estado = 1');
+        foreach($secciones as $sec){
+                $sec->video = extrarIdYoutube($sec->video);
+        }
+      
+        $data["secciones"] = $secciones;
 //Cafeteria
         $this->ws->order('caf_orden ASC');
         $data['cafeterias'] = $this->ws->listar(44, 'caf_estado = 1');

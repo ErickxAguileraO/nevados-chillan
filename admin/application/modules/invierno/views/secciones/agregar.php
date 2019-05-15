@@ -35,6 +35,14 @@
 				    <option value="2" >Lateral</option>
 				</select>
                 
+
+
+
+                <label>Video</label>
+                <input type="url" class="form-control" name="video" value="<?php echo $seccion->video; ?>" />
+
+
+
                 <label>Link</label>
                 <input type="text" class="form-control" name="link" />
                 

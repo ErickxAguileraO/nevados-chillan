@@ -207,6 +207,7 @@ class Secciones extends CI_Controller {
             $datos['secc_orden'] = $this->input->post('orden');
             $datos['secc_url'] = slug($this->input->post('titulo'));
             $datos['secc_estado'] = $this->input->post('estado');
+            $datos['secc_video'] = $this->input->post('video');
             $datos['secc_tipo_seccion'] = 9;
             
             $this->ws->insertar($this->modulo,$datos);
@@ -358,6 +359,7 @@ class Secciones extends CI_Controller {
             $datos['secc_orden'] = $this->input->post('orden');
             $datos['secc_url'] = slug($this->input->post('titulo'));
             $datos['secc_estado'] = $this->input->post('estado');
+            $datos['secc_video'] = $this->input->post('video');
             
             if($this->input->post('ruta_interna_1'))
                 $datos['secc_imagen_adjunta_fondo'] = $this->input->post('ruta_interna_1');
