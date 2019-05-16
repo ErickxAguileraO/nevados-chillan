@@ -50,6 +50,7 @@ class Invierno extends CI_Controller {
                 $sec->video = extrarIdYoutube($sec->video);
         }
       
+        
         $data["secciones"] = $secciones;
 //Cafeteria
         $this->ws->order('caf_orden ASC');

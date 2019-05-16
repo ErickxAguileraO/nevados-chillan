@@ -92,7 +92,9 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
     <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
     <?php } ?>
   </div>
+  <?php if($item->video != '') { ?>
   <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
+  <?php } ?>
   <div class="clear"></div>
 </div>
 <?php }else{ ?>
@@ -123,6 +125,9 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
       <?php } ?>
     </div>
   </div>
+  <?php if($item->video != '') { ?>
+  <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
+  <?php } ?>
   <div class="clear"></div>
 </div>
 <?php }
