@@ -47,7 +47,7 @@ class Invierno extends CI_Controller {
         $this->ws->order('secc_orden ASC');
         $secciones = $this->ws->listar(19, 'secc_tipo_seccion = 9 and secc_estado = 1');
         foreach($secciones as $sec){
-                $sec->video = extrarIdYoutube($sec->video);
+                $sec->video = ExtraerIdVideoYoutube($sec->video);
         }
       
         

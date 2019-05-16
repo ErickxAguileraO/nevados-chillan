@@ -67,7 +67,7 @@
 	}
 
 
-	function extrarIdYoutube($url)
+	function ExtraerIdVideoYoutube($url)
     {
        
         $vid_id = "";

@@ -60,11 +60,35 @@
 
 
                 <label>Video</label>
-                <input type="url" class="form-control" name="video" value="<?php echo $seccion->video; ?>" />
+                <input type="url" class="form-control" id="video" name="video" value="<?php echo $seccion->video; ?>" />
 
 
              
+                <script type="text/javascript">
 
+                        
+                $("#video").change(function(){
+                  
+                        var url = document.getElementById("video").value;
+                        var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+                        if (pattern.test(url)) {
+                           
+                            return true;
+                        } 
+                         noty({
+        						text: 'La url ingresada no es válida',
+        						layout: 'topCenter',
+        						type: 'warning',
+                                timeout:2000,
+        						killer: true
+        					});
+                            $("#video").val('');
+                            return false;
+
+                    
+                });
+                </script>
+                            
 
                 <label>Link</label>
                 <input type="text" class="form-control" name="link" value="<?php echo $seccion->link; ?>" />
