@@ -114,7 +114,7 @@ temperatura.</p>
 <?php endforeach; ?>
   <!-- fin habitaciones -->
 
-  <div class="center">
+  <?php /*?><div class="center">
     <!-- Inicio servicios asociados -->
     <?php if(count($servicios)>0){ ?>
     <div class="serv-compl wow fadeInLeft">
@@ -171,7 +171,7 @@ temperatura.</p>
     <?php } ?>
     <!-- Fin Calendario -->
     <div class="clear"></div>
-    </div>
+    </div><?php */?>
     <!-- inicio secciones -->
     <?php if(count($secciones)>0){ ?>
     <?php foreach($secciones as $item): ?>

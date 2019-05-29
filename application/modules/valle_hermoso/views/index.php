@@ -59,7 +59,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
   </div>
   <a href="https://waze.to/lr/h63mjyxte8" class="wase-btn" target="_blank"><img src="../../imagenes/template/wase-btn.jpg"></a>
   <div class="clear"></div>
-  <!-- Inicio Actividades -->
+ <?php /*?> <!-- Inicio Actividades -->
   <?php if(count($actividades)>0){ ?>
   <h2>Actividades</h2>
   <div class="grid10 float-left wow fadeInUp">
@@ -108,7 +108,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
   </div>
   <div class="clear"></div>
   <?php } ?>
-  <!-- Fin Actividades -->
+  <!-- Fin Actividades --><?php */?>
   <!--<div class="intro dptos-valle" id="departamentos">
     <h2>Conoce los espectaculares departamentos de valle hermoso</h2>
     <p>Nuestros departamentos de <strong>Valle Hermoso están completamente equipados</strong> con todo lo necesario para que disfrutes unos gratos días de descanso un entorno natural único <strong>con una vista privilegiada hacia el Cordón Montañoso de Nevados de Chillán y Valle las Trancas</strong>.</p>

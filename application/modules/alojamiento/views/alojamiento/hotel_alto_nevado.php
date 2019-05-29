@@ -109,7 +109,7 @@ practicando ski y snowboard o disfrutando de las aguas termales minerales y cura
   <?php } ?>
 <?php endforeach; ?>
   <!-- fin habitaciones -->
-  <div class="center">
+  <?php /*?><div class="center">
     <!-- Inicio servicios asociados -->
     <?php if(count($servicios)>0){ ?>
     <div class="serv-compl wow fadeInLeft">
@@ -165,7 +165,7 @@ practicando ski y snowboard o disfrutando de las aguas termales minerales y cura
     <?php } ?>
     <!-- Fin Calendario -->
     <div class="clear"></div>
-    </div>
+    </div><?php */?>
     <!-- inicio secciones -->
     <?php if(count($secciones)>0){ ?>
     <?php foreach($secciones as $item): ?>

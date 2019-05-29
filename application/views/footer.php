@@ -18,12 +18,13 @@
   <div class="center">
     <div class="newsletter">
       <form id="new-newsletter" method="POST" action="#">
-        <h3>Newsletter</h3>
+        <h3 class="text-70">CONTÁCTANOS</h3>
         <fieldset>
           <input class="input" placeholder="Nombre..." type="text" name="nombre" style="margin: 0;" />
           <input class="input" placeholder="Email..." type="text" name="email" />
           <input type="submit" value="Enviar" class="btn" />
           <ul class="borrar">
+          <li class="text-30" style="margin-right:10px;">Quiero saber más de</li>
             <li>
               <input type="checkbox" name="intereses[]" id="alojamiento" value="Ofertas Hoteleras" />
               <label for="alojamiento"><span></span> Alojamiento</label>
@@ -43,7 +44,8 @@
     <div class="newsletter-auspiciadores">
       <figure><img src="/imagenes/template/chile-travel.png" width="128" height="150" class="chile-travel" /></figure>
       <figure><img src="/imagenes/template/trip-advisor.png" width="212" height="150" class="trip-logo" /></figure>
-      <figure><img src="/imagenes/template/chile-best.png" width="155" height="150" class="chile-best" /></figure>
+      <figure><img src="/imagenes/template/chile-best-2017.png" width="155" height="150" class="chile-best 2017" /></figure>
+      <figure><img src="/imagenes/template/chile-best-2018.png" width="155" height="150" class="chile-best 2018" /></figure>
     </div>
     <div class="informacion">
       <div class="coll-footer">

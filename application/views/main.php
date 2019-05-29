@@ -216,7 +216,7 @@
     <div class="formulario-reserva">
       <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
         <fieldset>
-          <legend>Reservar Ahora</legend>
+          <?php /*?><legend>Reservar Ahora</legend><?php */?>
           <ul>
             <li>
               <label for="calendario">Fecha llegada</label>

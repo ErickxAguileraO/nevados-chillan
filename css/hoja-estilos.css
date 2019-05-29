@@ -287,7 +287,7 @@ body {
 	margin-left:auto;
 	padding-top:5px;
 }
-.formulario-reserva fieldset{ padding-left: 270px; position:relative;}
+.formulario-reserva fieldset{ padding-left: 195px; position:relative;}
 .formulario-reserva legend{
 	color: #FFF;
 	font-size: 34px;
@@ -300,14 +300,14 @@ body {
 
 .formulario-reserva ul li {
 	display: inline-block;
-	width: 98px;
+	width: 110px;
 }
 .formulario-reserva ul li label {
-	font-size: 14px;
+	font-size: 16px;
 	color: #FFFFFF;
 }
 .formulario-reserva ul li input[type="text"] {
-	font-size: 13px;
+	font-size: 14px;
 	color: #00274c;
 	width: 90%;
 	padding: 5px 8px;
@@ -325,10 +325,10 @@ body {
 	margin-top: 30px;
 	width: 100%;
 	height: 30px;
-	background: #ff7500;
+	background: #ffb249;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	display: block;
 	text-align: center;
@@ -337,7 +337,12 @@ body {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	border: 0;
+	border: 2px solid #b46801;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
 }
 .btn-enviar:hover {
 	text-decoration: none;
@@ -460,18 +465,18 @@ figure.effect-sadie figcaption {
 	height: 100%;
 	padding-left: 24px;
 	
-	background: rgba(0,39,75,0);
+	/*background: rgba(0,39,75,0);
 background: -moz-linear-gradient(top, rgba(0,39,75,0) 56%, rgba(0,39,75,0.02) 57%, rgba(0,39,75,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(56%, rgba(0,39,75,0)), color-stop(57%, rgba(0,39,75,0.02)), color-stop(100%, rgba(0,39,75,1)));
 background: -webkit-linear-gradient(top, rgba(0,39,75,0) 56%, rgba(0,39,75,0.02) 57%, rgba(0,39,75,1) 100%);
 background: -o-linear-gradient(top, rgba(0,39,75,0) 56%, rgba(0,39,75,0.02) 57%, rgba(0,39,75,1) 100%);
 background: -ms-linear-gradient(top, rgba(0,39,75,0) 56%, rgba(0,39,75,0.02) 57%, rgba(0,39,75,1) 100%);
 background: linear-gradient(to bottom, rgba(0,39,75,0) 56%, rgba(0,39,75,0.02) 57%, rgba(0,39,75,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00274b', endColorstr='#00274b', GradientType=0 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00274b', endColorstr='#00274b', GradientType=0 );*/
 	/*background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgb(0, 41, 79) 75%);
 	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgb(0, 39, 75) 75%);*/
-	content: '';
-	/*opacity: 0;
+	/*content: '';
+	opacity: 0;
 	-webkit-transform: translate3d(0, 50%, 0);
 	transform: translate3d(0, 50%, 0);*/
 }
@@ -499,7 +504,7 @@ figure.effect-sadie h2, figure.effect-sadie h3 {
 figure.effect-sadie figcaption a{ background: none;}
 figure.effect-sadie p {
 	color: #fff;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 19px;
 	text-transform: none;
 	width: 95%;
@@ -558,7 +563,7 @@ figure.effect-sadie p {
 	opacity: 0;
 	-webkit-transform: translate3d(0, 10px, 0);
 	transform: translate3d(0, 10px, 0);
-	font-size: 13px;
+	font-size: 14px;
 	width: 89%;
 	line-height: 19px;
 	color: #fff;
@@ -602,14 +607,21 @@ figure.effect-sadie:hover figcaption::before, figure.effect-sadie:hover p {
 	width: 46%;
 	float: right;
 }
-h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 {
+h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2, .text-70 {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 70px;
+	font-size: 40px;
 	margin: 0;
 	margin-bottom: 15px;
 	padding: 0;
 	color: #033e6c;
+}
+
+.text-70, footer .newsletter .text-70, .noticias h2.text-70 {
+	font-size: 70px;
+	font-family:'Roboto';
+	font-weight:800;
+	
 }
 .valle-hermoso-act h2, .instalaciones h2 {
 	margin-bottom: 20px;
@@ -651,7 +663,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	margin-bottom: 30px;
 }
 .fecha span {
-	font-size: 13px;
+	font-size: 14px;
 }
 .icono-calendario {
 	background: url(/imagenes/template/icono-calendario.jpg) no-repeat;
@@ -679,7 +691,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	color: #18375c;
 }
 .Datos span {
-	font-size: 13px;
+	font-size: 14px;
 	color: #828282;
 	margin-bottom: 5px;
 }
@@ -688,7 +700,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	margin-right: 7px;
 }
 .Datos p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 18px;
 	margin: 5px 0;
 }
@@ -698,7 +710,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	position: relative;
 }
 .noticias p, .redes-sociales p {
-	font-size: 13px;
+	font-size: 14px;
 	color: #929292;
 	font-style: italic;
 	margin-top: 20px;
@@ -724,7 +736,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	float: left;
 }
 .articulo p {
-	font-size: 13px;
+	font-size: 14px;
 	color: #929292;
 	font-style: italic;
 	margin-top: 10px;
@@ -733,7 +745,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	width: 100%;
 }
 .articulo h3 {
-	font-size: 13px;
+	font-size: 14px;
 	text-transform: uppercase;
 	line-height: 20px;
 	color: #ff7400;
@@ -782,6 +794,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 footer {
 	color: #003d69;
 	position: relative;
+	padding-top:40px;
 }
 .logos-footer {
 	width: 20%;
@@ -835,7 +848,7 @@ footer p a:hover {
 	border-radius: 3px;
 	padding: 7px;
 	color: #fff;
-	font-size: 13px;
+	font-size: 14px;
 	background: none;
 	float: left;
 	margin-right: 20px;
@@ -850,7 +863,7 @@ footer p a:hover {
 	border-radius: 3px;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	display: block;
 	padding: 10px 0;
@@ -879,16 +892,7 @@ footer p a:hover {
 	display: none !important;
 }
 footer .newsletter{
-	font-size: 0;
-	background: rgba(3, 62, 108, 0.3);
-	padding: 20px 20px 1px;
-	margin-bottom: 50px;
-	overflow: hidden;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-khtml-border-radius: 10px;
-	border-radius: 10px;
+	text-align:center;
 }
 footer .newsletter h3{
 	font-size: 7.9em;
@@ -899,18 +903,31 @@ footer .newsletter h3{
 	text-transform: uppercase;
 	font-family: 'Roboto Condensed', sans-serif;
 	letter-spacing: -0.04em;
-	float: left;
+	margin-bottom: 20px;
+	/*float: left;*/
 }
-footer .newsletter fieldset{
+/*footer .newsletter fieldset{
 	margin-left: 420px;
+}*/
+footer .newsletter fieldset{
+	font-size: 0;
+	background: rgba(3, 62, 108, 0.3);
+	width: 900px;
+	padding: 20px 0 1px 20px;
+	margin:0 auto 50px;
+	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
 }
-
 footer .newsletter .input{
 	color: #707070;
 	font-size: 16px;
 	font-style: italic;
 	background-color: #FFF;
-	width: 38%;
+	width: 41%;
 	line-height: 30px;
 	padding: 0 10px;
 	float: left;
@@ -920,7 +937,7 @@ footer .newsletter .input{
 }
 footer .newsletter .btn{
 	color: #FFF;
-	font-size: 13px;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: bold;
 	background: #f57517;
@@ -1188,7 +1205,7 @@ footer .informacion  .grid-footer-2{
 	display: block;
 }
 .overlay ul li ul li a {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	text-transform: none;
 }
@@ -1364,7 +1381,7 @@ footer .informacion  .grid-footer-2{
 }
 .calendario-diario p {
 	margin-top: 20px;
-	font-size: 13px;
+	font-size: 14px;
 	color: #173f67;
 }
 .calendario-diario .item {
@@ -1422,7 +1439,7 @@ footer .informacion  .grid-footer-2{
 	text-transform: uppercase;
 }
 .cont-testimonio p {
-	font-size: 13px;
+	font-size: 14px;
 	color: #fff;
 	line-height: 23px;
 }
@@ -1486,7 +1503,7 @@ footer .informacion  .grid-footer-2{
 	text-align: center;
 }
 .valores-seccion p {
-	font-size: 13px;
+	font-size: 14px;
 	width: 70%;
 	margin: 0 auto;
 	text-align: center;
@@ -1573,7 +1590,7 @@ footer .informacion  .grid-footer-2{
 }
 .valores-seccion table p {
 	text-align: center;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 20px;
 	width: 100%;
 	font-weight: normal;
@@ -1589,7 +1606,7 @@ footer .informacion  .grid-footer-2{
 	color: #fff;
 }
 .precio span {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 }
 .ofertas {
@@ -1605,7 +1622,7 @@ footer .informacion  .grid-footer-2{
 	width: 48%;
 }
 .texto-info p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 }
 .calendario-bikepark {
@@ -1680,7 +1697,7 @@ footer .auspiciadores h1 {
 	background: transparent;
 	width: 75%;
 	padding: 10px;
-	font-size: 13px;
+	font-size: 14px;
 	/*font-family: 'Raleway', sans-serif;*/
 }
 .formulario ul textarea {
@@ -1694,7 +1711,7 @@ footer .auspiciadores h1 {
 	float: right;
 	margin-right: 2%;
 	margin-top: 17px;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .formulario .btn, .form-trabajo .btn a/*, .newsletter .btn*/ {
@@ -1702,7 +1719,7 @@ footer .auspiciadores h1 {
 	border-radius: 3px;
 	background: #f57517;
 	padding: 10px 0;
-	font-size: 13px;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: bold;
 	display: block;
@@ -1722,7 +1739,7 @@ footer .auspiciadores h1 {
 	background: #ff8932;
 }
 .formulario p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 	margin-bottom: 40px;
 }
@@ -1732,7 +1749,7 @@ select{
     border: 1px solid #aeadae;
     border-radius: 3px;
     font-family: "Raleway",sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     padding: 10px;
 }
 select option{ text-indent:10px; padding:2px 0;}
@@ -1775,7 +1792,7 @@ select option{ text-indent:10px; padding:2px 0;}
 	padding: 25px;
 	display: none;
 	margin-top: -12px;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 	border: 1px solid #f57517;
 	border-radius: 0 0 4px 4px;
@@ -1798,7 +1815,7 @@ select option{ text-indent:10px; padding:2px 0;}
 	background: transparent;
 	width: 100%;
 	padding: 10px;
-	font-size: 13px;
+	font-size: 14px;
 	margin: 10px 0 15px 0;
 	/*font-family: 'Raleway', sans-serif;*/
 }
@@ -1810,7 +1827,7 @@ select option{ text-indent:10px; padding:2px 0;}
 	margin-bottom: 10px;
 }
 .form-trabajo p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 }
 .form-trabajo select {
@@ -1828,14 +1845,14 @@ select option{ text-indent:10px; padding:2px 0;}
 	width: 49%
 }
 .condiciones p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 }
 .condiciones span, .galeria-noticias span, .profesor span {
 	padding: 10px;
 	background: rgba(255, 255, 255, 0.36);
 	border-radius: 3px;
-	font-size: 13px;
+	font-size: 14px;
 	width: 100%;
 	margin-top: 20px;
 	display: block;
@@ -2030,7 +2047,7 @@ nav#navigation  a{
 	background: rgba(255, 255, 255, 0.3);
 	padding: 15px 0;
 	border-radius: 3px;
-	font-size: 13px;
+	font-size: 14px;
 	margin: 0 auto;
 }
 .paginacion ul {
@@ -2198,7 +2215,7 @@ nav#navigation  a{
 	text-transform: uppercase;
 }
 .camara p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 }
 /* Panel reserva */
@@ -2354,7 +2371,7 @@ nav#navigation  a{
 	padding: 9px;
 	display: none;
 	line-height: 22px;
-	font-size: 13px;
+	font-size: 14px;
 }
 #tab-1 {
 	display: block;
@@ -2369,12 +2386,11 @@ ul.tabs-menu {
 .profesor h3 {
 	font-size: 18px;
 	text-transform: uppercase;
-	color: #000;
 	text-align: center;
 	margin-bottom: 20px;
 }
 .profesor p, .instalaciones p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 	text-align: center;
 }
@@ -2419,7 +2435,7 @@ span.fc-time {
 	margin-top: 30px;
 }
 .serv-compl small {
-	font-size: 13px;
+	font-size: 14px;
 	font-style: italic;
 	color: #afafaf;
 	margin-top: 7px;
@@ -2482,7 +2498,7 @@ span.fc-time {
 }
 .estado-camino .col1 ul li, .pistas .col1 ul li {
 	margin-bottom: 20px;
-	font-size: 13px;
+	font-size: 14px;
 }
 .estado-camino .col2 {
 	width: 33%;
@@ -2497,7 +2513,7 @@ span.fc-time {
 	margin-bottom: 10px;
 }
 .estado-camino .col2 p, .estado-camino .col3 p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 }
 .estado-camino .col3 {
@@ -2552,7 +2568,7 @@ hr {
 	margin-bottom: 30px;
 }
 .pistas .col2 span {
-	font-size: 13px;
+	font-size: 14px;
 	display: block;
 }
 #ui-datepicker-div {
@@ -2592,9 +2608,10 @@ hr {
 .portfolio {
 	width: 30%;
 }
+
 /* Contenido Editable */
 .editable p{
-	font-size: 13px;
+	font-size: 14px;
 	margin-bottom: 15px;
 	line-height: 21px;
 }
@@ -2618,7 +2635,7 @@ hr {
 }
 .editable li {
 	margin-bottom: 10px;
-	font-size: 13px;
+	font-size: 14px;
 }
 .editable ol ul, .editable ul ol {
 	margin: 10px 5px 10px 30px;
@@ -2669,7 +2686,7 @@ hr {
 }
 
 .texto-detalle ol li, .texto-detalle2 ol li{
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
     margin-left: 12px;
     margin-bottom: 20px;
@@ -2693,7 +2710,7 @@ hr {
 	z-index: 9999;
 }
 .idioma2 ul li {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 23px;
 	color: #fff;
 	margin: 0;
@@ -2761,7 +2778,7 @@ hr {
 	margin-right: 10px;
 }
 .idioma2 span a{
-	font-size: 13px;
+	font-size: 14px;
 	color: #fff;
 	text-decoration: none;
 	background: none;
@@ -2795,7 +2812,7 @@ hr {
     top: 0;
 }
 .redes-resp{
-	font-size: 13px;
+	font-size: 14px;
 	color: #fff;
 }
 .redes-resp a{
@@ -2925,10 +2942,7 @@ footer .newsletter h3{
 	line-height:normal;
 	float:none;
 }
-footer .newsletter fieldset{
-	margin-left:0;
-}
-footer .newsletter .input{ width:40%; margin-left:2%;}
+footer .newsletter .input{ width:38%; margin-left:2%;}
 footer .newsletter .btn{ width: 16%; margin-left:2%;}
 
 
@@ -3058,9 +3072,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 .grid figure {
 	background-position: center top;
 }
-footer {
-	margin-top: 50px;
-}
+footer { padding-top: 50px;}
 .informacion p {
 	float: left;
 	margin-right: 7%;
@@ -3142,7 +3154,10 @@ footer {
 .block-dscto .dcto li{ font-size:30px;}
 .block-dscto .valor-promocion{ font-size:80px;}
 
-h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 { font-size: 50px;}
+h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 { font-size: 36px;}
+.text-70, footer .newsletter .text-70, .noticias h2.text-70 { font-size: 50px;}
+
+footer .newsletter fieldset{ width:auto;}
 }
 
 @media screen and (max-width: 900px) {
@@ -3398,7 +3413,6 @@ figure.effect-sadie:hover h2 {
 	width: 100%;
 	overflow: hidden;
 }
-footer { margin-top: 50px;}
 footer h3 { font-size: 15px;}
 .input-newsletter {
 	width: 66%;
@@ -3413,7 +3427,7 @@ footer h3 { font-size: 15px;}
 	border-radius: 3px;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	display: block;
 	padding: 10px 0;
@@ -3429,7 +3443,7 @@ footer h3 { font-size: 15px;}
 	font-size: 30px;
 }
 .texto-reserva small {
-	font-size: 13px;
+	font-size: 14px;
 }
 .texto-reserva span {
 	font-size: 17px;
@@ -3694,6 +3708,7 @@ footer .informacion .grid-footer-2 li {
 }
 }
 @media screen and (max-width: 550px) {
+footer .newsletter fieldset{ padding:20px 20px 1px;}
 footer .newsletter{ padding-bottom:10px;}
 footer .newsletter .input{ width:100%; margin:10px 0;}
 footer .newsletter .btn {
@@ -3777,6 +3792,7 @@ footer .informacion .grid-footer-2{ margin-top:30px; width:auto;}
 footer .informacion .grid-footer-2 li{ margin:0 5px;}
 footer .informacion .grid-footer-2 li img{ height: 40px; width:auto;}
 footer .informacion .grid-footer-2.color{ padding:15px 5px;}
+footer .newsletter ul li.text-30{ display:block;}
 }
 @media screen and (max-width: 460px) {
 footer .informacion .grid-footer-2{ width:100%; padding:20px 10px;}

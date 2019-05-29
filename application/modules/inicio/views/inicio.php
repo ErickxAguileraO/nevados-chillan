@@ -16,11 +16,8 @@
           <?php if($item->link){ ?>
           </a>
           <?php }?>
-          <h2>            <?=$item->titulo?>
-          </h2>
-          <p>
-            <?=$item->bajada?>
-          </p>
+          <h2><?=$item->titulo?></h2>
+          <p><?=$item->bajada?></p>
         </div>
         <div class="video-slider float-right">
           <iframe width="100%" height="300px" src="<?=str_replace('watch?v=','embed/',$item->url_video)?>" frameborder="0" allowfullscreen></iframe>
@@ -30,15 +27,11 @@
           <?php if($item->link){ ?>
           <a href="<?=$item->link?>" title="<?=$item->titulo?>">
           <?php }?>
-          <span>
-          <?=$item->antetitulo?>
-          </span>
+          <span><?=$item->antetitulo?></span>
           <?php if($item->link){ ?>
           </a>
           <?php }?>
-          <h2>
-            <?=$item->titulo?>
-          </h2>
+          <h2><?=$item->titulo?></h2>
           <p><?=$item->bajada?></p>
         </div>
         <?php } ?>
@@ -182,7 +175,7 @@ endforeach;
 <!-- Inicio Noticias -->
 <?php if(count($noticias)>0){ ?>
 <div class="center noticias">
-  <h2 class="text-center" style="padding-top:40px;">Noticias</h2>
+  <h2 class="text-center text-70" style="padding-top:40px;">Noticias</h2>
   <?php /*?><p>Mantente al día con las últimas informaciones de nuestro centro.</p><?php */?>
   <div class="carrusel responsive">
     <?php $i = 0; foreach($noticias as $item): ?>
@@ -216,19 +209,6 @@ endforeach;
 </div>
 <!-- Fin Noticias --> 
 
-  <!-- Inicio Auspiciadores -->
-  <?php if(count($auspiciadores)>0){ ?>
-  <section class="auspiciadores">
-    <h1>PARTNERS</h1>
-    <div class="auspiciadores-background">
-      <div class="carrusel partners-responsive">
-        <?php foreach($auspiciadores as $item): ?>
-        <div><figure><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" /></figure></div>
-        <?php endforeach; ?>
-      </div>
-    </div>
-  </section>
-  <?php } ?>
 <!-- fin contenedor -->
 <?php /*?><style>
 .wow:first-child {
