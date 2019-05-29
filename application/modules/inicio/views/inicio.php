@@ -208,7 +208,9 @@ endforeach;
       </article>
     </div>
     <?php $i++; endforeach; ?>
-    <?php /*?><span class="float-right"><img src="/imagenes/template/arrow.png" class="arrow" /><a href="/noticias/">Ver todas las noticias</a></span><?php */?>
+  </div>
+  <div style=" overflow:hidden;">
+  <span class="float-right"><img src="/imagenes/template/arrow.png" class="arrow" /><a href="/noticias/">Ver todas las noticias</a></span>
   </div>
   <?php } ?>
 </div>

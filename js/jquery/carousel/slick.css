@@ -38,7 +38,7 @@
 .slick-next:before { background:url(next.png) no-repeat;}
 
 /* Dots */
-.slick-slider { margin:0;}
+.slick-slider { margin:0 0 10px;}
 
 .slick-dots { position: absolute; bottom: -45px; list-style: none; display: block; text-align: center; padding: 0; width: 100%; }
 .slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0 5px; padding: 0; cursor: pointer; }

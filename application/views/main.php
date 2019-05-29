@@ -8,8 +8,8 @@
       <a href="/" title="Inicio: Tecla de Acceso 0" accesskey="0"><img src="/imagenes/template/logo-header.png" alt="Centro de Ski, Resort de montaña y thermal spa |Nevados de Chillán" /></a>
       <?php } ?>
     </div>
-    <!-- [MENU] -->
     
+    <!-- [MENU] -->    
     <div class="nav" id="nav">
       <ul class="menu">
         <li><a href="/descubrenos/" title="Descúbrenos: Tecla de Acceso 1" accesskey="1">Descúbrenos</a></li>
