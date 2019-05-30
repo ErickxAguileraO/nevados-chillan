@@ -56,7 +56,7 @@
     <?php } ?>
     <h3><?=$item->nombre?></h3>
     <p><?=$item->descripcion?></p>
-    <iframe width="587" height="553" src="<?=$item->iframe?>"></iframe>
+    <iframe width="587" height="550" src="<?=$item->iframe?>"></iframe>
   </div>
 <?php  $i++;
 endforeach; ?>
@@ -70,5 +70,4 @@ endforeach; ?>
 		directionNav: false,
       });
 });
-
 </script>

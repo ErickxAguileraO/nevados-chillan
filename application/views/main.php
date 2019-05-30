@@ -22,19 +22,19 @@
         </li>
         <li><a href="/valle-hermoso/" title="Valle Hermoso: Tecla de Acceso 4" accesskey="4">Valle Hermoso</a></li>
         <li><a href="/parque-de-agua/" title="Parque de agua: Tecla de Acceso 5" accesskey="5">Parque de agua</a></li>
-        <li><a href="/invierno/" title="Actividades de invierno: Tecla de Acceso 6" accesskey="6">Actividades de invierno</a>
+        <li><a href="#" title="Actividades de invierno">Invierno</a>
           <ul class="submenu">
-            <li><a href="/invierno/escuela/#clases-de-ski-snowboard">Ski & Snowboard</a></li>
+            <li><a href="/invierno/">Ski & Snowboard</a></li>
             <li><a href="/invierno/mapa-de-pistas">Mapa de pistas</a></li>
             <li><a href="/invierno/infonieve">Infonieve</a></li>
             <li><a href="/invierno/escuela/">Escuela Ski</a></li>
             <li><a href="/invierno/backcountry">Backcountry</a></li>
           </ul>
         </li>
-        <li><a href="/verano/" title="Actividades de verano: Tecla de Acceso 7" accesskey="7">Actividades de verano</a>
+        <li><a href="#" title="Actividades de verano">Verano</a>
           <ul class="submenu">
             <li><a href="/bikepark">BikePark Nevados</a></li>
-            <li><a href="/calendario">Outdoor</a></li>
+            <li><a href="/verano/">Outdoor</a></li>
           </ul>
         </li>
         <li><a href="/necesitas-ayuda/faqs/" title="Preguntas frecuentes: Tecla de Acceso 8" accesskey="8">Preguntas frecuentes</a></li>

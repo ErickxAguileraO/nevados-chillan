@@ -50,20 +50,20 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="imagen-detalle float-left" style="height:auto;"><img class="img-rounded" src="<?=URL_ADMINISTRACION.$promocion->imagen_adjunta_detalle?>" alt="<?=$promocion->nombre?>" />
-    <div class="formulario-reserva" style="float:none; width:auto; padding-top:1px;">
+    <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
       <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
-        <?php /*?><ul>
+        <ul>
         <li>
           <label for="calendario">Fecha llegada</label>
           <br />
           <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
         </li>
-        <li>
+        <li class="dos">
           <label for="noches">Noches</label>
           <br />
           <input id="noches" name="NOCHES" type="text" value="1" />
         </li>
-        <li>
+        <li class="dos">
           <label for="adultos">Adultos</label>
           <br />
           <input name="ADULTOS" id="adultos" type="text" value="2" />
@@ -79,8 +79,10 @@
           <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" />
         </li>
       </ul>
-      <img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
-        <input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" />
+      <?php /*?><img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
+      
+        <?php /*?><input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" /> <?php */?>
+        <a class="btn-enviar" href="Tel:600 6000 170" style="font-size:16px; height:auto;">Llamar ahora</a>
       </form>
     </div>
   </div>

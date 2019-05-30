@@ -56,7 +56,7 @@
       <a href="https://waze.to/lr/h63mnp1f4m" class="wase-btn" target="_blank" style="margin-top:50px;"><img src="../../imagenes/template/wase-btn.jpg"></a>
 
   <div class="clear"></div>
-  <!-- Inicio servicios asociados -->
+  <?php /*?><!-- Inicio servicios asociados -->
   <?php if(count($servicios)>0){ ?>
   <div class="serv-compl wow fadeInLeft" id="servicios">
     <h2>Servicios Complementarios</h2>
@@ -71,7 +71,7 @@
     <div class="clear"></div>
   </div>
   <?php } ?>
-  <!--Fin Servicios asociados -->
+  <!--Fin Servicios asociados --><?php */?>
 </div>
 
 

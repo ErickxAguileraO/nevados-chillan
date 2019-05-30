@@ -81,12 +81,10 @@
   </div>
   <?php if(count($imagenes)>0){ ?>
   <div class="galeria-noticias float-right wow fadeInRight">
-    <h3>Galería de imágenes</h3>
-    <ul>
+    <h3>Galería de imágenes</h3>    
       <?php foreach($imagenes as $item):?>
-      <li><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->ruta_grande?>"><img src="<?=URL_ADMINISTRACION.$item->ruta_interna?>" width="99" /></a></li>
-    <?php endforeach; ?>
-    </ul>
+      <figure><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->ruta_grande?>"><img src="<?=URL_ADMINISTRACION.$item->ruta_interna?>" width="99" /></a></figure>
+    <?php endforeach; ?>    
   </div>
   <?php } ?>
   <div class="clear"></div>

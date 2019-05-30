@@ -44,7 +44,7 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="estado-camino">
-    <h2>Estado del camino</h2> <a href="/invierno/createPdf"><button type="button" class="btn-exportar">Exportar a pdf</button></a>
+    <h2>Estado del camino</h2> <a class="btn-exportar" href="/invierno/createPdf">Exportar a pdf</a>
     <div class="col1">
       <ul>
         <li>Estado del camino: <br />
@@ -64,7 +64,7 @@
       <?=$estadoCamino->horarios?>
     </div>
     <div class="col3">
-<link href="//es.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="//es.snow-forecast.com/resorts/Chillan/forecasts/feed/mid/m" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Su navegador no da soporte a iframes</p></iframe><div id="wf-link"><a href="https://www.snow-forecast.com/"><img alt="Snow Forecast" src="//es.snow-forecast.com/images/feed/snowlogo-150.png"/></a><p id="cmt">Panorama detallado del Pronóstico de Nieve para <a href="https://es.snow-forecast.com/resorts/Chillan/6day/mid">Nevados de Chillan</a> en:<br /><a href="https://es.snow-forecast.com/"><strong>snow-forecast.com</strong></a></p><div style="clear: both;"></div></div></div>    </div>
+<link href="//es.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="//es.snow-forecast.com/resorts/Chillan/forecasts/feed/mid/m" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Su navegador no da soporte a iframes</p></iframe><div id="wf-link"><a class="no-background" href="https://www.snow-forecast.com/"><img alt="Snow Forecast" src="//es.snow-forecast.com/images/feed/snowlogo-150.png"/></a><p id="cmt">Panorama detallado del Pronóstico de Nieve para <a style="color:#FFF;" href="https://es.snow-forecast.com/resorts/Chillan/6day/mid">Nevados de Chillan</a> en:<br /><a href="https://es.snow-forecast.com/" style=" color:#FFF;"><strong>snow-forecast.com</strong></a></p><div style="clear: both;"></div></div></div>    </div>
     <div class="clear"></div>
     <hr />
   </div>
