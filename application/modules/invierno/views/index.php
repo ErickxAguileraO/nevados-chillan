@@ -245,12 +245,6 @@ Desde la cafetería en las alturas Buena Vista hasta la más familiar Quincho ta
   <?php } ?>
   <!--Fin Servicios asociados -->
 </div>
-
-
-
-<!-- inicio Seccion Valores -->
-
-  
   
 <!-- inicio Seccion Valores -->
 <div class="valores-seccion" id="valores">

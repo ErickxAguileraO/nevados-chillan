@@ -1532,9 +1532,7 @@ footer .informacion  .grid-footer-2{
 	padding:10px 0;
 	clear: both;
 }
-.block-table .center{
-	font-size:0;
-}
+.block-table .center{ font-size:0;}
 .block-table .block-tr{ margin:0 -2%; border-bottom: 1px solid #255f8c;}
 .block-table .block-tr:last-child{ border: none;}
 .block-table .block-th, .block-td{

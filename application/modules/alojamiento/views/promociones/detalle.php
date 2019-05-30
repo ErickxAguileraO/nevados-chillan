@@ -170,20 +170,7 @@
       <p><?=html_entity_decode($promocion->resumen)?></p>
     </div>
   </div>
-  
-
       <?php } ?>
-
-
-
-
-
-
-
-
-
-
-
 
   <div class="texto-detalle" style="clear:both; width:auto; padding-top:30px;">    
     <?php ?>
@@ -270,31 +257,31 @@
 //		directionNav: false,
 //      });
 //	});
-	</script>
+</script>
 <style type="text/css">
 #header{ position:relative !important;}
 </style>
 
 <script>
-              $("#descuento_uno").click(function(){
-                $(".li_promocion").removeClass("li_blue_promocion");
-                $("#descuento_uno").addClass("li_blue_promocion");
-                $('#monto_uno').show();
-                $('#monto_dos').hide();
-                $('#monto_tres').hide();
-              });
-              $("#descuento_dos").click(function(){
-                $(".li_promocion").removeClass("li_blue_promocion");
-                $("#descuento_dos").addClass("li_blue_promocion");
-                $('#monto_uno').hide();
-                $('#monto_dos').show();
-                $('#monto_tres').hide();
-              });
-              $("#descuento_tres").click(function(){
-                $(".li_promocion").removeClass("li_blue_promocion");
-                $("#descuento_tres").addClass("li_blue_promocion");
-                $('#monto_uno').hide();
-                $('#monto_dos').hide();
-                $('#monto_tres').show();
-              });
-          </script>
+  $("#descuento_uno").click(function(){
+	$(".li_promocion").removeClass("li_blue_promocion");
+	$("#descuento_uno").addClass("li_blue_promocion");
+	$('#monto_uno').show();
+	$('#monto_dos').hide();
+	$('#monto_tres').hide();
+  });
+  $("#descuento_dos").click(function(){
+	$(".li_promocion").removeClass("li_blue_promocion");
+	$("#descuento_dos").addClass("li_blue_promocion");
+	$('#monto_uno').hide();
+	$('#monto_dos').show();
+	$('#monto_tres').hide();
+  });
+  $("#descuento_tres").click(function(){
+	$(".li_promocion").removeClass("li_blue_promocion");
+	$("#descuento_tres").addClass("li_blue_promocion");
+	$('#monto_uno').hide();
+	$('#monto_dos').hide();
+	$('#monto_tres').show();
+  });
+</script>

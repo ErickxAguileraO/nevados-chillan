@@ -40,7 +40,6 @@
 <?php }?>
 </div>
 <!-- Fin Slider -->
-
 <div class="clear"></div><?php */?>
 <div class="center">
   <?=$this->layout->getNav();?>
