@@ -51,7 +51,7 @@
   <?=$this->layout->getNav();?>
   <div class="imagen-detalle float-left" style="height:auto;"><img class="img-rounded" src="<?=URL_ADMINISTRACION.$promocion->imagen_adjunta_detalle?>" alt="<?=$promocion->nombre?>" />
     <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
-      <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
+      <?php /*?><form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
         <ul>
         <li>
           <label for="calendario">Fecha llegada</label>
@@ -79,11 +79,11 @@
           <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" />
         </li>
       </ul>
-      <?php /*?><img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
+      <img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
       
         <?php /*?><input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" /> <?php */?>
-        <a class="btn-enviar" href="Tel:600 6000 170" style="font-size:16px; height:auto;">Llamar ahora</a>
       </form>
+        <a class="btn-enviar" href="Tel:600 6000 170" style="font-size:16px; height:auto;">Llamar ahora</a>
     </div>
   </div>
   <div class="texto-detalle float-right">
@@ -168,6 +168,40 @@
       <?php } ?>
       </ul>
       <p><?=html_entity_decode($promocion->resumen)?></p>
+    </div>
+    <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
+      <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
+        <ul>
+        <li>
+          <label for="calendario">Fecha llegada</label>
+          <br />
+          <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
+        </li>
+        <li class="dos">
+          <label for="noches">Noches</label>
+          <br />
+          <input id="noches" name="NOCHES" type="text" value="1" />
+        </li>
+        <li class="dos">
+          <label for="adultos">Adultos</label>
+          <br />
+          <input name="ADULTOS" id="adultos" type="text" value="2" />
+        </li>
+        <li>
+          <label for="ninos">Niños</label>
+          <br />
+          <input id="ninos" name="CHILDREN" type="text" value="" placeholder="6 a 12 años" />
+        </li>
+        <li>
+          <label for="infantes">Infantes</label>
+          <br />
+          <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" />
+        </li>
+      </ul>
+      <?php /*?><img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
+      
+        <input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar" />
+      </form>
     </div>
   </div>
       <?php } ?>
