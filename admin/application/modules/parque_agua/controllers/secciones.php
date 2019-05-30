@@ -21,7 +21,7 @@ class Secciones extends CI_Controller {
         
         #define el tamaño del recorte
         $this->img->recorte_ancho_1 = 1580;
-        $this->img->recorte_alto_1 = 550;
+        $this->img->recorte_alto_1 = 350;
         
         
         #IMAGEN LATERAL
