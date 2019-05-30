@@ -167,7 +167,7 @@
 
       <?php } ?>
       </ul>
-      <p><?=$promocion->resumen?></p>
+      <p><?=html_entity_decode($promocion->resumen)?></p>
     </div>
   </div>
   

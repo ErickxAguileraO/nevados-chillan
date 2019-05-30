@@ -351,6 +351,16 @@ $route['portada/auspiciadores/agregar']          = "portada/auspiciadores/agrega
 $route['portada/auspiciadores/editar/(:num)']    = "portada/auspiciadores/editar/$1";
 $route['portada/auspiciadores/eliminar']         = "portada/auspiciadores/eliminar";
 
+
+#partner
+$route['descubrenos/partner']                  = "descubrenos/partner";
+$route['descubrenos/partner/(:num)']           = "descubrenos/partner";
+$route['descubrenos/partner/agregar']          = "descubrenos/partner/agregar";
+$route['descubrenos/partner/editar/(:num)']    = "descubrenos/partner/editar/$1";
+$route['descubrenos/partner/eliminar']         = "descubrenos/partner/eliminar";
+
+
+
 #informacion para prensa
 $route['portada/informacion-prensa']                            = "portada/informacion_prensa";
 $route['portada/informacion-prensa/agregar']                    = "portada/informacion_prensa/agregar";
