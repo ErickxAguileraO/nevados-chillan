@@ -1546,6 +1546,7 @@ footer .informacion  .grid-footer-2{
 	text-align:right;
 	width:34%;
 }
+.texto-detalle iframe{ max-width:100%;}
 .block-table .block-td{
 	width: 22%;
 }
@@ -2861,7 +2862,7 @@ hr {
 
 @media screen and (min-width: 959px) {
 #wrapper{
-	padding-top: 218px;
+	padding-top: 208px;
 	position: relative;
 }
 #wrapper header{
