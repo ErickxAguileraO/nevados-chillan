@@ -83,7 +83,7 @@
   <div class="galeria-noticias float-right wow fadeInRight">
     <h3>Galería de imágenes</h3>    
       <?php foreach($imagenes as $item):?>
-      <figure><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->ruta_grande?>"><img src="<?=URL_ADMINISTRACION.$item->ruta_interna?>" width="99" /></a></figure>
+      <figure><img src="<?=URL_ADMINISTRACION.$item->ruta_interna?>" width="99" /><?php /*?><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->ruta_grande?>"><img src="<?=URL_ADMINISTRACION.$item->ruta_interna?>" width="99" /></a><?php */?></figure>
     <?php endforeach; ?>    
   </div>
   <?php } ?>
