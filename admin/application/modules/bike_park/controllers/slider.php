@@ -18,7 +18,7 @@ class Slider extends CI_Controller {
         
         #define el tamaño del recorte
         $this->img->recorte_ancho_1 = 1580;
-        $this->img->recorte_alto_1 = 657;
+        $this->img->recorte_alto_1 = 350;
         
         $this->img->upload_dir = '/imagenes/modulos/bike-park/slider/';
         
