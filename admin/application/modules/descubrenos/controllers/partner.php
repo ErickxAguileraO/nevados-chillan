@@ -70,6 +70,8 @@ class partner extends CI_Controller {
                 $extension = array_pop(explode('.',$_FILES['imagen']['name']));
                 $nombre = slug($this->input->post('nombre')).time().'.'.$extension;
                 
+
+              
                 $configU['upload_path'] = $_SERVER['DOCUMENT_ROOT'].$upload_dir;
         		$configU['allowed_types'] = 'png';
                 $configU['file_name'] = $nombre;
@@ -78,10 +80,12 @@ class partner extends CI_Controller {
                 $config['max_height']  = '100';
         		$this->load->library('upload', $configU);
                 
-        		if(!$this->upload->do_upload('imagen'))
-        			#$error .= $this->upload->display_errors();
+
+              
+        		if(!$this->upload->do_upload('imagen')){
+        			$error .= $this->upload->display_errors();
                     $error .= "<div>* Ha ocurrido un error al subir la imagen. Inténtelo nuevamente.</div>";
-        		else{
+                }else{
                     
                     $datos['par_imagen_adjunta'] = $upload_dir.$nombre;
         		}
@@ -105,13 +109,13 @@ class partner extends CI_Controller {
         else{
 
     		#Title
-    		$this->layout->title('Agregar Auspiciador');
+    		$this->layout->title('Agregar partner');
     		
             #js
             $this->layout->js('/js/sistema/descubrenos/partner/agregar.js');
             
     		#Nav
-    		$this->layout->nav(array("partner" => '/descubrenos/partner/', "Agregar Auspiciador" => "/"));
+    		$this->layout->nav(array("partner" => '/descubrenos/partner/', "Agregar partner" => "/"));
     		
     		#view
     		$this->layout->view('partner/agregar');
@@ -176,17 +180,17 @@ class partner extends CI_Controller {
         else{
             
             #registro
-            if($contenido['auspiciador'] = $auspiciador = $this->ws->obtener($this->modulo,"par_codigo = '$codigo'"));
+            if($contenido['partner'] = $partner = $this->ws->obtener($this->modulo,"par_codigo = '$codigo'"));
             else show_error('');
         
     		#Title
-    		$this->layout->title('Editar Auspiciador');
+    		$this->layout->title('Editar partner');
             
             #js
             $this->layout->js('/js/sistema/descubrenos/partner/editar.js');
             
     		#Nav
-    		$this->layout->nav(array("partner" => '/descubrenos/partner/', "Editar Auspiciador" => "/"));
+    		$this->layout->nav(array("partner" => '/descubrenos/partner/', "Editar partner" => "/"));
     		
     		#view
     		$this->layout->view('partner/editar',$contenido);
