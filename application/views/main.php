@@ -211,7 +211,7 @@
         </a> </figure>
       <figure><a href="/alojamiento/promociones/"><img src="/imagenes/sitio/promociones.png" width="64" height="46" alt="Promociones" />
         <figcaption>Promociones</figcaption>
-        </a> </figure>
+        </a></figure>
     </div>
     <div class="formulario-reserva">
       <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">

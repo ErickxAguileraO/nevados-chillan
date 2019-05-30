@@ -189,7 +189,6 @@
     <div id="portfoliolist">
       <?php  foreach($promociones as $item){
     
-    
       $class = null;
       
       foreach($item->hoteles as $z => $hotel){

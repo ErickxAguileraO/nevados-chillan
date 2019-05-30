@@ -76,10 +76,8 @@
 <div class="valores-seccion" id="valores">
     <div class="block-table">
       <div class="center">
-        <?php if($programas){ 
-          
-            foreach($programas as $pro) { 
-          
+        <?php if($programas){           
+            foreach($programas as $pro) {           
           ?>
           <div class="block-tr">
             <div class="block-th">
