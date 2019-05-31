@@ -81,12 +81,10 @@
   </div>
   <?php if(count($imagenes)>0){ ?>
   <div class="galeria-noticias float-right wow fadeInRight">
-    <h3>Galería de imágenes</h3>
-    <ul>
+    <h3>Galería de imágenes</h3>    
       <?php foreach($imagenes as $item):?>
-      <li><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->ruta_grande?>"><img src="<?=URL_ADMINISTRACION.$item->ruta_interna?>" width="99" /></a></li>
-    <?php endforeach; ?>
-    </ul>
+      <figure><img src="<?=URL_ADMINISTRACION.$item->ruta_interna?>" width="99" /><?php /*?><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->ruta_grande?>"><img src="<?=URL_ADMINISTRACION.$item->ruta_interna?>" width="99" /></a><?php */?></figure>
+    <?php endforeach; ?>    
   </div>
   <?php } ?>
   <div class="clear"></div>
@@ -100,9 +98,7 @@
       <article class="articulo float-left wow fadeInLeft"> <a href="/noticias/<?=str_replace("-","/",$n->fecha_publicacion)?>/<?=$n->url?>"><img src="<?=URL_ADMINISTRACION.$n->noticias_imagenes->ruta_interna?>" width="181" class="img-noticia" /></a> 
      <div class="resumen">
       <span><?=invierte_fecha($n->fecha_publicacion,'/')?></span>
-        <?php }else{ ?>
-        
-        
+        <?php }else{ ?>        
     <article class="articulo float-right wow fadeInRight"> <a href="/noticias/<?=str_replace("-","/",$n->fecha_publicacion)?>/<?=$n->url?>"><img src="<?=URL_ADMINISTRACION.$n->noticias_imagenes->ruta_interna?>" width="181" class="img-noticia" /></a> 
     <div class="resumen">
     <span><?=invierte_fecha($n->fecha_publicacion,'/')?></span>

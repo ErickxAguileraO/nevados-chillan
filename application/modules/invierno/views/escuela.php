@@ -40,11 +40,10 @@
 <?php }?>
 </div>
 <!-- Fin Slider -->
-
 <div class="clear"></div><?php */?>
 <div class="center">
   <?=$this->layout->getNav();?>
-  <div class="float-left instalaciones wow fadeInLeft">
+  <div class="instalaciones wow fadeInLeft" style=" width:100%;">
     <h2>Conoce nuestras instalaciones</h2>
     <?=$instalaciones->descripcion?>
     <?php if(count($imagenes)>0){ ?>
@@ -57,14 +56,15 @@
     </div>
     <?php } ?>
   </div>
-  <div class="float-right profesor wow fadeInRight">
-  <h3>Director Escuela</h3>
-   <img src="<?=URL_ADMINISTRACION.$profesor->imagen_adjunta?>" />
+  <?php /*?><div class="float-right profesor wow fadeInRight">
+    <h3>Director Escuela</h3>
+    <img src="<?=URL_ADMINISTRACION.$profesor->imagen_adjunta?>" />
     <h3><?=$profesor->nombre?></h3>
     <?=$profesor->descripcion?>
       <?php if($profesor->archivo_adjunto){ ?>
-    <span><img src="../../imagenes/template/descargar-icono.png" class="arrow" /> Descargar cv </span> </div>
+    <span><img src="../../imagenes/template/descargar-icono.png" class="arrow" /> Descargar cv </span>
     <?php } ?>
+  </div><?php */?>
 </div>
 <div class="clear"></div>
 <!-- inicio secciones -->

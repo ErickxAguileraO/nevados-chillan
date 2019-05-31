@@ -50,20 +50,20 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="imagen-detalle float-left" style="height:auto;"><img class="img-rounded" src="<?=URL_ADMINISTRACION.$promocion->imagen_adjunta_detalle?>" alt="<?=$promocion->nombre?>" />
-    <div class="formulario-reserva" style="float:none; width:auto; padding-top:1px;">
-      <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
-        <?php /*?><ul>
+    <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
+      <?php /*?><form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
+        <ul>
         <li>
           <label for="calendario">Fecha llegada</label>
           <br />
           <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
         </li>
-        <li>
+        <li class="dos">
           <label for="noches">Noches</label>
           <br />
           <input id="noches" name="NOCHES" type="text" value="1" />
         </li>
-        <li>
+        <li class="dos">
           <label for="adultos">Adultos</label>
           <br />
           <input name="ADULTOS" id="adultos" type="text" value="2" />
@@ -80,8 +80,10 @@
         </li>
       </ul>
       <img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
-        <input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" />
+      
+        <?php /*?><input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" /> <?php */?>
       </form>
+        <a class="btn-enviar" href="Tel:600 6000 170" style="font-size:16px; height:auto; padding:8px 10px;">Llamar ahora</a>
     </div>
   </div>
   <div class="texto-detalle float-right">
@@ -167,21 +169,43 @@
       </ul>
       <p><?=html_entity_decode($promocion->resumen)?></p>
     </div>
+    <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
+      <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
+        <ul style="margin-left:0;">
+        <li>
+          <label for="calendario">Fecha llegada</label>
+          <br />
+          <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
+        </li>
+        <li class="dos">
+          <label for="noches">Noches</label>
+          <br />
+          <input id="noches" name="NOCHES" type="text" value="1" />
+        </li>
+        <li class="dos">
+          <label for="adultos">Adultos</label>
+          <br />
+          <input name="ADULTOS" id="adultos" type="text" value="2" />
+        </li>
+        <li>
+          <label for="ninos">Niños</label>
+          <br />
+          <input id="ninos" name="CHILDREN" type="text" value="" placeholder="6 a 12 años" />
+        </li>
+        <li>
+          <label for="infantes">Infantes</label>
+          <br />
+          <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" />
+        </li>
+      </ul>
+      <?php /*?><img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
+      <div style="text-align:center;">
+        <input style="width:auto; margin:0 auto; padding:4px 20px; float:none;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar" />
+        </div>
+      </form>
+    </div>
   </div>
-  
-
       <?php } ?>
-
-
-
-
-
-
-
-
-
-
-
 
   <div class="texto-detalle" style="clear:both; width:auto; padding-top:30px;">    
     <?php ?>
@@ -199,7 +223,6 @@
     <h2>Promociones relacionadas</h2>
     <div id="portfoliolist">
       <?php  foreach($promociones as $item){
-    
     
       $class = null;
       
@@ -268,31 +291,31 @@
 //		directionNav: false,
 //      });
 //	});
-	</script>
+</script>
 <style type="text/css">
 #header{ position:relative !important;}
 </style>
 
 <script>
-              $("#descuento_uno").click(function(){
-                $(".li_promocion").removeClass("li_blue_promocion");
-                $("#descuento_uno").addClass("li_blue_promocion");
-                $('#monto_uno').show();
-                $('#monto_dos').hide();
-                $('#monto_tres').hide();
-              });
-              $("#descuento_dos").click(function(){
-                $(".li_promocion").removeClass("li_blue_promocion");
-                $("#descuento_dos").addClass("li_blue_promocion");
-                $('#monto_uno').hide();
-                $('#monto_dos').show();
-                $('#monto_tres').hide();
-              });
-              $("#descuento_tres").click(function(){
-                $(".li_promocion").removeClass("li_blue_promocion");
-                $("#descuento_tres").addClass("li_blue_promocion");
-                $('#monto_uno').hide();
-                $('#monto_dos').hide();
-                $('#monto_tres').show();
-              });
-          </script>
+  $("#descuento_uno").click(function(){
+	$(".li_promocion").removeClass("li_blue_promocion");
+	$("#descuento_uno").addClass("li_blue_promocion");
+	$('#monto_uno').show();
+	$('#monto_dos').hide();
+	$('#monto_tres').hide();
+  });
+  $("#descuento_dos").click(function(){
+	$(".li_promocion").removeClass("li_blue_promocion");
+	$("#descuento_dos").addClass("li_blue_promocion");
+	$('#monto_uno').hide();
+	$('#monto_dos').show();
+	$('#monto_tres').hide();
+  });
+  $("#descuento_tres").click(function(){
+	$(".li_promocion").removeClass("li_blue_promocion");
+	$("#descuento_tres").addClass("li_blue_promocion");
+	$('#monto_uno').hide();
+	$('#monto_dos').hide();
+	$('#monto_tres').show();
+  });
+</script>

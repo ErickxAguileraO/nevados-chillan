@@ -61,7 +61,6 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
   </div>
 </div>
 <!-- inicio secciones -->
-
 <a name="servicios"></a>
 <?php if(count($secciones)>0){ ?>
 <?php $i = 0; foreach($secciones as $item):
@@ -246,21 +245,13 @@ Desde la cafetería en las alturas Buena Vista hasta la más familiar Quincho ta
   <?php } ?>
   <!--Fin Servicios asociados -->
 </div>
-
-
-
-<!-- inicio Seccion Valores -->
-
-  
   
 <!-- inicio Seccion Valores -->
 <div class="valores-seccion" id="valores">
     <div class="block-table">
       <div class="center">
-        <?php if($programas){ 
-          
-            foreach($programas as $pro) { 
-          
+        <?php if($programas){           
+            foreach($programas as $pro) {           
           ?>
           <div class="block-tr">
             <div class="block-th">
