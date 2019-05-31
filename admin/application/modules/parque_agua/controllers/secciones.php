@@ -2,7 +2,8 @@
 
 class Secciones extends CI_Controller {
 	    
-	private $modulo = 19;
+    private $modulo = 19;
+    private $modulo_imagenes = 76; //sec2_ 76 
     public $img;
     private $tipo_seccion = 2;
     
@@ -195,7 +196,7 @@ class Secciones extends CI_Controller {
             $datos['secc_titulo'] = $this->input->post('titulo');
             $datos['secc_bajada'] = $this->input->post('bajada');
             $datos['secc_imagen_adjunta_fondo'] = $this->input->post('ruta_interna_1');
-            $datos['secc_imagen_adjunta_lateral'] = $this->input->post('ruta_interna_2');
+            //$datos['secc_imagen_adjunta_lateral'] = $this->input->post('ruta_interna_2');
             $datos['secc_link'] = $this->input->post('link');
             $datos['secc_nombre_link'] = $this->input->post('nombre_link');
             $datos['secc_link_2'] = $this->input->post('link_2');
@@ -212,8 +213,29 @@ class Secciones extends CI_Controller {
             $datos['secc_url'] = slug($this->input->post('titulo'));
             $datos['secc_estado'] = $this->input->post('estado');
             $datos['secc_tipo_seccion'] = $this->tipo_seccion;
+            $datos['secc_posicion'] = $this->input->post('posicion');
+
+
+            $id = $this->ws->insertar($this->modulo,$datos);
+
+            $codigo = $id->secc_codigo;
             
-            $this->ws->insertar($this->modulo,$datos);
+            unset($datos);
+
+
+            $internas = $this->input->post('ruta_interna_2');
+            $grandes = $this->input->post('ruta_grande_2');
+            
+            if($grandes){
+                foreach($grandes as $k=>$aux){
+                    if($aux){
+                        $datos['sec2_ruta_interna'] = $internas[$k];
+                        $datos['sec2_ruta_grande'] = $aux;
+                        $datos['sec2_seccion'] = $codigo;                
+                        $this->ws->insertar(76,$datos);
+                    }
+                }
+            }
             
             echo json_encode(array("result"=>true));
             
@@ -362,14 +384,33 @@ class Secciones extends CI_Controller {
             $datos['secc_orden'] = $this->input->post('orden');  
             $datos['secc_url'] = slug($this->input->post('titulo'));
             $datos['secc_estado'] = $this->input->post('estado');
+            $datos['secc_posicion'] = $this->input->post('posicion');
             
             if($this->input->post('ruta_interna_1'))
                 $datos['secc_imagen_adjunta_fondo'] = $this->input->post('ruta_interna_1');
             
-            if($this->input->post('ruta_interna_2'))
-                $datos['secc_imagen_adjunta_lateral'] = $this->input->post('ruta_interna_2');
+           /* if($this->input->post('ruta_interna_2'))
+                $datos['secc_imagen_adjunta_lateral'] = $this->input->post('ruta_interna_2');*/
             
             $this->ws->actualizar($this->modulo,$datos,"secc_codigo = $codigo");
+
+
+            unset($datos);
+
+
+            $internas = $this->input->post('ruta_interna_2');
+            $grandes = $this->input->post('ruta_grande_2');
+            
+            if($grandes){
+                foreach($grandes as $k=>$aux){
+                    if($aux){
+                        $datos['sec2_ruta_interna'] = $internas[$k];
+                        $datos['sec2_ruta_grande'] = $aux;
+                        $datos['sec2_seccion'] = $codigo;                
+                        $this->ws->insertar(76,$datos);
+                    }
+                }
+            }
             
             echo json_encode(array("result"=>true));
             
@@ -380,6 +421,10 @@ class Secciones extends CI_Controller {
             if($contenido['seccion'] = $seccion = $this->ws->obtener($this->modulo,"secc_codigo = '$codigo' and secc_tipo_seccion = ".$this->tipo_seccion));
             else show_error('');
         
+
+                       
+            $contenido['seccion']->imagenes = $this->ws->listar($this->modulo_imagenes,"sec2_seccion = $codigo");
+
     		#Title
     		$this->layout->title('Editar Sección');
     		
@@ -467,8 +512,22 @@ class Secciones extends CI_Controller {
                 $this->ws->actualizar($this->modulo,array($campo=>""),"secc_codigo = $codigo");
             }
         }
+
+        if($imagen = $this->ws->obtener(76,"sec2_codigo = $codigo")){
+                
+                
+            if(file_exists($_SERVER['DOCUMENT_ROOT'].$ruta_imagen))
+                unlink($_SERVER['DOCUMENT_ROOT'].$ruta_imagen);
+
+                $data = array(
+                    "sec2_visible"=>0,
+                );
+                
+            $this->ws->actualizar(76,$data, "sec2_codigo = $codigo");
+        }
+
         
-        echo json_encode(array("result"=>true));
+        echo json_encode(array("result"=>true, "reload" => true));
     }
 	
 }

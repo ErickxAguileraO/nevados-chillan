@@ -28,6 +28,15 @@
             		</div>
                     <div id="cont-imagenes-2"></div>
                 </div>
+
+
+                <label>Posición</label>
+				<select class="form-control validate[required]" name="posicion">
+				    <option value="1" >Derecha</option>
+				    <option value="0" >Izquierda</option>
+				</select>
+
+
                 
                 <label>Tipo Imagen</label>
 				<select class="form-control validate[required]" name="tipo_imagen">
@@ -72,8 +81,13 @@
     
     var cargar = [];
     cargar.push(1);
-    cargar.push(2);
+    //cargar.push(2);
     cargar_imagen(cargar);
+
+
+    var nuevo_cargar = [];
+    nuevo_cargar.push(2);
+    cargar_imagenes(nuevo_cargar);
 </script> 
 
 <style type="text/css">

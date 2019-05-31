@@ -3,6 +3,8 @@ $(function(){
         var codigo = $(this).attr('rel');
         var contenedor = $(this).parent().parent().parent();
         var cont = $(this).parent().parent().attr('rel');
+        var gal = $(this).parent().parent().attr('gal');
+
 
         $.ajax({
             type: "POST",
@@ -10,10 +12,18 @@ $(function(){
             dataType: "json",
             url: urlDelete,
             success: function(json){
+
+                if(json.reload && gal==1){
+                    document.location.reload();
+                }else{
+
                 contenedor.remove();
 
                 if(!galeria)
                     cargar_imagen(cont);
+                }
+
+              
             }
         });
     });
