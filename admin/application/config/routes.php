@@ -97,6 +97,32 @@ $route['hoteles/banners/cargar-imagen']         = "hoteles/banners/cargar_imagen
 $route['hoteles/banners/cortar-imagen']         = "hoteles/banners/cortar_imagen";
 $route['hoteles/banners/eliminar-imagen']       = "hoteles/banners/eliminar_imagen";
 
+
+
+
+
+
+
+
+
+$route['hoteles/(:any)/programas']                  = "hoteles/programas";
+$route['hoteles/(:any)/programas/(:num)']           = "hoteles/programas";
+$route['hoteles/(:any)/programas/agregar']          = "hoteles/programas/agregar";
+$route['hoteles/(:any)/programas/editar/(:num)']    = "hoteles/programas/editar/$1";
+$route['hoteles/(:any)/programas/eliminar']         = "hoteles /programas/eliminar";
+
+
+
+
+
+
+
+
+
+
+
+
+
 #FIN HOTELES
 
 

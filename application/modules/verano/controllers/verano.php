@@ -88,6 +88,11 @@ class Verano extends CI_Controller
 
     public function bikepark()
     {
+
+
+
+       
+
 #Title
         $this->layout->title('Bike Park');
 

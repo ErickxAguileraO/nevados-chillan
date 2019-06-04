@@ -133,6 +133,7 @@ foreach($secciones_menu as $aux){
                             
                             <?php if($permisos['todo']){ ?>
             				    <li><a href="/hoteles/<?php echo $aux->url; ?>/banners/">Banners</a></li>
+                                <li><a href="/hoteles/<?php echo $aux->url;?>/programas/">Programas y Valores</a></li>
                             <?php } ?>
             			</ul>
         		  </li>
