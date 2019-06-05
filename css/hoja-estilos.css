@@ -259,14 +259,17 @@ body {
 .top-figure figure figcaption{
 	font-size: 1.6em;
 	font-size: 1.6rem;
-	text-align:center;
+	text-align: center;
 	padding-top: 4px;
+	font-weight:bold;
+	text-transform: uppercase;
 }
 .top-figure figure a{
-	color: #4a2b01;
+	color: #fff;
 	background: none;
 	display: block;
 	padding:6px 8px 4px;
+	border-radius: 0;
 }
 .top-figure figure a:hover{
 	color: #FFF;
@@ -2860,7 +2863,8 @@ hr {
 /********** RESPONSIVE **********/
 
 
-@media screen and (min-width: 959px) {
+/*@media screen and (min-width: 959px) {*/
+@media screen and (min-width: 358px) {
 #wrapper{
 	padding-top: 208px;
 	position: relative;
