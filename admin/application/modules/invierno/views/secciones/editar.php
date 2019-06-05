@@ -38,18 +38,27 @@
             			<div class="img" style="width:<?php echo $this->img->min_ancho_2+2; ?>px; height:<?php echo $this->img->min_alto_2+2; ?>px;" ></div>
             		</div>
                     <div id="cont-imagenes-2">
-                        <?php if($seccion->imagen_adjunta_lateral){ ?>
+                        <?php if($seccion->imagenes){ ?>
+                            <?php foreach($seccion->imagenes as $aux){ ?>
                             <div class="box" >
-                    			<div rel="2" class="img" style="width:<?php echo $this->img->min_ancho_2+2; ?>px; height:<?php echo $this->img->min_alto_2+2; ?>px;" >
-                                    <img class="croppedImg" src="<?php echo $seccion->imagen_adjunta_lateral; ?>" />
+                    			<div rel="2"  gal="1" class="img" style="width:<?php echo $this->img->min_ancho_2+2; ?>px; height:<?php echo $this->img->min_alto_2+2; ?>px;" >
+                                    <img class="croppedImg" src="<?php echo $aux->ruta_interna; ?>" />
                                     <div class="cropControls cropControlsUpload">
-                                        <i class="cropControlRemoveCroppedImage eliminar_imagen" rel="<?php echo $seccion->codigo; ?>"></i>
+                                        <i class="cropControlRemoveCroppedImage eliminar_imagen" rel="<?php echo $aux->codigo; ?>"></i>
                                     </div>
                                 </div>
                     		</div>
+                            <?php } ?>
                         <?php } ?>
                     </div>
                 </div>
+                
+
+                <label>Posición</label>
+				<select class="form-control validate[required]" name="posicion">
+				    <option  <?php if($seccion->posicion == 1) echo 'selected'; ?> value="1" >Derecha</option>
+				    <option  <?php if($seccion->posicion == 0) echo 'selected'; ?> value="0" >Izquierda</option>
+				</select>
                 
                 <label>Tipo Imagen</label>
 				<select class="form-control validate[required]" name="tipo_imagen">
@@ -197,14 +206,13 @@
     var cargar = [];
     <?php if(!$seccion->imagen_adjunta_fondo){ ?>
 	   cargar.push(1);
+       cargar_imagen(cargar);
     <?php } ?>
     
-    <?php if(!$seccion->imagen_adjunta_lateral){ ?>
-	   cargar.push(2);
-    <?php } ?>
     
-    if(cargar)
-        cargar_imagen(cargar);
+        var nuevo_cargar = [];
+        nuevo_cargar.push(2);
+        cargar_imagenes(nuevo_cargar);
 </script> 
 
 <style type="text/css">

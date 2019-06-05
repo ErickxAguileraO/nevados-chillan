@@ -59,6 +59,15 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
   </div>
   <a href="https://waze.to/lr/h63mjyxte8" class="wase-btn" target="_blank"><img src="../../imagenes/template/wase-btn.jpg"></a>
   <div class="clear"></div>
+
+
+
+
+
+
+
+
+  
  <?php /*?> <!-- Inicio Actividades -->
   <?php if(count($actividades)>0){ ?>
   <h2>Actividades</h2>
@@ -116,6 +125,43 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
   </div>
     <a href="https://waze.to/lr/h63mjyz23c" class="wase-btn" target="_blank" style="margin-top:50px;"><img src="../../imagenes/template/wase-btn.jpg"></a>-->
 </div>
+
+
+
+<div class="valores-seccion" id="valores">
+    <div class="block-table">
+      <div class="center">
+        <?php if($programas){ 
+          
+            foreach($programas as $pro) { 
+          
+          ?>
+          <div class="block-tr">
+            <div class="block-th">
+              <h3><?=$pro->titulo?></h3>
+              <ul>
+                <li><?=$pro->bajada_uno?></li>
+                <li><?=$pro->bajada_dos?></li>
+              </ul>
+            </div>
+
+              <?php foreach($pro->opciones as $op ){ ?>
+            <div class="block-td">
+              <h4><?=$op->nombre?></h4>
+              <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
+            </div>
+              <?php } ?>
+
+          </div>
+          <?php
+            }
+          }
+          
+          ?>
+
+      </div>
+    </div>
+  
 <div class="clear"></div>
 <!-- inicio Habitaciones -->
 <?php foreach($habitaciones as $item): ?>

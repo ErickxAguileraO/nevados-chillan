@@ -91,6 +91,17 @@ $this->layout->current = 4;
     #Nav
     $this->layout->nav(array("Valle Hermoso"=>"/"));
 
+
+
+    $this->ws->order('prog_orden ASC');
+    $programas = $this->ws->listar(72,'prog_estado = 1 and prog_tipo = "deptos-valle-hermoso"');
+    foreach($programas as $pro){
+            $this->ws->order('opc_orden ASC');
+            $pro->opciones = $this->ws->listar(73, "opc_programa_verano = ".$pro->codigo);
+    }
+    $data["programas"] = $programas;
+
+
     #La vista siempre,  debe ir cargada al final de la función
     $this->layout->view('index',$data);
   }

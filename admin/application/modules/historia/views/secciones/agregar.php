@@ -21,13 +21,32 @@
                     <div id="rutas-imagenes"></div>
                 </div>
                 
-                <label>Adjuntar imagen lateral tamaño mínimo <?php echo $this->img->recorte_ancho_2; ?>px x <?php echo $this->img->recorte_alto_2; ?>px</label>
+                <!--<label>Adjuntar imagen lateral tamaño mínimo <?php echo $this->img->recorte_ancho_2; ?>px x <?php echo $this->img->recorte_alto_2; ?>px</label>
                 <div class="multi-imagen" style="margin-bottom:20px;">
                     <div style="display:none;" id="replicar-2" class="box">
             			<div class="img" style="width:<?php echo $this->img->min_ancho_2+2; ?>px; height:<?php echo $this->img->min_alto_2+2; ?>px;" ></div>
             		</div>
                     <div id="cont-imagenes-2"></div>
+                </div>-->
+                
+               
+            
+                <label>Adjuntar imágenes tamaño mínimo <?php echo $this->img->recorte_ancho_2; ?>px x <?php echo $this->img->recorte_alto_2; ?>px</label>
+                <div class="multi-imagen" style="margin-bottom:20px;">
+                    <div style="display:none;" id="replicar-2" class="box">
+            			<div class="img" style="width:<?php echo $this->img->min_ancho_2+2; ?>px; height:<?php echo $this->img->min_alto_2+2; ?>px;" ></div>
+            		</div>
+                    <div id="cont-imagenes-2"></div>
+                    <div id="rutas-imagenes-2"></div>
                 </div>
+
+
+                <label>Posición</label>
+				<select class="form-control validate[required]" name="posicion">
+				    <option value="1" >Derecha</option>
+				    <option value="0" >Izquierda</option>
+				</select>
+                
                 
                 <label>Tipo Imagen</label>
 				<select class="form-control validate[required]" name="tipo_imagen">
@@ -106,8 +125,13 @@
     
     var cargar = [];
     cargar.push(1);
-    cargar.push(2);
+    //cargar.push(2);
     cargar_imagen(cargar);
+
+
+    var nuevo_cargar = [];
+    nuevo_cargar.push(2);
+    cargar_imagenes(nuevo_cargar);
 </script> 
 
 <style type="text/css">
