@@ -196,6 +196,7 @@
 	top:0;
 	left:0;
 	overflow:visible;
+	position:relative;
 }
 #nav ul.menu{
 	width: 100%;

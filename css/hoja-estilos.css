@@ -282,7 +282,6 @@ body {
 }
 
 
-
 .formulario-reserva {
 	width: 672px;
 	margin-left:auto;
@@ -3056,14 +3055,15 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	float: none;
 	margin-bottom: 40px;
 }
+.formulario-reserva { width: 614px;}
+.formulario-reserva ul li { width: 100px;}
+.formulario-reserva ul li input[type="text"]{
+	width: 96%;
+}
 }
 @media screen and (max-width: 1000px) {
-#top ul li.hide {
-	display: none;
-}
-#top ul li {
-    padding: 2px 10px;
-}
+#top ul li.hide { display: none;}
+#top ul li { padding: 2px 10px;}
 
 .img-izq {
 	width: 49% !important;
@@ -3140,6 +3140,7 @@ footer { padding-top: 50px;}
 #top ul li:hover ul li{ display:inline-block;}
 #top ul li:hover ul li a, #top ul li a:hover ul li a { padding:5px 10px;}
 
+#wrapper { padding-top: 199px;}
 .formulario-reserva{ display:none;}
 .movil-res{ display: block;}
 .movil-res.formulario-reserva ul li{ padding-top:10px;}
