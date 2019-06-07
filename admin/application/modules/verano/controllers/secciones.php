@@ -202,7 +202,7 @@ class Secciones extends CI_Controller {
             $datos['secc_nombre_imagen_adjunta'] = $this->input->post('nombre_imagen_adjunta');
             $datos['secc_posicion'] = $this->input->post('posicion');
             
-            
+            $datos['secc_embed_video'] = $this->input->post('embed_video');
                         
             $datos['secc_nombre_imagen_adjunta2'] = $this->input->post('nombre_imagen_adjunta2');
             $datos['secc_nombre_imagen_adjunta3'] = $this->input->post('nombre_imagen_adjunta3');
@@ -250,7 +250,8 @@ class Secciones extends CI_Controller {
             $this->layout->js('/js/sistema/imagenes/simple.js');
             
             #js
-            $this->layout->js('/js/sistema/verano/secciones/agregar.js');
+            $this->layout->js('/js/sistema/verano/secciones/agregar.js');         #js
+            $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
     		
     		#Nav
     		$this->layout->nav(array("Secciones" => '/verano/secciones/', "Agregar Sección" => "/"));
@@ -377,7 +378,7 @@ class Secciones extends CI_Controller {
             $datos['secc_nombre_imagen_adjunta'] = $this->input->post('nombre_imagen_adjunta');
             $datos['secc_posicion'] = $this->input->post('posicion');
             
-             
+            $datos['secc_embed_video'] = $this->input->post('embed_video');
                          
             $datos['secc_nombre_imagen_adjunta2'] = $this->input->post('nombre_imagen_adjunta2');
             $datos['secc_nombre_imagen_adjunta3'] = $this->input->post('nombre_imagen_adjunta3');
@@ -433,7 +434,8 @@ class Secciones extends CI_Controller {
             $this->layout->js('/js/jquery/croppic/croppic.js');
             $this->layout->css('/js/jquery/croppic/croppic.css');
             $this->layout->js('/js/sistema/imagenes/simple.js');
-            
+                     #js
+           $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
             #js
             $this->layout->js('/js/sistema/verano/secciones/editar.js');
     		

@@ -211,6 +211,7 @@ class Secciones extends CI_Controller {
             $datos['secc_nombre_link_2'] = $this->input->post('nombre_link_2');
             $datos['secc_link_3'] = $this->input->post('link_3');
             $datos['secc_nombre_link_3'] = $this->input->post('nombre_link_3');
+            $datos['secc_embed_video'] = $this->input->post('embed_video');
             
             $datos['secc_nombre_imagen_adjunta'] = $this->input->post('nombre_imagen_adjunta');
             $datos['secc_nombre_imagen_adjunta2'] = $this->input->post('nombre_imagen_adjunta2');
@@ -261,6 +262,9 @@ class Secciones extends CI_Controller {
             $this->layout->js('/js/jquery/croppic/croppic.js');
             $this->layout->css('/js/jquery/croppic/croppic.css');
             $this->layout->js('/js/sistema/imagenes/simple.js');
+
+              #js
+           $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
             
             #js
             $this->layout->js('/js/sistema/descubrenos/secciones/agregar.js');
@@ -391,7 +395,7 @@ class Secciones extends CI_Controller {
             $datos['secc_nombre_link_2'] = $this->input->post('nombre_link_2');
             $datos['secc_link_3'] = $this->input->post('link_3');
             $datos['secc_nombre_link_3'] = $this->input->post('nombre_link_3');
-   
+            $datos['secc_embed_video'] = $this->input->post('embed_video');
             
             $datos['secc_nombre_imagen_adjunta'] = $this->input->post('nombre_imagen_adjunta');
              
@@ -452,6 +456,10 @@ class Secciones extends CI_Controller {
             $this->layout->js('/js/jquery/croppic/croppic.js');
             $this->layout->css('/js/jquery/croppic/croppic.css');
             $this->layout->js('/js/sistema/imagenes/simple.js');
+
+
+              #js
+           $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
             
             #js
             $this->layout->js('/js/sistema/descubrenos/secciones/editar.js');

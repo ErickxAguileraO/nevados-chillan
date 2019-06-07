@@ -210,6 +210,7 @@ class Secciones extends CI_Controller {
             $datos['secc_nombre_imagen_adjunta'] = $this->input->post('nombre_imagen_adjunta');
             $datos['secc_nombre_imagen_adjunta2'] = $this->input->post('nombre_imagen_adjunta2');
             $datos['secc_nombre_imagen_adjunta3'] = $this->input->post('nombre_imagen_adjunta3');
+            $datos['secc_embed_video'] = $this->input->post('embed_video');
             
             $datos['secc_tipo_de_imagen'] = $this->input->post('tipo_imagen');
             $datos['secc_orden'] = $this->input->post('orden');
@@ -260,6 +261,8 @@ class Secciones extends CI_Controller {
             
             #js
             $this->layout->js('/js/sistema/historia/secciones/agregar.js');
+                  #js
+           $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
     		
     		#Nav
     		$this->layout->nav(array("Secciones" => '/historia/secciones/', "Agregar Sección" => "/"));
@@ -391,6 +394,7 @@ class Secciones extends CI_Controller {
             $datos['secc_url'] = slug($this->input->post('titulo'));
             $datos['secc_estado'] = $this->input->post('estado');
             $datos['secc_posicion'] = $this->input->post('posicion');
+            $datos['secc_embed_video'] = $this->input->post('embed_video');
             
             if($this->input->post('ruta_interna_1'))
                 $datos['secc_imagen_adjunta_fondo'] = $this->input->post('ruta_interna_1');
@@ -442,6 +446,8 @@ class Secciones extends CI_Controller {
             
             #js
             $this->layout->js('/js/sistema/historia/secciones/editar.js');
+                  #js
+           $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
     		
     		#Nav
     		$this->layout->nav(array("Secciones" => '/historia/secciones/', "Editar Sección" => "/"));

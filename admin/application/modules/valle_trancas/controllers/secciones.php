@@ -209,6 +209,7 @@ class Secciones extends CI_Controller {
                 
             $datos['secc_nombre_imagen_adjunta2'] = $this->input->post('nombre_imagen_adjunta2');
             $datos['secc_nombre_imagen_adjunta3'] = $this->input->post('nombre_imagen_adjunta3');
+            $datos['secc_embed_video'] = $this->input->post('embed_video');
             
             $datos['secc_tipo_de_imagen'] = $this->input->post('tipo_imagen');
             $datos['secc_orden'] = $this->input->post('orden');
@@ -256,6 +257,8 @@ class Secciones extends CI_Controller {
             
             #js
             $this->layout->js('/js/sistema/valle-las-trancas/secciones/agregar.js');
+                  #js
+           $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
     		
     		#Nav
     		$this->layout->nav(array("Secciones" => '/valle-las-trancas/secciones/', "Agregar Sección" => "/"));
@@ -385,6 +388,7 @@ class Secciones extends CI_Controller {
             
             $datos['secc_nombre_imagen_adjunta2'] = $this->input->post('nombre_imagen_adjunta2');
             $datos['secc_nombre_imagen_adjunta3'] = $this->input->post('nombre_imagen_adjunta3');
+            $datos['secc_embed_video'] = $this->input->post('embed_video');
             
             $datos['secc_tipo_de_imagen'] = $this->input->post('tipo_imagen');
             $datos['secc_orden'] = $this->input->post('orden');
@@ -440,6 +444,8 @@ class Secciones extends CI_Controller {
             
             #js
             $this->layout->js('/js/sistema/valle-las-trancas/secciones/editar.js');
+                  #js
+           $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
     		
     		#Nav
     		$this->layout->nav(array("Secciones" => '/valle-las-trancas/secciones/', "Editar Sección" => "/"));

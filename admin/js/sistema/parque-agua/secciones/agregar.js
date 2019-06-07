@@ -16,6 +16,9 @@ $(document).ready(function () {
         			fondo: '<div id="fondo" style=" position: fixed; top:0; height: 100%; width:100%; background-color: rgba(60, 56, 56, 0.38); display:block;z-index: 9999;"></div>'
         		});
                 
+					
+				$("#embed_video").val(CKEDITOR.instances['embed_video'].getData());	
+				
                 var formData = new FormData(document.getElementById("form-agregar"));
         		$.ajax({
         			url: '/parque-agua/secciones/agregar/',

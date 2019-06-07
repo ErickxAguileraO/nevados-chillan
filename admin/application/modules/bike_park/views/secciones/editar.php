@@ -72,6 +72,13 @@
 				    <option value="2" <?php if($seccion->tipo_de_imagen == 2) echo 'selected'; ?>>Lateral</option>
 				</select>
                 
+                    
+                <label>Video</label>
+                <textarea class="form-control" rows="3"  id="embed_video" name="embed_video"><?php echo $seccion->embed_video; ?></textarea>
+                <script>
+                CKEDITOR.replace('embed_video');
+                </script>
+                
                 <label>Link</label>
                 <input type="text" class="form-control" name="link" value="<?php echo $seccion->link; ?>" />
                 

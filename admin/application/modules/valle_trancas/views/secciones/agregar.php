@@ -44,6 +44,14 @@
 				    <option value="2" >Lateral</option>
 				</select>
                 
+                    
+                <label>Video</label>
+                <textarea class="form-control" rows="3"  id="embed_video" name="embed_video"></textarea>
+                <script>
+                CKEDITOR.replace('embed_video');
+                </script>
+
+
                 <label>Link</label>
                 <input type="text" class="form-control" name="link" />
                 
