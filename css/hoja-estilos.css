@@ -634,7 +634,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	margin-bottom: 30px;
 }
 .valores-seccion h2 {
-	color: #fff;
+	/*color: #fff;*/
 	text-align: center;
 	margin-bottom: 30px;
 }
@@ -1513,7 +1513,7 @@ footer .informacion  .grid-footer-2{
 	text-align: center;
 	margin-bottom: 30px;
 	line-height: 20px;
-	color: #fff;
+	/*color: #fff;*/
 }
 .cabecera, .precio {
 	padding: 15px;
@@ -2172,7 +2172,7 @@ nav#navigation  a{
 }
 .video-slider iframe{
 	width: 100%;
-	font-style: italic;
+	height:400px;
 }
 .valores-seccion .video-slider  p{
     width: 100%;
@@ -2184,7 +2184,7 @@ nav#navigation  a{
 	position: absolute;
 	bottom: 20px;
 	text-align: center;
-	z-index: 99;
+	z-index: 2;
 	left: 0;
 	width: 20%;
 }
@@ -3217,7 +3217,7 @@ footer .newsletter fieldset{ width:auto;}
  position: absolute;
  bottom: 20px;
  text-align: center;
- z-index: 99;
+ /*z-index: 99;*/
  left: 40%;
  width: 20%;
 }
