@@ -270,8 +270,9 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
                               <?php } ?>
 
                     <?php } else { ?>
-
+                    <div class="video-slider float-right">
                        <?php echo html_entity_decode($item->embed_video);?>
+                       </div>
 
                     <?php } ?>
 
@@ -352,7 +353,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
                     <?php if($item->embed_video == "") { ?>
 
                           <?php if(count($item->galeria)>1){ ?>
-                                <div class="slider float-left wow fadeInRight">
+                                <div class="slider float-right wow fadeInRight">
                                         <div class="slider-habitacion">
                                         <ul class="slides">
                                           <?php foreach($item->galeria as $imagen): ?>
@@ -368,8 +369,9 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
                           <?php } ?>
 
                           <?php } else { ?>
-
+                           <div class="video-slider float-right">
                           <?php echo $item->embed_video;?>
+                          </div>
 
                     <?php } ?>
 

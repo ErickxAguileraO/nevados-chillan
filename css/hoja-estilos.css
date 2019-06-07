@@ -1334,7 +1334,7 @@ footer .informacion  .grid-footer-2{
 	margin-top: 15px;
 }
 .slider {
-	width: 50%;
+	width: 45%;
 	background: #000;
 	position: relative;
 }
@@ -2166,10 +2166,20 @@ nav#navigation  a{
 }
 .slides .center { margin-top: 15%;}
 .video-slider {
-	width: 48%;
-	border: 7px solid #fff;
-	border-radius: 5px;
+	width: 45%;
+	/*border: 7px solid #fff;
+	border-radius: 5px;*/
 }
+.video-slider iframe{
+	width: 100%;
+	font-style: italic;
+}
+.valores-seccion .video-slider  p{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
 .slider-habitacion .flex-control-nav, .slider-testimonio .flex-control-nav {
 	position: absolute;
 	bottom: 20px;
