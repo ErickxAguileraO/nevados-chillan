@@ -69,6 +69,9 @@
 				    <option value="1" <?php if($seccion->tipo_de_imagen == 1) echo 'selected'; ?>>Fondo</option>
 				    <option value="2" <?php if($seccion->tipo_de_imagen == 2) echo 'selected'; ?>>Lateral</option>
 				</select>
+
+                <label>Video</label>
+                <input type="text" class="form-control" name="video" />
                 
                 <label>Link</label>
                 <input type="text" class="form-control" name="link" value="<?php echo $seccion->link; ?>" />

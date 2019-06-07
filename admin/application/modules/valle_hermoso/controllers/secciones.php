@@ -187,6 +187,7 @@ class Secciones extends CI_Controller {
             $datos['secc_tipo_de_imagen'] = $this->input->post('tipo_imagen');
             $datos['secc_orden'] = $this->input->post('orden');
             $datos['secc_url'] = slug($this->input->post('titulo'));
+            $datos['secc_video'] = slug($this->input->post('video'));
             $datos['secc_estado'] = $this->input->post('estado');
             $datos['secc_posicion'] = $this->input->post('posicion');
             

@@ -43,6 +43,8 @@
 				    <option value="1" >Fondo</option>
 				    <option value="2" >Lateral</option>
 				</select>
+
+                
                 
                 <label>Link</label>
                 <input type="text" class="form-control" name="link" />
