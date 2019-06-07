@@ -57,16 +57,18 @@
                 </div>
 
 
-                <label>Posición</label>
-				<select class="form-control validate[required]" name="posicion">
-				    <option  <?php if($seccion->posicion == 1) echo 'selected'; ?> value="1" >Derecha</option>
-				    <option  <?php if($seccion->posicion == 0) echo 'selected'; ?> value="0" >Izquierda</option>
-				</select>
+      
                 
                 <label>Tipo Imagen</label>
 				<select class="form-control validate[required]" name="tipo_imagen">
 				    <option value="1" <?php if($seccion->tipo_de_imagen == 1) echo 'selected'; ?>>Fondo</option>
 				    <option value="2" <?php if($seccion->tipo_de_imagen == 2) echo 'selected'; ?>>Lateral</option>
+				</select>
+
+                <label>Posición</label>
+				<select class="form-control validate[required]" name="posicion">
+				    <option  <?php if($seccion->posicion == 1) echo 'selected'; ?> value="1" >Derecha</option>
+				    <option  <?php if($seccion->posicion == 0) echo 'selected'; ?> value="0" >Izquierda</option>
 				</select>
                 
                     

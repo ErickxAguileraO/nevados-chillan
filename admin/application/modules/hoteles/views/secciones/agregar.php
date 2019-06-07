@@ -32,19 +32,20 @@
                     <div id="rutas-imagenes-2"></div>
                 </div>
 
-
+ 
+                <label>Tipo Imagen</label>
+				<select class="form-control validate[required]" name="tipo_imagen">
+				    <option value="1" >Fondo</option>
+				    <option value="2" >Lateral</option>
+				</select>
+                
                 <label>Posición</label>
 				<select class="form-control validate[required]" name="posicion">
 				    <option value="1" >Derecha</option>
 				    <option value="0" >Izquierda</option>
 				</select>
 
-                
-                <label>Tipo Imagen</label>
-				<select class="form-control validate[required]" name="tipo_imagen">
-				    <option value="1" >Fondo</option>
-				    <option value="2" >Lateral</option>
-				</select>
+               
 
                 
                 <label>Video</label>

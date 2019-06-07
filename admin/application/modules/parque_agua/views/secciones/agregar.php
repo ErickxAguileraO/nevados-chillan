@@ -29,6 +29,13 @@
                     <div id="cont-imagenes-2"></div>
                 </div>
 
+                <label>Tipo Imagen</label>
+				<select class="form-control validate[required]" name="tipo_imagen">
+				    <option value="1" >Fondo</option>
+				    <option value="2" >Lateral</option>
+				</select>
+                
+
 
                 <label>Posición</label>
 				<select class="form-control validate[required]" name="posicion">
@@ -37,12 +44,6 @@
 				</select>
 
 
-                
-                <label>Tipo Imagen</label>
-				<select class="form-control validate[required]" name="tipo_imagen">
-				    <option value="1" >Fondo</option>
-				    <option value="2" >Lateral</option>
-				</select>
                 
 
                     
