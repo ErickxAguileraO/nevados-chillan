@@ -166,72 +166,198 @@ practicando ski y snowboard o disfrutando de las aguas termales minerales y cura
     <!-- Fin Calendario -->
     <div class="clear"></div>
     </div><?php */?>
-    <!-- inicio secciones -->
-    <?php if(count($secciones)>0){ ?>
-    <?php foreach($secciones as $item): ?>
-      <?php if($item->tipo_de_imagen==2){ ?>
-    <div class="center cont2 wow fadeInLeft" id="<?=$item->url?>"><!-- imagen chica -->
-      <div class="texto">
-        <h2><?=$item->titulo?></h2>
-        <p><?=nl2br($item->bajada)?></p>
-        <!-- si es un enlace -->
-        <?php if($item->link){ ?>
-        <span><a href="<?=$item->link?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link?></a></span>
-        <?php } ?>
-        <?php if($item->link_2){ ?>
-        <span><a href="<?=$item->link_2?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_2?></a></span>
-        <?php } ?>
-        <?php if($item->link_3){ ?>
-        <span><a href="<?=$item->link_3?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_3?></a></span>
-        <?php } ?>
-        <!-- si es imagen -->
-        <?php if($item->imagen_adjunta){ ?>
-        <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
-        <?php } ?>
-        <?php if($item->imagen_adjunta2){ ?>
-        <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>"><?=$item->nombre_imagen_adjunta2?></a></span>
-        <?php } ?>
-        <?php if($item->imagen_adjunta3){ ?>
-        <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
-        <?php } ?>
-      </div>
-      <img src="<?=URL_ADMINISTRACION.$item->imagen_adjunta_lateral?>" class="wow fadeInRight" />
-      <div class="clear"></div>
-    </div>
-    <?php }else{ ?>
-    <div class="seccion-fondo ski-seccion" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_fondo?>) !important;" id="<?=$item->url?>"><!-- imagen grande -->
-      <div class="center">
-        <div class="texto wow fadeInLeft">
-          <h2><?=$item->titulo?></h2>
-          <p><?=nl2br($item->bajada)?></p>
-          <!-- si es un enlace -->
-          <?php if($item->link){ ?>
-          <span><a href="<?=$item->link?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link?></a></span>
-          <?php } ?>
-          <?php if($item->link_2){ ?>
-          <span><a href="<?=$item->link_2?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_2?></a></span>
-          <?php } ?>
-          <?php if($item->link_3){ ?>
-          <span><a href="<?=$item->link_3?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_3?></a></span>
-          <?php } ?>
-          <!-- si es imagen -->
-          <?php if($item->imagen_adjunta){ ?>
-          <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
-          <?php } ?>
-          <?php if($item->imagen_adjunta2){ ?>
-          <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>"><?=$item->nombre_imagen_adjunta2?></a></span>
-          <?php } ?>
-          <?php if($item->imagen_adjunta3){ ?>
-          <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
-          <?php } ?>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
+<!-- inicio secciones -->
+<?php if(count($secciones)>0){ ?>
+<?php foreach($secciones as $item): ?>
+
+<!--Posicion foto derecha-->
+<?php if($item->posicion == 0) { ?>
+<?php if($item->tipo_de_imagen==2){ ?>
+<div class="center cont2 wow fadeInLeft" id="<?=$item->url?>"><!-- imagen chica -->
+  <div class="texto float-right">
+    <h2 style="color:#033e6c;"><?=$item->titulo?></h2>
+    <p style="color:#004f8d;"><?=$item->bajada?></p>
+    <!-- si es un enlace -->
+    <?php if($item->link){ ?>
+    <span><a href="<?=$item->link?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+    <?=$item->nombre_link?></a></span>
     <?php } ?>
-  <?php endforeach; ?>
-    <?php }?>
-    <!-- Fin Secciones -->
+    <?php if($item->link_2){ ?>
+    <span><a href="<?=$item->link_2?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+    <?=$item->nombre_link_2?></a></span>
+    <?php } ?>
+    <?php if($item->link_3){ ?>
+    <span><a href="<?=$item->link_3?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+    <?=$item->nombre_link_3?></a></span>
+    <?php } ?>
+    <!-- si es imagen -->
+    <?php if($item->imagen_adjunta){ ?>
+    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>">
+    <?=$item->nombre_imagen_adjunta?></a></span>
+    <?php } ?>
+    <?php if($item->imagen_adjunta2){ ?>
+    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>">
+    <?=$item->nombre_imagen_adjunta2?></a></span>
+    <?php } ?>
+    <?php if($item->imagen_adjunta3){ ?>
+    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>">
+    <?=$item->nombre_imagen_adjunta3?></a></span>
+    <?php } ?>
+  </div>
+  <?php if($item->embed_video == "") { ?>
+  <?php if(count($item->galeria)>1){ ?>
+  <div class="slider float-left wow fadeInRight">
+    <div class="slider-habitacion">
+      <ul class="slides">
+        <?php foreach($item->galeria as $imagen): ?>
+        <li> <img src="<?=URL_ADMINISTRACION.$imagen->ruta_interna?>" /> </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+  </div>
+  <?php }else{ ?>
+  <div class="slider float-left wow fadeInLeft"> <img src="<?=URL_ADMINISTRACION.$item->galeria[0]->ruta_interna?>" /> </div>
+  <?php } ?>
+  <?php } else { ?>
+  <div class="video-slider float-left"> <?php echo html_entity_decode($item->embed_video);?> </div>
+  <?php } ?>
+  <div class="clear"></div>
+</div>
+<?php }else{ ?>
+<div class="seccion-fondo ski-seccion" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_fondo?>) !important;" id="<?=$item->url?>"><!-- imagen grande -->
+  <div class="center">
+    <div class="texto wow fadeInLeft">
+      <h2><?=$item->titulo?></h2>
+      <p><?=$item->bajada?></p>
+      <!-- si es un enlace -->
+      <?php if($item->link){ ?>
+      <span><a  href="<?=$item->link?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+      <?=$item->nombre_link?>
+      </a></span>
+      <?php } ?>
+      <?php if($item->link_2){ ?>
+      <span><a  href="<?=$item->link_2?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+      <?=$item->nombre_link_2?>
+      </a></span>
+      <?php } ?>
+      <?php if($item->link_3){ ?>
+      <span><a  href="<?=$item->link_3?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+      <?=$item->nombre_link_3?>
+      </a></span>
+      <?php } ?>
+      <!-- si es imagen -->
+      <?php if($item->imagen_adjunta){ ?>
+      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>">
+      <?=$item->nombre_imagen_adjunta?>
+      </a></span>
+      <?php } ?>
+      <?php if($item->imagen_adjunta2){ ?>
+      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>">
+      <?=$item->nombre_imagen_adjunta2?>
+      </a></span>
+      <?php } ?>
+      <?php if($item->imagen_adjunta3){ ?>
+      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>">
+      <?=$item->nombre_imagen_adjunta3?>
+      </a></span>
+      <?php } ?>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<?php } ?>
+<?php } else { ?>
+
+<!--POSICION FOTO IZQUIERDA-->
+<?php if($item->tipo_de_imagen==2){ ?>
+<div class="center cont2 wow fadeInLeft" id="<?=$item->url?>"><!-- imagen chica -->
+  <div class="texto">
+    <h2 style="color:#033e6c;"><?=$item->titulo?></h2>
+    <p  style="color:#004f8d;"><?=$item->bajada?></p>
+    <!-- si es un enlace -->
+    <?php if($item->link){ ?>
+    <span><a href="<?=$item->link?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+    <?=$item->nombre_link?>
+    </a></span>
+    <?php } ?>
+    <?php if($item->link_2){ ?>
+    <span><a href="<?=$item->link_2?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+    <?=$item->nombre_link_2?>
+    </a></span>
+    <?php } ?>
+    <?php if($item->link_3){ ?>
+    <span><a href="<?=$item->link_3?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+    <?=$item->nombre_link_3?>
+    </a></span>
+    <?php } ?>
+    <!-- si es imagen -->
+    <?php if($item->imagen_adjunta){ ?>
+    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
+    <?php } ?>
+    <?php if($item->imagen_adjunta2){ ?>
+    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>"><?=$item->nombre_imagen_adjunta2?></a></span>
+    <?php } ?>
+    <?php if($item->imagen_adjunta3){ ?>
+    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
+    <?php } ?>
+  </div>
+  <?php if($item->embed_video == "") { ?>
+  <?php if(count($item->galeria)>1){ ?>
+  <div class="slider float-right wow fadeInRight">
+    <div class="slider-habitacion">
+      <ul class="slides">
+        <?php foreach($item->galeria as $imagen): ?>
+        <li> <img src="<?=URL_ADMINISTRACION.$imagen->ruta_interna?>" /> </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+  </div>
+  <?php }else{ ?>
+  <img src="<?=URL_ADMINISTRACION.$item->galeria[0]->ruta_interna?>" class="wow fadeInRight" />
+  <?php } ?>
+  <?php } else { ?>
+  <div class="video-slider float-right"> <?php echo $item->embed_video;?> </div>
+  <?php } ?>
+  <div class="clear"></div>
+</div>
+<?php }else{ ?>
+<div class="seccion-fondo ski-seccion" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_fondo?>) !important;" id="<?=$item->url?>"><!-- imagen grande -->
+  <div class="center">
+    <div class="texto wow fadeInLeft">
+      <h2><?=$item->titulo?></h2>
+      <p><?=$item->bajada?></p>
+      <!-- si es un enlace -->
+      <?php if($item->link){ ?>
+      <span><a  href="<?=$item->link?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+      <?=$item->nombre_link?></a></span>
+      <?php } ?>
+      <?php if($item->link_2){ ?>
+      <span><a  href="<?=$item->link_2?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+      <?=$item->nombre_link_2?></a></span>
+      <?php } ?>
+      <?php if($item->link_3){ ?>
+      <span><a  href="<?=$item->link_3?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
+      <?=$item->nombre_link_3?></a></span>
+      <?php } ?>
+      <!-- si es imagen -->
+      <?php if($item->imagen_adjunta){ ?>
+      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
+      <?php } ?>
+      <?php if($item->imagen_adjunta2){ ?>
+      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>"><?=$item->nombre_imagen_adjunta2?></a></span>
+      <?php } ?>
+      <?php if($item->imagen_adjunta3){ ?>
+      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
+      <?php } ?>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<?php } ?>
+<?php } ?>
+<?php endforeach; ?>
+<?php }?>
+<!-- Fin Secciones --> 
 
   <!-- fin del center -->
   <!-- Inicio Testimonios -->

@@ -53,7 +53,21 @@ class Parque_de_agua extends CI_Controller
 
         //Secciones
         $this->ws->order('secc_orden ASC');
-        $data['secciones'] = $this->ws->listar(19,'secc_tipo_seccion = ' . $seccion . ' and secc_estado = 1');
+        $secciones = $this->ws->listar(19,'secc_tipo_seccion = ' . $seccion . ' and secc_estado = 1');
+        foreach($secciones as $sec){
+          $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
+        }
+    
+        $data['secciones']  = $secciones;
+
+
+
+
+
+
+
+
+
 
         //Banner
         $this->ws->order('bann_orden ASC');

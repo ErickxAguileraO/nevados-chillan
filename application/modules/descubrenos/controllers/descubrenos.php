@@ -45,8 +45,17 @@ class Descubrenos extends CI_Controller
         $data['hoteles'] = $this->ws->listar(50, 'hop_estado = 1');
 
         //Secciones
-        $this->ws->order('secc_orden ASC');
-        $data['secciones'] = $this->ws->listar(19, 'secc_tipo_seccion = 8 and secc_estado = 1');
+      
+
+        $secciones = $this->ws->listar(19, 'secc_tipo_seccion = 8 and secc_estado = 1');
+        foreach($secciones as $sec){
+          $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
+        }
+    
+        $data['secciones']  = $secciones;
+
+        
+
 
         #Nav
         $this->layout->nav(array("Descúbrenos" => "/"));
@@ -86,7 +95,15 @@ class Descubrenos extends CI_Controller
 
         //Secciones
         $this->ws->order('secc_orden ASC');
-        $data['secciones'] = $this->ws->listar(19, 'secc_tipo_seccion = 10 and secc_estado = 1');
+        $secciones = $this->ws->listar(19, 'secc_tipo_seccion = 10 and secc_estado = 1');
+        foreach($secciones as $sec){
+          $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
+        }
+    
+        $data['secciones']  = $secciones;
+
+
+
 
         //introduccion
         $data['introduccion'] = $this->ws->obtener(69, 'int_tipo_seccion = ' . $tipo_seccion . ' and int_visible = 1');
@@ -130,8 +147,16 @@ class Descubrenos extends CI_Controller
         $data['introduccion'] = $this->ws->obtener(69, 'int_tipo_seccion = ' . $tipo_seccion . ' and int_visible = 1');
 
         //Secciones
-        $this->ws->order('secc_orden ASC');
-        $data['secciones'] = $this->ws->listar(19, 'secc_tipo_seccion = ' . $tipo_seccion . ' and secc_estado = 1');
+        $secciones = $this->ws->listar(19, 'secc_tipo_seccion = ' . $tipo_seccion . ' and secc_estado = 1');
+        foreach($secciones as $sec){
+          $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
+        }
+    
+        $data['secciones']  = $secciones;
+
+
+
+
 
         #Nav
         $this->layout->nav(array("Descúbrenos" => "/"));

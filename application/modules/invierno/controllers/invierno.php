@@ -44,14 +44,18 @@ class Invierno extends CI_Controller {
         $data['sliders'] = $this->ws->listar(13, 'sli_tipo_seccion = 9 and sli_estado = 1');
 
 //Secciones
+    
+  
+
         $this->ws->order('secc_orden ASC');
         $secciones = $this->ws->listar(19, 'secc_tipo_seccion = 9 and secc_estado = 1');
         foreach($secciones as $sec){
-                $sec->video = ExtraerIdVideoYoutube($sec->video);
+          $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
         }
-      
-        
-        $data["secciones"] = $secciones;
+    
+        $data['secciones']  = $secciones;
+
+
 //Cafeteria
         $this->ws->order('caf_orden ASC');
         $data['cafeterias'] = $this->ws->listar(44, 'caf_estado = 1');
@@ -270,8 +274,19 @@ class Invierno extends CI_Controller {
 
 
 //Secciones
+   
         $this->ws->order('secc_orden ASC');
-        $data['secciones'] = $this->ws->listar(19, 'secc_tipo_seccion = 13 and secc_estado = 1');
+        $secciones =  $this->ws->listar(19, 'secc_tipo_seccion = 13 and secc_estado = 1');
+        foreach($secciones as $sec){
+          $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
+        }
+    
+        $data['secciones']  = $secciones;
+
+
+
+
+
 
 #Nav
         $this->layout->nav(array("Invierno" => "invierno", "Escuela" => "/"));

@@ -49,8 +49,23 @@ class Verano extends CI_Controller
         $data['bikepark'] = $this->ws->listar(54, 'bip_codigo = 1');
 //print_array($data['bikepark']);die;
 //Secciones
+       
+
         $this->ws->order('secc_orden ASC');
-        $data['secciones'] = $this->ws->listar(19, 'secc_tipo_seccion = 14 and secc_estado = 1');
+        $secciones = $this->ws->listar(19, 'secc_tipo_seccion = 14 and secc_estado = 1');
+        foreach($secciones as $sec){
+          $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
+        }
+    
+        $data['secciones']  = $secciones;
+
+        
+
+
+
+
+
+
 
 //Programas y Valores
         $data['valores'] = $this->ws->obtener(27, 'prv_tipo_seccion = 14');
@@ -80,6 +95,8 @@ class Verano extends CI_Controller
      
 #Nav
         $this->layout->nav(array("Verano" => "/"));
+
+
 
 #La vista siempre,  debe ir cargada al final de la función
         $this->layout->view('index', $data);
@@ -121,8 +138,25 @@ class Verano extends CI_Controller
         $data['bikepark'] = $this->ws->obtener(54, 'bip_codigo = 1');
 
 //Secciones
+       
+
+
         $this->ws->order('secc_orden ASC');
-        $data['secciones'] = $this->ws->listar(19, 'secc_tipo_seccion = 11 and secc_estado = 1');
+        $secciones = $this->ws->listar(19, 'secc_tipo_seccion = 11 and secc_estado = 1');
+        foreach($secciones as $sec){
+          $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
+        }
+    
+        $data['secciones']  = $secciones;
+
+
+
+
+
+
+
+
+
 #print_array($data['secciones']);
 //Programas y Valores
         $data['valores'] = $this->ws->obtener(27, 'prv_tipo_seccion = 11');

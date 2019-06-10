@@ -94,7 +94,20 @@ public function index()	{
 
   //Secciones
   $this->ws->order('secc_orden ASC');
-  $data['secciones'] = $this->ws->listar(19,'secc_hotel = '.$hotel->codigo.' and secc_tipo_seccion = 1 and secc_estado = 1');
+  $secciones =  $this->ws->listar(19,'secc_hotel = '.$hotel->codigo.' and secc_tipo_seccion = 1 and secc_estado = 1');
+  foreach($secciones as $sec){
+    $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
+  }
+
+  $data['secciones']  = $secciones;
+
+
+
+
+
+
+
+
 
   //Testimonios
   $this->ws->order('tes_orden ASC');
