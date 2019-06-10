@@ -281,6 +281,54 @@ sus tres volcanes Volcán Nevado, Volcán Viejo y Volcán Nuevo.</p>
 <?php endforeach; ?>
 <?php }?>
 <!-- Fin Secciones --> 
+<style>
+.auspiciadores-background {
+	background-color: #033e6c;
+	text-align:center;
+	padding:20px 10px;
+}
+.auspiciadores {
+	padding: 10px 0;
+	margin-bottom: 80px;
+}
+.auspiciadores h1 {
+	font-size:70px;
+	color:#033e6c;
+	text-align:center;
+}
+.auspiciadores ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.auspiciadores ul li {
+	display: inline-block;
+	width: 10%;
+	margin-right: 30px;
+}
+.auspiciadores ul li img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+</style>
+<!-- inicio partners -->
+<?php if(count($auspiciadores)>0){ ?>
+  <section class="auspiciadores">
+    <h1>PARTNERS</h1>
+    <div class="auspiciadores-background">
+      <div class="carrusel partners-responsive">
+        <?php foreach($auspiciadores as $item): ?>
+        <div><figure><img style="width: 70% !important;" alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" /></figure></div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+  <?php } ?> 
+<!-- fin partners -->
+
+
+
 
 <style type="text/css">
 #header{ position:relative !important;}
@@ -296,6 +344,7 @@ $(document).ready(function(){
 		slideshowSpeed: 5000,
 		directionNav: false,
 	});
+  
 
 
 });

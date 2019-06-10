@@ -34,6 +34,22 @@ class Descubrenos extends CI_Controller
         #WebFont
         $this->layout->css('/css/webfont/stylesheet.css');
 
+
+
+#Animacion
+$this->layout->css('/js/jquery/wow/animate.css');
+$this->layout->js('/js/jquery/wow/wow.js');
+$this->layout->js('/js/jquery/wow/wow-init.js');
+
+#Carrousel
+$this->layout->css('/js/jquery/carousel/slick.css');
+$this->layout->js('/js/jquery/carousel/slick.min.js');
+$this->layout->js('/js/jquery/carousel/scripts.js');
+
+
+$this->layout->css('/css/webfont/stylesheet.css');
+		$this->layout->js('/js/sistema/portada/index.js');
+
         //Contenido
         //slider
         $this->ws->order('sli_orden ASC');
@@ -56,6 +72,11 @@ class Descubrenos extends CI_Controller
 
         
 
+        $this->ws->order("par_orden");
+        $data['auspiciadores'] = $this->ws->listar(74,"par_estado = 1");
+
+
+       
 
         #Nav
         $this->layout->nav(array("Descúbrenos" => "/"));
@@ -137,6 +158,8 @@ class Descubrenos extends CI_Controller
 
         #WebFont
         $this->layout->css('/css/webfont/stylesheet.css');
+
+
 
         //Contenido
         //slider
