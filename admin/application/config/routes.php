@@ -782,3 +782,22 @@ $route['contactos_landing/eliminar-imagen']        = "contactos_landing/eliminar
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
+
+
+
+//PROGRAMAS
+
+#introduccion
+$route['programas/introduccion']                  = "programas/introduccion";
+$route['programas/introduccion/agregar']          = "programas/introduccion/agregar";
+
+#secciones
+$route['programas/secciones']                  = "programas/secciones";
+$route['programas/secciones/(:num)']           = "programas/secciones";
+$route['programas/secciones/agregar']          = "programas/secciones/agregar";
+$route['programas/secciones/editar/(:num)']    = "programas/secciones/editar/$1";
+$route['programas/secciones/eliminar']         = "programas/secciones/eliminar";
+$route['programas/secciones/cargar-imagen']    = "programas/secciones/cargar_imagen";
+$route['programas/secciones/cortar-imagen']    = "programas/secciones/cortar_imagen";
+$route['programas/secciones/eliminar-imagen']  = "programas/secciones/eliminar_imagen";
+$route['programas/secciones/eliminar-imagen-adjunta'] = "programas/secciones/eliminar_imagen_adjunta";

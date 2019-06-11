@@ -83,6 +83,21 @@ foreach($secciones_menu as $aux){
             <li><a style="background: #FFF;"></a></li>
         <?php } ?>
         
+
+        <!-- Programas-->
+        <li><a style="background: #FFF; color: #969696; font-style: italic;">Programas</a></li>
+            <li>
+                <a style="cursor:pointer;">Programas</a>
+                <ul>
+                    <li><a href="/programas/introduccion/">Introducción</a></li>
+                    <li><a href="/programas/secciones/">Secciones</a></li>
+                </ul>
+            </li>
+
+
+
+
+
         <!-- alojamiento -->
         <?php if($permisos['todo'] || $permisos['calendario-hotel-nevado'] || $permisos['calendario-hotel-alto']){ ?>
             <li><a style="background: #FFF; color: #969696; font-style: italic;">Alojamiento</a></li>
