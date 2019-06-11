@@ -55,6 +55,8 @@
 
 <div class="center valle-hermoso-act" id="actividades" style="margin-bottom: 50px;">
   <?=$this->layout->getNav();?>
+
+  <h2>Programas</h2>
   <div class="intro"> <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?> 
     <!--
     <h2>Valle Hermoso: Lugar ideal para la entretención familiar</h2>
@@ -68,7 +70,7 @@ parte del año. Durante el invierno, es posible que sea necesario el uso de
 vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a solo 5 Km del hotel Nevados.</p>
 --> 
   </div>
-  <a href="https://waze.to/lr/h63mjyxte8" class="wase-btn" target="_blank"><img src="../../imagenes/template/wase-btn.jpg"></a>
+ 
   <div class="clear"></div>
   <?php /*?> <!-- Inicio Actividades -->
   <?php if(count($actividades)>0){ ?>
@@ -127,105 +129,8 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
   </div>
     <a href="https://waze.to/lr/h63mjyz23c" class="wase-btn" target="_blank" style="margin-top:50px;"><img src="../../imagenes/template/wase-btn.jpg"></a>--> 
 </div>
-<div class="valores-seccion" id="valores">
-<div class="block-table">
-  <div class="center">
-    <?php if($programas){ 
-          
-            foreach($programas as $pro) { 
-          
-          ?>
-    <div class="block-tr">
-      <div class="block-th">
-        <h3>
-          <?=$pro->titulo?>
-        </h3>
-        <ul>
-          <li>
-            <?=$pro->bajada_uno?>
-          </li>
-          <li>
-            <?=$pro->bajada_dos?>
-          </li>
-        </ul>
-      </div>
-      <?php foreach($pro->opciones as $op ){ ?>
-      <div class="block-td">
-        <h4>
-          <?=$op->nombre?>
-        </h4>
-        <span class="valor">$
-        <?=$op->monto?>
-        </span> <span class="condiciones">
-        <?=$op->resumen?>
-        </span> </div>
-      <?php } ?>
-    </div>
-    <?php
-            }
-          }
-          
-          ?>
-  </div>
-</div>
+
 <div class="clear"></div>
-<!-- inicio Habitaciones -->
-<?php foreach($habitaciones as $item): ?>
-<?php if($item->alineacion_galeria == 1){ ?>
-<div class="slider float-left wow fadeInLeft">
-  <?php if(count($item->imagenes)>0){ ?>
-  <div class="slider-habitacion">
-    <ul class="slides">
-      <?php foreach($item->imagenes as $imagen): ?>
-      <li> <img src="<?=URL_ADMINISTRACION.$imagen->ruta_grande?>" /> </li>
-      <?php endforeach; ?>
-    </ul>
-  </div>
-  <?php }?>
-</div>
-<div class="texto-habitaciones float-right wow fadeInRight">
-  <div class="texto">
-    <h2>
-      <?=$item->titulo?>
-    </h2>
-    <?=$item->descripcion?>
-    <?php if($item->imagen_adjunta){ ?>
-    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>">
-    <?=$item->nombre_imagen_adjunta?>
-    </a></span>
-    <?php } ?>
-  </div>
-</div>
-<div class="clear"></div>
-<?php }else{ ?>
-<div class="slider float-right wow fadeInRight">
-  <?php if(count($item->imagenes)>0){ ?>
-  <div class="slider-habitacion">
-    <ul class="slides">
-      <?php foreach($item->imagenes as $imagen): ?>
-      <li> <img src="<?=URL_ADMINISTRACION.$imagen->ruta_grande?>" /> </li>
-      <?php endforeach; ?>
-    </ul>
-  </div>
-  <?php }?>
-</div>
-<div class="texto-habitaciones float-left margin wow fadeInLeft">
-  <div class="texto">
-    <h2>
-      <?=$item->titulo?>
-    </h2>
-    <?=$item->descripcion?>
-    <?php if($item->imagen_adjunta){ ?>
-    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>">
-    <?=$item->nombre_imagen_adjunta?>
-    </a></span>
-    <?php } ?>
-  </div>
-</div>
-<div class="clear"></div>
-<?php } ?>
-<?php endforeach; ?>
-<!-- fin habitaciones --> 
 
 
 
