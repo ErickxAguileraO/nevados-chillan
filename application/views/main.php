@@ -13,7 +13,7 @@
     <div class="nav" id="nav">
       <ul class="menu">
         <li><a href="/descubrenos/" title="Descúbrenos: Tecla de Acceso 1" accesskey="1">Descúbrenos</a></li>
-        <li><a href="/descubrenos/" title="Programas: Tecla de Acceso 2" accesskey="2">Programas</a></li>
+        <li><a href="/programas/" title="Programas: Tecla de Acceso 2" accesskey="2">Programas</a></li>
         <li><a href="/descubrenos/#hoteles" title="Hoteles: Tecla de Acceso 3" accesskey="3">Hoteles</a>
           <ul class="submenu">
             <li><a href="/alojamiento/hotel-nevados">Hotel Nevados</a></li>

@@ -225,7 +225,7 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
   <img src="<?=URL_ADMINISTRACION.$item->galeria[0]->ruta_interna?>" class="wow fadeInRight" />
   <?php } ?>
   <?php } else { ?>
-  <div class="video-slider float-right"> <?php echo $item->embed_video;?> </div>
+  <div class="video-slider float-right"> <?php echo html_entity_decode($item->embed_video);?> </div>
   <?php } ?>
   <div class="clear"></div>
 </div>
