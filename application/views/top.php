@@ -16,7 +16,7 @@
       <li><a lang="en" href="#googtrans(en)"><img height="20" width="20" alt="English" src="/imagenes/template/bandera-inglaterra.png" /><span class="hide"> Inglés</span></a>
         <?php }?>
         <?php if($this->session->userdata('idioma') == 'es' || !$this->session->userdata('idioma')) {?>
-      <li  lang="es" class="idioma"><a href="/#googtrans(es)"><img height="20" width="20" alt="Español" src="/imagenes/template/bandera-espana.png" /><span class="hide"> Español</span></a>
+      <li  lang="es" class="idioma"><a href="/#googtrans(es)"><img height="20" width="20" alt="Bandera Chilena" src="/imagenes/template/bandera-chile.png" /><span class="hide"> Español</span></a>
         <?php }?>
       <?php if($this->session->userdata('idioma') == 'pt') {?>
       <li><a lang="pt" href="#googtrans(pt)" ><img height="20" width="20" alt="Portuguese" src="/imagenes/template/bandera-brasil.png" /><span class="hide"> Portugués</span></a>
@@ -25,7 +25,7 @@
         <!--[if lte IE 6]><table><tr><td><![endif]-->
         <ul id="idioma">
           <li><a id="en" lang="en" href="#googtrans(en)" ><img height="20" width="20" alt="English" src="/imagenes/template/bandera-inglaterra.png" /><span class="hide"> Inglés</span></a></li>
-          <li><a id="es" lang="es" href="#googtrans(es)" ><img height="20" width="20" alt="Spanish" src="/imagenes/template/bandera-espana.png" /><span class="hide"> Español</span></a></li>
+          <li><a id="es" lang="es" href="#googtrans(es)" ><img height="20" width="20" alt="Bandera Chilena" src="/imagenes/template/bandera-chile.png" /><span class="hide"> Español</span></a></li>
           <li><a id="pt" lang="fr" href="#googtrans(pt)"><img height="20" width="20" alt="Portuguese" src="/imagenes/template/bandera-brasil.png" /><span class="hide"> Portugués</span></a></li>
         </ul>
         <!--[if lte IE 6]></td></tr></table></a><![endif]--> 

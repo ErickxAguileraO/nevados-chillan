@@ -281,11 +281,13 @@ sus tres volcanes Volcán Nevado, Volcán Viejo y Volcán Nuevo.</p>
 <?php endforeach; ?>
 <?php }?>
 <!-- Fin Secciones --> 
+<?php if(count($auspiciadores)>0){ ?>
+<!-- inicio partners -->
 <style>
 .auspiciadores-background {
 	background-color: #033e6c;
 	text-align:center;
-	padding:20px 10px;
+	padding:30px 10px;
 }
 .auspiciadores {
 	padding: 10px 0;
@@ -310,11 +312,8 @@ sus tres volcanes Volcán Nevado, Volcán Viejo y Volcán Nuevo.</p>
 	width: 100%;
 	vertical-align: middle;
 }
-
 </style>
-<!-- inicio partners -->
-<?php if(count($auspiciadores)>0){ ?>
-  <section class="auspiciadores">
+  <section class="auspiciadores" style="padding-top:80px;">
     <h1>PARTNERS</h1>
     <div class="auspiciadores-background">
       <div class="carrusel partners-responsive">
@@ -324,11 +323,8 @@ sus tres volcanes Volcán Nevado, Volcán Viejo y Volcán Nuevo.</p>
       </div>
     </div>
   </section>
-  <?php } ?> 
 <!-- fin partners -->
-
-
-
+  <?php } ?> 
 
 <style type="text/css">
 #header{ position:relative !important;}
