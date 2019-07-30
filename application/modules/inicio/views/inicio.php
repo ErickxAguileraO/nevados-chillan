@@ -87,7 +87,8 @@
           <h3><a href="<?=$accesosDirectos[0]->link?>">
             <?=$accesosDirectos[0]->titulo?>
             </a></h3>
-          <?php /*?><p><?=$accesosDirectos[0]->resumen?><br />          
+          <p><?=$accesosDirectos[0]->resumen?><br />
+          <?php /*          
           <br />
           <span><img src="/imagenes/template/arrow.png" class="arrow" /><a href="<?=$accesosDirectos[0]->link?>">Más Información</a></span></p><?php */?>
         </div>

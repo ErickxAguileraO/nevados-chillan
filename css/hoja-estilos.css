@@ -797,7 +797,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 }
 footer {
 	color: #003d69;
-	position: relative;
+	position: absolute; /*de dejo asi para que se viera el footer, ajustar en maquetacion*/
 	padding-top:40px;
 }
 .logos-footer {
