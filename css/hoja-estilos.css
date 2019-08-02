@@ -21,12 +21,12 @@ a {
     color: #fff;
     text-decoration: none;
     border-radius: 3px;
-}
+}  
 a:visited {
 /*color: #660099;*/
 }
 a:hover {
-	text-decoration: underline;
+	text-decoration: underline;  
 }
 * {
 	-webkit-box-sizing: border-box;

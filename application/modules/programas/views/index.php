@@ -1,5 +1,13 @@
+<style>
+  @media screen and (max-width: 703px){}
+  .video-slider {
+      display: block;
+      width: 100%;
+  }
+}
+</style>
 <!-- inicio Slider -->
-<div class="flexslider">
+<div class="flexslider" style="display: none;">
   <?php if(count($sliders)>0){ ?>
   <ul class="slides">
     <?php foreach($sliders as $item): ?>

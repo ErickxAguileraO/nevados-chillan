@@ -126,8 +126,8 @@ var responsiveNav = (function (window, document) {
 
       // Default options
       this.options = {
-        animate: true,        // Boolean: Use CSS3 transitions, true or false
-        transition: 400,      // Integer: Speed of the transition, in milliseconds
+        animate: false,        // Boolean: Use CSS3 transitions, true or false
+        transition: 0,      // Integer: Speed of the transition, in milliseconds
         label: "Menu",        // String: Label for the navigation toggle
         insert: "after",      // String: Insert the toggle before or after the navigation
         customToggle: "",     // Selector: Specify the ID of a custom toggle

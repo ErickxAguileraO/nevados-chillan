@@ -190,6 +190,7 @@
 @media screen and (max-width: 959px) {
 .js #nav {
   clip: rect(0 0 0 0);
+  position: absolute;
 }
 #nav {
 	z-index: 4;
