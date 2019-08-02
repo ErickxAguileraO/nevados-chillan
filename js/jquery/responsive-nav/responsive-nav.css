@@ -24,7 +24,7 @@
 .js #nav {
   max-height: 0;
   position: absolute !important;
-  top:0;
+  top:0; 
   right:0;
   display: block;
   zoom: 1;

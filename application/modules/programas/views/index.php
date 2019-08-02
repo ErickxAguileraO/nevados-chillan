@@ -1,5 +1,5 @@
 <style>
-  @media screen and (max-width: 703px){}
+  @media screen and (max-width: 703px){
   .video-slider {
       display: block;
       width: 100%;
@@ -345,23 +345,23 @@ $(document).ready(function(){
     $('.venobox').venobox();
 });
 $(window).load(function(){
-	$('.slider-habitacion').flexslider({
-		animation: "fade",
-		slideshowSpeed: 5000,
-		directionNav: false,
-	});
-	
-	$('.flexslider').flexslider({
-		animation: "fade",
-		slideshowSpeed: 5000,
-		directionNav: false,
-	});
+  $('.slider-habitacion').flexslider({
+    animation: "fade",
+    slideshowSpeed: 5000,
+    directionNav: false,
+  });
+  
+  $('.flexslider').flexslider({
+    animation: "fade",
+    slideshowSpeed: 5000,
+    directionNav: false,
+  });
 });
 </script> 
 <style>
 @media screen and (max-width: 640px) {
 .cont2 img {
-	display: block;
+  display: block;
 }
 }
 </style>

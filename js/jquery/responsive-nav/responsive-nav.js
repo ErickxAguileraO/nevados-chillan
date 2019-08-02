@@ -27,7 +27,7 @@ var responsiveNav = (function (window, document) {
           prop = prop.replace(re, function () {
             return arguments[2].toUpperCase();
           });
-        }
+        } 
         return el.currentStyle[prop] ? el.currentStyle[prop] : null;
       };
       return this;
