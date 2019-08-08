@@ -1,10 +1,10 @@
-<?php if($this->uri->segment(1) == "bikepark"){?>
+<?php /*?><?php if($this->uri->segment(1) == "bikepark"){?>
 <style>
 .valores-seccion {
 	background-image: url("<?=base_url('/imagenes/template/valores-fondo3.jpg')?>") !important;
 }
 </style>
-<?php }?>
+<?php }?><?php */?>
 
 <!-- inicio Slider -->
 <div class="flexslider">
@@ -47,8 +47,8 @@
   </ul>
   <?php }?>
 </div>
-
 <!-- Fin Slider -->
+
 <div class="center texto-intro-bike">
   <?=$this->layout->getNav();?>
   <div class="texto-info float-left wow fadeInLeft">
@@ -65,10 +65,8 @@
 <div class="valores-seccion" id="valores">
     <div class="block-table">
       <div class="center">
-        <?php if($programas){ 
-          
-            foreach($programas as $pro) { 
-          
+        <?php if($programas){          
+            foreach($programas as $pro) {          
           ?>
           <div class="block-tr">
             <div class="block-th">
@@ -78,70 +76,51 @@
                 <li><?=$pro->bajada_dos?></li>
               </ul>
             </div>
-
               <?php foreach($pro->opciones as $op ){ ?>
             <div class="block-td">
               <h4><?=$op->nombre?></h4>
               <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
             </div>
               <?php } ?>
-
           </div>
           <?php
             }
           }
-          
           ?>
-
       </div>
     </div>
   
-
+</div>
 <!-- inicio Seccion Valores -->
 
-<!--
+<?php /*?>
 <div class="seccion-fondo valores-seccion" id="valores">
   <h2>Programas y valores</h2>
   <div class="center valores">
     <?php $cant = explode("<table",$valores->contenido); $cant = count($cant)-1;
 
     if($cant == 1){
-
       echo '<style>
-
       .valores-seccion table{width:99%;}
-
       </style>';
-
     }
-
     if($cant == 2){
-
       echo '<style>
-
       .valores-seccion table{width:49%;}
-
       </style>';
-
     }
-
     if($cant == 3){
-
       echo '<style>
-
       .valores-seccion table{width:32%;}
-
       </style>';
-
     }
-
     ?>
     <?=$valores->contenido?>
     <div class="clear"></div>
   </div>
 </div>
 <div class="clear"></div>
--->
+<?php */?>
 <!-- Inicio Mapa de pistas -->
 <div class="center wow fadeInLeft pistas-bikepark" id="tabs-container">
   <ul class="tabs-menu">
@@ -154,7 +133,6 @@
   <div id="tab-2" class="tab-content"> <img src="/imagenes/template/enduro2.jpg" /> </div>
 </div>
 
-<!--</div>--> 
 <!-- Fin mapa de pistas --> 
 <!-- Fin Valores --> 
 <!-- inicio secciones -->
@@ -351,28 +329,13 @@
 <!-- Fin Secciones --> 
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('.venobox').venobox();
-
-
+$(document).ready(function(){
+	$('.venobox').venobox();
     $('.slider-habitacion').flexslider({
         animation: "slide",
 		slideshowSpeed: 5000,
 		directionNav: false,
       });
-
-
-
-	});
-
-	$(window).load(function(){
-	  $('.flexslider').flexslider({
-		animation: "fade",
-		slideshowSpeed: 5000,
-		directionNav: false,
-	
-	  });
-	});
 
 	$(".tabs-menu a").click(function(event) {
 		event.preventDefault();
@@ -383,10 +346,21 @@
 		$(tab).fadeIn();
 	});
 
-	$('.flexslider').flexslider({
+//	$('.flexslider').flexslider({
+//		animation: "fade",
+//		slideshowSpeed: 5000,
+//		directionNav: false,
+//	});
+	
+});
+
+	$(window).load(function(){
+	  $('.flexslider').flexslider({
 		animation: "fade",
 		slideshowSpeed: 5000,
 		directionNav: false,
+	
+	  });
 	});
 </script>
 <style type="text/css">

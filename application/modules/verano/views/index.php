@@ -1,10 +1,10 @@
-<?php if($this->uri->segment(1) == "verano"){?>
+<?php /*?><?php if($this->uri->segment(1) == "verano"){?>
     <style>
-        /*.valores-seccion{
+        .valores-seccion{
             background-image: url("<?=base_url('/imagenes/template/valores-fondo2.jpg')?>") !important;
-        }*/
+        }
     </style>
-<?php }?>
+<?php }?><?php */?>
 
 <!-- inicio Slider -->
 <div class="flexslider">
@@ -48,32 +48,13 @@
 <?php }?>
 </div>
 <!-- Fin Slider -->
-<div class="clear"></div>
+
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="intro">
       <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?>
-      <?php  /*<!--
-    <h2>Verano</h2>
-    <p>Los esquiadores y snowbordistas de todo el mundo afirman que Nevados de Chillán es el centro de ski más completo, excitante y hermoso de la Cordillera de Los Andes, en el Hemisferio Sur.</p>
-<p>Los fanáticos y deportistas profesionales lo llaman la “Meca del Ski” y lo califican como “ algo parecido al paraíso”, por la combinación perfecta de nieve polvo de alta calidad y las aguas termales de origen volcánico que devuelven al cuerpo su fortaleza física.</p>
-<p>Nevados de Chillán Mountain Resort & Thermal Spa, es un dominio esquiable de 10.000 hectáreas aptas para todo tipo de deportes invernales y niveles de habilidad y se encuentra ubicado a solo 194 kilómetros de Concepción, la capital de la Región del Biobío y a 400 kilómetros al sur de
-Santiago de Chile.</p>
-<p>A nivel mundial es célebre por la calidad de la nieve y su terreno esquiable fuera de pista, ya que la nieve caída puede alcanzar los 10 metros y se mantiene en perfectas condiciones durante toda la temporada de Junio a Octubre de cada año.</p>
-<p>Sus 30 pistas se mantienen en perfectas condiciones, entre ellas “Las Tres Marías”, la más larga de Sudamérica con 13 kilómetros de longitud. Las condiciones de seguridad y de confiabilidad en la preparación de las pistas es garantizada con el empleo de maquinaria profesional especializada en nieve de última generación.</p>
-<p>El paraje donde está ubicado Nevados de Chillán es de una belleza extraordinaria con nieves vírgenes que se entremezclan con grandes extensiones de bosques
-nativos de árboles milenarios. Al llegar a la cumbre, despierta
-gran admiración su extraordinaria visión panorámica en 360
-grados donde se puede ver la imponente Sierra Velluda, el Volcán
-Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
--> */ ?>
   </div>
 </div>
-
-
-<!-- inicio secciones -->
-
-
 
 <!-- inicio secciones -->
 <?php if(count($secciones)>0){ ?>
@@ -292,10 +273,8 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
 <div class="valores-seccion" id="valores">
     <div class="block-table">
       <div class="center">
-        <?php if($programas){ 
-          
-            foreach($programas as $pro) { 
-          
+        <?php if($programas){           
+            foreach($programas as $pro) {           
           ?>
           <div class="block-tr">
             <div class="block-th">
@@ -305,14 +284,12 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
                 <li><?=$pro->bajada_dos?></li>
               </ul>
             </div>
-
               <?php foreach($pro->opciones as $op ){ ?>
             <div class="block-td">
               <h4><?=$op->nombre?></h4>
               <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
             </div>
               <?php } ?>
-
           </div>
           <?php
             }
@@ -322,7 +299,7 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>
 
       </div>
     </div>
-  
+</div>  
 
 
 

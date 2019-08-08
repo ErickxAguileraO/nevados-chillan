@@ -180,10 +180,6 @@ body {
 	height: 100%;
 	
 }
-#wrapper{
-	background-color:#FFF;
-	position: relative;
-}
 #header {
 	/*background-color: rgba(0, 40, 76, 0.9);
 	background: rgba(0, 40, 76, 0.9);
@@ -220,7 +216,6 @@ body {
 	width: 49%;
 	float: left;
 }
-
 .background-reserva-header{
 	background-color: #fe8302;
 	height: 90px;
@@ -797,8 +792,8 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 }
 footer {
 	color: #003d69;
-	position: absolute; /*de dejo asi para que se viera el footer, ajustar en maquetacion*/
-	padding-top:40px;
+	/*position: absolute;*/ /*de dejo asi para que se viera el footer, ajustar en maquetacion*/
+	padding-top:50px;
 }
 .logos-footer {
 	width: 20%;
@@ -1502,7 +1497,8 @@ footer .informacion  .grid-footer-2{
 	float: left;
 }
 .valores-seccion {
-	/*background-image: url("/imagenes/template/valores-fondo.jpg") !important;*/
+	/*background-image: url("/imagenes/template/valores-fondo.jpg") !important;
+	background-repeat: no-repeat;*/
 	padding: 50px 0 100px 0;
 	text-align: center;
 }
@@ -1644,7 +1640,7 @@ footer .auspiciadores-background {
 	padding:30px 10px;
 }
 footer .auspiciadores {
-	padding: 10px 0;
+	padding: 1px 0 10px;
 	margin-bottom: 80px;
 }
 footer .auspiciadores h1 {
