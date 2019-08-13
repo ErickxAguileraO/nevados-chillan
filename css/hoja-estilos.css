@@ -1538,30 +1538,34 @@ footer .informacion  .grid-footer-2{
 	font-weight:bold;
 	vertical-align: top;
 	display:inline-block;
-	padding:15px 2%;
+	padding:15px 1%;
 }
 .block-table .block-th{
 	text-align:right;
-	width:34%;
+	width:25%;
+	padding-left:4px;
+	padding-right: 2%;
 }
 .texto-detalle iframe{ max-width:100%;}
 .block-table .block-td{
-	width: 22%;
+	width: 15%;
 }
 .block-table .block-th h3{
-	font-size: 46px;
+	font-size: 34px;
 	font-weight:900;
-	line-height: 50px;
+	line-height: 36px;
 }
 .block-table li{
-	font-size: 18px;
+	font-size: 14px;
+	font-weight:500;
 	margin-bottom: 2px;
 }
 .block-table .block-td h4{
-	font-size:21px;
+	font-size:15px;
+	font-weight:500;
 }
-.block-table .block-td .valor{ font-size:40px; display:block;}
-.block-table .block-td .condiciones{ font-size:18px; font-weight:500; display:block;}
+.block-table .block-td .valor{ font-size:32px; display:block;}
+.block-table .block-td .condiciones{ font-size:14px; font-weight:500; display:block;}
 
 
 /***** Borrar valores*****/
