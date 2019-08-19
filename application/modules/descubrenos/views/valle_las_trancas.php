@@ -44,7 +44,7 @@
   <div class="center">
     <?=$this->layout->getNav();?>
     <div class="intro">
-        <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?>
+        <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?>
         <!--
       <p>Quienes han visitado Valle Las Trancas, lo definen como un Poblado Cordillerano y una Villa de Montaña de características originales donde sobresalen parajes únicos, construcciones arquitectónicas modernas, aire puro, ríos, senderos, sol en verano y nieve en invierno, una exuberante ﬂora y fauna nativa y un ambiente cálido y acogedor. Está ubicado a 70 kilómetros de Chillán, lo que permite a los turistas chilenos y extranjeros subir por el día a disfrutar de los atractivos de Nevados de Chillán, el mejor resort de montaña de Sudamérica ubicado
 a tan sólo 10 kilómetros de Valle Las Trancas. En primavera y verano, Valle Las Trancas es una alternativa turística que congrega a los amantes de la naturaleza los que pueden admirar bosques de robles, lengas, coigues y hualles. Caminar por senderos que conducen al río Renegado, a caídas de agua, acantilados y farellones o admirar el Volcán Nevados de Chillán. Observar el vuelo de cóndores y ver brotar el bosque nativo y de ﬂores silvestres como añañucas, astromelias y orquídeas silvestres.</p>

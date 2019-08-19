@@ -55,7 +55,7 @@
 
 <div class="center valle-hermoso-act" id="actividades" style="margin-bottom: 50px;">
   <?=$this->layout->getNav();?>
-  <div class="intro"> <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?> 
+  <div class="intro"> <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?> 
     <!--
     <h2>Valle Hermoso: Lugar ideal para la entretención familiar</h2>
     <p>Es por excelencia un centro de recreación familiar enclavado en una zona de increíble belleza natural y a corta distancia de Nevados de Chillán, ya que forma parte del mejor resort de montaña del país.</p>
@@ -188,7 +188,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
     <h2>
       <?=$item->titulo?>
     </h2>
-    <?=$item->descripcion?>
+    <?=html_entity_decode($item->descripcion)?>
     <?php if($item->imagen_adjunta){ ?>
     <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>">
     <?=$item->nombre_imagen_adjunta?>
@@ -214,7 +214,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
     <h2>
       <?=$item->titulo?>
     </h2>
-    <?=$item->descripcion?>
+    <?=html_entity_decode($item->descripcion)?>
     <?php if($item->imagen_adjunta){ ?>
     <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>">
     <?=$item->nombre_imagen_adjunta?>

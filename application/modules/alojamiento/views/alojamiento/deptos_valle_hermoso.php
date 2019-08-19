@@ -110,7 +110,7 @@
 <div class="texto-habitaciones float-right wow fadeInRight">
   <div class="texto">
     <h2><?=$item->titulo?></h2>
-    <?=$item->descripcion?>
+    <?=html_entity_decode($item->descripcion)?>
      </div>
 </div>
 <div class="clear"></div>
@@ -129,7 +129,7 @@
 <div class="texto-habitaciones float-left margin wow fadeInLeft">
   <div class="texto">
     <h2><?=$item->titulo?></h2>
-    <?=$item->descripcion?>
+    <?=html_entity_decode($item->descripcion)?>
      </div>
 </div>
 <div class="clear"></div>

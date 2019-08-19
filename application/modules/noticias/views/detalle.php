@@ -77,7 +77,7 @@
       </ul>
       <div class="clear"></div>
     </div>
-    <?=$noticia->descripcion?>
+    <?=html_entity_decode($noticia->descripcion)?>
   </div>
   <?php if(count($imagenes)>0){ ?>
   <div class="galeria-noticias float-right wow fadeInRight">

@@ -43,7 +43,7 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="intro">
-      <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?>
+      <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?>
       <!--
     <h2>Alto Nevados: Un hotel sustentable con memoria histórica</h2>
     <p>Construido en un punto estratégico de la montaña el Hotel Alto Nevados de Chillán es una obra arquitectónica moderna, que se ha convertido en un elegante refugio donde buscar paz y tranquilidad.</p>
@@ -77,7 +77,7 @@ practicando ski y snowboard o disfrutando de las aguas termales minerales y cura
   <div class="texto-habitaciones float-right wow fadeInRight">
     <div class="texto">
       <h2><?=$item->titulo?></h2>
-      <?=$item->descripcion?>
+      <?=html_entity_decode($item->descripcion)?>
       <?php if($item->imagen_adjunta){ ?>
       <span><a name="spa" class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
       <?php } ?>
@@ -99,7 +99,7 @@ practicando ski y snowboard o disfrutando de las aguas termales minerales y cura
   <div class="texto-habitaciones float-left margin wow fadeInLeft">
     <div class="texto">
       <h2><?=$item->titulo?></h2>
-      <?=$item->descripcion?>
+      <?=html_entity_decode($item->descripcion)?>
       <?php if($item->imagen_adjunta){ ?>
       <span><a name="spa" class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
       <?php } ?>

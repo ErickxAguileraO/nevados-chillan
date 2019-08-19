@@ -44,7 +44,7 @@
   <div class="center">
     <?=$this->layout->getNav();?>
     <div class="intro">
-        <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?>
+        <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?>
     </div>
   </div>
 </div>

@@ -55,7 +55,7 @@ $(document).ready(function(){
   <div class="contenedor">
     <div class="article">
       <h2><?= $landing->nombre?></h2>
-      <p><?= $landing->descripcion?></p>
+      <p><?= html_entity_decode($landing->descripcion)?></p>
      </div>
   </div>
 </section>

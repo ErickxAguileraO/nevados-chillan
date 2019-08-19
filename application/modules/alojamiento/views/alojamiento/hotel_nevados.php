@@ -43,7 +43,7 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="intro">
-      <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?>
+      <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?>
       <!--
     <h2>Nevados: Hotel de familia</h2>
     <p>Con diseño y decoración minimalista, el Hotel Nevados (ex Pirigallo) está pensado para
@@ -81,7 +81,7 @@ temperatura.</p>
   <div class="texto-habitaciones float-right wow fadeInRight">
     <div class="texto">
       <h2><?=$item->titulo?></h2>
-      <?=$item->descripcion?>
+      <?=html_entity_decode($item->descripcion)?>
       <?php if($item->imagen_adjunta){ ?>
       <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
       <?php } ?>
@@ -103,7 +103,7 @@ temperatura.</p>
   <div class="texto-habitaciones float-left margin wow fadeInLeft">
     <div class="texto">
       <h2><?=$item->titulo?></h2>
-      <?=$item->descripcion?>
+      <?=html_entity_decode($item->descripcion)?>
       <?php if($item->imagen_adjunta){ ?>
       <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
       <?php } ?>

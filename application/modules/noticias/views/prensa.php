@@ -44,7 +44,7 @@
   <?=$this->layout->getNav();?>
   <div class="texto-detalle2 float-left wow fadeInLeft">
     <h2>Informaci&oacute;n para Prensa</h2>
-    <?=$prensa->descripcion?>
+    <?=html_entity_decode($prensa->descripcion)?>
   </div>
   <div class="galeria-noticias float-right wow fadeInRight">
     <?php if(count($imagenes)>0){ ?>

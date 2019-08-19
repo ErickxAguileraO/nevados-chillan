@@ -80,7 +80,7 @@
       </ul>
       <div class="clear"></div>
     </div>
-    <?=$actividad->descripcion?>
+    <?=html_entity_decode($actividad->descripcion)?>
      </div>
 </div>
 <script type="text/javascript">

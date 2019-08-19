@@ -52,7 +52,7 @@
 <div class="center texto-intro-bike">
   <?=$this->layout->getNav();?>
   <div class="texto-info float-left wow fadeInLeft">
-    <?=$bikepark->descripcion?>
+    <?=html_entity_decode($bikepark->descripcion)?>
   </div>
   <div class="calendario-bikepark float-right wow fadeInRight">
     <h2>Calendario de carreras</h2>

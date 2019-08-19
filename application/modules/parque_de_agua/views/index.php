@@ -43,7 +43,7 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="intro">
-      <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?>
+      <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?>
       <!--
     <h2>Parque de Agua termal</h2>
     <p>Parque de Aguas es en sí, un atractivo turístico único.</p>

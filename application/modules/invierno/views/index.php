@@ -44,7 +44,7 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="intro">
-      <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?>
+      <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?>
       <?php /* <!--
     <h2>Invierno</h2>
     <p>Los esquiadores y snowbordistas de todo el mundo afirman que Nevados de Chillán es el centro de ski más completo, excitante y hermoso de la Cordillera de Los Andes, en el Hemisferio Sur.</p>
