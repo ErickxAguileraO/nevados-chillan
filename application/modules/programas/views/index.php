@@ -65,7 +65,7 @@
   <?=$this->layout->getNav();?>
 
   <h2>Programas</h2>
-  <div class="intro"> <?php echo ($introduccion) ? $introduccion->descripcion : ''; ?> 
+  <div class="intro"> <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?> 
     <!--
     <h2>Valle Hermoso: Lugar ideal para la entretención familiar</h2>
     <p>Es por excelencia un centro de recreación familiar enclavado en una zona de increíble belleza natural y a corta distancia de Nevados de Chillán, ya que forma parte del mejor resort de montaña del país.</p>
