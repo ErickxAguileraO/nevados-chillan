@@ -18,18 +18,12 @@
           <?php if($item->link){ ?>
           <a href="<?=$item->link?>" title="<?=$item->titulo?>">
           <?php }?>
-          <span>
-          <?=$item->antetitulo?>
-          </span>
+          <span><?=$item->antetitulo?></span>
           <?php if($item->link){ ?>
           </a>
           <?php }?>
-          <h2>
-            <?=$item->titulo?>
-          </h2>
-          <p>
-            <?=$item->bajada?>
-          </p>
+          <h2><?=$item->titulo?></h2>
+          <p><?=$item->bajada?></p>
         </div>
         <div class="video-slider float-right">
           <iframe width="100%" height="300px" src="<?=str_replace('watch?v=','embed/',$item->url_video)?>" frameborder="0" allowfullscreen></iframe>
@@ -39,18 +33,12 @@
           <?php if($item->link){ ?>
           <a href="<?=$item->link?>" title="<?=$item->titulo?>">
           <?php }?>
-          <span>
-          <?=$item->antetitulo?>
-          </span>
+          <span><?=$item->antetitulo?></span>
           <?php if($item->link){ ?>
           </a>
           <?php }?>
-          <h2>
-            <?=$item->titulo?>
-          </h2>
-          <p>
-            <?=$item->bajada?>
-          </p>
+          <h2><?=$item->titulo?></h2>
+          <p><?=$item->bajada?></p>
         </div>
         <?php } ?>
       </div>
@@ -63,8 +51,7 @@
 
 <div class="center valle-hermoso-act" id="actividades" style="margin-bottom: 50px;">
   <?=$this->layout->getNav();?>
-
-  <h2>Programas</h2>
+  <h1>Programas</h1>
   <div class="intro"> <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?> 
     <!--
     <h2>Valle Hermoso: Lugar ideal para la entretención familiar</h2>

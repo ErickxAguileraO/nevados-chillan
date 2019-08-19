@@ -606,7 +606,7 @@ figure.effect-sadie:hover figcaption::before, figure.effect-sadie:hover p {
 	width: 46%;
 	float: right;
 }
-h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2, .text-70 {
+h1,h2, h3 .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2, .text-70 {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 40px;
@@ -614,6 +614,12 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 	margin-bottom: 15px;
 	padding: 0;
 	color: #033e6c;
+}
+h2{
+	font-size: 34px;
+}
+h3{
+	font-size: 26px;
 }
 
 .text-70, footer .newsletter .text-70, .noticias h2.text-70 {
@@ -1322,7 +1328,7 @@ footer .informacion  .grid-footer-2{
 	width: 100%;
 	margin-bottom: 50px;
 }
-.intro p {
+.intro p, p {
 	font-size: 1.6em;
 	font-size: 1.6rem;
 	line-height: 20px;
