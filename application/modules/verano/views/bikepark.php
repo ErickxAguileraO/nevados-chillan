@@ -55,7 +55,7 @@
     <?=html_entity_decode($bikepark->descripcion)?>
   </div>
   <div class="calendario-bikepark float-right wow fadeInRight">
-    <h2>Calendario de carreras</h2>
+    <h1>Calendario de carreras</h1>
     <a href="/verano/calendario/categoria/bikepark" title="Actividades Bikepark"> <img src="<?=URL_ADMINISTRACION.$bikepark->imagen_adjunta?>" /> </a> </div>
   <div class="clear"></div>
 </div>

@@ -44,7 +44,7 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="estado-camino">
-    <h2>Estado del camino</h2> <a class="btn-exportar" href="/invierno/createPdf">Exportar a pdf</a>
+    <h1>Estado del camino</h1> <a class="btn-exportar" href="/invierno/createPdf">Exportar a pdf</a>
     <div class="col1">
       <ul>
         <li>Estado del camino: <br />

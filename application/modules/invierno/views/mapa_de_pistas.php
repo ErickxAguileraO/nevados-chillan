@@ -44,7 +44,7 @@
 <div class="center">
 	<?=$this->layout->getNav();?>
 	<div class="intro">
-		<h2>Mapa de pista</h2>
+		<h1>Mapa de pista</h1>
 		<p>El Centro de ski Nevados de Chillán cuenta con un total de 13 sistemas de elevación tanto de telesillas como de arrastre, que conectan un total de 35 kilómetros de pistas situadas entre los 1.500 y los 2.400 metros de altura sobre el nivel del mar.</p>
 		<p>
 El total de terreno esquiable está destinado a diferentes niveles, los que se dividen en un 30% de pistas para principiantes, incluyendo la nueva Magic Carpet dentro de la Zona Debutantes, un 40 % de pistas nivel medio que incluye a Tres Marías, la pista más larga de Sudamérica con un total de 13 Km y por último un 30% de pistas nivel experto para los más experimentados donde el desnivel de la pista alcanza hasta los 700 metros.</p>
