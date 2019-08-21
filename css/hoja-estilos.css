@@ -606,21 +606,16 @@ figure.effect-sadie:hover figcaption::before, figure.effect-sadie:hover p {
 	width: 46%;
 	float: right;
 }
-h1,h2, h3 .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2, .text-70 {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 40px;
-	margin: 0;
-	margin-bottom: 15px;
-	padding: 0;
+h1,h2, h3, .text-70 {
 	color: #033e6c;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0 0 15px;
 }
-h2{
-	font-size: 34px;
-}
-h3{
-	font-size: 26px;
-}
+h2{ font-size: 34px;}
+h3{ font-size: 26px;}
 
 .text-70, footer .newsletter .text-70, .noticias h2.text-70 {
 	font-size: 70px;
