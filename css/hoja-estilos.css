@@ -202,6 +202,7 @@ body {
 	left:0;
 }
 #logo h1 {
+	font-size:0.05em;
 	width: 200px;
 	height: 79px;
 	text-indent: -999px;
