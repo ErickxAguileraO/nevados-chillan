@@ -99,7 +99,7 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
 
 
 <!-- inicio secciones -->
-<a name="servicios"></a>
+<a name="servicios" style="padding:0;"></a>
 <?php if(count($secciones)>0){ ?>
 <?php $i = 0; foreach($secciones as $item):
   if($i==0){?>
