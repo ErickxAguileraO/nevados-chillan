@@ -101,75 +101,75 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
 <!-- inicio secciones -->
 <a name="servicios" style="padding:0;"></a>
 <?php if(count($secciones)>0){ ?>
-<?php $i = 0; foreach($secciones as $item):
-  if($i==0){?>
+<?php foreach($secciones as $item):?>
+
   <?php if($item->tipo_de_imagen==2){ ?>
-<div class="center cont2 wow fadeInLeft"><!-- imagen chica -->
-  <div class="texto">
-    <h2><?=$item->titulo?></h2>
-    <p><?=nl2br($item->bajada)?></p>
-    <!-- si es un enlace -->
-    <?php if($item->link){ ?>
-    <span><a href="<?=$item->link?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link?></a></span>
-    <?php } ?>
-    <?php if($item->link_2){ ?>
-    <span><a  href="<?=$item->link_2?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_2?></a></span>
-    <?php } ?>
-    <?php if($item->link_3){ ?>
-    <span><a href="<?=$item->link_3?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_3?></a></span>
-    <?php } ?>
-    <!-- si es imagen -->
-    <?php if($item->imagen_adjunta){ ?>
-    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
-    <?php } ?>
-    <?php if($item->imagen_adjunta2){ ?>
-    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>"><?=$item->nombre_imagen_adjunta2?></a></span>
-    <?php } ?>
-    <?php if($item->imagen_adjunta3){ ?>
-    <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
-    <?php } ?>
-  </div>
-  <?php if($item->video != '') { ?>
-  <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
-  <?php } ?>
-  <div class="clear"></div>
-</div>
-<?php }else{ ?>
-<div class="seccion-fondo ski-seccion" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_fondo?>) !important;"><!-- imagen grande -->
-  <div class="center">
-    <div class="texto wow fadeInLeft">
-      <h2><?=$item->titulo?></h2>
-      <p><?=nl2br($item->bajada)?></p>
-      <!-- si es un enlace -->
-      <?php if($item->link){ ?>
-      <span><a href="<?=$item->link?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link?></a></span>
+
+    <div class="center cont2 wow fadeInLeft"><!-- imagen chica -->
+      <div class="texto">
+        <h2><?=$item->titulo?></h2>
+        <p><?=nl2br($item->bajada)?></p>
+        <!-- si es un enlace -->
+        <?php if($item->link){ ?>
+        <span><a href="<?=$item->link?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link?></a></span>
+        <?php } ?>
+        <?php if($item->link_2){ ?>
+        <span><a  href="<?=$item->link_2?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_2?></a></span>
+        <?php } ?>
+        <?php if($item->link_3){ ?>
+        <span><a href="<?=$item->link_3?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_3?></a></span>
+        <?php } ?>
+        <!-- si es imagen -->
+        <?php if($item->imagen_adjunta){ ?>
+        <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
+        <?php } ?>
+        <?php if($item->imagen_adjunta2){ ?>
+        <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>"><?=$item->nombre_imagen_adjunta2?></a></span>
+        <?php } ?>
+        <?php if($item->imagen_adjunta3){ ?>
+        <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
+        <?php } ?>
+      </div>
+      <?php if($item->video != '') { ?>
+      <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
       <?php } ?>
-      <?php if($item->link_2){ ?>
-      <span><a href="<?=$item->link_2?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_2?></a></span>
-      <?php } ?>
-      <?php if($item->link_3){ ?>
-      <span><a href="<?=$item->link_3?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_3?></a></span>
-      <?php } ?>
-      <!-- si es imagen -->
-      <?php if($item->imagen_adjunta){ ?>
-      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
-      <?php } ?>
-      <?php if($item->imagen_adjunta2){ ?>
-      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>"><?=$item->nombre_imagen_adjunta2?></a></span>
-      <?php } ?>
-      <?php if($item->imagen_adjunta3){ ?>
-      <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
-      <?php } ?>
+      <div class="clear"></div>
     </div>
-  </div>
-  <?php if($item->video != '') { ?>
-  <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
-  <?php } ?>
-  <div class="clear"></div>
-</div>
-<?php }
-}?>
-<?php $i++; endforeach; ?>
+<?php }else{ ?>
+    <div class="seccion-fondo ski-seccion" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_fondo?>) !important;"><!-- imagen grande -->
+      <div class="center">
+        <div class="texto wow fadeInLeft">
+          <h2><?=$item->titulo?></h2>
+          <p><?=nl2br($item->bajada)?></p>
+          <!-- si es un enlace -->
+          <?php if($item->link){ ?>
+          <span><a href="<?=$item->link?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link?></a></span>
+          <?php } ?>
+          <?php if($item->link_2){ ?>
+          <span><a href="<?=$item->link_2?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_2?></a></span>
+          <?php } ?>
+          <?php if($item->link_3){ ?>
+          <span><a href="<?=$item->link_3?>"> <img src="../../imagenes/template/arrow.png" class="arrow" /><?=$item->nombre_link_3?></a></span>
+          <?php } ?>
+          <!-- si es imagen -->
+          <?php if($item->imagen_adjunta){ ?>
+          <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>"><?=$item->nombre_imagen_adjunta?></a></span>
+          <?php } ?>
+          <?php if($item->imagen_adjunta2){ ?>
+          <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta2?>"><?=$item->nombre_imagen_adjunta2?></a></span>
+          <?php } ?>
+          <?php if($item->imagen_adjunta3){ ?>
+          <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
+          <?php } ?>
+        </div>
+      </div>
+      <?php if($item->video != '') { ?>
+      <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
+      <?php } ?>
+      <div class="clear"></div>
+    </div>
+<?php } ?>
+<?php endforeach; ?>
 <?php }?>
 <!-- Fin Secciones -->
 <!-- inicio Cafeteria -->
@@ -197,6 +197,7 @@ Desde la cafetería en las alturas Buena Vista hasta la más familiar Quincho ta
 </div>
 <?php }?>
 <!-- Fin Cafeteria -->
+<?php /*
 <!-- inicio secciones -->
 <?php if(count($secciones)>0){ ?>
 <?php foreach($secciones as $item): ?>
@@ -389,6 +390,7 @@ Desde la cafetería en las alturas Buena Vista hasta la más familiar Quincho ta
 <?php endforeach; ?>
 <?php }?>
 <!-- Fin Secciones --> 
+*/ ?>
 <div class="center">
   <!-- Inicio servicios asociados -->
   <?php if(count($servicios)>0){ ?>

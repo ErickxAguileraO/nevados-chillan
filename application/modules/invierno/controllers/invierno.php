@@ -52,7 +52,7 @@ class Invierno extends CI_Controller {
         foreach($secciones as $sec){
           $sec->galeria = $this->ws->listar(76, "sec2_seccion = ".$sec->codigo);
         }
-    
+        #print_array($secciones);die;
         $data['secciones']  = $secciones;
 
 

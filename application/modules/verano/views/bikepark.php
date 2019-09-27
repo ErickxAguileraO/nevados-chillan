@@ -51,12 +51,15 @@
 
 <div class="center texto-intro-bike">
   <?=$this->layout->getNav();?>
-  <div class="texto-info float-left wow fadeInLeft">
+  <div class="texto-info float-left wow fadeInLeft" style="width: 100%">
     <?=html_entity_decode($bikepark->descripcion)?>
   </div>
+
+  <?php /* OCulto por peticion del cliente el dia 27-09
   <div class="calendario-bikepark float-right wow fadeInRight">
     <h1>Calendario de carreras</h1>
-    <a href="/verano/calendario/categoria/bikepark" title="Actividades Bikepark"> <img src="<?=URL_ADMINISTRACION.$bikepark->imagen_adjunta?>" /> </a> </div>
+    <a href="/verano/calendario/categoria/bikepark" title="Actividades Bikepark"> <img src="<?=URL_ADMINISTRACION.$bikepark->imagen_adjunta?>" /> </a> 
+  </div> */?>
   <div class="clear"></div>
 </div>
 

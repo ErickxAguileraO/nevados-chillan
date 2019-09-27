@@ -45,18 +45,7 @@
     <?=$this->layout->getNav();?>
     <div class="intro" id="hoteles">
       <h1>Descubre Nuestros Hoteles</h1>
-      <p>La reputación de Nevados de Chillán de ser el mejor resort de montaña de Sudamérica, se consolida cada año gracias a una fuerte inversión y a una inteligente estrategia de planificación que mezcla el placer y la entretención de una forma armónica y amigable.
-Es el único que ha roto la estacionalidad convirtiendo sus recursos naturales y atractivos turísticos en el lugar ideal de vacaciones en cualquier estación del año, siendo hoy en día el ícono turístico de la región del Biobío. Con su filosofía de brindar servicios y programas de alta calidad los 365
-días del año las 24 horas, es el sitio ideal para descansar y entretenerse en
-primavera, verano, otoño o invierno. Es el único de su género que tiene
-en un solo lugar aguas termales, la pista de esquí más larga del hemisferio
-y un parque de bicicletas de montaña de condiciones técnicas de nivel
-mundial.</p>
-<p>Nevados de Chillán está enclavado en el centro de la Cordillera de Los
-Andes, a 85 kilómetros al sudeste de la histórica ciudad de Chillán, en la
-Octava Región del Biobío. Es un terreno natural de conformación estrato
-volcánica con abundantes especies nativas originales donde sobresalen
-sus tres volcanes Volcán Nevado, Volcán Viejo y Volcán Nuevo.</p>
+      <p><?php echo $introduccion ?></p>
     </div>
   </div>
   <?php if(count($hoteles)>0){ ?>

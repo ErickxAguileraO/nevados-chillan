@@ -5,6 +5,7 @@
     
   	<div class="subtitulo-btn">
     	<h2>&nbsp;</h2>
+        <a class="btn btn-default" href="/contactos_landing/exportar/" style="margin-left:5px;">Exportar</a>
         <a class="btn btn-default" href="/contactos_landing/agregar/">Agregar Contacto Landing Pages</a>
     </div>
     <?php //print_array($contactos); ?>

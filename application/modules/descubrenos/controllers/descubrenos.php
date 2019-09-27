@@ -36,22 +36,25 @@ class Descubrenos extends CI_Controller
 
 
 
-#Animacion
-$this->layout->css('/js/jquery/wow/animate.css');
-$this->layout->js('/js/jquery/wow/wow.js');
-$this->layout->js('/js/jquery/wow/wow-init.js');
+        #Animacion
+        $this->layout->css('/js/jquery/wow/animate.css');
+        $this->layout->js('/js/jquery/wow/wow.js');
+        $this->layout->js('/js/jquery/wow/wow-init.js');
 
-#Carrousel
-$this->layout->css('/js/jquery/carousel/slick.css');
-$this->layout->js('/js/jquery/carousel/slick.min.js');
-$this->layout->js('/js/jquery/carousel/scripts.js');
+        #Carrousel
+        $this->layout->css('/js/jquery/carousel/slick.css');
+        $this->layout->js('/js/jquery/carousel/slick.min.js');
+        $this->layout->js('/js/jquery/carousel/scripts.js');
 
 
-$this->layout->css('/css/webfont/stylesheet.css');
+        $this->layout->css('/css/webfont/stylesheet.css');
 		$this->layout->js('/js/sistema/portada/index.js');
 
         //Contenido
         //slider
+        $introduccion = $this->ws->obtener(69, 'int_tipo_seccion = 8');
+        $data['introduccion'] = $introduccion->descripcion;
+        #print_array($introduccion);die;
         $this->ws->order('sli_orden ASC');
         $data['sliders'] = $this->ws->listar(13, 'sli_tipo_seccion = 8 and sli_estado = 1');
 

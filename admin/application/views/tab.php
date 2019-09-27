@@ -60,9 +60,11 @@ foreach($secciones_menu as $aux){
                     <li><a href="/descubrenos/introduccion/">Introducción</a></li>
     				<li><a href="/descubrenos/hoteles/">Hoteles</a></li>
     				<li><a href="/descubrenos/secciones/">Secciones</a></li>
+                    <li><a href="/descubrenos/partner/">Partners</a></li>
                    
     			</ul>
     		</li>
+            <?php /*OCULTO EL DIA 27-09-2019
             <li>
     			<a style="cursor:pointer;">Nuestra Historia</a>
     			<ul>
@@ -71,13 +73,14 @@ foreach($secciones_menu as $aux){
     				<li><a href="/historia/secciones/">Secciones</a></li>
     			</ul>
     		</li>
+            */ ?>
             <li>
     			<a style="cursor:pointer;">Valle Las Trancas</a>
     			<ul>
     				<li><a href="/valle-las-trancas/slider/">Slider</a></li>
                     <li><a href="/valle-las-trancas/introduccion/">Introducción</a></li>
     				<li><a href="/valle-las-trancas/secciones/">Secciones</a></li>
-                    <li><a href="/descubrenos/partner/">Partners</a></li>
+                    
     			</ul>
     		</li>
             <li><a style="background: #FFF;"></a></li>

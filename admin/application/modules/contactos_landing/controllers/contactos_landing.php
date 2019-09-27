@@ -204,5 +204,182 @@ class Contactos_Landing extends CI_Controller {
 			echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, int�ntelo nuevamente."));
 		}
     }
+
+
+     public function exportar(){    
+        require APPPATH."libraries/PHPExcel/PHPExcel.php";
+        # Contenido        
+        
+        #echo "1";die;
+                
+        $datas = $this->ws->listar($this->modulo);
+        
+        foreach($datas as $res){
+            $res->landing = $this->ws->obtener($this->modulo_landing, 'lan_codigo ='.$res->landing)->url;
+        }
+          #print_array($datas);die;      
+        $objPHPExcel = new PHPExcel();
+        $objPHPExcel->
+            getProperties()
+                ->setCreator("Aeurus.cl")
+                ->setLastModifiedBy("Aeurus.cl")
+                ->setTitle("Excel Mensajes")
+                ->setSubject("Excel Mensajes")
+                ->setDescription("Excel Mensajes")
+                ->setKeywords("Mensajes")
+                ->setCategory("Mensajes"); 
+
+
+        $styleArray = array(
+               'borders' => array(
+                     'outline' => array(
+                            'style' => PHPExcel_Style_Border::BORDER_THIN,
+                            'color' => array('argb' => '000000'),
+                     ),
+               ),
+                'font'    => array(
+                 'bold'      => true,
+                 'italic'    => false,
+                 'strike'    => false,
+             ),
+            'alignment' => array(
+                    'wrap'       => true,
+              'horizontal' => PHPExcel_Style_Alignment::HORIZONTAL_CENTER,
+              'vertical' => PHPExcel_Style_Alignment::VERTICAL_CENTER
+            ),
+            'fill' => array(
+                'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                'color' => array('rgb' => 'b0c47c')
+            ),
+        );
+        
+        $styleArraInfo = array(
+                'font'    => array(
+                 'bold'      => false,
+                 'italic'    => false,
+                 'strike'    => false,
+                 'size' => 10
+                 ),
+                 'borders' => array(
+                     'outline' => array(
+                            'style' => PHPExcel_Style_Border::BORDER_THIN,
+                            'color' => array('argb' => '000000'),
+                     ),
+               ),
+               'alignment' => array(
+                    'wrap'       => true,
+              'horizontal' => PHPExcel_Style_Alignment::HORIZONTAL_CENTER,
+              'vertical' => PHPExcel_Style_Alignment::VERTICAL_CENTER
+              )
+        );
+        
+        
+        $styleFont = array(
+             'font'    => array(
+                 'bold'      => true,
+                 'italic'    => false,
+                 'strike'    => false,  
+             ),
+            'alignment' => array(
+                    'wrap'       => true,
+              'horizontal' => PHPExcel_Style_Alignment::HORIZONTAL_CENTER,
+              'vertical' => PHPExcel_Style_Alignment::VERTICAL_CENTER
+            ),
+        );
+
+        $objPHPExcel->getActiveSheet()->getStyle('1:3')->applyFromArray($styleFont); 
+        
+        $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(20);
+        $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+        $objPHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth(40);
+        $objPHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth(40);
+        $objPHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth(40);
+        
+        
+        $i=1;
+        
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('A'.$i, 'Nombre');
+        $objPHPExcel->getActiveSheet()->getStyle('A'.$i)->applyFromArray($styleArray);
+        
+    
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('B'.$i, 'Teléfono');
+        $objPHPExcel->getActiveSheet()->getStyle('B'.$i)->applyFromArray($styleArray);
+        
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('C'.$i, 'Correo');
+        $objPHPExcel->getActiveSheet()->getStyle('C'.$i)->applyFromArray($styleArray);
+        
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('D'.$i, 'Mensaje');
+        $objPHPExcel->getActiveSheet()->getStyle('D'.$i)->applyFromArray($styleArray);
+
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('E'.$i, 'Landing');
+        $objPHPExcel->getActiveSheet()->getStyle('E'.$i)->applyFromArray($styleArray);
+
+        /*
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('F'.$i, 'Región');
+        $objPHPExcel->getActiveSheet()->getStyle('F'.$i)->applyFromArray($styleArray);
+        
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('G'.$i, 'Asunto');
+        $objPHPExcel->getActiveSheet()->getStyle('G'.$i)->applyFromArray($styleArray);
+        
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('H'.$i, 'Mensaje');
+        $objPHPExcel->getActiveSheet()->getStyle('H'.$i)->applyFromArray($styleArray);
+        */
+          
+        $i++; 
+        
+        //carga de datos
+        
+        foreach($datas as $data){  
+  
+                    $objPHPExcel->setActiveSheetIndex(0)->setCellValue('A'.$i, $data->nombre);
+                    $objPHPExcel->getActiveSheet()->getStyle('A'.$i)->applyFromArray($styleArraInfo);
+                    
+                    $objPHPExcel->setActiveSheetIndex(0)->setCellValue('B'.$i, $data->telefono);
+                    $objPHPExcel->getActiveSheet()->getStyle('B'.$i)->applyFromArray($styleArraInfo);
+                    
+                    $objPHPExcel->setActiveSheetIndex(0)->setCellValue('C'.$i, $data->correo);
+                    $objPHPExcel->getActiveSheet()->getStyle('C'.$i)->applyFromArray($styleArraInfo);
+                    
+                    $objPHPExcel->setActiveSheetIndex(0)->setCellValue('D'.$i, $data->mensaje);
+                    $objPHPExcel->getActiveSheet()->getStyle('D'.$i)->applyFromArray($styleArraInfo);
+                    
+                    
+                    $objPHPExcel->setActiveSheetIndex(0)->setCellValue('E'.$i, SITIO_URL.'/landing/'.$data->landing.'/');
+                    $objPHPExcel->getActiveSheet()->getStyle('E'.$i)->applyFromArray($styleArraInfo);
+                    
+                                    
+                    
+
+                    $i++;   
+   
+            }         
+
+/*
+        $objPHPExcel->getActiveSheet()->setTitle("EXCEL MENSAJES");
+
+        $objPHPExcel->setActiveSheetIndex(0);
+
+    
+        header('Content-Type: application/vnd.ms-excel');
+        header('Content-Disposition: attachment;filename="Mensajes - '.date('d/m/Y').'.xls"');
+        header('Cache-Control: max-age=0');
+
+        $objWriter=PHPExcel_IOFactory::createWriter($objPHPExcel,'Excel5');
+        $objWriter->save('php://output');
+        exit;*/
+
+        ob_end_clean();
+        $objPHPExcel->setActiveSheetIndex(0);
+        $objWriter=PHPExcel_IOFactory::createWriter($objPHPExcel,"Excel5");
+        header("Content-Type: application/vnd.ms-excel");
+        header("Content-Disposition: attachment;filename=inscripcion.xls");
+        header("Cache-Control: max-age=0");
+
+        $objWriter->save("php://output");
+        exit;
+
+      }    
+
+
     	
 }
