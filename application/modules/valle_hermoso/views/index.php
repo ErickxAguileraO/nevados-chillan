@@ -237,6 +237,23 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
 <?php if($item->posicion == 0) { ?>
 <?php if($item->tipo_de_imagen==2){ ?>
 <div class="center cont2 wow fadeInLeft" id="<?=$item->url?>"><!-- imagen chica -->
+  <?php if($item->embed_video == "") { ?>
+  <?php if(count($item->galeria)>1){ ?>
+  <div class="slider float-left wow fadeInRight">
+    <div class="slider-habitacion">
+      <ul class="slides">
+        <?php foreach($item->galeria as $imagen): ?>
+        <li> <img src="<?=URL_ADMINISTRACION.$imagen->ruta_interna?>" /> </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+  </div>
+  <?php }else{ ?>
+  <div class="slider float-left wow fadeInLeft"> <img src="<?=URL_ADMINISTRACION.$item->galeria[0]->ruta_interna?>" /> </div>
+  <?php } ?>
+  <?php } else { ?>
+  <div class="video-slider float-left"> <?php echo html_entity_decode($item->embed_video);?> </div>
+  <?php } ?>
   <div class="texto float-right">
     <h2 style="color:#033e6c;"><?=$item->titulo?></h2>
     <p style="color:#004f8d;"><?=$item->bajada?></p>
@@ -267,23 +284,6 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
     <?=$item->nombre_imagen_adjunta3?></a></span>
     <?php } ?>
   </div>
-  <?php if($item->embed_video == "") { ?>
-  <?php if(count($item->galeria)>1){ ?>
-  <div class="slider float-left wow fadeInRight">
-    <div class="slider-habitacion">
-      <ul class="slides">
-        <?php foreach($item->galeria as $imagen): ?>
-        <li> <img src="<?=URL_ADMINISTRACION.$imagen->ruta_interna?>" /> </li>
-        <?php endforeach; ?>
-      </ul>
-    </div>
-  </div>
-  <?php }else{ ?>
-  <div class="slider float-left wow fadeInLeft"> <img src="<?=URL_ADMINISTRACION.$item->galeria[0]->ruta_interna?>" /> </div>
-  <?php } ?>
-  <?php } else { ?>
-  <div class="video-slider float-left"> <?php echo html_entity_decode($item->embed_video);?> </div>
-  <?php } ?>
   <div class="clear"></div>
 </div>
 <?php }else{ ?>
