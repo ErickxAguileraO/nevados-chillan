@@ -130,9 +130,18 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
         <span><a class="venobox" data-gall="myGallery" data-title="Titulo para imagen" href="<?=URL_ADMINISTRACION.$item->imagen_adjunta3?>"><?=$item->nombre_imagen_adjunta3?></a></span>
         <?php } ?>
       </div>
-      <?php if($item->video != '') { ?>
+      <?php if($item->video != 0) {#CUANDO NO TRAE NADA, DEJA DE VALOR 0 EN LUGAR DE VACIO ?>
       <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
       <?php } ?>
+      <?php if($item->galeria):?>
+      <div class="">
+        <ul class="slides">
+          <?php foreach($item->galeria as $imagen): ?>
+          <li> <img src="<?=URL_ADMINISTRACION.$imagen->ruta_grande?>" /> </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <?php endif; ?>
       <div class="clear"></div>
     </div>
 <?php }else{ ?>
@@ -166,6 +175,15 @@ Antuco y hasta el Volcán Dumuyo, en Neuquén, Argentina</p>--> */ ?>
       <?php if($item->video != '') { ?>
       <img src="http://img.youtube.com/vi/<?php echo $item->video; ?>/hqdefault.jpg" class="wow fadeInRight" />
       <?php } ?>
+      <?php if($item->galeria):?>
+      <div class="slider-habitacion">
+        <ul class="slides">
+          <?php foreach($item->galeria as $imagen): ?>
+          <li> <img src="<?=URL_ADMINISTRACION.$imagen->ruta_grande?>" /> </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <?php endif; ?>
       <div class="clear"></div>
     </div>
 <?php } ?>
