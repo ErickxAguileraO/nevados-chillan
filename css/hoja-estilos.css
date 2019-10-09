@@ -3486,7 +3486,7 @@ figure.effect-sadie:hover h2 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -90px, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -90px, 0);
 }
-.cont2 img, header {
+.cont2 img/*, header*/ {
 	display: none;
 }
 .cont2 .texto, .seccion-fondo .texto {
