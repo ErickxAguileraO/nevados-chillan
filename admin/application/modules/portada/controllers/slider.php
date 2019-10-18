@@ -15,9 +15,9 @@ class Slider extends CI_Controller {
         #define el tamaño de la imagen grande
         $this->img->max_ancho_1 = 1920;
         $this->img->max_alto_1 = 1920;
-        
+ 
         #define el tamaño del recorte
-        $this->img->recorte_ancho_1 = 760;
+        $this->img->recorte_ancho_1 = 1920;
         $this->img->recorte_alto_1 = 760;
         
         $this->img->upload_dir = '/imagenes/modulos/portada/slider/';
