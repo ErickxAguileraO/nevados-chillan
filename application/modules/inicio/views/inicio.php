@@ -1,5 +1,5 @@
 <!-- inicio Slider -->
-<div class="flexslider" style="margin-bottom:100px;">
+<div class="flexslider">
   <?php if(count($sliders)>0){ ?>
   <ul class="slides">
     <?php foreach($sliders as $item): ?>

@@ -2188,7 +2188,7 @@ nav#navigation  a{
 	text-align: center;
 	z-index: 2;
 	left: 0;
-	width: 20%;
+	width: 100%;
 }
 
 /*.slider-habitacion li {
@@ -3079,6 +3079,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 .formulario-reserva ul li input[type="text"]{
 	width: 96%;
 }
+.texto-slider h2, .full-texto-slider h2 { font-size: 70px;}
 }
 @media screen and (max-width: 1000px) {
 #top ul li.hide { display: none;}
@@ -3178,6 +3179,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 .text-70, footer .newsletter .text-70, .noticias h2.text-70 { font-size: 50px;}
 
 footer .newsletter fieldset{ width:auto;}
+.texto-slider h2, .full-texto-slider h2 { font-size: 60px;}
 }
 
 @media screen and (max-width: 900px) {
@@ -3226,9 +3228,9 @@ footer .newsletter fieldset{ width:auto;}
  position: absolute;
  bottom: 20px;
  text-align: center;
- /*z-index: 99;*/
+ /*z-index: 99;
  left: 40%;
- width: 20%;
+ width: 20%;*/
 }
 .bg-footer {
  background-size: 300%;
@@ -3241,6 +3243,7 @@ footer .newsletter fieldset{ width:auto;}
 .chile-best{
 	display: none;
 }
+.texto-slider h2, .full-texto-slider h2 { font-size: 50px;}
 }
 @media screen and (max-width: 870px) {
 footer .informacion .grid-footer-2:last-child li{ width:50%; margin:0; padding:0 1%; }
@@ -3304,9 +3307,9 @@ figure.effect-sadie:hover h3 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -55px, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -55px, 0);
 }
-/*.overlay nav {
-	margin-top: 30%;
-}*/
+.text-70, footer .newsletter .text-70, .noticias h2.text-70 {
+    font-size: 40px;
+}
 }
 @media screen and (max-width: 800px) {
 .goup-container, .goup-text{ display:none !important;}
@@ -3339,6 +3342,9 @@ figure.effect-sadie:hover h3 {
 .block-table .block-td .valor { font-size: 28px;}
 }
 @media screen and (max-width: 770px) {
+.text-70, footer .newsletter .text-70, .noticias h2.text-70 {
+    font-size: 30px;
+}
 #wrapper { padding-top: 156px;}
 #logo h1 {
     height: 56px;
@@ -3516,6 +3522,7 @@ figure.effect-sadie:hover h2 {
 .cont2 img/*, header*/ {
 	display: none;
 }
+.cont2 .slider img{ display:block;}
 .cont2 .texto, .seccion-fondo .texto {
 	width: 100%;
 	float: none !important;
@@ -3712,9 +3719,7 @@ footer .informacion .grid-footer-2 li {
 .newsletter-auspiciadores {
 	width: 100%;
 }
-.slides .center {
-	margin-top: 40%;
-}
+.slides .center { margin-top: 20%;}
 .texto-slider h2, .full-texto-slider h2 {
 	font-size: 30px;
 }
@@ -3876,9 +3881,11 @@ figure.effect-sadie:hover h3 {
 }
 
 h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 { font-size: 30px;}
+.slides .center { margin-top: 25%;}
 
 }
 @media screen and (max-width: 400px) {
+.slides .center { margin-top: 30%;}
 
 footer .informacion .coll-footer h4 {
     font-size: 2em;
@@ -3969,12 +3976,6 @@ figure.effect-sadie:hover h3 {
 }
 .lower {
  width: 15%;
-}
-.slides .center {
- margin-top: 40%;
-}
-.slides .center {
- margin-top: 50%;
 }
 .texto span {
  margin-left: 24%;
