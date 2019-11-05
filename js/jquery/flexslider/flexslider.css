@@ -236,7 +236,30 @@ html[xmlns] .slides {
 	opacity: 1;
 	cursor: default;
 }
+@media screen and (max-width: 1290px) {
+.flexslider ul li{
+	height: 545px;
+}
+}
+ @media screen and (max-width: 1150px) {
+.flexslider ul li{
+	height: 500px;
+}
+}
+ @media screen and (max-width: 990px) {
+.flexslider ul li{
+	height: 450px;
+}
+}
+ @media screen and (max-width: 950px) {
+.flexslider ul li{
+	height: 400px;
+}
+}
  @media screen and (max-width: 860px) {
+.flexslider ul li{
+	height: 340px;
+}
 .flex-direction-nav .flex-prev {
 	opacity: 1;
 	left: 10px;
@@ -244,5 +267,16 @@ html[xmlns] .slides {
 .flex-direction-nav .flex-next {
 	opacity: 1;
 	right: 10px;
+}
+}
+ @media screen and (max-width:799px) {
+.flexslider .slides > li {
+    background-size: cover !important;
+}
+}
+
+ @media screen and (max-width: 650px) {
+.flexslider ul li{
+	height: 300px;
 }
 }

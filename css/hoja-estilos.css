@@ -211,6 +211,7 @@ body {
 #logo a{
 	display:inline-block;
 	background: none;
+	padding:0;
 }
 #logo img{ vertical-align: top; width:100%; height:auto;}
 .texto-reserva {
@@ -3338,6 +3339,25 @@ figure.effect-sadie:hover h3 {
 .block-table .block-td .valor { font-size: 28px;}
 }
 @media screen and (max-width: 770px) {
+#wrapper { padding-top: 156px;}
+#logo h1 {
+    height: 56px;
+	background-size: cover;
+	margin:0;
+}
+#logo, #logo h1 { width: 144px;}
+.background-reserva-header { height: 70px; padding:8px 0 0;}
+.top-figure figure img {
+	width:auto;
+	height: 30px;
+	margin-bottom: 4px;
+}
+.top-figure figure figcaption {
+    font-size: 1.4em;
+    font-size: 1.4rem;
+}
+	
+	
 footer .informacion .coll-footer{ width:100%; padding: 15px 5px; border-bottom: 1px solid #719abe;}
 footer .informacion .coll-footer:last-child{ border-bottom: none;}
 footer .informacion .coll-footer h4 {
@@ -3628,9 +3648,9 @@ figure.effect-sadie:hover h2 {
 
 }
 @media screen and (max-width: 600px) {
-#logo { width: 180px;}
+/*#logo { width: 180px;}
 .background-reserva-header { height: 90px;}
-.top-figure figure img{ width:auto; height: 40px;}
+.top-figure figure img{ width:auto; height: 40px;}*/
 
 .formulario-reserva ul li {
 	width: 25%;
@@ -3718,17 +3738,19 @@ footer .informacion .grid-footer-2 li {
 	margin: 13px auto 0 auto;
 	width: 90%;
 }
-.flexslider {
+/*.flexslider {
 	height: 350px !important;
 }
 .flexslider ul li {
 	height: 350px !important;
-}
+}*/
 .newsletter .input{
 	width: 30%;
 }
 }
 @media screen and (max-width: 550px) {
+#logo, #logo h1 { width: 150px;}
+
 footer .newsletter fieldset{ padding:20px 20px 1px;}
 footer .newsletter{ padding-bottom:10px;}
 footer .newsletter .input{ width:100%; margin:10px 0;}
@@ -3929,7 +3951,13 @@ figure.effect-sadie:hover h3 {
 .btn-exportar {
     top: 53px;
 }
- @media screen and (max-width: 330px) {
+@media screen and (max-width: 357px) {
+#wrapper {
+    padding-top: 0;
+}
+#header{ position:relative !important;}
+}
+@media screen and (max-width: 330px) {
 .texto-reserva p {
  font-size: 25px;
 }

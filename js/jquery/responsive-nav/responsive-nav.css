@@ -211,13 +211,13 @@
 	overflow: visible;
 }
 #nav ul li{
-	font-size: 1.6em;
-	font-size: 1.6rem;
-	line-height:36px;
+	font-size: 1.4em;
+	font-size: 1.4rem;
+	line-height: normal;
 	height:auto;
 	margin:0;
 	padding:0;
-	border-bottom: 2px solid #004f8d;
+	border-bottom: 1px solid #004f8d;
 }
 #nav ul li:last-child{ border-bottom: none;}
 #nav ul li a{
@@ -227,8 +227,13 @@
 	padding: 0;
 	display: block;
 	text-decoration: none;
-	padding: 0 14px;
+	padding: 3px 14px;
 }
 #nav ul li a:hover{ box-shadow: 0 0 12px #387bbe;}
 #nav ul ul li a { background:url(/imagenes/template/sub-menu.png) 18px center no-repeat; padding-left:34px;}
+}
+@media screen and (max-width: 770px) {
+#nav-toggle {
+    top: 15px;
+}
 }
