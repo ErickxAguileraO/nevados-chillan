@@ -257,6 +257,7 @@ html[xmlns] .slides {
 }
 }
  @media screen and (max-width: 860px) {
+.flexslider{ margin-bottom: 40px;}
 .flexslider ul li{
 	height: 340px;
 }
