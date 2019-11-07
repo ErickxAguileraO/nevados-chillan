@@ -3511,11 +3511,11 @@ footer h3 { font-size: 15px;}
 .grid2 figure, .grid3 figure, .grid4 figure, .grid5 figure, .grid6 figure, .grid7 figure {
 	background-position: center;
 }
-figure.effect-sadie:hover h3 {
+/*figure.effect-sadie:hover h3 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -100%, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -90px, 0);
 }
-/*figure.effect-sadie:hover h2 {
+figure.effect-sadie:hover h2 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -90px, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -90px, 0);
 }*/
@@ -3934,11 +3934,11 @@ footer .informacion .coll-footer ul li:last-child {
 /*figure.effect-sadie:hover h2 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -100px, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -100px, 0);
-}*/
+}
 figure.effect-sadie:hover h3 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -100%, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -100px, 0);
-}
+}*/
 .overlay ul li {
 	margin-right: 10%;
 	margin-left: 1%;
