@@ -3836,10 +3836,10 @@ footer .newsletter ul li.text-30{ display:block;}
 footer .informacion .grid-footer-2{ width:100%; padding:20px 10px;}
 footer .informacion .grid-footer-2 li img { margin-top: 0;}	
 
-figure.effect-sadie:hover h3 {
+/*figure.effect-sadie:hover h3 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -90%, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -90px, 0);
-}
+}*/
 .texto-habitaciones {
 	padding: 50px 0 !important;
 }
@@ -3948,10 +3948,10 @@ figure.effect-sadie:hover h3 {
 	width: 90%;
 	padding: 20px 0;
 }
-.grid8 figure.effect-sadie:hover h3, .grid9 figure.effect-sadie:hover h3 {
+/*.grid8 figure.effect-sadie:hover h3, .grid9 figure.effect-sadie:hover h3 {
 	-webkit-transform: translate3d(0, -50%, 0) translate3d(0, -50px, 0);
 	transform: translate3d(0, -50%, 0) translate3d(0, -115px, 0);
-}
+}*/
 .slider {
 	height: auto;
 }
