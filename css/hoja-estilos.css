@@ -3303,10 +3303,10 @@ footer .informacion .grid-footer-2:last-child img{ width:100%; height:auto; }
 .noticias p, .redes-sociales p {
 	width: 100%;
 }
-figure.effect-sadie:hover h3 {
+/*figure.effect-sadie:hover h3 {
 	-webkit-transform: translate3d(0, -100%, 0) translate3d(0, -55px, 0);
 	transform: translate3d(0, -100%, 0) translate3d(0, -55px, 0);
-}
+}*/
 .text-70, footer .newsletter .text-70, .noticias h2.text-70 {
     font-size: 40px;
 }
@@ -3545,8 +3545,8 @@ figure.effect-sadie:hover h2 {
 }
 .grid8 figure.effect-sadie:hover h3, .grid9 figure.effect-sadie:hover h3 {
 	color: #fff;
-	-webkit-transform: translate3d(0, -50%, 0) translate3d(0, -50px, 0);
-	transform: translate3d(0, -50%, 0) translate3d(0, -95px, 0);
+	/*-webkit-transform: translate3d(0, -50%, 0) translate3d(0, -50px, 0);
+	transform: translate3d(0, -50%, 0) translate3d(0, -95px, 0);*/
 }
 .serv-compl ul {
 	margin-left: 6%;
