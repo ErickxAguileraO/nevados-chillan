@@ -13,12 +13,12 @@ class Slider extends CI_Controller {
         $this->img->min_alto_1 = 164.25;
         
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_1 = 1580;
-        $this->img->max_alto_1 = 1580;
+        $this->img->max_ancho_1 = 3160;
+        $this->img->max_alto_1 = 3160;
         
         #define el tamaño del recorte
-        $this->img->recorte_ancho_1 = 1580;
-        $this->img->recorte_alto_1 = 350;
+        $this->img->recorte_ancho_1 = 3160;
+        $this->img->recorte_alto_1 = 700;
         
         $this->img->upload_dir = '/imagenes/modulos/invierno/slider/';
         

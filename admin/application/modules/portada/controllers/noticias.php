@@ -13,12 +13,12 @@ class Noticias extends CI_Controller {
         $this->img->min_alto_1 = 180;
         
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_1 = 1080;
-        $this->img->max_alto_1 = 720;
+        $this->img->max_ancho_1 = 2160;
+        $this->img->max_alto_1 = 1440;
         
         #define el tamaño del recorte
-        $this->img->recorte_ancho_1 = 540;
-        $this->img->recorte_alto_1 = 360;
+        $this->img->recorte_ancho_1 = 1080;
+        $this->img->recorte_alto_1 = 720;
         
         $this->img->upload_dir = '/imagenes/modulos/portada/noticias/';
         
