@@ -14,8 +14,8 @@ class Accesos_directos extends CI_Controller {
         $this->img->min_alto_1 = 309.5;
         
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_1 = 640;
-        $this->img->max_alto_1 = 640;
+        $this->img->max_ancho_1 = 960;
+        $this->img->max_alto_1 = 929;
         
         #define el tamaño del recorte
         $this->img->recorte_ancho_1 = 960;
@@ -27,8 +27,8 @@ class Accesos_directos extends CI_Controller {
         $this->img->min_alto_2 = 167.5;
         
         #define el tamaño de la imagen grande
-        $this->img->max_ancho_2 = 640;
-        $this->img->max_alto_2 = 640;
+        $this->img->max_ancho_2 = 960;
+        $this->img->max_alto_2 = 503;
         
         #define el tamaño del recorte
         $this->img->recorte_ancho_2 = 960;
