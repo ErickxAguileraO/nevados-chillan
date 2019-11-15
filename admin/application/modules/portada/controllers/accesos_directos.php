@@ -10,8 +10,8 @@ class Accesos_directos extends CI_Controller {
         
         #imagen 1
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_1 = 320;
-        $this->img->min_alto_1 = 309.5;
+        $this->img->min_ancho_1 = 480;
+        $this->img->min_alto_1 = 464;
         
         #define el tamaño de la imagen grande
         $this->img->max_ancho_1 = 960;
@@ -23,8 +23,8 @@ class Accesos_directos extends CI_Controller {
         
         #imagen 2
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_2 = 320;
-        $this->img->min_alto_2 = 167.5;
+        $this->img->min_ancho_2 = 480;
+        $this->img->min_alto_2 = 464;
         
         #define el tamaño de la imagen grande
         $this->img->max_ancho_2 = 960;
