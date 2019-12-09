@@ -212,6 +212,7 @@ class Slider extends CI_Controller {
         $this->img->id = $this->input->post('id');
         $this->objImagen->config($this->img);
         
+     
         $response =  $this->objImagen->cortar_imagen($_POST);
         echo json_encode($response);
 	}
