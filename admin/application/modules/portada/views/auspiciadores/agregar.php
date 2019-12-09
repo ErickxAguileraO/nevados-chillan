@@ -9,7 +9,7 @@
             	<label>Nombre (*) </label>
                 <input type="text" class="form-control validate[required]" name="nombre" />
                 
-                <label>Imagen adjunta. Tamaño 130px x 100px</label>
+                <label>Imagen adjunta. Tamaño 260px x 200px</label>
                 <input type="file" class="form-control" name="imagen" />
                 
                 <label>Orden</label>

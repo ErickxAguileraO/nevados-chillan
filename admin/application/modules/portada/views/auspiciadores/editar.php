@@ -9,7 +9,7 @@
             	<label>Nombre (*) </label>
                 <input type="text" class="form-control validate[required]" name="nombre" value="<?php echo $auspiciador->nombre; ?>" />
                 
-                <label>Imagen adjunta. Tamaño 130px x 100px</label>
+                <label>Imagen adjunta. Tamaño 260px x 200px</label>
                 <input type="file" class="form-control" name="imagen" />
                 <?php if($auspiciador->imagen_adjunta){ ?>
                     <img width="145" style="height: auto; margin-top:10px;" src="<?php echo $auspiciador->imagen_adjunta; ?>" />

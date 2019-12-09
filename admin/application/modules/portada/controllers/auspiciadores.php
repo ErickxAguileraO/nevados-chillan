@@ -144,8 +144,8 @@ class Auspiciadores extends CI_Controller {
         		$configU['allowed_types'] = 'png';
                 $configU['file_name'] = $nombre;
         		#$configU['max_size']	= '100';
-                $config['max_width']  = '130';
-                $config['max_height']  = '100';
+                $config['max_width']  = '260';
+                $config['max_height']  = '200';
         		$this->load->library('upload', $configU);
                 
         		if(!$this->upload->do_upload('imagen'))
