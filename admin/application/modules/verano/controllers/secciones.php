@@ -32,13 +32,13 @@ class Secciones extends CI_Controller {
         $this->img->min_ancho_2 = 270;
         $this->img->min_alto_2 = 172.5;
         
-        #define el tamaño de la imagen grande
-        $this->img->max_ancho_2 = 540;
-        $this->img->max_alto_2 = 540;
-        
-        #define el tamaño del recorte
-        $this->img->recorte_ancho_2 = 540;
-        $this->img->recorte_alto_2 = 345;
+         #define el tamaño de la imagen grande
+         $this->img->max_ancho_2 = 810;
+         $this->img->max_alto_2 = 810;
+         
+         #define el tamaño del recorte
+         $this->img->recorte_ancho_2 = 810;
+         $this->img->recorte_alto_2 = 517;
         
         $this->img->upload_dir = '/imagenes/modulos/verano/secciones/';
         
