@@ -37,7 +37,13 @@
             <li><a href="/verano/">Outdoor</a></li>
           </ul>
         </li>
-        <li><a href="/necesitas-ayuda/faqs/" title="Preguntas frecuentes: Tecla de Acceso 8" accesskey="8">Preguntas frecuentes</a></li>
+        <li><a href="#" title="Ayuda: Tecla de Acceso 8" accesskey="8">Ayuda</a>
+          <ul class="submenu sub-ayuda">
+            <li><a href="/necesitas-ayuda/como-llegar/">Como llegar</a></li>
+            <li><a href="/necesitas-ayuda/faqs/">Preguntas frecuentes</a></li>
+            <li><a href="/necesitas-ayuda/condiciones/">Condiciones</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     <?php /*?><div class="nav" id="nav">

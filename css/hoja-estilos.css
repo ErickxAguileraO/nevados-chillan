@@ -1127,6 +1127,10 @@ footer .informacion  .grid-footer-2{
 }
 
 /***********************/
+.sub-ayuda{
+	left: -130px !important;
+    width: 230px !important;
+}
 
 
 /***** MENU RESPONSIVE ***/
