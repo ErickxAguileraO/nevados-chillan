@@ -27,8 +27,12 @@
 <?php echo $this->layout->getCss(); ?>
 <!-- js -->
 <?php echo $this->layout->getJs(); ?>
+<!-- Google Tag Manager -->
 
-<?php echo $generales->tag_manager_header?>
+<script><?php echo $generales->tag_manager_header?></script>
+
+<!-- End Google Tag Manager -->
+
 
 <script>
     $(document).ready(function() {
