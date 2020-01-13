@@ -52,9 +52,9 @@ class Datos_generales extends CI_Controller {
             $datos['dag_metadato_descripcion'] = $this->input->post('metadato_descripcion');
             $datos['dag_metadato_keywords'] = $this->input->post('metadato_keywords');
 
-            #Tag Manager
-            $datos['dag_tag_manager_header'] = htmlspecialchars_decode( $this->input->post('tag_manager_header'));
-            $datos['dag_tag_manager_body'] = htmlspecialchars_decode($this->input->post('tag_manager_body'));
+            // #Tag Manager
+            // $datos['dag_tag_manager_header'] = htmlspecialchars_decode( $this->input->post('tag_manager_header'));
+            // $datos['dag_tag_manager_body'] = htmlspecialchars_decode($this->input->post('tag_manager_body'));
 
             #reservas
             $datos['dag_reserva_telefono'] = $this->input->post('reserva_telefono');

@@ -7,7 +7,7 @@
     
         <!-- metadatos -->
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
-            <?php print_array($datos) ;?>
+            
             <div class="col-md-5">
                 <h3>Metadatos</h3>
                 
@@ -20,11 +20,11 @@
                 <label>Palabras Claves</label>
                 <textarea class="form-control" name="metadato_keywords" rows="3"><?php echo ($datos)?$datos->metadato_keywords:''; ?></textarea>
 
-                <label>Tag Manager Header</label>
+                <!-- <label>Tag Manager Header</label>
                 <textarea class="form-control" name="tag_manager_header" rows="6"><?php echo ($datos)?$datos->tag_manager_header:''; ?></textarea>
 
                 <label>Tag Manager Body</label>
-                <textarea class="form-control" name="tag_manager_body" rows="6"><?php echo ($datos)?$datos->tag_manager_body:''; ?></textarea>
+                <textarea class="form-control" name="tag_manager_body" rows="6"><?php echo ($datos)?$datos->tag_manager_body:''; ?></textarea> -->
         	</div>
 
 
