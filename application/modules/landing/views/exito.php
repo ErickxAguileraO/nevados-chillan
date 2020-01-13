@@ -24,6 +24,15 @@
 <script type="text/javascript" src="/js/sistema/landing/detalle.js"></script> 
 <script type="text/javascript" src='/js/sistema/newsletter/index.js'></script> 
 <script type="text/javascript" src="/js/jquery/venobox/venobox.min.js">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KT75JBJ');</script>
+<!-- End Google Tag Manager -->
+
 <!-- web fonts -->
 <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 <script>
@@ -41,6 +50,11 @@ $(document).ready(function(){
 }</style>"?>
 <?= $css?>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT75JBJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <header>
   <div class="contenedor"> <img src="/imagenes/logo-header2.png" class="logo-header">
     <div class="texto">
