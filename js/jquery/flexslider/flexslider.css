@@ -236,6 +236,11 @@ html[xmlns] .slides {
 	opacity: 1;
 	cursor: default;
 }
+@media screen and (min-width: 1280px){
+	.flex-control-nav{
+		bottom: 90px;
+	}
+}
 @media screen and (max-width: 1290px) {
 .flexslider ul li{
 	height: 545px;
