@@ -27,6 +27,9 @@
 <?php echo $this->layout->getCss(); ?>
 <!-- js -->
 <?php echo $this->layout->getJs(); ?>
+
+<?php echo $generales->tag_manager_header?>
+
 <script>
     $(document).ready(function() {
         $('#idioma li a ,#idioma2 li a').click(function () {
@@ -131,6 +134,8 @@
 </script>
 </head>
 <body>
+<?php echo $generales->tag_manager_body?>
+
 <?php /*?><div class="bg-footer"></div><?php */?>
 <div id="wrapper">
     <header>
