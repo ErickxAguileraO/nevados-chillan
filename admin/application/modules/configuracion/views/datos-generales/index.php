@@ -7,7 +7,7 @@
     
         <!-- metadatos -->
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
-            <?php print_array(datos) ;?>
+            <?php print_array($datos) ;?>
             <div class="col-md-5">
                 <h3>Metadatos</h3>
                 
