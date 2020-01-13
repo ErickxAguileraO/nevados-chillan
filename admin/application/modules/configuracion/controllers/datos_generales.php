@@ -51,7 +51,11 @@ class Datos_generales extends CI_Controller {
             $datos['dag_metadato_titulo'] = $this->input->post('metadato_titulo');
             $datos['dag_metadato_descripcion'] = $this->input->post('metadato_descripcion');
             $datos['dag_metadato_keywords'] = $this->input->post('metadato_keywords');
-            
+
+            #Tag Manager
+            $datos['dag_tag_manager_header'] = $this->input->post('tag_manager_header');
+            $datos['dag_tag_manager_body'] = $this->input->post('tag_manager_body');
+
             #reservas
             $datos['dag_reserva_telefono'] = $this->input->post('reserva_telefono');
             $datos['dag_reserva_telefono_extranjero'] = $this->input->post('reserva_telefono_extranjero');

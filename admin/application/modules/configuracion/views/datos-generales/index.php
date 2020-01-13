@@ -19,7 +19,15 @@
                 
                 <label>Palabras Claves</label>
                 <textarea class="form-control" name="metadato_keywords" rows="3"><?php echo ($datos)?$datos->metadato_keywords:''; ?></textarea>
+
+                <label>Tag Manager Header</label>
+                <textarea class="form-control" name="tag_manager_header" rows="3"><?php echo ($datos)?$datos->tag_manager_header:''; ?></textarea>
+
+                <label>Tag Manager Body</label>
+                <textarea class="form-control" name="tag_manager_body" rows="3"><?php echo ($datos)?$datos->tag_manager_body:''; ?></textarea>
         	</div>
+
+
        	</div>
         
         <!-- reservas -->
