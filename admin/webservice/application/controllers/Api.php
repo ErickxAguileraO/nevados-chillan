@@ -821,7 +821,7 @@ class Api extends REST_Controller
                 $this->response($response, 400);
             }
            
-            if(!$this->post('campos')){
+            if(!$this->input->post('campos')){
                 $response = array(
                     "result" => false,
                     "msg" => 'Debe indicar los campos a insertar'
