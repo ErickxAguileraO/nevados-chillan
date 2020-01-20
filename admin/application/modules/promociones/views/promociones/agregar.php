@@ -36,7 +36,7 @@
                 <input type="text" class="form-control" name="precio_anterior" />
 
                 <label>Resumen (*) </label>
-                <textarea class="form-control" rows="3"  id="descripcion" name="descripcion"></textarea>
+                <textarea class="form-control" rows="3"  id="resumen" name="resumen"></textarea>
 
 
                 <script>

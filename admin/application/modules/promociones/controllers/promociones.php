@@ -128,7 +128,7 @@ class Promociones extends CI_Controller {
             $datos['pro_evento'] = $this->input->post('evento');
 
             $datos['pro_estado'] = $this->input->post('estado');
-            print_array($datos);die;
+            #print_array($datos);die;
             $id = $this->ws->insertar($this->modulo,$datos); #23 promociones
             $codigo = $id->pro_codigo;
               
