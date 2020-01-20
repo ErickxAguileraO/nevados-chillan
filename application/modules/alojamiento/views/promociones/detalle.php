@@ -139,13 +139,13 @@
     <div class="block-dscto">
       <ul class="dcto img-rounded">
         <?php if($promocion->descuento_uno != "") { ?>
-          <li style="cursor:pointer;" class="li_blue_promocion li_promocion" id="descuento_uno"><?=$promocion->descuento_uno?> dcto</li>
+          <li style="cursor:pointer;" class="li_blue_promocion li_promocion" id="descuento_uno"><?=$promocion->descuento_uno?> </li>
         <?php } ?>
         <?php if($promocion->descuento_dos != "") { ?>
-        <li  style="cursor:pointer;" class="li_promocion" id="descuento_dos"><?=$promocion->descuento_dos?> dcto</li>
+        <li  style="cursor:pointer;" class="li_promocion" id="descuento_dos"><?=$promocion->descuento_dos?> </li>
         <?php } ?>
         <?php if($promocion->descuento_tres != "") { ?>
-        <li style="cursor:pointer;"  class="li_promocion" id="descuento_tres"><?=$promocion->descuento_tres?> dcto</li>
+        <li style="cursor:pointer;"  class="li_promocion" id="descuento_tres"><?=$promocion->descuento_tres?> </li>
         <?php } ?>
       </ul>
         <?php if($promocion->descuento_uno != "") { ?>
@@ -167,7 +167,7 @@
 
       <?php } ?>
       </ul>
-      <p><?=html_entity_decode($promocion->resumen)?></p>
+      <p><?=html_entity_decode($promocion->descripcion)?></p>
     </div>
     <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
       <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
