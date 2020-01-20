@@ -14,18 +14,18 @@
                 
 
                 <label>Descuento 1 (*) </label>
-                <input type="text" class="form-control" onkeyup="this.value=descuento(this.value)" name="descuento_uno" />
+                <input type="text" class="form-control" name="descuento_uno" />
                 <label>Monto 1 (*) </label>
                 <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_uno" />
 
                 <label>Descuento 2 (*) </label>
-                <input type="text" class="form-control" onkeyup="this.value=descuento(this.value)" name="descuento_dos" />
+                <input type="text" class="form-control" name="descuento_dos" />
                 <label>Monto 2 (*) </label>
                 <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_dos" />
 
 
                 <label>Descuento 3 (*) </label>
-                <input type="text" class="form-control" onkeyup="this.value=descuento(this.value)" name="descuento_tres" />
+                <input type="text" class="form-control" name="descuento_tres" />
                 <label>Monto 3 (*) </label>
                 <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_tres" />
 
