@@ -109,19 +109,18 @@ class Promociones extends CI_Controller {
             
             $datos['pro_descuento_uno'] = $this->input->post('descuento_uno');
             $datos['pro_monto_uno'] = $this->input->post('monto_uno');
+            $datos['pro_resumen_1'] = $this->input->post('resumen_1');
 
             $datos['pro_descuento_dos'] = $this->input->post('descuento_dos');
             $datos['pro_monto_dos'] = $this->input->post('monto_dos');
+            $datos['pro_resumen_2'] = $this->input->post('resumen_2');
 
             $datos['pro_descuento_tres'] = $this->input->post('descuento_tres');
             $datos['pro_monto_tres'] = $this->input->post('monto_tres');
+            $datos['pro_resumen_3'] = $this->input->post('resumen_3');
 
             $datos['pro_codigo_promocion'] = $this->input->post('codigo_promocion');
-            $datos['pro_precio_anterior'] = $this->input->post('precio_anterior');
-
-
-            $datos['pro_resumen'] = $this->input->post('resumen');
-          
+            $datos['pro_precio_anterior'] = $this->input->post('precio_anterior'); 
 
 
 
@@ -258,18 +257,21 @@ class Promociones extends CI_Controller {
 
             $datos['pro_descuento_uno'] = $this->input->post('descuento_uno');
             $datos['pro_monto_uno'] = $this->input->post('monto_uno');
+            $datos['pro_resumen_1'] = $this->input->post('resumen_1');
 
             $datos['pro_descuento_dos'] = $this->input->post('descuento_dos');
             $datos['pro_monto_dos'] = $this->input->post('monto_dos');
+            $datos['pro_resumen_2'] = $this->input->post('resumen_2');
 
             $datos['pro_descuento_tres'] = $this->input->post('descuento_tres');
             $datos['pro_monto_tres'] = $this->input->post('monto_tres');
+            $datos['pro_resumen_3'] = $this->input->post('resumen_3');
 
             $datos['pro_codigo_promocion'] = $this->input->post('codigo_promocion');
             $datos['pro_precio_anterior'] = $this->input->post('precio_anterior');
 
 
-            $datos['pro_resumen'] = $this->input->post('resumen');
+            
 
             if(!$this->input->post('invierno')){
                  $datos['pro_invierno'] =  0; 

@@ -17,26 +17,30 @@
                 <input type="text" class="form-control" name="descuento_uno" />
                 <label>Monto 1 (*) </label>
                 <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_uno" />
+                <label>Resumen 1 (*) </label>
+                <textarea class="form-control" rows="3"  id="resumen_1" name="resumen_1"></textarea>
 
                 <label>Descuento 2 (*) </label>
                 <input type="text" class="form-control" name="descuento_dos" />
                 <label>Monto 2 (*) </label>
                 <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_dos" />
-
+                <label>Resumen 2 (*) </label>
+                <textarea class="form-control" rows="3"  id="resumen_2" name="resumen_2"></textarea>
 
                 <label>Descuento 3 (*) </label>
                 <input type="text" class="form-control" name="descuento_tres" />
                 <label>Monto 3 (*) </label>
                 <input type="text" class="form-control"  onkeyup="this.value=monto(this.value)" name="monto_tres" />
-
+                <label>Resumen 3 (*) </label>
+                <textarea class="form-control" rows="3"  id="resumen_3" name="resumen_3"></textarea>
+                
                 <label>Código (*) </label>
                 <input type="text" class="form-control" name="codigo_promocion" />
 
                 <label>Precio anterior (*) </label>
                 <input type="text" class="form-control" name="precio_anterior" />
 
-                <label>Resumen (*) </label>
-                <textarea class="form-control" rows="3"  id="resumen" name="resumen"></textarea>
+                
 
 
                 <script>
