@@ -167,7 +167,7 @@
 
       <?php } ?>
       </ul>
-      <p><?=html_entity_decode($promocion->descripcion)?></p>
+      <p><?=html_entity_decode($promocion->resumen)?></p>
     </div>
     <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
       <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
