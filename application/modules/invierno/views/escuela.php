@@ -260,66 +260,39 @@
 <?php }?>
 <!-- Fin Secciones --> 
 <!-- inicio Seccion Valores -->
-<div class="valores-seccion" style="background: none; padding-bottom: 60px;">
-  <h2>Programas y valores</h2>
-  <div class="block-table">
-    <div class="center">
-      <div class="block-tr">
-        <div class="block-th">
-          <h3>Ticket Full</h3>
-          <ul>
-            <li>Temporada alta</li>
-            <li>13-28 JUL ·  3,4,10,11 AGO - 15-18 AGO - 24,25 AGO</li>
-          </ul>
-        </div>
-        <div class="block-td">
-          <h4>Adulto (12+)</h4>
-          <span class="valor">$48.000</span> <span class="condiciones">79 USD</span> </div>
-        <div class="block-td">
-          <h4>Menor (6-11)</h4>
-          <span class="valor">$38.000</span> <span class="condiciones">62 USD</span> </div>
-        <div class="block-td">
-          <h4>Niño (0-5)</h4>
-          <span class="valor">$0</span> <span class="condiciones">FREE</span> </div>
-      </div>
-      <div class="block-tr">
-        <div class="block-th">
-          <h3>Ticket Full</h3>
-          <ul>
-            <li>Temporada alta</li>
-            <li>13-28 JUL ·  3,4,10,11 AGO - 15-18 AGO - 24,25 AGO</li>
-          </ul>
-        </div>
-        <div class="block-td">
-          <h4>Adulto (12+)</h4>
-          <span class="valor">$48.000</span> <span class="condiciones">79 USD</span> </div>
-        <div class="block-td">
-          <h4>Menor (6-11)</h4>
-          <span class="valor">$38.000</span> <span class="condiciones">62 USD</span> </div>
-        <div class="block-td">
-          <h4>Niño (0-5)</h4>
-          <span class="valor">$0</span> <span class="condiciones">FREE</span> </div>
-      </div>
-      <div class="block-tr">
-        <div class="block-th">
-          <h3>Ticket Full</h3>
-          <ul>
-            <li>Temporada alta</li>
-            <li>13-28 JUL ·  3,4,10,11 AGO - 15-18 AGO - 24,25 AGO</li>
-          </ul>
-        </div>
-        <div class="block-td">
-          <h4>Adulto (12+)</h4>
-          <span class="valor">$48.000</span> <span class="condiciones">79 USD</span> </div>
-        <div class="block-td">
-          <h4>Menor (6-11)</h4>
-          <span class="valor">$38.000</span> <span class="condiciones">62 USD</span> </div>
-        <div class="block-td">
-          <h4>Niño (0-5)</h4>
-          <span class="valor">$0</span> <span class="condiciones">FREE</span> </div>
+<div class="valores-seccion" id="valores" >
+<h2>Programas y Valores</h2>
+<div class="block-table">
+      <div class="center">
+        <?php if($programas){           
+            foreach($programas as $pro) {           
+          ?>
+          <div class="block-tr">
+            <div class="block-th">
+              <h3><?=$pro->titulo?></h3>
+              <ul>
+                <li><?=$pro->bajada_uno?></li>
+                <li><?=$pro->bajada_dos?></li>
+              </ul>
+            </div>
+
+              <?php foreach($pro->opciones as $op ){ ?>
+            <div class="block-td">
+              <h4><?=$op->nombre?></h4>
+              <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
+            </div>
+              <?php } ?>
+
+          </div>
+          <?php
+            }
+          }
+          
+          ?>
+
       </div>
     </div>
-  </div>
+  
   <?php /*?><div class="center valores">
     <?php $cant = explode("<table",$valores->contenido); $cant = count($cant)-1;
     if($cant == 1){
