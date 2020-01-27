@@ -214,7 +214,7 @@ foreach($secciones_menu as $aux){
             	<ul>
             		<li><a href="/escuela/conoce-nuestras-instalaciones/">Conoce Nuestras Instalaciones</a></li>
             		<li><a href="/escuela/profesor-guia/">Profesor Guía</a></li>
-            		<li><a href="/escuela/programas-valores/">Programas y Valores</a></li>
+            		<li><a href="/escuela/programas/">Programas y Valores</a></li>
                     <li><a href="/escuela/secciones/">Secciones</a></li>
             	</ul>
             </li>
