@@ -35,7 +35,14 @@ class Layout {
 		$this->js('/js/jquery/scrollto/jquery.goup.js');
 		$this->js('/js/jquery/ui/1.12.1/jquery-ui-1.12.1.custom.js');
 		$this->js('/js/jquery/ui/1.10.4/jquery.ui.datepicker-es.js');
-		$this->js('/js/sistema/template/index.js');
+        $this->js('/js/sistema/template/index.js');
+        
+        #JS - Calendario
+		$this->css('/js/jquery/bootstrap-datepicker/css/bootstrap-datepicker3.css');
+		$this->js('/js/jquery/bootstrap-datepicker/bootstrap.min.js');
+		$this->js('/js/jquery/bootstrap-datepicker/bootstrap-datepicker.js');
+        $this->js('/js/jquery/bootstrap-datepicker/locales/bootstrap-datepicker.es.js');
+        $this->js('/js/jquery/bootstrap-datepicker/datepicker_init.js');
 
 		#Menu responsive
 		$this->css('/js/jquery/responsive-nav/responsive-nav.css');

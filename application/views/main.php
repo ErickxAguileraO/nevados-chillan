@@ -227,7 +227,7 @@
             <li>
               <label for="calendario">Fecha llegada</label>
               <br />
-              <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
+              <input id="calendario" class="datepickerfix" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
             </li>
             <li>
               <label for="noches_r">Noches</label>
