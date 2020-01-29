@@ -207,6 +207,7 @@ body {
 	height: 79px;
 	text-indent: -999px;
 	background: url(/imagenes/template/logo_nevados_blanco.png) no-repeat;
+	background-size: contain;
 }
 #logo a{
 	display:inline-block;
