@@ -1132,6 +1132,9 @@ footer .informacion  .grid-footer-2{
     width: 230px !important;
 }
 
+.valores-seccion .block-table{
+	margin-bottom: 50px;
+}
 
 /***** MENU RESPONSIVE ***/
 .lower {
@@ -1275,8 +1278,7 @@ footer .informacion  .grid-footer-2{
 	display: none;
 }
 .cont2 {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 70px;
 }
 .cont2 .texto, .seccion-fondo .texto {
 	width: 45%;
@@ -3208,7 +3210,7 @@ footer .newsletter fieldset{ width:auto;}
 .texto-habitaciones, .cont2 .texto {
  width: 70%;
  float: none !important;
- padding: 60px 0;
+ padding: 30px 0;
  margin: 0 auto;
 }
 .grid8 figure.effect-sadie:hover h3, .grid9 figure.effect-sadie:hover h3 {
@@ -3529,7 +3531,6 @@ figure.effect-sadie:hover h2 {
 .cont2 .texto, .seccion-fondo .texto {
 	width: 100%;
 	float: none !important;
-	margin-top: 60px;
 }
 /*.cont2 .texto h2, .seccion-fondo .texto h2, .cont2 .texto .bajada, .seccion-fondo .texto .bajada, .cont2 .texto p, .seccion-fondo .texto p, .texto-habitaciones .texto h2, .texto-habitaciones .bajada, .texto-habitaciones .texto p {
 	text-align: center;
@@ -3662,6 +3663,9 @@ figure.effect-sadie:hover h2 {
 .background-reserva-header { height: 90px;}
 .top-figure figure img{ width:auto; height: 40px;}*/
 
+.cont2 {
+	margin-top: 0px;
+}
 .formulario-reserva ul li {
 	width: 25%;
 	margin: 7px 0;
