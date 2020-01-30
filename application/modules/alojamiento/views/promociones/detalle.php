@@ -135,7 +135,7 @@
 
 </style>
     
-<?php if($promocion->descuento_uno!="" or $promocion->descuento_dos!="" or $promocion->descuento_tres!="" or $promocion->monto_uno!="" or  $promocion->monto_dos!="" or  $promocion->monto_tres !="" or   $promocion->codigo_promocion !="" or  $promocion->resumen !="" or  $promocion->precio_anterior!="" ) { ?>
+<?php if($promocion->descuento_uno!="" or $promocion->descuento_dos!="" or $promocion->descuento_tres!="" or $promocion->monto_uno!="" or  $promocion->monto_dos!="" or  $promocion->monto_tres !="" or   $promocion->codigo_promocion !="" or  $promocion->resumen_1 !="" or  $promocion->resumen_2 !="" or  $promocion->resumen_3 !="" or  $promocion->precio_anterior!="" ) { ?>
     <div class="block-dscto">
       <ul class="dcto img-rounded">
         <?php if($promocion->descuento_uno != "") { ?>
@@ -167,7 +167,15 @@
 
       <?php } ?>
       </ul>
-      <p><?=html_entity_decode($promocion->resumen)?></p>
+      <?php if($promocion->resumen_1):?>
+        <p id="monto_uno" ><?=html_entity_decode($promocion->resumen_1)?></p>
+      <?php endif; ?>
+      <?php if($promocion->resumen_2):?>
+        <p style="display:none;"  id="monto_dos" ><?=html_entity_decode($promocion->resumen_2)?></p>
+      <?php endif; ?>
+      <?php if($promocion->resumen_3):?>
+        <p style="display:none;"  id="monto_tres" ><?=html_entity_decode($promocion->resumen_3)?></p>
+      <?php endif; ?>
     </div>
     <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
       <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
@@ -175,7 +183,7 @@
         <li>
           <label for="calendario">Fecha llegada</label>
           <br />
-          <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
+          <input id="calendario" class="datepickerfix" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
         </li>
         <li class="dos">
           <label for="noches">Noches</label>
@@ -301,21 +309,30 @@
 	$(".li_promocion").removeClass("li_blue_promocion");
 	$("#descuento_uno").addClass("li_blue_promocion");
 	$('#monto_uno').show();
+  $('#resumen_uno').show();
 	$('#monto_dos').hide();
+  $('#resumen_dos').hide();
 	$('#monto_tres').hide();
+  $('#resumen_tres').hide();
   });
   $("#descuento_dos").click(function(){
 	$(".li_promocion").removeClass("li_blue_promocion");
 	$("#descuento_dos").addClass("li_blue_promocion");
 	$('#monto_uno').hide();
+  $('#resumen_uno').hide();
 	$('#monto_dos').show();
+  $('#resumen_dos').show();
 	$('#monto_tres').hide();
+  $('#resumen_tres').hide();
   });
   $("#descuento_tres").click(function(){
 	$(".li_promocion").removeClass("li_blue_promocion");
 	$("#descuento_tres").addClass("li_blue_promocion");
 	$('#monto_uno').hide();
+  $('#resumen_uno').hide();
 	$('#monto_dos').hide();
+  $('#resumen_dos').hide();
 	$('#monto_tres').show();
+  $('#resumen_tres').show();
   });
 </script>
