@@ -168,13 +168,13 @@
       <?php } ?>
       </ul>
       <?php if($promocion->resumen_1):?>
-        <p id="monto_uno" ><?=html_entity_decode($promocion->resumen_1)?></p>
+        <p id="resumen_uno" ><?=html_entity_decode($promocion->resumen_1)?></p>
       <?php endif; ?>
       <?php if($promocion->resumen_2):?>
-        <p style="display:none;"  id="monto_dos" ><?=html_entity_decode($promocion->resumen_2)?></p>
+        <p style="display:none;"  id="resumen_dos" ><?=html_entity_decode($promocion->resumen_2)?></p>
       <?php endif; ?>
       <?php if($promocion->resumen_3):?>
-        <p style="display:none;"  id="monto_tres" ><?=html_entity_decode($promocion->resumen_3)?></p>
+        <p style="display:none;"  id="resumen_tres" ><?=html_entity_decode($promocion->resumen_3)?></p>
       <?php endif; ?>
     </div>
     <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
