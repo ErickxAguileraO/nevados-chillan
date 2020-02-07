@@ -224,10 +224,15 @@
         <fieldset>
           <?php /*?><legend>Reservar Ahora</legend><?php */?>
           <ul>
-            <li>
+            <li class="ancho-calendar">
               <label for="calendario">Fecha llegada</label>
               <br />
-              <input id="calendario" class="datepickerfix" translate="no"  name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
+              <input type="date" style="width: 150px; padding: 3px;">
+              <!--<input type="text" id="example">-->
+
+               <!--<input type="text" id="datepicker" onchange="console.log(d.getDate())" autocomplete="off">-->
+
+              <!--<input id="calendario" translate="no"  name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />-->
             </li>
             <li>
               <label for="noches_r">Noches</label>
@@ -259,3 +264,61 @@
     </div>
   </div>
 </div>
+
+
+        <!-- Datepicker initialization -->
+        <script>
+(function(){
+
+  'use strict';
+  var dayNamesShort = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var icon = '<svg viewBox="0 0 512 512"><polygon points="268.395,256 134.559,121.521 206.422,50 411.441,256 206.422,462 134.559,390.477 "/></svg>';
+  var root = document.getElementById('picker');
+  var dateInput = document.getElementById('date');
+  var altInput = document.getElementById('alt');
+  var doc = document.documentElement;
+  function format ( dt ) {
+    return Picker.prototype.pad(dt.getDate()) + ' ' + monthNames[dt.getMonth()].slice(0,3) + ' ' + dt.getFullYear();
+  }
+  function show ( ) {
+    root.removeAttribute('hidden');
+  }
+  function hide ( ) {
+    root.setAttribute('hidden', '');
+    doc.removeEventListener('click', hide);
+  }
+  function onSelectHandler ( ) {
+    var value = this.get();
+    if ( value.start ) {
+      dateInput.value = value.start.Ymd();
+      altInput.value = format(value.start);
+      hide();
+    }
+  }
+  var picker = new Picker(root, {
+    min: new Date(dateInput.min),
+    max: new Date(dateInput.max),
+    icon: icon,
+    twoCalendars: false,
+    dayNamesShort: dayNamesShort,
+    monthNames: monthNames,
+    onSelect: onSelectHandler
+  });
+  root.parentElement.addEventListener('click', function ( e ) { e.stopPropagation(); });
+  dateInput.addEventListener('change', function ( ) {
+    if ( dateInput.value ) {
+      picker.select(new Date(dateInput.value));
+    } else {
+      picker.clear();
+    }
+  });
+  altInput.addEventListener('focus', function ( ) {
+    altInput.blur();
+    show();
+    doc.addEventListener('click', hide, false);
+  });
+}());
+
+
+        </script>
