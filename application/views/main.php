@@ -227,7 +227,7 @@
             <li class="ancho-calendar">
               <label for="calendario">Fecha llegada</label>
               <br />
-              <input type="date" name="FECHA_CHECKIN" style="width: 150px;font-family: roboto;height: 28px;font-size: 13px;" value="<?=date('Y-m-d')?>">
+              <input type="date" name="FECHA_CHECKIN" value="<?=date('Y-m-d')?>" />
               <!--<input type="text" id="example">-->
 
                <!--<input type="text" id="datepicker" onchange="console.log(d.getDate())" autocomplete="off">-->

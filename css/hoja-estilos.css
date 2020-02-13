@@ -281,7 +281,7 @@ body {
 
 
 .formulario-reserva {
-	width: 750px;
+	width: 700px;
 	margin-left:auto;
 	padding-top:5px;
 }
@@ -297,8 +297,13 @@ body {
 }
 
 .formulario-reserva ul li {
+	font-family:'Roboto Condensed', sans-serif;
 	display: inline-block;
-	width: 110px;
+	width: 105px;
+}
+
+.formulario-reserva ul li.ancho-calendar{
+	width: 130px;
 }
 .formulario-reserva ul li.dos{ width:90px;}
 .formulario-reserva ul li label {
@@ -307,21 +312,27 @@ body {
 }
 .formulario-reserva ul li input[type="text"], .formulario-reserva ul li input[type="date"] {
 	font-size: 14px;
+	line-height: 29px;
 	color: #00274c;
 	width: 90%;
-	padding: 5px 8px;
+	padding: 0 8px;
 	margin-top: 4px;
 	border: 1px solid #FFF;
 }
+
+.formulario-reserva ul li input[type="date"]{ padding-left: 6px;}
 .formulario-reserva.movil-res ul li label{ color: #004f8d;}
 .formulario-reserva.movil-res ul li input[type="text"] {border: 1px solid #000;}
 .formulario-reserva ul li input[type="text"], .formulario-reserva ul li input[type="date"], .btn-enviar {
+	font-family:'Roboto Condensed', sans-serif;
+	font-size:15px;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	-ms-border-radius: 6px;
 	-khtml-border-radius: 6px;
 }
+
 .btn-enviar {
 	margin-top: 30px;
 	width: 100%;
@@ -2883,9 +2894,6 @@ hr {
 }*/
 
 
-.ancho-calendar{
-	width: 160px !important;
-}
 
 
 /********** RESPONSIVE **********/
@@ -2962,7 +2970,7 @@ footer .informacion .coll-footer ul li:last-child {
 .block-dscto .dcto li{ font-size:34px;}
 .block-dscto .valor-promocion{ font-size:100px;}
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1051px) {
 .texto-reserva {
 	width: 100%;
 	float: none;
@@ -3048,6 +3056,10 @@ footer .informacion .coll-footer ul li:last-child {
 }
 h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 { font-size: 60px;}
 
+.formulario-reserva { width: 590px;}
+.formulario-reserva ul li { width: 90px;}
+.formulario-reserva ul li.ancho-calendar { width: 120px;}
+.formulario-reserva ul li input[type="text"], .formulario-reserva ul li input[type="date"]{ width: 96%;}
 }
 @media screen and (max-width: 1024px) {
 .lower { top: 40%;}
@@ -3086,13 +3098,6 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 .wase-btn{
 	float: none;
 	margin-bottom: 40px;
-}
-.formulario-reserva { width: 614px;}
-.formulario-reserva ul li { width: 100px;}
-
-
-.formulario-reserva ul li input[type="text"]{
-	width: 96%;
 }
 .texto-slider h2, .full-texto-slider h2 { font-size: 70px;}
 }
