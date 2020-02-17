@@ -303,7 +303,7 @@ body {
 }
 
 .formulario-reserva ul li.ancho-calendar{
-	width: 130px;
+	width: 154px;
 }
 .formulario-reserva ul li.dos{ width:90px;}
 .formulario-reserva ul li label {
@@ -3058,7 +3058,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 
 .formulario-reserva { width: 590px;}
 .formulario-reserva ul li { width: 90px;}
-.formulario-reserva ul li.ancho-calendar { width: 120px;}
+.formulario-reserva ul li.ancho-calendar { width: 128px;}
 .formulario-reserva ul li input[type="text"], .formulario-reserva ul li input[type="date"]{ width: 96%;}
 }
 @media screen and (max-width: 1024px) {
