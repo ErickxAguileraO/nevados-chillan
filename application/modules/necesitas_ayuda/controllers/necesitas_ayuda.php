@@ -374,9 +374,10 @@ public function descargar_archivo(){
 
 			$codigo = $this->uri->segment(4);
       $archivo = $this->ws->obtener(58,"cor_codigo = $codigo");
-      print_array($archivo);die;
+      print_array($archivo);#die;
        $this->load->helper('download');
        $name = basename($archivo->archivo_adjunto);
+        print_array($name);die;
        $data = file_get_contents(URL_ADMINISTRACION.$archivo->archivo_adjunto);
 
        force_download($name, $data);
