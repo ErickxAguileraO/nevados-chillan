@@ -23,6 +23,7 @@
 
 	#URL ADMINISTRACION
 	define('URL_ADMINISTRACION', 'http://admin.nevados.aeurus.cl');
+	define('URL_ADMIN', 'http://admin.nevados.aeurus.cl');
     define('URL_SITIO', 'https://nevados.aeurus.cl');
 /*
  *---------------------------------------------------------------
