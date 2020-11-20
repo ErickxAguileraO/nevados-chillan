@@ -372,8 +372,10 @@ public function condiciones()	{
 
 public function descargar_archivo(){
 
-			$codigo = $this->uri->segment(4);
+      $codigo = $this->uri->segment(4);
+      print_array($codigo);
       $archivo = $this->ws->obtener(58,"cor_codigo = $codigo");
+      print_array($archivo);die;
       $this->load->helper('download');
       $name = basename($archivo->archivo_adjunto);
       $data = file_get_contents(URL_ADMINISTRACION.$archivo->archivo_adjunto);
