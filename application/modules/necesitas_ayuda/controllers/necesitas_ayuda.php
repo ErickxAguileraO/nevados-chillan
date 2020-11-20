@@ -373,14 +373,24 @@ public function condiciones()	{
 public function descargar_archivo(){
 
       $codigo = $this->uri->segment(4);
-      print_array($codigo);
+      #print_array($codigo);
       $archivo = $this->ws->obtener(58,"cor_codigo = $codigo");
-      print_array($archivo);die;
-      $this->load->helper('download');
+      #print_array($archivo);die;
+      #$this->load->helper('download');
       $name = basename($archivo->archivo_adjunto);
       $data = file_get_contents(URL_ADMINISTRACION.$archivo->archivo_adjunto);
+      
+      #force_download($name, $data);
 
-       force_download($name, $data);
+      header('Content-Description: File Transfer');
+      header('Content-Type: application/octet-stream');
+      header('Content-disposition: attachment; filename='.$name);
+      header('Content-Length: '.strlen($data));
+      header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+      header('Expires: 0');
+      header('Pragma: public');
+      echo $data;
+      exit;
 
    }
 
