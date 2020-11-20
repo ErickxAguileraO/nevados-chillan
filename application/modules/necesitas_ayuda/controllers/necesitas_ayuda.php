@@ -378,7 +378,8 @@ public function descargar_archivo(){
       #print_array($archivo);die;
       #$this->load->helper('download');
       $name = basename($archivo->archivo_adjunto);
-      $data = file_get_contents(URL_ADMINISTRACION.$archivo->archivo_adjunto);
+      $data = file_get_contents('/admin'.$archivo->archivo_adjunto);
+      #$data = file_get_contents(URL_ADMINISTRACION.$archivo->archivo_adjunto);
       
       #force_download($name, $data);
 
