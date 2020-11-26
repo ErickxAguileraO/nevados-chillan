@@ -343,6 +343,9 @@ $route['portada/slider/cargar-imagen']    = "portada/slider/cargar_imagen";
 $route['portada/slider/cortar-imagen']    = "portada/slider/cortar_imagen";
 $route['portada/slider/eliminar-imagen']  = "portada/slider/eliminar_imagen";
 
+$route['portada/popup']                   = "portada/popup/editar";
+$route['portada/popup/editar/(:num)']     = "portada/popup/editar";
+
 #calendario general
 $route['portada/calendario']                  = "portada/calendario_general";
 $route['portada/calendario/(:num)']           = "portada/calendario_general";

@@ -135,11 +135,11 @@ class Popup extends CI_Controller {
             }
             
             $datos['p_titulo'] = $this->input->post('titulo');
-            $datos['p_descripcion'] = $this->input->post('descipcion');
+            $datos['p_descripcion'] = $this->input->post('descripcion');
             $datos['p_link'] = $this->input->post('link');
             $datos['p_estado'] = $this->input->post('estado');
             
-            $this->ws->actualizar($this->modulo,$datos,"sli_codigo = $codigo");
+            $this->ws->actualizar($this->modulo,$datos,"p_codigo = $codigo");
             
             echo json_encode(array("result"=>true));
             
