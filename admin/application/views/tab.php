@@ -39,7 +39,7 @@ foreach($secciones_menu as $aux){
     				    <li><a href="/portada/noticias/">Noticias</a></li>
                     <?php } ?>
                     <?php if($permisos['todo']){ ?>
-        				<li><a href="/portada/popup/">popup</a></li>
+        				<li><a href="/portada/popup/">Popup</a></li>
         				<li><a href="/portada/accesos-directos/">Accesos Directos</a></li>
         				<li><a href="/portada/auspiciadores/">Auspiciadores</a></li>
         				<li><a href="/portada/informacion-prensa/">Información Para Prensa</a></li>
