@@ -92,7 +92,7 @@ class Popup extends CI_Controller {
             $datos['p_descripcion'] = $this->input->post('descripcion');
             $datos['p_link'] = $this->input->post('link');
             $datos['p_estado'] = $this->input->post('estado');
-            print_array($datos);die;
+            // print_array($datos);die;
             $this->ws->insertar($this->modulo,$datos);
             
             echo json_encode(array("result"=>true));
