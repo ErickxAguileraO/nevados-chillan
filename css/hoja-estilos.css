@@ -96,7 +96,10 @@ body {
 .overlay-pop-up .txt-close:hover {
 	background-position:-25px -25px;
 }
-
+.background-pop-up .editable {
+	max-height: 400px;
+	overflow-y:auto;
+}
 
 /***** TEMPLATE *****/
 #wrapper {
@@ -3719,6 +3722,9 @@ figure.effect-sadie:hover h2 {
 
 }
 @media screen and (max-width: 600px) {
+.background-pop-up .editable {
+	max-height: 300px;
+}
 /*#logo { width: 180px;}
 .background-reserva-header { height: 90px;}
 .top-figure figure img{ width:auto; height: 40px;}*/
