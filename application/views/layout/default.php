@@ -36,6 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KT75JBJ');</script>
 <!-- End Google Tag Manager -->
 
+<!-- Código de instalación Cliengo para nevados2020@gmail.com -->
+<script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/' + 5fc104837337f3002a5ba6bd + '/' + 5fc104837337f3002a5ba6c0 + '.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
 
 <script>
     $(document).ready(function() {

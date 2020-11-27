@@ -206,6 +206,7 @@
 <script type="text/javascript">
 	var navigation = responsiveNav("#nav");
 </script>
+
 <div class="background-reserva-header">
   <div class="center">
     <div class="top-figure">
