@@ -12,6 +12,7 @@
           <li>Aliquam sed libero sed neque luctus iaculis. Ut et odio in neque congue  dapibus ut vel velit. Pellentesque habitant morbi tristique senectus et  netus et malesuada fames ac turpis egestas.</li>
         </ul>
       </div>
+      <p style="text-align:center; padding-bottom: 10px;"><img style="float: none; margin-bottom: -2px;" src="/imagenes/template/arrow.png" class="arrow"><a href="#">Ver más información</a></p>
       </div>
     </div>
   </div>
