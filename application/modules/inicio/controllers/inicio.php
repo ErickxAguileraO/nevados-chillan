@@ -68,6 +68,8 @@ class Inicio extends CI_Controller {
 	  $this->ws->order('calg_fecha_inicio ASC');
 		$this->ws->limit(3);
 	  $data['calendarios'] = $this->ws->listar(35,'calg_estado = 1 and calg_fecha_inicio >= "'.date('Y-m-d').'"');
+
+	  $data['popup'] = $this->ws->obtener(78,"p_codigo = 1");
 	  
       #Nav
 	  $this->layout->nav(array("¿Necesitas ayuda?: Cómo llegar"=>"/"));

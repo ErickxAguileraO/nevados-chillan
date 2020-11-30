@@ -1,18 +1,16 @@
+<?php if($popup->estado) { ?>
 <div id="txt-pop" class="overlay-pop-up">
   <div class="center-pop-up">
     <div class="contenido-pop-up">
       <div class="background-pop-up">
       <button type="button" class="txt-close">Cerrar</button>
-        <h2>Titulo del contenido</h2>
+        <h2><?=$popup->titulo?></h2>
         <div class="editable">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin lobortis ultrices. Vestibulum tristique lorem vel nisi ornare eu pulvinar neque euismod.</li>
-          <li>Aliquam sed libero sed neque luctus iaculis. Ut et odio in neque congue  dapibus ut vel velit. Pellentesque habitant morbi tristique senectus et  netus et malesuada fames ac turpis egestas.</li>
-        </ul>
+        <p><?=$popup->descripcion?></p>
       </div>
-      <p style="text-align:center; padding-bottom: 10px;"><img style="float: none; margin-bottom: -2px;" src="/imagenes/template/arrow.png" class="arrow"><a href="#">Ver más información</a></p>
+      <?php if( !empty($popup->link) ){ ?>
+      <p style="text-align:center; padding-bottom: 10px;"><img style="float: none; margin-bottom: -2px;" src="/imagenes/template/arrow.png" class="arrow"><a href="<?=$popup->link?>">Ver más información</a></p>
+      <?php } ?>
       </div>
     </div>
   </div>
@@ -24,6 +22,7 @@ $(document).ready(function(){
 	});	
 });
 </script>
+<?php } ?>
 <!-- inicio Slider -->
 <div class="flexslider">
   <?php if(count($sliders)>0){ ?>
