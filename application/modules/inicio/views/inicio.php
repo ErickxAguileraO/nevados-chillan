@@ -4,12 +4,12 @@
     <div class="contenido-pop-up">
       <div class="background-pop-up">
       <button type="button" class="txt-close">Cerrar</button>
-        <h2><?=$popup->titulo?></h2>
+        <h2 style="text-align:center; padding-bottom: 10px;"><?=$popup->titulo?></h2>
         <div class="editable">
-        <p><?=$popup->descripcion?></p>
+        <p style="text-align:center; padding-bottom: 10px;"><?=$popup->descripcion?></p>
       </div>
       <?php if( !empty($popup->link) ){ ?>
-      <p style="text-align:center; padding-bottom: 10px;"><img style="float: none; margin-bottom: -2px;" src="/imagenes/template/arrow.png" class="arrow"><a href="<?=$popup->link?>">Ver más información</a></p>
+      <p style="text-align:center; padding-bottom: 10px;"><img style="float: none; margin-bottom: -2px;" src="/imagenes/template/arrow.png" class="arrow"><a href="<?=$popup->link?>" target="_blank">Ver más información</a></p>
       <?php } ?>
       </div>
     </div>
