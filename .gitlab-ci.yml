@@ -12,7 +12,7 @@ desarrollo:
 testing:
   stage: deploy
   script:
-  - rsync -auv --chown=tenevadosae:tenevadosae --exclude='*application/configs/application.ini' --exclude='*application/config/database.php' --exclude='/index.php' --exclude='/admin/index.php' --exclude='ws.php' --exclude='Ws.php' --exclude='.htaccess' --exclude='CHANGELOG' --exclude='configuracion.ini' --exclude='.gitlab-ci.yml' --exclude='.git'  --exclude='robots.txt' --exclude='/admin/webservice' --exclude='BD' . root@209.126.103.129:/home/tenevadosae/public_html/dashboard/
+  - rsync -auv --chown=tenevadosae:tenevadosae --exclude='*application/configs/application.ini' --exclude='*application/config/database.php' --exclude='/index.php' --exclude='/admin/index.php' --exclude='ws.php' --exclude='Ws.php' --exclude='.htaccess' --exclude='CHANGELOG' --exclude='configuracion.ini' --exclude='.gitlab-ci.yml' --exclude='.git'  --exclude='robots.txt' --exclude='/admin/webservice' --exclude='BD' . root@209.126.103.129:/home/tenevadosae/public_html/
   
   artifacts:
     paths:
