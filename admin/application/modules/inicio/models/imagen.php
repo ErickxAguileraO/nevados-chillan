@@ -48,7 +48,6 @@ class Imagen extends CI_Model{
                         #crea el directorio para subir imagen
                         $uploads_dir = $_SERVER['DOCUMENT_ROOT'].$this->upload_dir;
                         creaDirectoriosUrl($this->upload_dir);
-                        
                         #sube la imagen al servidor
                         if(!move_uploaded_file($imagen['tmp_name'], $uploads_dir.$foto_name))
                             $response = array("status"=>'error',"message"=>'<b>Ha ocurrido un error al subir la imagen. Inténtelo nuevamente.</b>');

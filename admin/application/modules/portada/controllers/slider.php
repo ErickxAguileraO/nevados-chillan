@@ -21,7 +21,6 @@ class Slider extends CI_Controller {
         $this->img->recorte_alto_1 = 1352;
         
         $this->img->upload_dir = '/imagenes/modulos/portada/slider/';
-        
         #lib imagenes
         $this->load->model('inicio/imagen','objImagen');
 	}
