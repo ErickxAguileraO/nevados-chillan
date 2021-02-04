@@ -102,11 +102,11 @@ $(document).ready(function(){
   </div>
   <div class="clear"></div>
 </div><?php */?>
-<div class="contenedor"> 
+<div class="contenedor cont-seccion01"> 
   <!-- Inicio primer Acceso Directo -->
   <?php if(count($accesosDirectos)>0){ ?>
-  <div class="grid float-left border-right wow fadeInLeft">
-    <figure class="effect-sadie" style="background-image: url(<?=URL_ADMINISTRACION.$accesosDirectos[0]->imagen_adjunta?>) !important;">
+  <div class="wow fadeInLeft">
+    <figure class="effect-sadie" style="background-image: url(<?=URL_ADMINISTRACION.$accesosDirectos[0]->imagen_adjunta?>) !important; height: 565px; position: relative; background-size: cover;">
       <figcaption>
         <div class="block-bottom">
           <h3><a href="<?=$accesosDirectos[0]->link?>">
@@ -165,14 +165,14 @@ $(document).ready(function(){
   
   <div class="clear"></div>
 </div>
-<div class="contenedor"> 
+<div class="contenedor cont-secciones"> 
   
   <!-- inicio accesos director 4 -->
   <?php if(count($accesosDirectos)>1){ $i=0;
     foreach($accesosDirectos as $item):
       if($i>0){ ?>
-  <div class="grid2 float-left border-right wow fadeInLeft">
-    <figure class="effect-sadie" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important;">
+  <div class="wow fadeInLeft">
+    <figure class="effect-sadie" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative;">
       <figcaption>
         <div class="block-bottom">
           <h2><a href="<?=$item->link?>">
@@ -195,7 +195,6 @@ endforeach;
   
   <!-- Fin accesos director 4 -->
   
-  <div class="clear"></div>
 </div>
 
 <!-- Inicio Noticias -->
