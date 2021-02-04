@@ -1,5 +1,6 @@
 <?php
-    
+	#Memodria Imagenes
+    ini_set("memory_limit",-1);
     #zona horaria
 	date_default_timezone_set('America/Santiago');
     
