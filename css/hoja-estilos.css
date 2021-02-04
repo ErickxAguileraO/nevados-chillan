@@ -2943,6 +2943,22 @@ hr {
 
 
 
+.cont-secciones{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.cont-seccion01{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+}
+
+
+
+
 
 /********** RESPONSIVE **********/
 
@@ -3251,6 +3267,12 @@ footer .newsletter fieldset{ width:auto;}
 }
 
 @media screen and (max-width: 900px) {
+
+	
+.cont-seccion01, .cont-secciones{
+	display: grid;
+	grid-template-columns: 1fr;
+}
 .instagram {
  float: left;
  width: 100%;
