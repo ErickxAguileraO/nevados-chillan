@@ -43,8 +43,7 @@ class Imagen extends CI_Model{
     			$permitidas = array("jpg","png","jpeg"); #extensiones permitidas
     			list($ancho,$alto) = getimagesize($imagen['tmp_name']);
     			
-    			if(in_array($extension,$permitidas))
-    			{
+    			if(in_array($extension,$permitidas)) {
     				if($ancho >= $this->img->recorte_ancho && $alto >= $this->img->recorte_alto){
                         #crea el directorio para subir imagen
                         $uploads_dir = $_SERVER['DOCUMENT_ROOT'].$this->upload_dir;

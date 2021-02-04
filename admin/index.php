@@ -3,7 +3,6 @@
     ini_set("memory_limit",-1);
     #zona horaria
 	date_default_timezone_set('America/Santiago');
-    
     #url sitio
 	define('SITIO_URL', 'http://www.nevadosdechillan.com');
 /*

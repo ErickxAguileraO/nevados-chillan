@@ -157,7 +157,6 @@ class Slider extends CI_Controller {
             $this->ws->actualizar($this->modulo,$datos,"sli_codigo = $codigo");
             
             echo json_encode(array("result"=>true));
-            
         }
         else{
             
@@ -192,9 +191,7 @@ class Slider extends CI_Controller {
 			echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, int�ntelo nuevamente."));
 		}
     }
-    
-    
-    
+
     ###IMAGENES
 	public function cargar_imagen(){
         
@@ -235,5 +232,4 @@ class Slider extends CI_Controller {
         
         echo json_encode(array("result"=>true));
     }
-	
 }
