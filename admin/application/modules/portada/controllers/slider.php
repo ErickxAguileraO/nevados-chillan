@@ -9,19 +9,18 @@ class Slider extends CI_Controller {
 		parent::__construct();
         
         #define el tamaño del contenedor en la vista
-        $this->img->min_ancho_1 = 395;
-        $this->img->min_alto_1 = 168.75;
+        $this->img->min_ancho_1 = 3160/7;
+        $this->img->min_alto_1 = 1352/7;
         
         #define el tamaño de la imagen grande
         $this->img->max_ancho_1 = 3160;
-        $this->img->max_alto_1 = 3160;
+        $this->img->max_alto_1 = 1352;
  
         #define el tamaño del recorte
         $this->img->recorte_ancho_1 = 3160;
-        $this->img->recorte_alto_1 = 700;
+        $this->img->recorte_alto_1 = 1352;
         
         $this->img->upload_dir = '/imagenes/modulos/portada/slider/';
-        
         #lib imagenes
         $this->load->model('inicio/imagen','objImagen');
 	}
@@ -157,7 +156,6 @@ class Slider extends CI_Controller {
             $this->ws->actualizar($this->modulo,$datos,"sli_codigo = $codigo");
             
             echo json_encode(array("result"=>true));
-            
         }
         else{
             
@@ -192,9 +190,7 @@ class Slider extends CI_Controller {
 			echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, int�ntelo nuevamente."));
 		}
     }
-    
-    
-    
+
     ###IMAGENES
 	public function cargar_imagen(){
         
@@ -215,6 +211,7 @@ class Slider extends CI_Controller {
      
         $response =  $this->objImagen->cortar_imagen($_POST);
         echo json_encode($response);
+        exit;
 	}
     
     public function eliminar_imagen(){
@@ -234,5 +231,4 @@ class Slider extends CI_Controller {
         
         echo json_encode(array("result"=>true));
     }
-	
 }
