@@ -112,14 +112,20 @@ footer .auspiciadores-background .slick-slider{
 }
 footer .auspiciadores-background .slick-slide img{ max-width: 100%; width:auto; height: 150px; }
 
-footer .auspiciadores-background .slick-prev, footer .auspiciadores-background .slick-next {height: 80px; width: 21px; }
+footer .auspiciadores-background .slick-prev, footer .auspiciadores-background .slick-next,
+.alojamiento-responsive .slick-prev, .alojamiento-responsive .slick-next
+ {height: 80px; width: 21px; }
 
 
-footer .auspiciadores-background .slick-prev { left: -35px; background:url(/imagenes/template/c-prev.png) no-repeat; }
-footer .auspiciadores-background .slick-prev:before {  background:url(/imagenes/template/c-prev.png) no-repeat; }
+footer .auspiciadores-background .slick-prev, .alojamiento-responsive .slick-prev
+ { left: -35px; background:url(/imagenes/template/c-prev.png) no-repeat; }
+footer .auspiciadores-background .slick-prev:before, .alojamiento-responsive .slick-prev:before
+ {  background:url(/imagenes/template/c-prev.png) no-repeat; }
 
-footer .auspiciadores-background .slick-next { right: -35px; background:url(/imagenes/template/c-next.png) no-repeat; }
-footer .auspiciadores-background .slick-next:before { background:url(/imagenes/template/c-next.png) no-repeat;}
+footer .auspiciadores-background .slick-next, .alojamiento-responsive .slick-next { right: -35px; background:url(/imagenes/template/c-next.png) no-repeat; }
+footer .auspiciadores-background .slick-next:before, .alojamiento-responsive .slick-next:before { background:url(/imagenes/template/c-next.png) no-repeat;}
+
+.alojamiento-responsive .slick-prev, .alojamiento-responsive .slick-next { top: 40%;}
 
 
 /********** Responsive **********/

@@ -48,7 +48,7 @@
       <figure><img src="/imagenes/template/chile-best-2018.png" width="155" height="150" class="chile-best 2018" /></figure>
     </div>
     <div class="informacion">
-      <div class="coll-footer">
+      <?php /*?><div class="coll-footer">
         <h4>Oficina Concepción</h4>
         <ul>
           <li><a href="tel:<?=$generales->concepcion_telefono?>">
@@ -75,8 +75,8 @@
             <?=$generales->santiago_horario?>
           </li>
         </ul>
-      </div>
-      <div class="coll-footer">
+      </div><?php */?>
+      <div class="coll-footer" style="display: block; margin: 0 auto; ">
         <h4>Oficina Chillán</h4>
         <ul>
           <li><a href="tel:<?=$generales->chillan_telefono?>">
