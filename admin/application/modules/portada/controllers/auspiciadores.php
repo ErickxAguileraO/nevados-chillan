@@ -95,6 +95,7 @@ class Auspiciadores extends CI_Controller {
             $datos['aus_url'] = slug($this->input->post('nombre'));
             $datos['aus_orden'] = $this->input->post('orden');
             $datos['aus_estado'] = $this->input->post('estado');
+            $datos['aus_link'] = $this->input->post('link');
             
             $this->ws->insertar($this->modulo,$datos);
             
@@ -166,6 +167,7 @@ class Auspiciadores extends CI_Controller {
             $datos['aus_url'] = slug($this->input->post('nombre'));
             $datos['aus_orden'] = $this->input->post('orden');
             $datos['aus_estado'] = $this->input->post('estado');
+            $datos['aus_link'] = $this->input->post('link');
 
             $this->ws->actualizar($this->modulo,$datos,"aus_codigo = $codigo");
             

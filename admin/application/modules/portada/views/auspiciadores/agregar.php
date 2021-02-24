@@ -20,6 +20,9 @@
 				    <option value="1" >Activo</option>
 				    <option value="0" >Inactivo</option>
 				</select>
+
+                <label>Link</label>
+                <input type="text" class="form-control" name="link" />
                 
         	</div>
             

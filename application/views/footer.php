@@ -7,7 +7,23 @@
     <div class="auspiciadores-background">
       <div class="carrusel partners-responsive">
         <?php foreach($auspiciadores as $item): ?>
-        <div><figure><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" /></figure></div>
+        <div>
+
+        <?php 
+        
+     
+        if($item->link){ ?>
+          <a target="_blank" href="<?php echo $item->link; ?>">
+        <?php } ?>
+        
+        <figure><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" />
+        </figure>
+        
+        <?php if($item->link){ ?>
+          </a>
+        <?php } ?> 
+        
+        </div>
         <?php endforeach; ?>
       </div>
     </div>
