@@ -23,6 +23,9 @@
 				    <option <?php if($auspiciador->estado) echo 'selected'; ?> value="1" >Activo</option>
 				    <option <?php if(!$auspiciador->estado) echo 'selected'; ?>value="0" >Inactivo</option>
 				</select>
+
+                <label>Link</label>
+                <input type="text" class="form-control" name="link" value="<?php echo $auspiciador->link; ?>" />
                 
         	</div>
             
