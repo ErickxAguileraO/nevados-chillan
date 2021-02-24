@@ -1478,8 +1478,8 @@ footer .informacion  .grid-footer-2{
 }
 .testimonios {
 	width: 100%;
-	background-image: url("/imagenes/template/fondo-testimonios.jpg");
-	background-size: cover;
+	/*background-image: url("/imagenes/template/fondo-testimonios.jpg");
+	background-size: cover;*/
 	text-align: center;
 	padding: 90px 0;
 }
@@ -1495,14 +1495,14 @@ footer .informacion  .grid-footer-2{
 	margin-bottom: 30px;
 }
 .testimonios h2 {
-	text-align: center;
-	color: #fff;
-	margin-bottom: 30px;
+	/*text-align: center;
+	color: #fff;*/
+	margin-bottom: 20px;
 }
 .cont-testimonio h3 {
 	font-size: 18px;
 	color: #fff;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 .cont-testimonio p {

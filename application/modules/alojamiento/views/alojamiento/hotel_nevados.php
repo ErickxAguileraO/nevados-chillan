@@ -370,13 +370,57 @@ temperatura.</p>
   <?php if(count($testimonios)>0){ ?>
   <div class="testimonios">
     <h2>Testimonios</h2>
-    <a href="https://www.tripadvisor.cl/Hotel_Review-g317797-d675215-Reviews-Nevados_de_Chillan-Chillan_Biobio_Region.html" target="_blank"><img src="/imagenes/template/trip-advisor2.png"  style="margin-bottom:30px;" /></a>
-    <!--<div id="TA_cdsscrollingravewide207" class="TA_cdsscrollingravewide">
+    <section class="auspiciadores" style=" padding: 30px 50px; background-color: #033e6c;">
+    <!--<a href="https://www.tripadvisor.cl/Hotel_Review-g317797-d675215-Reviews-Nevados_de_Chillan-Chillan_Biobio_Region.html" target="_blank"><img src="/imagenes/template/trip-advisor2.png"  style="margin-bottom:30px;" /></a>
+    <div id="TA_cdsscrollingravewide207" class="TA_cdsscrollingravewide">
       <ul id="8wABok" class="TA_links JDYVGGSq98">
         <li id="PBDkICpdM" class="cXQdECi5g2"> <a target="_blank" href="https://www.tripadvisor.cl/"><img src="https://static.tacdn.com/img2/t4b/Stacked_TA_logo.png" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a> </li>
       </ul>
     </div> -->
-    <div class="slider-testimonio wow fadeInUp">
+    <div class="auspiciadores-background">
+      <div class="carrusel alojamiento-responsive">
+        <?php foreach($testimonios as $item): ?>
+        <div>
+          <div class="cont-testimonio">
+            <h3><?=$item->nombre?></h3>
+            <span><?=fecha_corta($item->fecha,2)?></span>
+            <p><?=$item->testimonio?></p>
+          </div>
+        </div>
+        <!--HTML funcionamiento carrusel -->
+        <div>
+          <div class="cont-testimonio">
+            <h3><?=$item->nombre?></h3>
+            <span><?=fecha_corta($item->fecha,2)?></span>
+            <p>Prueba HTML Este hotel tiene todo para olvidarte del stress, relajarse, rica comida, un excelente bar, acogedor, muy buen servicio, lindo entorno, buenos lugares para hacer trecking, piscinas termales maravillosas.</p>
+          </div>
+        </div>
+        <div>
+          <div class="cont-testimonio">
+            <h3><?=$item->nombre?></h3>
+            <span><?=fecha_corta($item->fecha,2)?></span>
+            <p>Esto se debe borrar, es solo HTML de prueba. Este hotel tiene todo para olvidarte del stress, relajarse, rica comida, un excelente bar, acogedor, muy buen servicio, lindo entorno, buenos lugares para hacer trecking, piscinas termales maravillosas.</p>
+          </div>
+        </div>
+        <div>
+          <div class="cont-testimonio">
+            <h3><?=$item->nombre?></h3>
+            <span><?=fecha_corta($item->fecha,2)?></span>
+            <p>Prueba HTML Este hotel tiene todo para olvidarte del stress, relajarse, rica comida, un excelente bar, acogedor, muy buen servicio, lindo entorno, buenos lugares para hacer trecking, piscinas termales maravillosas.</p>
+          </div>
+        </div>
+        <div>
+          <div class="cont-testimonio">
+            <h3><?=$item->nombre?></h3>
+            <span><?=fecha_corta($item->fecha,2)?></span>
+            <p>Esto se debe borrar, es solo HTML de prueba. Este hotel tiene todo para olvidarte del stress, relajarse, rica comida, un excelente bar, acogedor, muy buen servicio, lindo entorno, buenos lugares para hacer trecking, piscinas termales maravillosas.</p>
+          </div>
+        </div>
+        <!--Fin HTML funcionamiento carrusel -->
+      <?php endforeach; ?>    
+      </div>
+    </div>
+    <?php /*?><div class="slider-testimonio wow fadeInUp">
       <ul class="slides">
         <?php foreach($testimonios as $item): ?>
         <li>
@@ -386,9 +430,10 @@ temperatura.</p>
             <p><?=$item->testimonio?></p>
           </div>
         </li>
-      <?php endforeach; ?>
+      <?php endforeach; ?>    
       </ul>
-    </div>
+    </div><?php */?>
+    </section>
   </div>
   <?php } ?>
   <!-- Fin Testiminios -->
@@ -401,6 +446,10 @@ temperatura.</p>
   <?php } ?>
 <!-- Fin Banners -->
 </div>
+
+		<link rel="stylesheet" type="text/css"  href="/js/jquery/carousel/slick.css" />
+<script type="text/javascript" src="/js/jquery/carousel/slick.min.js"></script>
+<script src="/js/sistema/alojamiento/index.js"></script>
 <script type="text/javascript">
   
   $(document).ready(function(){
@@ -423,11 +472,11 @@ temperatura.</p>
 		slideshow: false,
       });
 
-	   $('.slider-testimonio').flexslider({
-        animation: "fade",
-		slideshowSpeed: 5000,
-		directionNav: false,
-      });  
+	  // $('.slider-testimonio').flexslider({
+//        animation: "fade",
+//		slideshowSpeed: 5000,
+//		directionNav: true,
+//      });  
  });
 
    
