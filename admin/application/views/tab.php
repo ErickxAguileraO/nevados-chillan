@@ -89,7 +89,7 @@ foreach($secciones_menu as $aux){
         
 
         <!-- Programas-->
-
+        
         <!--
         <li><a style="background: #FFF; color: #969696; font-style: italic;">Programas</a></li>
             <li>
@@ -99,7 +99,7 @@ foreach($secciones_menu as $aux){
                     <li><a href="/programas/secciones/">Secciones</a></li>
                 </ul>
             </li>
-         -->
+          -->
 
 
 
@@ -128,13 +128,14 @@ foreach($secciones_menu as $aux){
                                 <li><a href="/hoteles/<?php echo $aux->url; ?>/slider/">Slider</a></li>
                                 <li><a href="/hoteles/<?php echo $aux->url; ?>/introduccion/">Introducción</a></li>
                 				<li><a href="/hoteles/<?php echo $aux->url; ?>/habitaciones/">Habitaciones</a></li>
-
-                            <?php if($aux->url != 'hotel-nevados' && $aux->url != 'deptos-valle-hermoso'){ ?>
+                                
+                                
+                            <?php if($aux->url != 'hotel-nevados' && $aux->url != 'deptos-valle-hermoso' && $aux->url != 'hotel-alto-nevados'){ ?>
                 				<li><a href="/hoteles/<?php echo $aux->url; ?>/actividades/">Actividades</a></li>
                             <?php } ?>    
 
-
-
+                                
+                                
                             <?php } ?>
                             
                             <?php if($aux->codigo != 3){ ?>
@@ -146,14 +147,18 @@ foreach($secciones_menu as $aux){
                                         $calendario = true;
                                 
                                 ?>
-
-
-                            <?php if($aux->url != 'hotel-nevados'){ ?>
-                                <?php if($calendario){ ?>
-            				        <li><a href="/hoteles/<?php echo $aux->url; ?>/calendario/">Calendario</a></li>
+                                
+                                
+                                <?php if($aux->url != 'hotel-nevados' && $aux->url != 'hotel-alto-nevados'){ ?>
+                                    <?php if($calendario){ ?>
+                				        <li><a href="/hoteles/<?php echo $aux->url; ?>/calendario/">Calendario</a></li>
+                                    <?php } ?>
                                 <?php } ?>
-                            <?php } ?>
-
+    
+                            
+                                
+                                
+                                
                             <?php } ?>
                             
                             <?php if($permisos['todo']){ ?>
@@ -165,9 +170,8 @@ foreach($secciones_menu as $aux){
                             
                             <?php if($permisos['todo']){ ?>
             				    <li><a href="/hoteles/<?php echo $aux->url; ?>/banners/">Banners</a></li>
-
-
-                               <?php if($aux->url != 'hotel-nevados'){ ?>
+                                
+                                <?php if($aux->url != 'hotel-nevados' && $aux->url != 'deptos-valle-hermoso' && $aux->url != 'hotel-alto-nevados'){ ?>
                                 <li><a href="/hoteles/<?php echo $aux->url;?>/programas/">Programas y Valores</a></li>
                                <?php } ?> 
 
@@ -178,13 +182,21 @@ foreach($secciones_menu as $aux){
             <?php } ?>
             
             <?php if($permisos['todo']){ ?>
+            
+             <!-- servicios complementarios -->
+             
+             <!--
                 <li>
-                    <!-- servicios complementarios -->
+                   
                     <li>
             			<a href="/servicios-complementarios/">Servicios Complementarios</a>
             		</li>                
         			<a href="/promociones/">Promociones</a>
         		</li>
+                
+                -->
+                
+                
             <?php } ?>
             <li><a style="background: #FFF;"></a></li>
         <?php } ?>
