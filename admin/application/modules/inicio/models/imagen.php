@@ -32,31 +32,26 @@ class Imagen extends CI_Model{
         $this->upload_dir = $config->upload_dir;
     }
     
-    public function cargar_imagen($files){
+    public function cargar_imagen($archivo){
 
-		if($files['img']['name'] != ''){
-			
-            $imagen = $files['img'];
+		if($archivo['img']['name'] != ''){
+            $imagen = $archivo['img'];
             if(!$imagen['error']){
                 
     			$extension = strtolower((array_pop(explode(".",$imagen['name']))));
                 $foto_name = 'grande_'.time().'.'.$extension;
     			$permitidas = array("jpg","png","jpeg"); #extensiones permitidas
-                
     			list($ancho,$alto) = getimagesize($imagen['tmp_name']);
-    			if(in_array($extension,$permitidas))
-    			{
+    			
+    			if(in_array($extension,$permitidas)) {
     				if($ancho >= $this->img->recorte_ancho && $alto >= $this->img->recorte_alto){
-                        
                         #crea el directorio para subir imagen
                         $uploads_dir = $_SERVER['DOCUMENT_ROOT'].$this->upload_dir;
                         creaDirectoriosUrl($this->upload_dir);
-                        
                         #sube la imagen al servidor
                         if(!move_uploaded_file($imagen['tmp_name'], $uploads_dir.$foto_name))
                             $response = array("status"=>'error',"message"=>'<b>Ha ocurrido un error al subir la imagen. Inténtelo nuevamente.</b>');
                         else{
-                            
                             #si las medidas maximas son menores que las medidas de la imagen se ajusta
                             if($ancho > $this->img->max_ancho || $alto > $this->img->max_alto){
                                 $config['image_library'] = 'gd2';
@@ -104,43 +99,42 @@ class Imagen extends CI_Model{
 		return $response;
 	}
 	
-	public function cortar_imagen($post){
-
+	public function cortar_imagen($imagen){
+	    
 		#IMAGEN TAMAÑO INTERNA
-		$ruta_grande = $imgUrl = $post['imgUrl'];
+		$ruta_grande = $imgUrl = $imagen['imgUrl'];
         
         #obtiene la ruta donde se caga la imagen
 		$uploads_dir = explode('/',$imgUrl);
         unset($uploads_dir[count($uploads_dir)-1]);
         $uploads_dir = implode('/',$uploads_dir);
-
         #obtiene la extension
         $extension = array_pop(explode('.',$imgUrl));
         
 		// original sizes
-		$imgInitW = $post['imgInitW'];
-		$imgInitH = $post['imgInitH'];
+		$imgInitW = $imagen['imgInitW'];
+		$imgInitH = $imagen['imgInitH'];
 		
 		// resized sizes
-		$imgW = $post['imgW'] * $this->img->razon;
-		$imgH = $post['imgH'] * $this->img->razon;
+		$imgW = $imagen['imgW'] * $this->img->razon;
+		$imgH = $imagen['imgH'] * $this->img->razon;
 		
 		// offsets
-		$imgY1 = $post['imgY1'] * $this->img->razon;
-		$imgX1 = $post['imgX1'] * $this->img->razon;
+		$imgY1 = $imagen['imgY1'] * $this->img->razon;
+		$imgX1 = $imagen['imgX1'] * $this->img->razon;
         
 		// crop box
-		$cropW = $post['cropW'] * $this->img->razon;
-		$cropH = $post['cropH'] * $this->img->razon;
+		$cropW = $imagen['cropW'] * $this->img->razon;
+		$cropH = $imagen['cropH'] * $this->img->razon;
 		
 		// rotation angle
-		$angle = $post['rotation'];
+		$angle = $imagen['rotation'];
 		$jpeg_quality = 100;
 		$output_filename = $uploads_dir.'/interna_'.time().'.'.$extension;
 
 		$imgUrl = $_SERVER['DOCUMENT_ROOT'].$imgUrl;
 		$what = getimagesize($imgUrl);
-
+		
 		switch(strtolower($what['mime']))
 		{
 			case 'image/png':
@@ -157,7 +151,8 @@ class Imagen extends CI_Model{
 				break;
 			default: die('Tipo de imagen no soportado');
 		}
-
+		
+		
 		$resizedImage = imagecreatetruecolor($imgW, $imgH);
 		imagecopyresampled($resizedImage, $source_image, 0, 0, 0, 0, $imgW, $imgH, $imgInitW, $imgInitH);
 		$rotated_image = imagerotate($resizedImage, -$angle, 0);
@@ -166,14 +161,16 @@ class Imagen extends CI_Model{
 		$dx = $rotated_width - $imgW;
 		$dy = $rotated_height - $imgH;
 		$cropped_rotated_image = imagecreatetruecolor($imgW, $imgH);
+		
+		
 		imagecolortransparent($cropped_rotated_image, imagecolorallocate($cropped_rotated_image, 0, 0, 0));
 		imagecopyresampled($cropped_rotated_image, $rotated_image, 0, 0, $dx / 2, $dy / 2, $imgW, $imgH, $imgW, $imgH);
-		$final_image = imagecreatetruecolor($cropW, $cropH);
+		$final_image = imagecreatetruecolor($cropW, $cropH);#LINEA CON ERROR
 		imagecolortransparent($final_image, imagecolorallocate($final_image, 0, 0, 0));
 		imagecopyresampled($final_image, $cropped_rotated_image, 0, 0, $imgX1, $imgY1, $cropW, $cropH, $cropW, $cropH);
 		imagejpeg($final_image, $_SERVER['DOCUMENT_ROOT'].$output_filename, $jpeg_quality);
 		$ruta_interna = $output_filename;
-        
+       
 		$response = Array("status"=>'success',"url"=>$ruta_interna, "ruta_grande"=>$ruta_grande);
 		return $response;
 	}

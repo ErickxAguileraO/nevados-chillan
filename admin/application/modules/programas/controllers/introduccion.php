@@ -8,6 +8,8 @@ class Introduccion extends CI_Controller
     function __construct()
     {
         parent::__construct();
+
+        redirect('/portada/slider/'); 
     }
 
     public function index()

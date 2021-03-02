@@ -97,7 +97,21 @@ class Layout {
         
         #Auspiciadores
         $this->obj->ws->order("aus_orden");
-        $data['auspiciadores'] = $this->obj->ws->listar(40,"aus_estado = 1");
+        $auspiciadores = $this->obj->ws->listar(40,"aus_estado = 1");
+
+        foreach($auspiciadores as $aux){
+            if($aux->link){
+                $url = $aux->link;
+                if (false === strpos($url, '://')) {
+                    $url = 'https://' . $aux->link;
+                } 
+                $aux->link = $url; 
+
+            }
+        }
+
+       $data['auspiciadores']  = $auspiciadores;
+
 
         #template
         $this->block_replace = true;

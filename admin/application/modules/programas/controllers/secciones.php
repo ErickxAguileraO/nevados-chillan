@@ -9,6 +9,8 @@ class Secciones extends CI_Controller {
 	function __construct(){
 		parent::__construct();
         
+
+        redirect('/portada/slider/');
         
         #IMAGEN FONDO
         #define el tamaño del contenedor en la vista
