@@ -185,16 +185,19 @@ foreach($secciones_menu as $aux){
             
              <!-- servicios complementarios -->
              
-             <!--
+            
                 <li>
                    
+                   <!--
                     <li>
             			<a href="/servicios-complementarios/">Servicios Complementarios</a>
-            		</li>                
+            		</li>   
+                     -->             
+
         			<a href="/promociones/">Promociones</a>
         		</li>
                 
-                -->
+                
                 
                 
             <?php } ?>
