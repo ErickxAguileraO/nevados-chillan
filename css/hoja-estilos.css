@@ -1340,7 +1340,7 @@ footer .informacion  .grid-footer-2{
 	display: none;
 }
 .cont2 {
-	margin-top: 70px;
+	margin: 70px auto;
 }
 .cont2 .texto, .seccion-fondo .texto {
 	width: 45%;
