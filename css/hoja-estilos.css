@@ -663,10 +663,11 @@ figure.effect-sadie:hover figcaption::before, figure.effect-sadie:hover p {
 	float: left;
 	margin-right: 10px;
 }
+/*
 .calendario {
 	width: 46%;
 	float: right;
-}
+} */
 h1,h2, h3, .text-70 {
 	color: #033e6c;
 	font-size: 40px;
