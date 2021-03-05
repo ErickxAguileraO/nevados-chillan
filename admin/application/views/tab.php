@@ -75,6 +75,8 @@ foreach($secciones_menu as $aux){
     			</ul>
     		</li>
             */ ?>
+
+            <!-- oculto 05-03-2021
             <li>
     			<a style="cursor:pointer;">Valle Las Trancas</a>
     			<ul>
@@ -85,6 +87,8 @@ foreach($secciones_menu as $aux){
     			</ul>
     		</li>
             <li><a style="background: #FFF;"></a></li>
+            -->
+
         <?php } ?>
         
 
