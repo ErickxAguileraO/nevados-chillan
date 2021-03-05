@@ -471,8 +471,13 @@ $route['historia/secciones/eliminar-imagen-adjunta'] = "historia/secciones/elimi
 
 #FIN NUESTRA HISTORIA
 
+
+
+
 #VALLE LAS TRANCAS
 
+/*
+//se comenta sección  05-03-21
 #slider
 $route['valle-las-trancas/slider']                  = "valle_trancas/slider";
 $route['valle-las-trancas/slider/(:num)']           = "valle_trancas/slider";
@@ -498,7 +503,11 @@ $route['valle-las-trancas/secciones/cortar-imagen']    = "valle_trancas/seccione
 $route['valle-las-trancas/secciones/eliminar-imagen']  = "valle_trancas/secciones/eliminar_imagen";
 $route['valle-las-trancas/secciones/eliminar-imagen-adjunta'] = "valle_trancas/secciones/eliminar_imagen_adjunta";
 
+*/
+
 #FIN VALLE LAS TRANCAS
+
+
 
 
 #INVIERNO
