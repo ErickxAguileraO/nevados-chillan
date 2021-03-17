@@ -172,7 +172,7 @@ $(document).ready(function(){
     foreach($accesosDirectos as $item):
       if($i>0){ ?>
   <div class="wow fadeInLeft">
-    <figure class="effect-sadie" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative;">
+    <figure class="effect-sadie" style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
       <figcaption>
         <div class="block-bottom">
           <h2><a href="<?=$item->link?>">

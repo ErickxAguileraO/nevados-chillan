@@ -12,6 +12,9 @@ class Secciones extends CI_Controller {
         
         #IMAGEN FONDO
         #define el tamaño del contenedor en la vista
+        #$this->img->min_ancho_1 = 900;
+        #$this->img->min_alto_1 = 200;
+
         $this->img->min_ancho_1 = 395;
         $this->img->min_alto_1 = 137.5;
         
