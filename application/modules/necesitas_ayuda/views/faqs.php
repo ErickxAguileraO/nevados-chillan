@@ -56,49 +56,7 @@
     </div>
     <!--end .accordion-->
   </div>
-  <div class="float-right form-trabajo wow fadeInRight">
-    <h2>Trabaja con nosotros</h2>
-    <p>Únete al equipo de Nevados de Chillán.</p>
-    <form method="post" id="form-trabaja-nosotros" action="#" enctype="multipart/form-data">
-      <ul>
-        <li>
-          <label>Nombre Completo:</label>
-          <br />
-          <input type="text" name="nombre" class="validate[required]" />
-        </li>
-        <li>
-          <label>Teléfono:</label>
-          <br />
-          <input type="text" name="telefono" class="validate[required]" />
-        </li>
-        <li>
-          <label>Correo:</label>
-          <br />
-          <input type="text" name="correo" />
-        </li>
-        <li>
-          <label>Área de trabajo:</label>
-          <br />
-          <select name="area" class="validate[required]">
-            <option>Seleccione área</option>
-            <?php foreach($areas as $item): ?>
-              <<option value="<?=$item->codigo?>"><?=$item->nombre?></option>
-            <?php endforeach; ?>
-          </select>
-        </li>
-        <li>
-          <label>CV:</label>
-          <br />
-          <input type="file" name="adjunto" class="validate[required]" />
-          <span>Todos los campos son obligatorios</span>
-          <div class="clear"></div>
-        </li>
-        <li>
-          <input type="submit" class="btn" value="Enviar Mensaje">
-        </li>
-      </ul>
-    </form>
-  </div>
+  
 </div>
 <!-- fin center -->
 <script type="text/javascript">
