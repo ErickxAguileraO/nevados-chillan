@@ -42,53 +42,53 @@
 <!-- Fin Slider -->
 <div class="center">
   <?=$this->layout->getNav();?>
-<div class="float-left formulario wow fadeInLeft">
-  <p>¿Tienes alguna duda o comentario? ¡Ponte en contacto!</p>
-  <form action="#" method="post" id="form-contacto">
-    <ul>
-      <li>
-        <label>Nombre Completo:</label>
-        <input type="text" name="nombre" class="validate[required]" />
-      </li>
-      <li>
-        <label>Teléfono:</label>
-        <input type="text" name="telefono" class="validate[required]" />
-      </li>
-      <li>
-        <label>Correo:</label>
-        <input type="text" name="correo" class="validate[required]" />
-      </li>
-      <li>
-        <label>Motivo:</label>
-        <select name="motivo" class="validate[required]">
-          <option>Seleccione un motivo</option>
-          <?php foreach($asunto as $item): ?>
-            <<option value="<?=$item->codigo?>"><?=$item->nombre?></option>
-          <?php endforeach; ?>
-        </select>
-      </li>
-      <li>
-        <label>Mensaje:</label>
-        <textarea name="mensaje" class="validate[required]"></textarea>
-        <span>Todos los campos son obligatorios</span>
-        <div class="clear"></div>
-      </li>
-      <li>
-        <input type="submit" class="btn" value="Enviar Mensaje">
-      </li>
-    </ul>
-  </form>
+  
+  <div class="float-left form-trabajo wow fadeInRight ">
+    <h2>Trabaja con nosotros</h2>
+    <p>Únete al equipo de Nevados de Chillán.</p>
+    <form method="post" id="form-trabaja-nosotros" action="#" enctype="multipart/form-data">
+      <ul>
+        <li>
+          <label>Nombre Completo:</label>
+          <br />
+          <input type="text" name="nombre" class="validate[required]" />
+        </li>
+        <li>
+          <label>Teléfono:</label>
+          <br />
+          <input type="text" name="telefono" class="validate[required]" />
+        </li>
+        <li>
+          <label>Correo:</label>
+          <br />
+          <input type="text" name="correo" />
+        </li>
+        <li>
+          <label>Área de trabajo:</label>
+          <br />
+          <select name="area" class="validate[required]">
+            <option>Seleccione área</option>
+            <?php foreach($areas as $item): ?>
+              <<option value="<?=$item->codigo?>"><?=$item->nombre?></option>
+            <?php endforeach; ?>
+          </select>
+        </li>
+        <li>
+          <label>CV:</label>
+          <br />
+          <input type="file" name="adjunto" class="validate[required]" />
+          <span>Todos los campos son obligatorios</span>
+          <div class="clear"></div>
+        </li>
+        <li>
+          <input type="submit" class="btn" value="Enviar Mensaje">
+        </li>
+      </ul>
+    </form>
+  </div>
 </div>
-
+<!-- fin center -->
 <script type="text/javascript">
-$(".tabs-menu a").click(function(event) {
-    event.preventDefault();
-    $(this).parent().addClass("current");
-    $(this).parent().siblings().removeClass("current");
-    var tab = $(this).attr("href");
-    $(".tab-content").not(tab).css("display", "none");
-    $(tab).fadeIn();
-});
     $(window).load(function(){
       $('.flexslider').flexslider({
         animation: "fade",

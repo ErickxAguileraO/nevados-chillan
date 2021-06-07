@@ -13,7 +13,7 @@
     <div class="nav" id="nav">
       <ul class="menu">
         <li><a href="/descubrenos/" title="Descúbrenos: Tecla de Acceso 1" accesskey="1">Descúbrenos</a></li>
-        <li><a href="/programas/" title="Programas: Tecla de Acceso 2" accesskey="2">Programas</a></li>
+        <li><a href="/experiencias/" title="Experiencias: Tecla de Acceso 2" accesskey="2">Experiencias</a></li>
         <li><a href="/descubrenos/#hoteles" title="Hoteles: Tecla de Acceso 3" accesskey="3">Hoteles</a>
           <ul class="submenu">
             <li><a href="/alojamiento/hotel-nevados">Hotel Nevados</a></li>
@@ -42,6 +42,8 @@
             <li><a href="/necesitas-ayuda/como-llegar/">Como llegar</a></li>
             <li><a href="/necesitas-ayuda/faqs/">Preguntas frecuentes</a></li>
             <li><a href="/necesitas-ayuda/condiciones/">Condiciones</a></li>
+            <li><a href="/necesitas-ayuda/contacto/">Contacto</a></li>
+            <li><a href="/necesitas-ayuda/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
           </ul>
         </li>
       </ul>

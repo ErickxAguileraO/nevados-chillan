@@ -233,6 +233,53 @@ $this->layout->nav(array("¿Necesitas ayuda?: FAQs"=>"/"));
 $this->layout->view('faqs',$data);
 }
 
+public function trabaja_nosotros()	{
+  #Title
+  $this->layout->title('Trabaja con nosotros');
+  
+  #Metas
+  $this->layout->setMeta('title','Trabaja con nosotros');
+  $this->layout->setMeta('description','Trabaja con nosotros');
+  $this->layout->setMeta('keywords','Trabaja con nosotros');
+  
+  #flexslider
+  $this->layout->css('/js/jquery/flexslider/flexslider.css');
+  $this->layout->js('/js/jquery/flexslider/jquery.flexslider.js');
+  
+  #WebFont
+  $this->layout->css('/css/webfont/stylesheet.css');
+  
+  #Accordeon
+  $this->layout->js('/js/jquery/accordeon/accordeon.js');
+  #validador
+  $this->layout->css('/js/jquery/validation-engine/css/validationEngine.jquery.css');
+  $this->layout->css('/js/jquery/validation-engine/css/validationEngine.jquery.css');
+  $this->layout->js('/js/jquery/validation-engine/js/jquery.validationEngine.js');
+  $this->layout->js('/js/jquery/validation-engine/js/languages/jquery.validationEngine-es.js');
+  $this->layout->js('/js/jquery/noty/packaged/jquery.noty.packaged.js');
+  $this->layout->js('/js/jquery/validador-rut/jquery.Rut.min.js');
+  $this->layout->js('/js/sistema/trabaje-con-nosotros/trabaje-con-nosotros.js');
+  
+  //Contenido
+  //slider
+  $this->ws->order('sli_orden ASC');
+  $data['sliders'] = $this->ws->listar(13,'sli_tipo_seccion = 12 and sli_estado = 1');
+  
+  //Preguntas frecuentes
+  $this->ws->order('prf_orden ASC');
+  $data['faqs'] = $this->ws->listar(57,'prf_estado = 1');
+  
+  //Area
+  $this->ws->order('art_orden ASC');
+  $data['areas'] = $this->ws->listar(33,'art_estado = 1');
+  
+  #Nav
+  $this->layout->nav(array("¿Necesitas ayuda?: Trabaja con nosotros"=>"/")); 
+  
+  #La vista siempre,  debe ir cargada al final de la función
+  $this->layout->view('trabaja_nosotros',$data);
+  }
+
 public function envio_trabaja(){
   if($this->input->post()){
     #validaciones

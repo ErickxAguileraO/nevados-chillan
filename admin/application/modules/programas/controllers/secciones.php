@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No puede acceder a este archivo');
-
+#CAMBIO DE NOMBRE DE "PROGRAMAS" A "EXPERIENCIAS" HECHO EL 07/06/2021
 class Secciones extends CI_Controller {
 	    
     private $modulo = 19;
@@ -10,7 +10,7 @@ class Secciones extends CI_Controller {
 		parent::__construct();
         
 
-        redirect('/portada/slider/');
+        
         
         #IMAGEN FONDO
         #define el tamaño del contenedor en la vista
