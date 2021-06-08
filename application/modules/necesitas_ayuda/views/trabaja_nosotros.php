@@ -42,21 +42,50 @@
 <!-- Fin Slider -->
 <div class="center">
   <?=$this->layout->getNav();?>
-  <div class="main float-left wow fadeInLeft">
-    <div class="accordion">
-      <?php $i = 1; foreach($faqs as $item): ?>
-      <div class="accordion-section"> <a class="accordion-section-title" href="#<?=$item->url?>"><?=$i?>.- <?=$item->pregunta?></a>
-        <div id="<?=$item->url?>" class="accordion-section-content">
-          <?=$item->descripcion?>
-        </div>
-        <!--end .accordion-section-content-->
-      </div>
-    <?php $i++; endforeach; ?>
-      <!--end .accordion-section-->
-    </div>
-    <!--end .accordion-->
-  </div>
   
+  <div class="float-left form-trabajo wow fadeInRight ">
+    <h2>Trabaja con nosotros</h2>
+    <p>Únete al equipo de Nevados de Chillán.</p>
+    <form method="post" id="form-trabaja-nosotros" action="#" enctype="multipart/form-data">
+      <ul>
+        <li>
+          <label>Nombre Completo:</label>
+          <br />
+          <input type="text" name="nombre" class="validate[required]" />
+        </li>
+        <li>
+          <label>Teléfono:</label>
+          <br />
+          <input type="text" name="telefono" class="validate[required]" />
+        </li>
+        <li>
+          <label>Correo:</label>
+          <br />
+          <input type="text" name="correo" />
+        </li>
+        <li>
+          <label>Área de trabajo:</label>
+          <br />
+          <select name="area" class="validate[required]">
+            <option>Seleccione área</option>
+            <?php foreach($areas as $item): ?>
+              <<option value="<?=$item->codigo?>"><?=$item->nombre?></option>
+            <?php endforeach; ?>
+          </select>
+        </li>
+        <li>
+          <label>CV:</label>
+          <br />
+          <input type="file" name="adjunto" class="validate[required]" />
+          <span>Todos los campos son obligatorios</span>
+          <div class="clear"></div>
+        </li>
+        <li>
+          <input type="submit" class="btn" value="Enviar Mensaje">
+        </li>
+      </ul>
+    </form>
+  </div>
 </div>
 <!-- fin center -->
 <script type="text/javascript">

@@ -94,16 +94,16 @@ foreach($secciones_menu as $aux){
 
         <!-- Programas-->
         
-        <!--
-        <li><a style="background: #FFF; color: #969696; font-style: italic;">Programas</a></li>
+        
+        <li><a style="background: #FFF; color: #969696; font-style: italic;">Experiencias</a></li>
             <li>
-                <a style="cursor:pointer;">Programas</a>
+                <a style="cursor:pointer;">Experiencias</a>
                 <ul>
-                    <li><a href="/programas/introduccion/">Introducción</a></li>
-                    <li><a href="/programas/secciones/">Secciones</a></li>
+                    <li><a href="/experiencias/introduccion/">Introducción</a></li>
+                    <li><a href="/experiencias/secciones/">Secciones</a></li>
                 </ul>
             </li>
-          -->
+         
 
 
 

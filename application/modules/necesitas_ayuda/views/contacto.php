@@ -79,33 +79,7 @@
     </ul>
   </form>
 </div>
-<div class="float-right info-contacto wow fadeInRight">
-  <h2>Información de contacto</h2>
-  <div class="informacion">
-    <p><strong>Reservas: </strong> <a href="tel:<?=$generales->reserva_telefono?>"><?=$generales->reserva_telefono?></a><br />
-      <a href="mailto:<?=$generales->reserva_email?>"><?=$generales->reserva_email?></a> <br />
-      <br />
-      <strong>Oficina Chillán: </strong> <a href="tel:<?=$generales->chillan_telefono?>"><?=$generales->chillan_telefono?></a><br />
-      <a href="mailto:<?=$generales->chillan_email?>"><?=$generales->chillan_email?></a><br />
-      <?=$generales->chillan_horario?><br />
-      <br />
-      <strong>Oficina Concepción:</strong> <a href="tel:<?=$generales->concepcion_telefono?>">
-      <?=$generales->concepcion_telefono?>
-      </a><br />
-      <a href="mailto:<?=$generales->concepcion_email?>">
-      <?=$generales->concepcion_email?>
-      </a><br />
-      <?=$generales->concepcion_horario?>
-      <br /><br />
-      <strong>Oficina Santiago:</strong> <a href="tel:<?=$generales->santiago_telefono?>">
-      <?=$generales->santiago_telefono?>
-      </a><br />
-      <a href="mailto:<?=$generales->santiago_email?>"><?=$generales->santiago_email?>
-      </a><br />
-      <?=$generales->santiago_horario?>
-    </p>
-  </div>
-</div>
+
 <script type="text/javascript">
 $(".tabs-menu a").click(function(event) {
     event.preventDefault();

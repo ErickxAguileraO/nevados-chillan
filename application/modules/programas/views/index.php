@@ -51,7 +51,7 @@
 
 <div class="center valle-hermoso-act" id="actividades" style="margin-bottom: 50px;">
   <?=$this->layout->getNav();?>
-  <h1>Programas</h1>
+  <h1>Experiencias</h1>
   <div class="intro"> <?php echo ($introduccion) ? html_entity_decode($introduccion->descripcion) : ''; ?> 
     <!--
     <h2>Valle Hermoso: Lugar ideal para la entretención familiar</h2>

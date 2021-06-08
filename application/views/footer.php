@@ -34,7 +34,7 @@
   <div class="center">
     <div class="newsletter">
       <form id="new-newsletter" method="POST" action="#">
-        <h3 class="text-70">CONTÁCTANOS</h3>
+        <h3 class="text-70">NEWSLETTER</h3>
         <fieldset>
           <input class="input" placeholder="Nombre..." type="text" name="nombre" style="margin: 0;" />
           <input class="input" placeholder="Email..." type="text" name="email" />

@@ -1,5 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
-
+#CAMBIO DE NOMBRE DE "PROGRAMAS" A "EXPERIENCIAS" HECHO EL 07/06/2021
 class programas extends CI_Controller
 {
 
@@ -17,12 +17,12 @@ class programas extends CI_Controller
         $tipo_seccion = 99;
 
 #Title
-        $this->layout->title('Programas');
+        $this->layout->title('Experiencias');
 
 #Metas
-        $this->layout->setMeta('title', 'Programas');
-        $this->layout->setMeta('description', 'Programas');
-        $this->layout->setMeta('keywords', 'Programas');
+        $this->layout->setMeta('title', 'Experiencias');
+        $this->layout->setMeta('description', 'Experiencias');
+        $this->layout->setMeta('keywords', 'Experiencias');
 
 #flexslider
         $this->layout->css('/js/jquery/flexslider/flexslider.css');
@@ -55,7 +55,7 @@ class programas extends CI_Controller
         $data['introduccion'] = $this->ws->obtener(69, 'int_tipo_seccion = ' . $tipo_seccion . ' and int_visible = 1');
 
 
-        $this->layout->nav(array("Programas" => "/"));
+        $this->layout->nav(array("Experiencias" => "/"));
 
 
 
