@@ -149,20 +149,11 @@ public function envio(){
               # print_array($envio); die;
 
       if($envio){
-        $config = array(
-        'smtp_crypto' => 'ssl',
-        'protocol' => 'SMTP',
-        'smtp_host' => 'smtp.gmail.com',
-        'smtp_port' => 465,
-        'smtp_user' => 'webmail@aeurus.cl',
-        'smtp_pass' => 'webmail123',
-        'mailtype' => 'html',
-        'newline' => '\r\n'
-        );
+     
 
         //die("hola");
-        $this->load->library("email",$config);
-        $this->email->from('webmail@aeurus.cl', utf8_decode('Nevados de Chillán'));
+        #$this->load->library("email",$config);
+        $this->email->from('nevadoshelp@nevadosdechillan.com', utf8_decode('Nevados de Chillán'));
 
         $this->email->to($envio->email_destino);
 
@@ -172,7 +163,8 @@ public function envio(){
          if($this->email->send()){
           echo json_encode(array("result"=>true)); exit;
         }else {
-          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde"));
+         
+          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
         }
       }
 
@@ -340,33 +332,26 @@ public function envio_trabaja(){
               # print_array($envio); die;
 
               if($envio){
-                $config = array(
-                'smtp_crypto' => 'ssl',
-                'protocol' => 'SMTP',
-                'smtp_host' => 'smtp.gmail.com',
-                'smtp_port' => 465,
-                'smtp_user' => 'webmail@aeurus.cl',
-                'smtp_pass' => 'webmail123',
-                'mailtype' => 'html',
-                'newline' => "\r\n"
-                );
+                
 
 
-                $this->load->library("email",$config);
-                $this->email->from('webmail@aeurus.cl', utf8_decode('Nevados de Chillán'));
+                #$this->load->library("email",$config);
+                $this->email->from('nevadoshelp@nevadosdechillan.com', utf8_decode('Nevados de Chillán'));
 
-                $this->email->to($envio->email_destino);
-
+               $this->email->to($envio->email_destino);
+               
                 if($_FILES['adjunto']['tmp_name'] != ''){
                   $this->email->attach($_SERVER['DOCUMENT_ROOT'].$upload_dir.$nombre);
                 }
         $asunto = "Envío formulario Trabaja con nosotros web";
          $this->email->subject($asunto);
          $this->email->message(utf8_decode($cuerpo));
-         if($this->email->send())
-          echo json_encode(array("result"=>true));
-        else {
-          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde"));
+         if($this->email->send()){
+          echo json_encode(array("result"=>true));exit;
+        }else {
+          print_array($this->email->print_debugger());
+          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
+          exit;
         }
       }
 
