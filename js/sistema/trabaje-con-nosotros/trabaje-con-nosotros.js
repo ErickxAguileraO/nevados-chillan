@@ -34,7 +34,7 @@ $(document).ready(function() {
             killer: true
           });
           setTimeout(function() {
-            window.location.href = '/necesitas-ayuda/faqs/enviado';
+            window.location.href = '/necesitas-ayuda/trabaja-con-nosotros/enviado';
           }, 2000);
         }
         else
