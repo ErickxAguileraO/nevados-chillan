@@ -814,3 +814,7 @@ $route['experiencias/secciones/cargar-imagen']    = "programas/secciones/cargar_
 $route['experiencias/secciones/cortar-imagen']    = "programas/secciones/cortar_imagen";
 $route['experiencias/secciones/eliminar-imagen']  = "programas/secciones/eliminar_imagen";
 $route['experiencias/secciones/eliminar-imagen-adjunta'] = "programas/secciones/eliminar_imagen_adjunta";
+$route['programas/secciones/cargar-imagen']    = "programas/secciones/cargar_imagen";
+$route['programas/secciones/cortar-imagen']    = "programas/secciones/cortar_imagen";
+$route['programas/secciones/eliminar-imagen']  = "programas/secciones/eliminar_imagen";
+$route['programas/secciones/eliminar-imagen-adjunta'] = "programas/secciones/eliminar_imagen_adjunta";

@@ -92,6 +92,17 @@ $this->layout->current = 4;
     $this->ws->order('ban_orden ASC');
     $data['banners'] = $this->ws->listar(21,'ban_hotel = '.$hotel->codigo.' and ban_tipo_seccion = 1 and ban_estado = 1');
 
+    //Programas y Valores
+    $this->ws->order('prog_orden ASC');
+        $programas = $this->ws->listar(72,'prog_estado = 1 and prog_tipo = "parque-agua"');
+        foreach($programas as $pro){
+                $this->ws->order('opc_orden ASC');
+                $pro->opciones = $this->ws->listar(73, "opc_programa_verano = ".$pro->codigo);
+        }
+
+
+        $data["programas"] = $programas;
+
       //introduccion
       $data['introduccion'] = $this->ws->obtener(69, 'int_tipo_seccion = ' . $tipo_seccion . ' and int_visible = 1');
 
