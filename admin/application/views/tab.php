@@ -131,6 +131,11 @@ foreach($secciones_menu as $aux){
             				<?php if($permisos['todo']){ ?>
                                 <li><a href="/hoteles/<?php echo $aux->url; ?>/slider/">Slider</a></li>
                                 <li><a href="/hoteles/<?php echo $aux->url; ?>/introduccion/">Introducción</a></li>
+
+                                <?php if($aux->url != 'hotel-nevados' && $aux->url != 'hotel-alto-nevados'){ ?>
+                                <li><a href="/hoteles/<?php echo $aux->url;?>/programas/">Programas y Valores</a></li>
+                               <?php } ?> 
+                               
                 				<li><a href="/hoteles/<?php echo $aux->url; ?>/habitaciones/">Habitaciones</a></li>
                                 
                                 
@@ -175,9 +180,8 @@ foreach($secciones_menu as $aux){
                             <?php if($permisos['todo']){ ?>
             				    <li><a href="/hoteles/<?php echo $aux->url; ?>/banners/">Banners</a></li>
                                 
-                                <?php if($aux->url != 'hotel-nevados' && $aux->url != 'deptos-valle-hermoso' && $aux->url != 'hotel-alto-nevados'){ ?>
-                                <li><a href="/hoteles/<?php echo $aux->url;?>/programas/">Programas y Valores</a></li>
-                               <?php } ?> 
+                                
+                                
 
                             <?php } ?>
             			</ul>
