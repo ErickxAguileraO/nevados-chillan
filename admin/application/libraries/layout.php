@@ -11,7 +11,7 @@ class Layout {
 	private $navegacion = array();
 	public $current = '';
 
-    function Layout() {
+    function __construct() {
 	
 		#obj
         $this->obj =& get_instance();

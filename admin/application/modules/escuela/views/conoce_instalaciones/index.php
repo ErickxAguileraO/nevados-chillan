@@ -4,6 +4,16 @@
     </div>
     
     <form action="#" method="post" id="form-agregar" >
+
+        <div class="row" style="margin-top:30px; margin-bottom:30px;">
+        	<div class="col-md-10">
+
+                <label>Titulo </label>
+                <input class="form-control"   id="titulo" name="titulo" value="<?php echo ($informacion)?$informacion->titulo:''; ?>">
+                
+            </div>
+        </div>
+
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-10">
 
