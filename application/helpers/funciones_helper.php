@@ -610,5 +610,11 @@
 		echo "<script>parent.location.reload();parent.$.fn.colorbox.close();</script>";
 	}
 
+	function rutasCkeditor($string){
+		$string =  str_replace('src="/imagenes','src="/admin/imagenes', html_entity_decode($string)); 
+			
+		$string =  str_replace('href="/imagenes','href="/admin/imagenes', html_entity_decode($string)); 
+		return $string;
+	}
 
 ?>

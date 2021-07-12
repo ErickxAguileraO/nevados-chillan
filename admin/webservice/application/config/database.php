@@ -12,11 +12,11 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 
-$db['default']['username'] = 'da_admin';
+$db['default']['username'] = 'root';
 
-$db['default']['password'] = 'DbQkaxaWTk';
+$db['default']['password'] = '';
 
-$db['default']['database'] = 'nevados_site';
+$db['default']['database'] = 'nevados';
 
 
 

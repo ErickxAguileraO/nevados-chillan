@@ -65,8 +65,10 @@
 </div>
 
 
+
 <iframe class="wow fadeInRight" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27492.791855219188!2d-71.44251113076946!3d-36.91247789674862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966e922ffdbd8941%3A0xde2339b65841e6da!2sHotel+Nevados+de+Chillan!5e0!3m2!1ses!2scl!4v1493734960615" width="100%" height="450" frameborder="0" style="border:0; margin-top: 30px;" allowfullscreen></iframe>
-<!--</div>-->
+<a href="https://waze.to/lr/h63mnp1cqp" class="wase-btn" target="_blank"><img src="../../imagenes/template/wase-btn.jpg" /></a>
+  <!--</div>-->
 <script type="text/javascript">
     $(".tabs-menu a").click(function(event) {
         event.preventDefault();

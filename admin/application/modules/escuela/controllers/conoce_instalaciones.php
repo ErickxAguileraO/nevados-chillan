@@ -65,8 +65,8 @@ class Conoce_instalaciones extends CI_Controller {
                 echo json_encode(array("result"=>false,"msg"=>$error));
                 exit;
             }
-            
-            $datos['cni_descripcion'] = $this->input->post('descripcion');
+            $datos['cni_titulo'] = $this->input->post('titulo', true);    
+            $datos['cni_descripcion'] = $this->input->post('descripcion', true);
             
             if($codigo = $this->input->post('codigo')){
                 $this->ws->actualizar($this->modulo,$datos,"cni_codigo = $codigo");

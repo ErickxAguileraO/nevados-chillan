@@ -4,6 +4,7 @@ require(APPPATH.'/libraries/REST_Controller.php');
 
 class Api extends REST_Controller
 {
+	private $key;
 	function __construct()
     {
         // Construct our parent class
@@ -21,12 +22,27 @@ class Api extends REST_Controller
         $this->load->model('modulo_model','objModulo');
         $this->load->model('tablaJoin_model','objTablaJoin');
         
+		#captura la api key del header
+        #depende del servidor el nombre de la variable puede cambiar
+        $this->key = "";
+        $formas_key = array('x-api-key','X-Api-Key','X-API-KEY');
+        foreach($formas_key as $aux){
+            $this->key = $this->input->get_request_header($aux);
+            if($this->key) break;
+        }
+        
+        if(!$this->key){
+            $response = array(
+                "result" => false,
+                "msg" => "Key no v&aacute;lida"
+            );
+            $this->response($response, 400);
+        }
     }
     
     public function listado_post(){
 
-        $key = $this->input->get_request_header('X-Api-Key');
-        if($usuario = $this->objUsuario->get_user($key)){
+        if($usuario = $this->objUsuario->get_user($this->key)){
            if(!is_numeric($this->post('tabla'))){
                 $response = array(
                     "result" => false,
@@ -453,8 +469,7 @@ class Api extends REST_Controller
     
     public function obtener_post(){
 
-        $key = $this->input->get_request_header('X-Api-Key');
-        if($usuario = $this->objUsuario->get_user($key)){
+        if($usuario = $this->objUsuario->get_user($this->key)){
 
            if(!is_numeric($this->post('tabla'))){
                 $response = array(
@@ -810,8 +825,8 @@ class Api extends REST_Controller
     }
     
     public function insertar_post(){
-        $key = $this->input->get_request_header('X-Api-Key');
-        if($usuario = $this->objUsuario->get_user($key)){
+        
+        if($usuario = $this->objUsuario->get_user($this->key)){
 
             if(!is_numeric($this->post('tabla'))){
                 $response = array(
@@ -821,7 +836,7 @@ class Api extends REST_Controller
                 $this->response($response, 400);
             }
            
-            if(!$this->input->post('campos')){
+            if(!$this->post('campos')){
                 $response = array(
                     "result" => false,
                     "msg" => 'Debe indicar los campos a insertar'
@@ -881,8 +896,7 @@ class Api extends REST_Controller
     
     public function actualizar_post(){
         
-        $key = $this->input->get_request_header('X-Api-Key');
-        if($usuario = $this->objUsuario->get_user($key)){
+        if($usuario = $this->objUsuario->get_user($this->key)){
 
            if(!is_numeric($this->post('tabla'))){
                 $response = array(
@@ -957,8 +971,7 @@ class Api extends REST_Controller
     
     public function eliminar_post(){
         
-        $key = $this->input->get_request_header('X-Api-Key');
-        if($usuario = $this->objUsuario->get_user($key)){
+        if($usuario = $this->objUsuario->get_user($this->key)){
 
            if(!is_numeric($this->post('tabla'))){
                 $response = array(
