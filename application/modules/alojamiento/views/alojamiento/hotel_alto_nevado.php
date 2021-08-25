@@ -55,7 +55,7 @@ Se creó un gran hall de acceso y salas de estar en el primer nivel complementad
 practicando ski y snowboard o disfrutando de las aguas termales minerales y curativas.</p>
       -->
   </div>
-     <a href="https://waze.to/lr/h63mnp1cqp" class="wase-btn" target="_blank"><img src="../../imagenes/template/wase-btn.jpg" /></a>
+     <!-- <a href="https://waze.to/lr/h63mnp1cqp" class="wase-btn" target="_blank"><img src="../../imagenes/template/wase-btn.jpg" /></a> -->
 
   <div class="clear"></div>
 </div>

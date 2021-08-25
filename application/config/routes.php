@@ -30,6 +30,8 @@ $route['necesitas-ayuda/contacto'] = 'necesitas_ayuda/contacto';
 $route['necesitas-ayuda/contacto/enviado'] = 'necesitas_ayuda/contacto';
 $route['necesitas-ayuda/contacto/envio'] = 'necesitas_ayuda/envio';
 $route['necesitas-ayuda/faqs'] = 'necesitas_ayuda/faqs';
+$route['necesitas-ayuda/trabaja-con-nosotros'] = 'necesitas_ayuda/trabaja_nosotros';
+$route['necesitas-ayuda/trabaja-con-nosotros/enviado'] = 'necesitas_ayuda/trabaja_nosotros';
 $route['necesitas-ayuda/faqs/enviado'] = 'necesitas_ayuda/faqs';
 $route['necesitas-ayuda/faqs/envio'] = 'necesitas_ayuda/envio_trabaja';
 $route['necesitas-ayuda/como-llegar'] = 'necesitas_ayuda/como_llegar';
@@ -57,7 +59,9 @@ $route['invierno/bikepark'] = 'verano/bikepark';
 $route['invierno/calendario'] = 'verano/calendario';
 $route['invierno/descargar_archivo'] = 'invierno/descargar_archivo';
 
-
+/**EXPERIENCIAS */
+#CAMBIO DE NOMBRE DE "PROGRAMAS" A "EXPERIENCIAS" HECHO EL 07/06/2021
+$route['experiencias'] = 'programas/index';
 
 
 /* RUTAS PYME */

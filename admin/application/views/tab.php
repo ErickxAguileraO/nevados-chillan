@@ -94,16 +94,16 @@ foreach($secciones_menu as $aux){
 
         <!-- Programas-->
         
-        <!--
-        <li><a style="background: #FFF; color: #969696; font-style: italic;">Programas</a></li>
+        
+        <li><a style="background: #FFF; color: #969696; font-style: italic;">Experiencias</a></li>
             <li>
-                <a style="cursor:pointer;">Programas</a>
+                <a style="cursor:pointer;">Experiencias</a>
                 <ul>
-                    <li><a href="/programas/introduccion/">Introducción</a></li>
-                    <li><a href="/programas/secciones/">Secciones</a></li>
+                    <li><a href="/experiencias/introduccion/">Introducción</a></li>
+                    <li><a href="/experiencias/secciones/">Secciones</a></li>
                 </ul>
             </li>
-          -->
+         
 
 
 
@@ -131,6 +131,11 @@ foreach($secciones_menu as $aux){
             				<?php if($permisos['todo']){ ?>
                                 <li><a href="/hoteles/<?php echo $aux->url; ?>/slider/">Slider</a></li>
                                 <li><a href="/hoteles/<?php echo $aux->url; ?>/introduccion/">Introducción</a></li>
+
+                                <?php if($aux->url != 'hotel-nevados' && $aux->url != 'hotel-alto-nevados'){ ?>
+                                <li><a href="/hoteles/<?php echo $aux->url;?>/programas/">Programas y Valores</a></li>
+                               <?php } ?> 
+                               
                 				<li><a href="/hoteles/<?php echo $aux->url; ?>/habitaciones/">Habitaciones</a></li>
                                 
                                 
@@ -175,9 +180,8 @@ foreach($secciones_menu as $aux){
                             <?php if($permisos['todo']){ ?>
             				    <li><a href="/hoteles/<?php echo $aux->url; ?>/banners/">Banners</a></li>
                                 
-                                <?php if($aux->url != 'hotel-nevados' && $aux->url != 'deptos-valle-hermoso' && $aux->url != 'hotel-alto-nevados'){ ?>
-                                <li><a href="/hoteles/<?php echo $aux->url;?>/programas/">Programas y Valores</a></li>
-                               <?php } ?> 
+                                
+                                
 
                             <?php } ?>
             			</ul>

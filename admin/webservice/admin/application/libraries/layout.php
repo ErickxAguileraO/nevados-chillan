@@ -7,12 +7,12 @@ class Layout {
     private $title = '';
     private $titleDefault = 'Intranet';
     private $css_list = array(), $js_list = array();
-	private $metas = '';
+	private $metas = array();
 	private $navegacion = array();
 	public $current = '';
 	public $subCurrent = '';
 
-    function Layout() {
+    function __construct() {
 	
 		#obj
         $this->obj =& get_instance();

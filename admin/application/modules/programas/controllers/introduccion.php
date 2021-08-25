@@ -1,15 +1,15 @@
 <?php if (!defined('BASEPATH')) exit('No puede acceder a este archivo');
-
+#CAMBIO DE NOMBRE DE "PROGRAMAS" A "EXPERIENCIAS" HECHO EL 07/06/2021
 class Introduccion extends CI_Controller
 {
     private $modulo = 69;
     private $seccion = 99;
-
+    
     function __construct()
     {
         parent::__construct();
 
-        redirect('/portada/slider/'); 
+        #redirect('/portada/slider/'); 
     }
 
     public function index()

@@ -70,6 +70,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
   </div>
   <a href="https://waze.to/lr/h63mjyxte8" class="wase-btn" target="_blank"><img src="../../imagenes/template/wase-btn.jpg"></a>
   <div class="clear"></div>
+
   <?php /*?> <!-- Inicio Actividades -->
   <?php if(count($actividades)>0){ ?>
   <h2>Actividades</h2>

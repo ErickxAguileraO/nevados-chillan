@@ -800,15 +800,20 @@ $route['contactos_landing/eliminar-imagen']        = "contactos_landing/eliminar
 //PROGRAMAS
 
 #introduccion
-$route['programas/introduccion']                  = "programas/introduccion";
-$route['programas/introduccion/agregar']          = "programas/introduccion/agregar";
+#CAMBIO DE NOMBRE DE "PROGRAMAS" A "EXPERIENCIAS" HECHO EL 07/06/2021 
+$route['experiencias/introduccion']                  = "programas/introduccion";
+$route['experiencias/introduccion/agregar']          = "programas/introduccion/agregar";
 
 #secciones
-$route['programas/secciones']                  = "programas/secciones";
-$route['programas/secciones/(:num)']           = "programas/secciones";
-$route['programas/secciones/agregar']          = "programas/secciones/agregar";
-$route['programas/secciones/editar/(:num)']    = "programas/secciones/editar/$1";
-$route['programas/secciones/eliminar']         = "programas/secciones/eliminar";
+$route['experiencias/secciones']                  = "programas/secciones";
+$route['experiencias/secciones/(:num)']           = "programas/secciones";
+$route['experiencias/secciones/agregar']          = "programas/secciones/agregar";
+$route['experiencias/secciones/editar/(:num)']    = "programas/secciones/editar/$1";
+$route['experiencias/secciones/eliminar']         = "programas/secciones/eliminar";
+$route['experiencias/secciones/cargar-imagen']    = "programas/secciones/cargar_imagen";
+$route['experiencias/secciones/cortar-imagen']    = "programas/secciones/cortar_imagen";
+$route['experiencias/secciones/eliminar-imagen']  = "programas/secciones/eliminar_imagen";
+$route['experiencias/secciones/eliminar-imagen-adjunta'] = "programas/secciones/eliminar_imagen_adjunta";
 $route['programas/secciones/cargar-imagen']    = "programas/secciones/cargar_imagen";
 $route['programas/secciones/cortar-imagen']    = "programas/secciones/cortar_imagen";
 $route['programas/secciones/eliminar-imagen']  = "programas/secciones/eliminar_imagen";

@@ -60,7 +60,7 @@ acceden directamente a los baños termales, cuyas aguas minerales están a 36 gr
 temperatura.</p>
       -->
   </div>
-       <a href="https://waze.to/lr/h63mnp1cqp" class="wase-btn" target="_blank"><img src="/imagenes/template/wase-btn.jpg" /></a>
+       <!-- <a href="https://waze.to/lr/h63mnp1cqp" class="wase-btn" target="_blank"><img src="/imagenes/template/wase-btn.jpg" /></a> -->
   <div class="clear"></div>
 </div>
 <div class="contenedor">

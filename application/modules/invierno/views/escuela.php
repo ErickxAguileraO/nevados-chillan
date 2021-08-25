@@ -44,8 +44,8 @@
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="instalaciones wow fadeInLeft" style=" width:100%;">
-    <h1>Conoce nuestras instalaciones</h1>
-    <?php echo html_entity_decode($instalaciones->descripcion) ?>
+    <h1><?php echo $instalaciones->titulo?></h1>
+    <?php echo html_entity_decode(rutasCkeditor($instalaciones->descripcion)) ?>
     <?php if(count($imagenes)>0){ ?>
     <div class="instalacion">
       <ul class="slides">

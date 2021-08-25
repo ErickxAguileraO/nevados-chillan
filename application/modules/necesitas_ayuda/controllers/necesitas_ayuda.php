@@ -149,20 +149,11 @@ public function envio(){
               # print_array($envio); die;
 
       if($envio){
-        $config = array(
-        'smtp_crypto' => 'ssl',
-        'protocol' => 'SMTP',
-        'smtp_host' => 'smtp.gmail.com',
-        'smtp_port' => 465,
-        'smtp_user' => 'webmail@aeurus.cl',
-        'smtp_pass' => 'webmail123',
-        'mailtype' => 'html',
-        'newline' => '\r\n'
-        );
+     
 
         //die("hola");
-        $this->load->library("email",$config);
-        $this->email->from('webmail@aeurus.cl', utf8_decode('Nevados de Chillán'));
+        #$this->load->library("email",$config);
+        $this->email->from('nevadoshelp@nevadosdechillan.com', utf8_decode('Nevados de Chillán'));
 
         $this->email->to($envio->email_destino);
 
@@ -172,7 +163,8 @@ public function envio(){
          if($this->email->send()){
           echo json_encode(array("result"=>true)); exit;
         }else {
-          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde"));
+         
+          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
         }
       }
 
@@ -232,6 +224,53 @@ $this->layout->nav(array("¿Necesitas ayuda?: FAQs"=>"/"));
 #La vista siempre,  debe ir cargada al final de la función
 $this->layout->view('faqs',$data);
 }
+
+public function trabaja_nosotros()	{
+  #Title
+  $this->layout->title('Trabaja con nosotros');
+  
+  #Metas
+  $this->layout->setMeta('title','Trabaja con nosotros');
+  $this->layout->setMeta('description','Trabaja con nosotros');
+  $this->layout->setMeta('keywords','Trabaja con nosotros');
+  
+  #flexslider
+  $this->layout->css('/js/jquery/flexslider/flexslider.css');
+  $this->layout->js('/js/jquery/flexslider/jquery.flexslider.js');
+  
+  #WebFont
+  $this->layout->css('/css/webfont/stylesheet.css');
+  
+  #Accordeon
+  $this->layout->js('/js/jquery/accordeon/accordeon.js');
+  #validador
+  $this->layout->css('/js/jquery/validation-engine/css/validationEngine.jquery.css');
+  $this->layout->css('/js/jquery/validation-engine/css/validationEngine.jquery.css');
+  $this->layout->js('/js/jquery/validation-engine/js/jquery.validationEngine.js');
+  $this->layout->js('/js/jquery/validation-engine/js/languages/jquery.validationEngine-es.js');
+  $this->layout->js('/js/jquery/noty/packaged/jquery.noty.packaged.js');
+  $this->layout->js('/js/jquery/validador-rut/jquery.Rut.min.js');
+  $this->layout->js('/js/sistema/trabaje-con-nosotros/trabaje-con-nosotros.js');
+  
+  //Contenido
+  //slider
+  $this->ws->order('sli_orden ASC');
+  $data['sliders'] = $this->ws->listar(13,'sli_tipo_seccion = 12 and sli_estado = 1');
+  
+  //Preguntas frecuentes
+  $this->ws->order('prf_orden ASC');
+  $data['faqs'] = $this->ws->listar(57,'prf_estado = 1');
+  
+  //Area
+  $this->ws->order('art_orden ASC');
+  $data['areas'] = $this->ws->listar(33,'art_estado = 1');
+  
+  #Nav
+  $this->layout->nav(array("¿Necesitas ayuda?: Trabaja con nosotros"=>"/")); 
+  
+  #La vista siempre,  debe ir cargada al final de la función
+  $this->layout->view('trabaja_nosotros',$data);
+  }
 
 public function envio_trabaja(){
   if($this->input->post()){
@@ -293,33 +332,26 @@ public function envio_trabaja(){
               # print_array($envio); die;
 
               if($envio){
-                $config = array(
-                'smtp_crypto' => 'ssl',
-                'protocol' => 'SMTP',
-                'smtp_host' => 'smtp.gmail.com',
-                'smtp_port' => 465,
-                'smtp_user' => 'webmail@aeurus.cl',
-                'smtp_pass' => 'webmail123',
-                'mailtype' => 'html',
-                'newline' => "\r\n"
-                );
+                
 
 
-                $this->load->library("email",$config);
-                $this->email->from('webmail@aeurus.cl', utf8_decode('Nevados de Chillán'));
+                #$this->load->library("email",$config);
+                $this->email->from('nevadoshelp@nevadosdechillan.com', utf8_decode('Nevados de Chillán'));
 
-                $this->email->to($envio->email_destino);
-
+               $this->email->to($envio->email_destino);
+               
                 if($_FILES['adjunto']['tmp_name'] != ''){
                   $this->email->attach($_SERVER['DOCUMENT_ROOT'].$upload_dir.$nombre);
                 }
         $asunto = "Envío formulario Trabaja con nosotros web";
          $this->email->subject($asunto);
          $this->email->message(utf8_decode($cuerpo));
-         if($this->email->send())
-          echo json_encode(array("result"=>true));
-        else {
-          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde"));
+         if($this->email->send()){
+          echo json_encode(array("result"=>true));exit;
+        }else {
+          print_array($this->email->print_debugger());
+          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
+          exit;
         }
       }
 
