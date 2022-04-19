@@ -1,11 +1,12 @@
 <?php
 $config = array(
-	'smtp_crypto' => 'ssl',
-	'protocol' => 'smtp',
-	'smtp_host' => 'smtp.tie.cl',
-	'smtp_port' => 465,
-	'smtp_user' => 'nevadoshelp@nevadosdechillan.com',
-	'smtp_pass' => 'ndc2019',
-	'mailtype' => 'html',
-	'newline' => "\r\n"
+    'smtp_crypto' => 'ssl',
+    'protocol' => 'smtp',
+    'smtp_host' => 'smtp.gmail.com',
+    'smtp_port' => 465,
+    'smtp_user' => 'rrhh.nevados@gmail.com',
+    'smtp_pass' => 'nevados+2022_rrhh',
+    'mailtype' => 'html',
+    'charset' => 'utf-8',
+    'newline' => "\r\n"
 );
