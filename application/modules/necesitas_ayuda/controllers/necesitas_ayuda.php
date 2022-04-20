@@ -163,7 +163,7 @@ public function envio(){
          if($this->email->send()){
           echo json_encode(array("result"=>true)); exit;
         }else {
-         
+          print_array($this->email->print_debugger());die;
           echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
         }
       }
@@ -299,16 +299,20 @@ public function envio_trabaja(){
         $nombre = slug($this->input->post('nombre')).time().'.'.$extension;
 
         $configU['upload_path'] = $_SERVER['DOCUMENT_ROOT'].$upload_dir;
-    $configU['allowed_types'] = 'doc|docx|ppt|pptx|pdf';
+        $configU['allowed_types'] = 'doc|docx|ppt|pptx|pdf';
         $configU['file_name'] = $nombre;
+        $configU["overwrite"] = 1;
+        $configU["max_size"] = 10000;
     #$configU['max_size']	= '100';
         #$config['max_width']  = '130';
         #$config['max_height']  = '100';
     $this->load->library('upload', $configU);
 
-    if(!$this->upload->do_upload('adjunto'))
-      #$error .= $this->upload->display_errors();
-            $error .= "<div>* Ha ocurrido un error al subir la imagen. Inténtelo nuevamente.</div>";
+    if(!$this->upload->do_upload('adjunto')){
+      print_array($configU);
+      print_array($this->upload->display_errors());die;
+            // $error .= "<div>* Ha ocurrido un error al subir la imagen. Inténtelo nuevamente.</div>";
+    }
     else{
 
             $data['tcn_archivo_adjunto'] = $upload_dir.$nombre;
