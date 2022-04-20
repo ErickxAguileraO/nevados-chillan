@@ -28,7 +28,9 @@
                 <div class="row" style="margin-top:10px;">
                     <div class="col-md-5">
                         <?php if($trabaja->archivo_adjunto){ ?>
-                            <a href="/ayuda/trabaja-con-nosotros/descargar-archivo/<?php echo $trabaja->codigo; ?>/">Descargar Archivo</a>
+                            
+                            <a href= "<?php echo SITIO_URL . $trabaja->archivo_adjunto; ?>" target="_blank">Descargar Archivo</a>
+                            
                         <?php } else{ ?>
                             <p style="font-size: 11px;">Sin archivo adjunto</p>
                         <?php } ?>
