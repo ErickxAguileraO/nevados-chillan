@@ -163,7 +163,7 @@ public function envio(){
          if($this->email->send()){
           echo json_encode(array("result"=>true)); exit;
         }else {
-          print_array($this->email->print_debugger());die;
+          
           echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
         }
       }
@@ -309,8 +309,8 @@ public function envio_trabaja(){
     $this->load->library('upload', $configU);
 
     if(!$this->upload->do_upload('adjunto')){
-      print_array($configU);
-      print_array($this->upload->display_errors());die;
+      echo json_encode(array("result"=>false,"msg"=>"Ha ocurrido un error al subir el archivo. Inténtelo nuevamente."));
+      exit;
             // $error .= "<div>* Ha ocurrido un error al subir la imagen. Inténtelo nuevamente.</div>";
     }
     else{
@@ -353,7 +353,7 @@ public function envio_trabaja(){
          if($this->email->send()){
           echo json_encode(array("result"=>true));exit;
         }else {
-          print_array($this->email->print_debugger());
+         
           echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
           exit;
         }
