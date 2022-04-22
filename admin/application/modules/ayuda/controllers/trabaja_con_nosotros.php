@@ -218,7 +218,7 @@ class Trabaja_con_nosotros extends CI_Controller {
 
 
 		header('Content-Type: application/vnd.ms-excel');
-		header('Content-Disposition: attachment;filename="Trabaja-con-nosotros - '.date('d-m-Y H:i:s').'.xls"');
+		header('Content-Disposition: attachment;filename="Trabaja-con-nosotros - '.date('d-m-Y H-i-s').'.xls"');
 		header('Cache-Control: max-age=0');
 
 		$objWriter=PHPExcel_IOFactory::createWriter($objPHPExcel,'Excel5');
