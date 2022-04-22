@@ -327,6 +327,20 @@ public function envio_trabaja(){
     $data['tcn_area_de_trabajo'] = $this->input->post('area');
 
     if($this->ws->insertar(59,$data)){
+      $cuerpo_respuesta = $this->load->view("_email_respuesta_cliente", $data, true);
+
+      $asunto = "Envío formulario Trabaja con nosotros web";
+
+      $this->email->from('nevadoshelp@nevadosdechillan.com', utf8_decode('Nevados de Chillán'));
+
+      
+      
+
+      $this->email->to($data['tcn_email']);
+      $this->email->subject($asunto);
+         $this->email->message(utf8_decode($cuerpo_respuesta));
+         $this->email->send();
+
       $envio = $this->ws->obtener(33,'art_codigo = '.$this->input->post('area'));
       $data['asunto'] = $envio->nombre;
       $cuerpo = $this->load->view("_email_trabaja", $data, true);
@@ -347,7 +361,7 @@ public function envio_trabaja(){
                 if($_FILES['adjunto']['tmp_name'] != ''){
                   $this->email->attach($_SERVER['DOCUMENT_ROOT'].$upload_dir.$nombre);
                 }
-        $asunto = "Envío formulario Trabaja con nosotros web";
+        
          $this->email->subject($asunto);
          $this->email->message(utf8_decode($cuerpo));
          if($this->email->send()){

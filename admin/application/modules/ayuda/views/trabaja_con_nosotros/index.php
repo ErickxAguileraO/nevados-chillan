@@ -1,7 +1,10 @@
 ﻿<div class="col-sm-10 text-left marg-fix">
   	<div class="titulo-btn">
         <h1>Trabaja con Nosotros</h1>
+        <a href="/ayuda/trabaja_con_nosotros/exportar" class="btn btn-default">Exportar</a>
     </div>
+
+   
   
     <table class="table table-bordered">
         <thead>

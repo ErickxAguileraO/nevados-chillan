@@ -57,32 +57,14 @@ a:hover, table a:hover {
               <td bgcolor="#f0f0f0" style="color: #333; font-size: 15px;"><?php echo $tcn_hora; ?></td>
             </tr>
 
-            <!--
-            <tr>
-              <td style="color:#666; font-size:15px;">Comuna:</td>
-              <td style="color: #333; font-size: 15px;">  <?php //if($comuna){ echo $comuna; } ?>  </td>
-            </tr>  -->
+
 
           </tbody>
         </table>
-        <!-- <p style="font-size:15px; color:#333; margin:0 0 20px;">Texto descriptivo del contenido que se publicará en este bloque de texto descriptivo del contenido que se publicará en este bloque de texto descriptivo.</p> -->
-        <!--<p style="font-size:15px; color:#333; margin:0 0 60px;">Atentamente, Grupo Saesa</p>-->
+
       </div></td>
   </tr>
-  <!--<tr>
-    <td bgcolor="#dbdbdb"><table width="740" border="0" align="center" cellpadding="20" cellspacing="0">
-        <tr>
-          <td valign="middle"><img src="<?php echo "https://{$_SERVER[HTTP_HOST]}"; ?>/imagenes/template/saesa.png" width="220" height="47" alt="Grupo SAESA" /></td>
-          <td valign="top" style="font-size:13px; font-family: 'Open Sans', sans-serif;">info@saesa.cl<br />
-            600 4012020<br />
-            Bulnes 441, Osorno, Chile</td>
-          <td valign="top" style="font-size:13px; font-family: 'Open Sans', sans-serif;"><a href="#">Frontel</a><br />
-            <a href="#">Saesa</a><br />
-            <a href="#">Luz osorno</a><br />
-            <a href="#">Edelaysen</a></td>
-        </tr>
-      </table></td>
-  </tr>-->
+
 </table>
 </body>
 </html>
