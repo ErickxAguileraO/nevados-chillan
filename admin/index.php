@@ -4,7 +4,7 @@
     #zona horaria
 	date_default_timezone_set('America/Santiago');
     #url sitio
-	define('SITIO_URL', 'http://www.nevadosdechillan.com');
+	define('SITIO_URL', 'http://nevados.aeurus.cl');
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -23,7 +23,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	#define('ENVIRONMENT', 'development');
+	// define('ENVIRONMENT', 'development');
 	define('ENVIRONMENT', 'production');
 /*
  *---------------------------------------------------------------
