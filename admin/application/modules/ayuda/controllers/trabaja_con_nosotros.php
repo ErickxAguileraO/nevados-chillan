@@ -77,6 +77,7 @@ class Trabaja_con_nosotros extends CI_Controller {
 	public function exportar(){
 
 		require APPPATH."libraries/PHPExcel/PHPExcel.php";
+		$this->ws->order("tcn_codigo DESC");
 		$this->ws->joinLeft(33, "tcn_area_de_trabajo = art_codigo");
 		$formularios = $this->ws->listar($this->modulo);
 
@@ -151,13 +152,14 @@ class Trabaja_con_nosotros extends CI_Controller {
 			),
 		);
 
-		$objPHPExcel->getActiveSheet()->getStyle('1:5')->applyFromArray($styleFont);
+		$objPHPExcel->getActiveSheet()->getStyle('1:6')->applyFromArray($styleFont);
 
 		$objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(20);
 		$objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(20);
 		$objPHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth(20);
 		$objPHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth(20);
 		$objPHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth(20);
+		$objPHPExcel->getActiveSheet()->getColumnDimension('F')->setWidth(20);
 
 
 		$i=1;
@@ -176,6 +178,9 @@ class Trabaja_con_nosotros extends CI_Controller {
 		
 		$objPHPExcel->setActiveSheetIndex(0)->setCellValue('E'.$i, 'CV'); 
 		$objPHPExcel->getActiveSheet()->getStyle('E'.$i)->applyFromArray($styleArray);
+
+		$objPHPExcel->setActiveSheetIndex(0)->setCellValue('F'.$i, 'Fecha'); 
+		$objPHPExcel->getActiveSheet()->getStyle('F'.$i)->applyFromArray($styleArray);
 		
 
 		$i++;
@@ -203,6 +208,10 @@ class Trabaja_con_nosotros extends CI_Controller {
 			if(($n->archivo_adjunto)){ $archivo_adjunto = $n->archivo_adjunto; }else{ $archivo_adjunto = '';}
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('E'.$i, SITIO_URL . $archivo_adjunto );
 			$objPHPExcel->getActiveSheet()->getStyle('E'.$i)->applyFromArray($styleArraInfo);
+
+			if(($n->fecha)){ $fecha = new DateTime($n->fecha); $fecha = $fecha->format('d-m-Y'); }else{ $fecha = '';}
+			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('F'.$i, $fecha );
+			$objPHPExcel->getActiveSheet()->getStyle('F'.$i)->applyFromArray($styleArraInfo);
 
 			$i++;
 
