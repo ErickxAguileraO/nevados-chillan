@@ -116,17 +116,18 @@
         <a href="mailto:<?=$generales->reserva_email?>">
         <?=$generales->reserva_email?>
         </a></p><?php */?>
-      <div class="grid-footer-2 color">
+      <!-- <div class="grid-footer-2 color">
         <ul>
           <li><a href="#" target="_blank"><img src="/imagenes/template/skinpass.png" width="63" height="60" /></a></li>
           <li><a href="https://itunes.apple.com/us/app/nevados-de-chill%C3%A1n-app/id1217403552?mt=8" target="_blank"><img src="/imagenes/template/apple.png" width="176" height="60" /></a></li>
           <li><a href="https://play.google.com/store/apps/details?id=com.skitude.NevadosDeChillan&hl=es" target="_blank"><img src="/imagenes/template/android.png" width="176" height="60" /></a></li>
         </ul>
-      </div>
+      </div> -->
       <div class="grid-footer-2">
         <ul>
           <li><a href="/mapa-del-sitio/">Mapa de sitio</a></li>
           <li><a href="/noticias/prensa/">Información prensa</a></li>
+          <li><a href="/necesitas-ayuda/condiciones/">Condiciones</a></li>
         </ul>
       </div>
     </div>
