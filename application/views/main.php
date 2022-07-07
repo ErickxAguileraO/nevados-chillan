@@ -14,34 +14,36 @@
       <ul class="menu">
         <li><a href="/descubrenos/" title="Descúbrenos: Tecla de Acceso 1" accesskey="1">Descúbrenos</a></li>
         <li><a href="/experiencias/" title="Experiencias: Tecla de Acceso 2" accesskey="2">Experiencias</a></li>
-        <li><a href="/descubrenos/#hoteles" title="Hoteles: Tecla de Acceso 3" accesskey="3">Hoteles</a>
+        <li><a href="/descubrenos/#hoteles" title="Hoteles: Tecla de Acceso 3" accesskey="3">Alojamiento</a>
           <ul class="submenu">
             <li><a href="/alojamiento/hotel-nevados">Hotel Nevados</a></li>
             <li><a href="/alojamiento/hotel-alto-nevados">Hotel Alto Nevados</a></li>
+            <li><a href="/valle-hermoso/">Valle Hermoso</a></li>
           </ul>
         </li>
-        <li><a href="/valle-hermoso/" title="Valle Hermoso: Tecla de Acceso 4" accesskey="4">Valle Hermoso</a></li>
+        <!-- <li><a href="/valle-hermoso/" title="Valle Hermoso: Tecla de Acceso 4" accesskey="4">Valle Hermoso</a></li> -->
         <li><a href="/parque-de-agua/" title="Parque de agua: Tecla de Acceso 5" accesskey="5">Parque de agua</a></li>
         <li><a href="#" title="Actividades de invierno">Invierno</a>
           <ul class="submenu">
-            <li><a href="/invierno/">Ski & Snowboard</a></li>
+            <li><a href="/invierno/">Centro de Ski</a></li>
             <li><a href="/invierno/mapa-de-pistas">Mapa de pistas</a></li>
-            <li><a href="/invierno/infonieve">Infonieve</a></li>
+            <li><a href="/invierno/infonieve">Reporte de Montaña</a></li>
             <li><a href="/invierno/escuela/">Escuela Ski</a></li>
             <li><a href="/invierno/backcountry">Backcountry</a></li>
+            <li><a href="/zona_debutantes/">Zona Debutantes</a></li>
           </ul>
         </li>
-        <li><a href="#" title="Actividades de verano">Verano</a>
-          <ul class="submenu">
+        <li><a href="/bikepark" >Bikepark</a>
+          <!-- <ul class="submenu">
             <li><a href="/bikepark">BikePark Nevados</a></li>
             <li><a href="/verano/">Outdoor</a></li>
-          </ul>
+          </ul> -->
         </li>
         <li><a href="#" title="Ayuda: Tecla de Acceso 8" accesskey="8">Ayuda</a>
           <ul class="submenu sub-ayuda">
-            <li><a href="/necesitas-ayuda/como-llegar/">Como llegar</a></li>
+            <!-- <li><a href="/necesitas-ayuda/como-llegar/">Como llegar</a></li> -->
             <li><a href="/necesitas-ayuda/faqs/">Preguntas frecuentes</a></li>
-            <li><a href="/necesitas-ayuda/condiciones/">Condiciones</a></li>
+            <!-- <li><a href="/necesitas-ayuda/condiciones/">Condiciones</a></li> -->
             <li><a href="/necesitas-ayuda/contacto/">Contacto</a></li>
             <li><a href="/necesitas-ayuda/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
           </ul>

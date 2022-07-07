@@ -225,6 +225,20 @@ foreach($secciones_menu as $aux){
                     <li><a href="/parque-agua/banners/">Banners</a></li>
     			</ul>
     		</li>
+
+
+
+            <li>
+    			<a style="cursor:pointer;">Zona Debutantes</a>
+    			<ul>
+    				<li><a href="/zona-debutantes/slider/">Slider</a></li>
+                    <li><a href="/zona-debutantes/introduccion/">Introducción</a></li>
+                    <li><a href="/zona-debutantes/programas/">Programas y Valores</a></li>
+                    <li><a href="/zona-debutantes/secciones/">Secciones</a></li>
+                    <li><a href="/zona-debutantes/banners/">Banners</a></li>
+    			</ul>
+    		</li>
+
         
             <!-- invierno -->
             <li><a style="background: #FFF; color: #969696; font-style: italic;;">Invierno</a></li>
