@@ -53,7 +53,7 @@
 <p>Los servicios incluyen camarines y un spa, generando en su conjunto un lugar en donde se puede vivir un gran día.</p>
   -->
   </div>
-      <a href="https://waze.to/lr/h63mnp1f4m" class="wase-btn" target="_blank" style="margin-top:50px;"><img src="../../imagenes/template/wase-btn.jpg"></a>
+      <!-- <a href="https://waze.to/lr/h63mnp1f4m" class="wase-btn" target="_blank" style="margin-top:50px;"><img src="../../imagenes/template/wase-btn.jpg"></a> -->
 
   <div class="clear"></div>
   <?php /*?><!-- Inicio servicios asociados -->
