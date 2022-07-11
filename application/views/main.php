@@ -18,7 +18,7 @@
           <ul class="submenu">
             <li><a href="/alojamiento/hotel-nevados">Hotel Nevados</a></li>
             <li><a href="/alojamiento/hotel-alto-nevados">Hotel Alto Nevados</a></li>
-            <li><a href="/valle-hermoso/">Valle Hermoso</a></li>
+            <li><a href="/valle-hermoso/" title="Valle Hermoso: Tecla de Acceso 4" accesskey="4">Valle Hermoso</a></li>
           </ul>
         </li>
         <!-- <li><a href="/valle-hermoso/" title="Valle Hermoso: Tecla de Acceso 4" accesskey="4">Valle Hermoso</a></li> -->
