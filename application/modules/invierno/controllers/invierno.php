@@ -574,13 +574,18 @@ public function descargar_archivo(){
        $archivo->ruta='/imagenes/modulos/invierno/mapa-pistas/';
        $archivo->nombre='1528829058-grande';
        $archivo->extension='.jpg';
-    $URL_ADMINISTRACION='adminevados.aeurus.cl';
+
+        
+
+       $URL_ADMINISTRACION='http://admin.nevados.aeurus.cl/'; // Comentar esto en Producción
+       
+       //$URL_ADMINISTRACION='http://admin.nevadosdechillan.com/'; --> Descomentar esto en Producción
 
        $this->load->helper('download');
        //$data = file_get_contents($URL_ADMINISTRACION.$archivo->ruta);
-       $data = file_get_contents('/admin/imagenes/modulos/invierno/mapa-pistas/1528829058-grande.jpg');
+       $data = file_get_contents($URL_ADMINISTRACION.'/imagenes/modulos/invierno/mapa-pistas/1528829058-grande.jpg');
        $name = slug($archivo->nombre).'.'.$archivo->extension;
-             
+
        force_download($name, $data);
    }
 
