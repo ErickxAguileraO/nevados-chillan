@@ -165,14 +165,17 @@ public function envio(){
         }else {
           
           echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
+          exit;
         }
       }
 
     }else{
       echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde"));
+      exit;
     }
   }else {
     echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde"));
+    exit;
   }
 
 }
@@ -368,16 +371,18 @@ public function envio_trabaja(){
           echo json_encode(array("result"=>true));exit;
         }else {
          
-          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde"));
+          echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo más tarde1"));
           exit;
         }
       }
 
     }else{
-      echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde"));
+      echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde2"));
+      exit;
     }
   }else {
-    echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde"));
+    echo json_encode(array("result"=>false,"msg"=>"Problemas al env&iacute;ar el mensaje, intentalo m&acute;s tarde3"));
+    exit;
   }
   } //si hay ARCHIVO
 
