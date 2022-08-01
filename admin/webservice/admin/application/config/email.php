@@ -1,11 +1,12 @@
 <?php
 $config = array(
-	'smtp_crypto' => 'ssl',
+	'smtp_crypto' => 'tls',
 	'protocol' => 'smtp',
-	'smtp_host' => 'smtp.gmail.com',
-	'smtp_port' => 465,
-	'smtp_user' => 'web@aeurus.cl',
-	'smtp_pass' => 'web20101',
-	'mailtype' => 'html',
-	'newline' => "\r\n"
+    'smtp_host' => 'smtp-relay.sendinblue.com',
+    'smtp_port' => 587,
+    'smtp_user' => 'acatalan@aeurus.cl',
+    'smtp_pass' => 'CrwKqn9LH8IzdBy1',
+    'mailtype' => 'html',
+    'charset' => 'ISO-8859-1',
+    'newline' => "\r\n"
 );

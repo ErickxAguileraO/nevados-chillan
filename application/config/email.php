@@ -1,12 +1,12 @@
 <?php
 $config = array(
-    'smtp_crypto' => 'ssl',
+    'smtp_crypto' => 'tls',
     'protocol' => 'smtp',
-    'smtp_host' => 'smtp.gmail.com',
-    'smtp_port' => 465,
-    'smtp_user' => 'rrhh.nevados@gmail.com',
-    'smtp_pass' => 'nevados+2022_rrhh',
+    'smtp_host' => 'smtp-relay.sendinblue.com',
+    'smtp_port' => 587,
+    'smtp_user' => 'concepcion@nevadosdechillan.com',
+    'smtp_pass' => 'cYHSZLrwF2GR6pJP',
     'mailtype' => 'html',
-    'charset' => 'utf-8',
+    'charset' => 'ISO-8859-1',
     'newline' => "\r\n"
 );
