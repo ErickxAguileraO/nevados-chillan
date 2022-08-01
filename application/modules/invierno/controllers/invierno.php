@@ -568,19 +568,19 @@ strong{
 
 
 public function descargar_archivo(){
-               // $codigo = $this->uri->segment(4);
-       //$archivo = $this->ws->obtener(43,"ippa_codigo = $codigo");
-       $archivo=false;
+       $archivo = new stdClass;
        $archivo->ruta='/imagenes/modulos/invierno/mapa-pistas/';
        $archivo->nombre='1528829058-grande';
-       $archivo->extension='.jpg';
-    $URL_ADMINISTRACION='adminevados.aeurus.cl';
+       $archivo->extension='jpg';
+
+
+       $admin = $_SERVER{"DOCUMENT_ROOT"} . "/admin"; 
 
        $this->load->helper('download');
-       //$data = file_get_contents($URL_ADMINISTRACION.$archivo->ruta);
-       $data = file_get_contents('/admin/imagenes/modulos/invierno/mapa-pistas/1528829058-grande.jpg');
+       $data = file_get_contents($admin.'/imagenes/modulos/invierno/mapa-pistas/1528829058-grande.jpg');
        $name = slug($archivo->nombre).'.'.$archivo->extension;
-             
+
+
        force_download($name, $data);
    }
 
