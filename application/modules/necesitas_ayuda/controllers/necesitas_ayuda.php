@@ -157,7 +157,7 @@ public function envio(){
 
         $this->email->to($envio->email_destino);
 
-        $asunto = "Envío formulario contacto web";
+        $asunto = utf8_decode("Envío formulario contacto web");
          $this->email->subject($asunto);
          $this->email->message(utf8_decode($cuerpo));
          if($this->email->send()){
@@ -332,7 +332,7 @@ public function envio_trabaja(){
     if($this->ws->insertar(59,$data)){
       $cuerpo_respuesta = $this->load->view("_email_respuesta_cliente", $data, true);
 
-      $asunto = "Envío formulario Trabaja con nosotros web";
+      $asunto = utf8_decode("Envío formulario Trabaja con nosotros web");
 
       $this->email->from('nevadoshelp@nevadosdechillan.com', utf8_decode('Nevados de Chillán'));
 
