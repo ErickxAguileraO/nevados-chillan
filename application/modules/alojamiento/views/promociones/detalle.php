@@ -83,7 +83,7 @@
       
         <?php /*?><input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" /> <?php */?>
       </form>
-        <a class="btn-enviar" href="Tel:600 6000 170" style="font-size:16px; height:auto; padding:8px 10px;">Llamar ahora</a>
+        <a class="btn-enviar" href="Tel:+5644335002" style="font-size:16px; height:auto; padding:8px 10px;">Llamar ahora</a>
     </div>
   </div>
   <div class="texto-detalle float-right">
