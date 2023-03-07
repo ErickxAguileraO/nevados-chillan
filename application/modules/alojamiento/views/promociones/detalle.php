@@ -130,7 +130,7 @@
 -->
 <style>
 .li_blue_promocion{
-  background: #004f8d !important;
+  background: #004a8e !important;
 }
 
 </style>
@@ -188,27 +188,60 @@
         <li class="dos">
           <label for="noches">Noches</label>
           <br />
-          <input id="noches" name="NOCHES" type="text" value="1" />
+          <!-- <input id="noches" name="NOCHES" type="text" value="1" /> -->
+          <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+
+          </select>
+
         </li>
         <li class="dos">
           <label for="adultos">Adultos</label>
           <br />
-          <input name="ADULTOS" id="adultos" type="text" value="2" />
+          <!-- <input name="ADULTOS" id="adultos" type="text" value="2" /> -->
+          <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+
+          </select>
         </li>
         <li>
           <label for="ninos">Niños</label>
           <br />
-          <input id="ninos" name="CHILDREN" type="text" value="" placeholder="6 a 12 años" />
+          <!-- <input id="ninos" name="CHILDREN" type="text" value="" placeholder="6 a 12 años" /> -->
+          <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+
+          </select>
         </li>
         <li>
           <label for="infantes">Infantes</label>
           <br />
-          <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" />
+          <!-- <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" /> -->
+          <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+
+          </select>
         </li>
       </ul>
       <?php /*?><img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
       <div style="text-align:center;">
-        <input style="width:auto; margin:0 auto; padding:4px 20px; float:none;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar" />
+        <input style="width:auto; margin: 10px auto; padding:4px 50px; float:none;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar" />
         </div>
       </form>
     </div>

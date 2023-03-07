@@ -241,22 +241,50 @@
             <li>
               <label for="noches_r">Noches</label>
               <br />
-              <input id="noches_r" name="NOCHES" type="text" value="1" />
+              <!-- <input id="noches_r" name="NOCHES" type="text" value="1" /> -->
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+              </select>
             </li>
             <li>
               <label for="adultos_r">Adultos</label>
               <br />
-              <input name="ADULTOS" id="adultos_r" type="text" value="2" />
+              <!-- <input name="ADULTOS" id="adultos_r" type="text" value="2" /> -->
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+              </select>
             </li>
             <li>
               <label for="ninos_r">Niños</label>
               <br />
-              <input name="CHILDREN" type="text" id="ninos_r" value="" placeholder="6 a 12 años" />
+              <!-- <input name="CHILDREN" type="text" id="ninos_r" value="" placeholder="6 a 12 años" /> -->
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+              </select>
             </li>
             <li>
               <label for="infantes_r">Infantes</label>
               <br />
-              <input name="INFANTES" type="text" id="infantes_r" value="" placeholder="0 a 5 años" />
+              <!-- <input name="INFANTES" type="text" id="infantes_r" value="" placeholder="0 a 5 años" /> -->
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+              </select>
             </li>
             <li>
               <input type="submit" class="btn-enviar" onclick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar" />

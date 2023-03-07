@@ -105,7 +105,7 @@
 	bottom: 0;
 	left: 0;
 	width: 0%;
-	border-bottom: 4px solid #f57517;
+	border-bottom: 4px solid #c95d2a;
 	transition: 0.4s;
 }
 #nav ul li a:hover:after {
@@ -145,7 +145,7 @@
 	bottom: 0;
 	left: 0;
 	width: 0%;
-	border-bottom: 4px solid #f57517;
+	border-bottom: 4px solid #c95d2a;
 	transition: 0.4s;
 }
 #nav ul li a ul li a:hover:after {
@@ -217,7 +217,7 @@
 	height:auto;
 	margin:0;
 	padding:0;
-	border-bottom: 1px solid #004f8d;
+	border-bottom: 1px solid #004a8e;
 }
 #nav ul li:last-child{ border-bottom: none;}
 #nav ul li a{

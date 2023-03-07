@@ -140,7 +140,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
 <div class="center cont2 wow fadeInLeft" id="<?=$item->url?>"><!-- imagen chica -->
   <div class="texto float-right">
     <h2 style="color:#033e6c;"><?=$item->titulo?></h2>
-    <p style="color:#004f8d;"><?=$item->bajada?></p>
+    <p style="color:#004a8e;"><?=$item->bajada?></p>
     <!-- si es un enlace -->
     <?php if($item->link){ ?>
     <span><a href="<?=$item->link?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
@@ -192,7 +192,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
   <div class="center">
     <div class="texto wow fadeInLeft">
       <h2 style="color:#033e6c;"><?=$item->titulo?></h2>
-      <p  style="color:#004f8d;"><?=$item->bajada?></p>
+      <p  style="color:#004a8e;"><?=$item->bajada?></p>
       <!-- si es un enlace -->
       <?php if($item->link){ ?>
       <span><a  href="<?=$item->link?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
@@ -237,7 +237,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
 <div class="center cont2 wow fadeInLeft" id="<?=$item->url?>"><!-- imagen chica -->
   <div class="texto">
     <h2 style="color:#033e6c !important;"><?=$item->titulo?></h2>
-    <p  style="color:#004f8d !important;"><?=$item->bajada?></p>
+    <p  style="color:#004a8e !important;"><?=$item->bajada?></p>
     <!-- si es un enlace -->
     <?php if($item->link){ ?>
     <span><a href="<?=$item->link?>"> <img src="/imagenes/template/arrow.png" class="arrow" />
@@ -289,7 +289,7 @@ vehículos 4x4 o usar cadenas. Se encuentra a 80 Km de la ciudad de Chillán, a 
   <div class="center">
     <div class="texto wow fadeInLeft">
     <h2 style="color:#033e6c !important;"><?=$item->titulo?></h2>
-    <p  style="color:#004f8d !important;"><?=$item->bajada?></p>
+    <p  style="color:#004a8e !important;"><?=$item->bajada?></p>
       <!-- si es un enlace -->
       <?php if($item->link){ ?>
       <span><a  href="<?=$item->link?>"> <img src="/imagenes/template/arrow.png" class="arrow" />

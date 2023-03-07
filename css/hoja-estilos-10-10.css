@@ -53,11 +53,11 @@ body {
 	font: 62.5% 'Raleway', sans-serif;
 }
 *::-moz-selection {
- background: #f57517;
+ background: #c95d2a;
  color: #fff;
 }
 *::selection {
-	background: #f57517;
+	background: #c95d2a;
 	color: #fff;
 }
 .center {
@@ -320,7 +320,7 @@ body {
 	bottom: 0;
 	left: 0;
 	width: 0%;
-	border-bottom: 4px solid #f57517;
+	border-bottom: 4px solid #c95d2a;
 	transition: 0.4s;
 }
 .nav ul li a:hover:after {
@@ -358,7 +358,7 @@ body {
 	bottom: 0;
 	left: 0;
 	width: 0%;
-	border-bottom: 4px solid #f57517;
+	border-bottom: 4px solid #c95d2a;
 	transition: 0.4s;
 }
 .nav ul li a ul li a:hover:after {
@@ -788,7 +788,7 @@ footer p a:hover {
 	width: 25%;
 }
 .btn-enviar2 a {
-	background: #f57517;
+	background: #c95d2a;
 	border-radius: 3px;
 	color: #fff;
 	text-transform: uppercase;
@@ -1353,7 +1353,7 @@ footer p a:hover {
 .formulario .btn, .form-trabajo .btn a, .newsletter .btn {
 	width: 20%;
 	border-radius: 3px;
-	background: #f57517;
+	background: #c95d2a;
 	padding: 10px 0;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -1407,10 +1407,10 @@ select option{ text-indent:10px; padding:2px 0;}
 	width: 100%;
     padding: 15px;
     display: inline-block;
-    border: 1px solid #f57517;
+    border: 1px solid #c95d2a;
     transition: all linear 0.15s;
     font-size: 1.200em;
-    color: #f57517;
+    color: #c95d2a;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 3px;
@@ -1430,7 +1430,7 @@ select option{ text-indent:10px; padding:2px 0;}
 	margin-top: -12px;
 	font-size: 13px;
 	line-height: 22px;
-	border: 1px solid #f57517;
+	border: 1px solid #c95d2a;
 	border-radius: 0 0 4px 4px;
 	margin-bottom: 10px;
 }
@@ -1892,7 +1892,7 @@ nav#navigation  a{
 	text-align: center;
 	background: #ff7400 !important;
 	border: none !important;
-	border-bottom: 2px solid #f57517 !important;
+	border-bottom: 2px solid #c95d2a !important;
 	color: #fff;
 	border-radius: 3px;
 	font-weight: bold;
@@ -2410,7 +2410,7 @@ hr {
     font-family: 'raleway', sans-serif;
     font-size: 12px;
     color: #fff;
-    border-bottom: 2px solid #f57517;
+    border-bottom: 2px solid #c95d2a;
 	position: absolute;
     right: 0;
     top: 0;
