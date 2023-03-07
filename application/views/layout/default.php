@@ -106,7 +106,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             bottomOffset: 50,
             locationOffset: 50,
             title: 'Subir',
-            containerColor: '#f57517',
+            containerColor: '#c95d2a',
             titleAsText: true,
 
         });
@@ -147,6 +147,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdn.jsdelivr.net/npm/pickerjs@1.2.1/dist/picker.min.js"></script>
 </head>
 <body>
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT75JBJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
