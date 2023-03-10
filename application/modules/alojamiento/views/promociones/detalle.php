@@ -4,130 +4,25 @@
         $https = 'https://';
     $url = $https.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 ?>
-<?php /*?><!-- inicio Slider -->
-<div class="flexslider">
-<?php if(count($sliders)>0){ ?>
-  <ul class="slides">
-    <?php foreach($sliders as $item): ?>
-    <li style="background: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta?>) no-repeat;">
-      <div class="center">
-      <?php if($item->url_video){ ?>
-      <div class="texto-slider float-left">
-        <?php if($item->link){ ?>
-          <a href="<?=$item->link?>" title="<?=$item->titulo?>">
-        <?php }?>
-        <span><?=$item->antetitulo?></span>
-        <?php if($item->link){ ?>
-          </a>
-        <?php }?>
-        <h2><?=$item->titulo?></h2>
-        <p><?=$item->bajada?></p>
-      </div>
-      <div class="video-slider float-right">
-        <iframe width="100%" height="300px" src="<?=str_replace('watch?v=','embed/',$item->url_video)?>" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <?php }else{ ?>
-        <div class="full-texto-slider float-left">
-          <?php if($item->link){ ?>
-            <a href="<?=$item->link?>" title="<?=$item->titulo?>">
-          <?php }?>
-          <span><?=$item->antetitulo?></span>
-          <?php if($item->link){ ?>
-            </a>
-          <?php }?>
-          <h2><?=$item->titulo?></h2>
-          <p><?=$item->bajada?></p>
-        </div>
-      <?php } ?>
-      </div>
-    </li>
-  <?php endforeach; ?>
-  </ul>
-<?php }?>
-</div>
-<!-- Fin Slider --><?php */?>
+
 
 <div class="center">
   <?=$this->layout->getNav();?>
   <div class="imagen-detalle float-left" style="height:auto;"><img class="img-rounded" src="<?=URL_ADMINISTRACION.$promocion->imagen_adjunta_detalle?>" alt="<?=$promocion->nombre?>" />
     <div class="formulario-reserva movil-res" style="float:none; width:auto; padding-top:1px;">
       <?php /*?><form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
-        <ul>
-        <li>
-          <label for="calendario">Fecha llegada</label>
-          <br />
-          <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
-        </li>
-        <li class="dos">
-          <label for="noches">Noches</label>
-          <br />
-          <input id="noches" name="NOCHES" type="text" value="1" />
-        </li>
-        <li class="dos">
-          <label for="adultos">Adultos</label>
-          <br />
-          <input name="ADULTOS" id="adultos" type="text" value="2" />
-        </li>
-        <li>
-          <label for="ninos">Niños</label>
-          <br />
-          <input id="ninos" name="CHILDREN" type="text" value="" placeholder="6 a 12 años" />
-        </li>
-        <li>
-          <label for="infantes">Infantes</label>
-          <br />
-          <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" />
-        </li>
-      </ul>
-      <img src="/imagenes/template/web-pay.jpg" style="width:351px; display:none;" /><?php */?>
+
       
         <?php /*?><input style="width:auto;" type="submit" class="btn-enviar" onClick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" /> <?php */?>
       </form>
-        <a class="btn-enviar" href="Tel:+56443350002" style="font-size:16px; height:auto; padding:8px 10px;">Llamar ahora</a>
+        <a class="btn-enviar" href="https://wa.me/message/QMRFXVHVW6B6D1" style="font-size:16px; height:auto; padding:8px 10px;">Chat reserva</a>
     </div>
   </div>
   <div class="texto-detalle float-right">
     <h2 style="font-size:40px; margin-top:0;"><?=$promocion->nombre?></h2>
-    <?php /*?><div class="social-media">
-      <ul>
-        <li>Compartir en:</li>
-        <li>
-            <a class="popup-rs" href='https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>&t=<?php echo $promocion->nombre; ?>&p[summary]=contenido', 'facebook-share-dialog', 'width=626,height=436'>
-                <img src="/imagenes/template/share-facebook.png" />
-            </a>
-        </li>
-        <li>
-            <a class="popup-rs" href="https://twitter.com/share?text=<?php echo $promocion->nombre; ?>&url=<?php echo $url; ?>" title="Twitter" >
-                <img src="/imagenes/template/share-twitter.png" />
-            </a>
-        </li>
-        <li>
-            <a class="popup-rs" href="https://plus.google.com/share?url=<?php echo $url; ?>" title="Google+" >
-                <img src="/imagenes/template/share-google.png" />
-            </a>
-        </li>
-        <li>
-            <a href="whatsapp://send?text=<?php echo $url; ?>" data-action="share/whatsapp/share">
-                <img src="/imagenes/template/share-wsp.png" />
-            </a>
-        </li>
-      </ul>
-      <div class="clear"></div>
-    </div><?php */?>
 
 
-<!--
 
-   [descuento_uno] => 50%
-    [descuento_dos] => 20%
-    [descuento_tres] => 10%
-    [monto_uno] => 50.000
-    [monto_dos] => 80.000
-    [monto_tres] => 90.000
-    [codigo_promocion] => PRCX921
-    [precio_anterior] => 100.000
-    [resumen] =>   RESUMEN DE PROMOCION
--->
 <style>
 .li_blue_promocion{
   background: #004a8e !important;
@@ -189,12 +84,12 @@
           <label for="noches">Noches</label>
           <br />
           <!-- <input id="noches" name="NOCHES" type="text" value="1" /> -->
-          <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
+          <select name="NOCHES" id="noches_r">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
 
           </select>
 
@@ -203,12 +98,12 @@
           <label for="adultos">Adultos</label>
           <br />
           <!-- <input name="ADULTOS" id="adultos" type="text" value="2" /> -->
-          <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
+          <select name="ADULTOS" id="adultos_r">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
 
           </select>
         </li>
@@ -216,12 +111,13 @@
           <label for="ninos">Niños</label>
           <br />
           <!-- <input id="ninos" name="CHILDREN" type="text" value="" placeholder="6 a 12 años" /> -->
-          <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
+          <select name="CHILDREN" id="ninos_r">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
 
           </select>
         </li>
@@ -229,12 +125,13 @@
           <label for="infantes">Infantes</label>
           <br />
           <!-- <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" /> -->
-          <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
+          <select name="INFANTES" id="infantes_r">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
 
           </select>
         </li>

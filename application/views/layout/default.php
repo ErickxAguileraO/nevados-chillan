@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" xml:lang="es">
-<!--[if IE 6]>
-<html id="ie6" dir="ltr" lang="es-ES">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" dir="ltr" lang="es-ES">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" dir="ltr" lang="es-ES">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]>
-<html dir="ltr" lang="es-ES">
-<![endif]-->
+
 <head>
+
+
+
+
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -28,12 +21,19 @@
 <!-- js -->
 <?php echo $this->layout->getJs(); ?>
 
+<!-- Google tag (gtag.js) (2023)--> 
+<script async src=https://www.googletagmanager.com/gtag/js?id=G-8D739C3PN5></script> 
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-8D739C3PN5'); </script>
+
+<!-- Facebook pixel (2023)-->
+<meta name="facebook-domain-verification" content="mk7olnecp3fsfqy3fv19ib31gutgro" />
+
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KT75JBJ');</script>
+})(window,document,'script','dataLayer','GTM-KT75JBJ');</script> -->
 <!-- End Google Tag Manager -->
 
 <!-- Código de instalación Cliengo para nevados2020@gmail.com --> 
@@ -64,7 +64,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <?php } ?>
 
 <!-- Facebook Pixel Code -->
-<script>
+<!-- <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -78,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=2306195459503097&ev=PageView&noscript=1"
-/></noscript>
+/></noscript> -->
 <!-- End Facebook Pixel Code -->
 
 <!-- metas facebook -->
@@ -111,22 +111,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         });
     });
-//      $(function(){
-//            $('.panel-wrapper .btn').on('click',function(){
-//                $('.panel-reserva').toggle('fast');
-//            });
-//
-//        });
+
 
 </script>
-<!-- Datepicker -->
-<?php /*?><script src="/js/jquery/ui/1.10.4/jquery.ui.datepicker-es.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-    $(function() {
-        $("#datepicker").datepicker({dateFormat: 'yy-mm-dd'});
-    } );
-</script><?php */?>
+
 
 <script type="text/javascript">
 
@@ -163,67 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="clear"></div>
     </header>
     <!-- Contenido -->
-    <?php /*?><div  id="contenido">
-        <div class="left-side">
-            <a href="https://www.skipassnevadosdechillan.com/" onClick="_gaq.push(['_trackEvent', 'recarga', 'cargar'])" target="_blank">
-                <img src="/imagenes/template/ticket-online.png"/>
-            </a>
-
-
-        </div>
-        <div class="panel-wrapper">
-            <div class="btn"><img src="/imagenes/template/btn-reserva.png" />
-                <img src="/imagenes/template/icono-resp.png" class="resp" />
-            </div>
-            <div class="panel-reserva">
-                <div class="menu-panel">
-                    <ul>
-                        <li><a href="/alojamiento/hotel-nevados/">Hotel<br />
-                                Nevados</a></li>
-                        <li><a href="/alojamiento/hotel-alto-nevados/">Hotel<br />
-                                Alto Nevados</a></li>
-                        <li><a href="/valle-hermoso/">Valle<br />
-                                hermoso</a></li>
-                        <li><a href="/necesitas-ayuda/faqs/">Faqs</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-                <div class="formulario-panel">
-                    <h3>Haz tu reserva</h3>
-                    <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
-                        <ul>
-                            <li>
-                                <label>Fecha de llegada</label>
-                                <br />
-                                <input type="text" id="datepicker" name="FECHA_CHECKIN" class="datepicker" value="<?=date('Y-m-d')?>" />
-                            </li>
-                            <li>
-                                <label>Noches</label>
-                                <br />
-                                <input type="text" name="NOCHES" value="1" />
-                            </li>
-                            <li>
-                                <label>Adultos</label>
-                                <br />
-                                <input type="text" name="ADULTOS" value="2" />
-                            </li>
-                            <li>
-                                <label>Niños</label>
-                                <br />
-                                <input type="text" name="CHILDREN" placeholder="6 a 12 años" />
-                            </li>
-                            <li>
-                                <label>Infantes</label>
-                                <br />
-                                <input type="text" name="INFANTES" placeholder="0 a 5 años" />
-                            </li>
-                        </ul>
-                        <input type="submit" class="btn-reseva-panel" onClick="_gaq.push(['_trackEvent', 'reserva1', 'submit1'])" value="Enviar Reserva">
-                    </form>
-                    <img src="/imagenes/template/web-pay-reserva.png" /> </div>
-            </div>
-        </div>
-    </div><?php */?>
+    
     <?=$content_for_layout?>
     <div class="clear"></div>
 <!-- Footer -->
