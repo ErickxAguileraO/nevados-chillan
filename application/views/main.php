@@ -5,7 +5,7 @@
       <?php if(isset($home_indicador)){ ?>
       <h1>Centro de Ski, Resort de montaña y thermal spa |Nevados de Chillán</h1>
       <?php } else{ ?>
-      <a href="/" title="Inicio: Tecla de Acceso 0" accesskey="0"><img src="/imagenes/template/logo_nevados_blanco.png" alt="Centro de Ski, Resort de montaña y thermal spa |Nevados de Chillán" /></a>
+      <a href="/" title="Inicio: Tecla de Acceso 0" accesskey="0"><img src="/imagenes/template/Logo_Nevados_Blanco_2.png" alt="Centro de Ski, Resort de montaña y thermal spa |Nevados de Chillán" /></a>
       <?php } ?>
     </div>
     
@@ -155,7 +155,7 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
-                
+
               </select>
             </li>
             <li>
