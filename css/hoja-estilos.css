@@ -2066,6 +2066,7 @@ nav#navigation  a{
 }
 .texto-detalle {
 	width: 52%;
+	word-wrap: break-word;
 }
 .texto-detalle ul, .texto-detalle2 ul{
 	margin-left: 13px;
