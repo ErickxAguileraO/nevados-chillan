@@ -58,6 +58,7 @@
           <label for="calendario">Fecha llegada</label>
           <br />
           <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
+       
         </li>
         <li>
           <label for="noches">Noches</label>

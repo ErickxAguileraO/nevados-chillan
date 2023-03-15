@@ -69,38 +69,7 @@ $(document).ready(function(){
 <!-- Fin Slider -->
 
 <?php /*?><div class="center reserva wow bounceIn">
-  <div class="texto-reserva"> <span>No pierdas tiempo</span>
-    <p>Haz tu reserva ahora</p>
-    <small>y disfruta de los mejores departamentos y hoteles</small></div>
-  <div class="formulario-reserva">
-    <form action="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" method="get" target="_blank">
-      <ul>
-        <li>
-          <label for="calendario">Fecha llegada</label><br />
-          <input id="calendario" name="FECHA_CHECKIN" type="text" value="<?=date('Y-m-d')?>" />
-        </li>
-        <li>
-          <label for="noches_r">Noches</label><br />
-          <input id="noches_r" name="NOCHES" type="text" value="1" />
-        </li>
-        <li>
-          <label for="adultos_r">Adultos</label><br />
-          <input name="ADULTOS" id="adultos_r" type="text" value="2" />
-        </li>
-        <li>
-          <label for="ninos_r">Niños</label><br />
-          <input name="CHILDREN" type="text" id="ninos_r" value="" placeholder="6 a 12 años" />
-        </li>
-        <li>
-          <label for="infantes_r">Infantes</label><br />
-          <input name="INFANTES" type="text" id="infantes_r" value="" placeholder="0 a 5 años" />
-        </li>
-      </ul>
-      <!--<img src="/imagenes/template/web-pay.jpg" width="351" height="75" />-->
-      <input type="submit" class="btn-enviar" onclick="_gaq.push(['_trackEvent', 'estatico', 'reservar'])" value="Reservar Ahora" />
-    </form>
-  </div>
-  <div class="clear"></div>
+
 </div><?php */?>
 <div class="contenedor cont-seccion01"> 
   <!-- Inicio primer Acceso Directo -->
