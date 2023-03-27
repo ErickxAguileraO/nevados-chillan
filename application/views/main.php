@@ -8,7 +8,7 @@
       <a href="/" title="Inicio: Tecla de Acceso 0" accesskey="0"><img src="/imagenes/template/Logo_Nevados_Blanco_2.png" alt="Centro de Ski, Resort de montaña y thermal spa |Nevados de Chillán" /></a>
       <?php } ?>
     </div>
-    
+    <p class="txt-menu-bar-responsivo">MENÚ</p>
     <!-- [MENU] -->    
     <div class="nav" id="nav">
       <ul class="menu">
