@@ -2963,9 +2963,30 @@ hr {
 .span-inline img{
 	width: 100%;
 }*/
-
-
-
+.txt-menu-bar-responsivo{
+	display: none;
+}
+.center-home{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.txt-block-contenido{
+	padding: 10px;
+}
+.txt-block-contenido a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	width: auto;
+	height: 40px;
+	color: white;
+	background-color: #171717;
+	font-weight: 700;
+	width: 120px;
+	font-size: 14px;
+}
 .cont-secciones{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -2981,7 +3002,20 @@ hr {
 
 
 
-
+/* Redes sociales */
+.grid-instagram{
+	display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 20px;
+}
+.grid-instagram blockquote{
+	height: 100%;
+}
+.grid-instagram .Header{
+	display: none !important;
+}
 
 /********** RESPONSIVE **********/
 
@@ -3232,6 +3266,14 @@ footer { padding-top: 50px;}
 }
 
 @media screen and (max-width: 959px) {
+.txt-menu-bar-responsivo{
+	display: block;
+    position: absolute;
+	color: white;
+	font-weight: 700;
+    top: 20px;
+	right: 60px;
+}
 #top{
 	display: none;
 	width: 100%;
@@ -3291,7 +3333,10 @@ footer .newsletter fieldset{ width:auto;}
 }
 
 @media screen and (max-width: 900px) {
-
+.txt-block-contenido{
+	padding: 20px;
+	margin-bottom: 60px;
+}
 	
 .cont-seccion01, .cont-secciones{
 	display: grid;
@@ -3456,6 +3501,9 @@ footer .informacion .grid-footer-2:last-child img{ width:100%; height:auto; }
 .block-table .block-td .valor { font-size: 28px;}
 }
 @media screen and (max-width: 770px) {
+.txt-menu-bar-responsivo{
+    top: 5px;
+}
 .text-70, footer .newsletter .text-70, .noticias h2.text-70 {
     font-size: 30px;
 }
@@ -4004,6 +4052,7 @@ h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaci
 
 }
 @media screen and (max-width: 400px) {
+
 .slides .center { margin-top: 30%;}
 
 footer .informacion .coll-footer h4 {
@@ -4078,6 +4127,10 @@ figure.effect-sadie:hover h3 {
     top: 53px;
 }
 @media screen and (max-width: 357px) {
+.txt-menu-bar-responsivo{
+    top: -23px;
+	right: 7px;
+}
 #wrapper {
     padding-top: 0;
 }
