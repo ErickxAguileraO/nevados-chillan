@@ -148,6 +148,7 @@ $(document).ready(function() {
     <?php if(count($accesosDirectos)>1){ $i=0;
     foreach($accesosDirectos as $item):
       if($i>0){ ?>
+    <!-- texto derecha -->
     <div class="wow fadeInLeft">
         <figure class="effect-sadie"
             style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
@@ -179,10 +180,32 @@ $(document).ready(function() {
 
 endforeach;
 
+
+
 } ?>
 
-    <!-- Fin accesos director 4 -->
-
+    <!-- texto izquierda -->
+    <div class="txt-block-contenido center-home">
+        <h1>Texto de prueba</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus odit nemo animi, quae vel
+            eius aliquam porro. Iure, blanditiis pariatur quis repudiandae dignissimos facilis quod ut tempora cum
+            mollitia.</p>
+        <a href="">Leer más</a>
+    </div>
+    
+    <div class="wow fadeInLeft">
+        <figure class="effect-sadie"
+            style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
+            <figcaption>
+                <div class="block-bottom">
+                    <h2><a href="<?=$item->link?>">
+                            <?=$item->titulo?>
+                        </a></h2>
+                    <?php?>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
 </div>
 
 <!-- Inicio Noticias -->
