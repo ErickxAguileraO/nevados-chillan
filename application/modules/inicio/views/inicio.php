@@ -98,7 +98,7 @@ $(document).ready(function() {
     <!-- Fin Primer Acceso Directo -->
 
     <!-- Inicio Calendario -->
-    <div class="calendario wow fadeInRight">
+    <!-- <div class="calendario wow fadeInRight">
         <?php /*?><h2>Calendario de Actividades</h2><?php */?>
         <?php if(count($calendarios)>0){
 
@@ -137,7 +137,7 @@ $(document).ready(function() {
         <span class="more float-left"><img src="/imagenes/template/arrow.png" class="arrow" /><a href="calendario">Ver
                 todas las actividades</a></span>
         <?php }else echo "<p>No hay actividades</p>"; ?>
-    </div>
+    </div> -->
     <!-- Fin Calendario -->
 
     <div class="clear"></div>
@@ -148,32 +148,41 @@ $(document).ready(function() {
     <?php if(count($accesosDirectos)>1){ $i=0;
     foreach($accesosDirectos as $item):
       if($i>0){ ?>
-    <!-- texto derecha -->
-    <div class="wow fadeInLeft">
-        <figure class="effect-sadie"
-            style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
-            <figcaption>
-                <div class="block-bottom">
-                    <h2><a href="<?=$item->link?>">
-                            <?=$item->titulo?>
-                        </a></h2>
-                    <?php /*?><p><?=$item->resumen?><br />
-                        <br />
-                        <span><img src="/imagenes/template/arrow.png" class="arrow" /><a href="<?=$item->link?>">Más
-                                Información</a></span>
-                    </p><?php */?>
-                </div>
-            </figcaption>
-        </figure>
-    </div>
-    <div class="txt-block-contenido center-home">
-        <h1>Texto de prueba</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus odit nemo animi, quae vel
-            eius aliquam porro. Iure, blanditiis pariatur quis repudiandae dignissimos facilis quod ut tempora cum
-            mollitia.</p>
-        <a href="">Leer más</a>
-    </div>
 
+
+        <?php if($item->orden % 2 == 0) {?>
+            <!-- texto derecha -->
+            <div class="wow fadeInLeft">
+            <figure class="effect-sadie"
+                style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
+
+            </figure>
+            </div>
+            <div class="txt-block-contenido center-home">
+                <h1><?=$item->titulo?></h1>
+                <p><?=$item->resumen?></p>
+                <a href="<?=$item->link?>">Leer más</a>
+            </div>
+
+
+
+        <?php }else{?>
+            <!-- texto izquierda -->
+            <div class="txt-block-contenido center-home">
+                <h1><?=$item->titulo?></h1>
+                <p><?=$item->resumen?></p>
+                <?php if($item->link){?>
+                    <a href="<?=$item->link?>">Leer más</a>
+                <?php } ?>
+            </div>
+    
+            <div class="wow fadeInLeft">
+                <figure class="effect-sadie"
+                    style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
+
+                </figure>
+            </div>
+        <?php } ?>
     <?php }
 
   $i++;
@@ -184,34 +193,13 @@ endforeach;
 
 } ?>
 
-    <!-- texto izquierda -->
-    <div class="txt-block-contenido center-home">
-        <h1>Texto de prueba</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus odit nemo animi, quae vel
-            eius aliquam porro. Iure, blanditiis pariatur quis repudiandae dignissimos facilis quod ut tempora cum
-            mollitia.</p>
-        <a href="">Leer más</a>
-    </div>
-    
-    <div class="wow fadeInLeft">
-        <figure class="effect-sadie"
-            style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
-            <figcaption>
-                <div class="block-bottom">
-                    <h2><a href="<?=$item->link?>">
-                            <?=$item->titulo?>
-                        </a></h2>
-                    <?php?>
-                </div>
-            </figcaption>
-        </figure>
-    </div>
+
 </div>
 
 <!-- Inicio Noticias -->
 <?php if(count($noticias)>0){ ?>
 <div class="center noticias">
-    <h2 class="text-center text-70" style="padding-top:40px;">Noticias</h2>
+    <h2 class="text-center text-70" style="padding-top:40px;">Novedades</h2>
     <?php /*?><p>Mantente al día con las últimas informaciones de nuestro centro.</p><?php */?>
     <div class="carrusel responsive">
         <?php $i = 0; foreach($noticias as $item): ?>

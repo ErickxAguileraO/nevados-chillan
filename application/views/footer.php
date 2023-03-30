@@ -64,7 +64,7 @@
   <?php } ?> 
   <!-- Fin Auspiciadores -->
   <?php } ?>
-  <div class="center">
+  <!-- <div class="center">
     <div class="newsletter">
       <form id="new-newsletter" method="POST" action="#">
         <h3 class="text-70">NEWSLETTER</h3>
@@ -89,13 +89,13 @@
           </ul>
         </fieldset>
       </form>
-    </div>
-    <div class="newsletter-auspiciadores">
+    </div> -->
+    <!-- <div class="newsletter-auspiciadores">
       <figure><img src="/imagenes/template/chile-travel.png" width="128" height="150" class="chile-travel" /></figure>
       <figure><img src="/imagenes/template/trip-advisor.png" width="212" height="150" class="trip-logo" /></figure>
       <figure><img src="/imagenes/template/chile-best-2017.png" width="155" height="150" class="chile-best 2017" /></figure>
       <figure><img src="/imagenes/template/chile-best-2018.png" width="155" height="150" class="chile-best 2018" /></figure>
-    </div>
+    </div> -->
     <div class="informacion">
       <?php /*?><div class="coll-footer">
         <h4>Oficina Concepción</h4>
@@ -125,7 +125,7 @@
           </li>
         </ul>
       </div><?php */?>
-      <div class="coll-footer" style="display: block; margin: 0 auto; ">
+      <!-- <div class="coll-footer" style="display: block; margin: 0 auto; ">
         <h4>Oficina Chillán</h4>
         <ul>
           <li><a href="tel:<?=$generales->chillan_telefono?>">
@@ -138,7 +138,7 @@
             <?=$generales->chillan_horario?>
           </li>
         </ul>
-      </div>
+      </div> -->
       <?php /*?><p><strong>Reservas: </strong> <a href="tel:<?=$generales->reserva_telefono?>">
         <?=$generales->reserva_telefono?>
         </a>
