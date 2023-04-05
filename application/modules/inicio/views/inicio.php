@@ -74,80 +74,13 @@ $(document).ready(function() {
 <?php /*?><div class="center reserva wow bounceIn">
 
 </div><?php */?>
-<div class="contenedor cont-seccion01">
-    <!-- Inicio primer Acceso Directo -->
-    <?php if(count($accesosDirectos)>0){ ?>
-    <div class="wow fadeInLeft">
-        <figure class="effect-sadie"
-            style="background-image: url(<?=URL_ADMINISTRACION.$accesosDirectos[0]->imagen_adjunta?>) !important; height: 565px; position: relative; background-size: cover;">
-            <figcaption>
-                <div class="block-bottom">
-                    <h3><a href="<?=$accesosDirectos[0]->link?>">
-                            <?=$accesosDirectos[0]->titulo?>
-                        </a></h3>
-                    <p><?=$accesosDirectos[0]->resumen?><br />
-                        <?php /*          
-          <br />
-          <span><img src="/imagenes/template/arrow.png" class="arrow" /><a href="<?=$accesosDirectos[0]->link?>">Más
-                        Información</a></span></p><?php */?>
-                </div>
-            </figcaption>
-        </figure>
-    </div>
-    <?php } ?>
-    <!-- Fin Primer Acceso Directo -->
 
-    <!-- Inicio Calendario -->
-    <!-- <div class="calendario wow fadeInRight">
-        <?php /*?><h2>Calendario de Actividades</h2><?php */?>
-        <?php if(count($calendarios)>0){
-
-      foreach($calendarios as $item): ?>
-        <div class="actividad-calendario">
-            <div class="fecha">
-                <div class="icono-calendario"><span>
-                        <?php $dia = explode("-",$item->fecha_inicio); echo $dia[2];?>
-                    </span> </div>
-                <span>
-                    <?=mes_corto($item->fecha_inicio,1,false)?>
-                </span>
-            </div>
-            <div class="Datos">
-                <h3><a href="calendario/<?=$item->codigo?>-<?=$item->url?>">
-                        <?=$item->titulo?>
-                    </a></h3>
-                <span><img src="/imagenes/template/reloj-icono.png" />Del
-                    <?=fecha_corta($item->fecha_inicio,1)?>
-                    a las
-                    <?=extrae_hora($item->hora_inicio)?>
-                    al
-                    <?=fecha_corta($item->fecha_termino,1)?>
-                    a las
-                    <?=extrae_hora($item->hora_termino,'')?>
-                </span>
-                <p>
-                    <?=$item->resumen?>
-                </p>
-                <span><img src="/imagenes/template/marker-icono.png" />
-                    <?=$item->lugar?>
-                </span>
-            </div>
-        </div>
-        <?php endforeach; ?>
-        <span class="more float-left"><img src="/imagenes/template/arrow.png" class="arrow" /><a href="calendario">Ver
-                todas las actividades</a></span>
-        <?php }else echo "<p>No hay actividades</p>"; ?>
-    </div> -->
-    <!-- Fin Calendario -->
-
-    <div class="clear"></div>
-</div>
 <div class="contenedor cont-secciones">
 
     <!-- inicio accesos director 4 -->
-    <?php if(count($accesosDirectos)>1){ $i=0;
+    <?php if(count($accesosDirectos)>0){ $i=0;
     foreach($accesosDirectos as $item):
-      if($i>0){ ?>
+      if($i>=0){ ?>
 
 
         <?php if($item->orden % 2 == 0) {?>
