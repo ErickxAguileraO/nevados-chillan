@@ -32,6 +32,9 @@ foreach($secciones_menu as $aux){
                     <?php if($permisos['todo']){ ?>
     				    <li><a href="/portada/slider/">Slider</a></li>
                     <?php } ?>
+                    <?php if($permisos['todo']){ ?>
+    				    <li><a href="/portada/texto_slider/">Texto Slider</a></li>
+                    <?php } ?>
                     <?php if($permisos['todo'] || $permisos['calendario-general']){ ?>
     				    <li><a href="/portada/calendario/">Calendario General</a></li>
                     <?php } ?>
