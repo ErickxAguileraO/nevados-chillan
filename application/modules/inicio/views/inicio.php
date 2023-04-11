@@ -71,6 +71,11 @@ $(document).ready(function() {
 </div>
 <!-- Fin Slider -->
 
+<div class="center" style="display: flex; flex-direction: column; justify-content: center;">
+    <h2 class="text-center" style="padding-top:40px;">Texto ejemplo</h2>
+    
+</div>
+
 <?php /*?><div class="center reserva wow bounceIn">
 
 </div><?php */?>
