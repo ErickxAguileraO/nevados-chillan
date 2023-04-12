@@ -70,7 +70,13 @@ class Inicio extends CI_Controller {
 	  $data['calendarios'] = $this->ws->listar(35,'calg_estado = 1 and calg_fecha_inicio >= "'.date('Y-m-d').'"');
 
 	  $data['popup'] = $this->ws->obtener(78,"p_codigo = 1");
+
+	  $data['textoSlider'] = $this->ws->obtener(79, "tex_codigo = 1");
 	  
+	//   print_array($data['popup']); die;
+		// print_array($data['textoSlider']); die;
+
+
       #Nav
 	  $this->layout->nav(array("¿Necesitas ayuda?: Cómo llegar"=>"/"));
 		//print_array($data['noticias']);die;
