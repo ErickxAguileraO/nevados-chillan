@@ -72,7 +72,7 @@ $(document).ready(function() {
 <!-- Fin Slider -->
 
 <div class="center" style="display: flex; flex-direction: column; justify-content: center;">
-    <h2 class="text-center" style="padding-top:40px;">Texto ejemplo</h2>
+    <h2 class="text-center" style="padding-top:40px;"> <?php echo($textoSlider->texto) ?> </h2>
     
 </div>
 
