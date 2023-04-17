@@ -1725,8 +1725,8 @@ footer .auspiciadores-background {
 	padding:30px 10px;
 }
 footer .auspiciadores {
-	padding: 1px 0 10px;
-	margin-bottom: 80px;
+	padding: 1px 0 0px;
+	margin-bottom: -10px;
 }
 footer .auspiciadores h1 {
 	font-size:70px;
@@ -3491,7 +3491,10 @@ footer .newsletter fieldset{ width:auto;}
 	padding: 20px;
 	margin-bottom: 60px;
 }
-	
+.column-reverse{
+	display: flex !important;
+	flex-direction: column-reverse !important;
+}	
 .cont-seccion01, .cont-secciones{
 	display: grid;
 	grid-template-columns: 1fr;

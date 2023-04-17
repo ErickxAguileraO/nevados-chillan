@@ -80,7 +80,7 @@ $(document).ready(function() {
 
 </div><?php */?>
 
-<div class="contenedor cont-secciones">
+<div>
 
     <!-- inicio accesos director 4 -->
     <?php if(count($accesosDirectos)>0){ $i=0;
@@ -89,37 +89,40 @@ $(document).ready(function() {
 
 
         <?php if($item->orden % 2 == 0) {?>
-            <!-- texto derecha -->
-            <div class="wow fadeInLeft">
-            <figure class="effect-sadie"
-                style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
+            <div class="contenedor cont-secciones">
+                <!-- texto derecha -->
+                <div class="wow fadeInLeft">
+                    <figure class="effect-sadie"
+                        style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
 
-            </figure>
+                    </figure>
+                </div>
+                <div class="txt-block-contenido center-home">
+                    <h1><?=$item->titulo?></h1>
+                    <p><?=$item->resumen?></p>
+                    <a href="<?=$item->link?>">Leer más</a>
+                </div>
             </div>
-            <div class="txt-block-contenido center-home">
-                <h1><?=$item->titulo?></h1>
-                <p><?=$item->resumen?></p>
-                <a href="<?=$item->link?>">Leer más</a>
-            </div>
-
-
 
         <?php }else{?>
-            <!-- texto izquierda -->
-            <div class="txt-block-contenido center-home">
-                <h1><?=$item->titulo?></h1>
-                <p><?=$item->resumen?></p>
-                <?php if($item->link){?>
-                    <a href="<?=$item->link?>">Leer más</a>
-                <?php } ?>
-            </div>
-    
-            <div class="wow fadeInLeft">
-                <figure class="effect-sadie"
-                    style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
+            <div class="contenedor cont-secciones column-reverse">
+                <!-- texto izquierda -->
+                <div class="txt-block-contenido center-home">
+                    <h1><?=$item->titulo?></h1>
+                    <p><?=$item->resumen?></p>
+                    <?php if($item->link){?>
+                        <a href="<?=$item->link?>">Leer más</a>
+                    <?php } ?>
+                </div>
+        
+                <div class="wow fadeInLeft">
+                    <figure class="effect-sadie"
+                        style="background-image: url(<?=URL_ADMINISTRACION.$item->imagen_adjunta_2?>) !important; height: 320px; position: relative; background-size:cover;">
 
-                </figure>
+                    </figure>
+                </div>
             </div>
+            
         <?php } ?>
     <?php }
 

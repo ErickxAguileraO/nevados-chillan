@@ -148,7 +148,7 @@
           <p>Portugués</p>
         </a>
         <a href="" class="bandera-idioma" style="width: 115px;">
-          <img src="/imagenes/template/bandera-portugal.svg" alt="" href="#googtrans(en)" >
+          <img src="/imagenes/template/bandera-chile.svg" alt="" href="#googtrans(en)" >
           <p>Español</p>
         </a>
       </div>
