@@ -3142,6 +3142,9 @@ hr {
 	display: flex;
 	justify-content: flex-end !important;
 }
+.auspiciadores .slick-slide {
+    height: auto;
+}
 /********** RESPONSIVE **********/
 
 @media (max-width: 768px) {  

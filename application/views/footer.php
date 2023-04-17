@@ -1,3 +1,4 @@
+<footer>
 <style>
     .reserva-aqui{
       display: flex;
@@ -31,18 +32,40 @@
     <img src="/imagenes/template/reserva.png" width="24px" height="24px"/>
     <p>Reserva Aquí</p>
   </a>
-    <!-- Inicio Auspiciadores -->
-    <?php if(count($auspiciadores)>0){ ?>
-    <div class="auspiciadores">
-      <h3>Auspician:</h3>
-      <ul>
+  <?php if(($home_indicador)){ ?>
+  <!-- Inicio Auspiciadores -->
+  <?php if(count($auspiciadores)>0){ ?>
+  <section class="auspiciadores">
+    <h1>PARTNERS</h1>
+    <div class="auspiciadores-background">
+      <div class="carrusel partners-responsive">
         <?php foreach($auspiciadores as $item): ?>
-        <li><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" /></li>
+        <div>
+
+        <?php 
+        
+     
+        if($item->link){ ?>
+          <a target="_blank" href="<?php echo $item->link; ?>">
+        <?php } ?>
+        
+        <figure><img alt="<?=$item->nombre?>" src="<?=URL_ADMINISTRACION.$item->imagen_adjunta?>" />
+        </figure>
+        
+        <?php if($item->link){ ?>
+          </a>
+        <?php } ?> 
+        
+        </div>
         <?php endforeach; ?>
-      </ul>
+      </div>
     </div>
-    <?php } ?>
-    <!-- Fin Auspiciadores --> 
+  </section>
+  <?php } ?> 
+  <!-- Fin Auspiciadores -->
+  <?php } ?>
+
+</footer>
 <footer class="footer-nuevo">
     <div class="suscribirse-nuevo">
       <h3>Suscríbete para recibir alertas y novedades</h3>
