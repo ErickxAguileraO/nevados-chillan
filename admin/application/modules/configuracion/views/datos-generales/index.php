@@ -46,6 +46,27 @@
                 <input type="text" class="form-control validate[custom[email]]" name="reserva_email" value="<?php echo ($datos)?$datos->reserva_email:''; ?>" />
             </div>
         </div>
+
+
+        <!-- reservas -->
+        <div class="row" style="margin-top:30px; margin-bottom:30px;">
+            
+            <div class="col-md-5">
+                <h3>General Footer</h3>
+                
+            	<label>Teléfono Emergencias Montaña</label>
+                <input type="text" class="form-control" name="telefono_emergencias_montana" value="<?php echo ($datos)?$datos->telefono_emergencias_montana:''; ?>" />
+                
+                <label>Teléfono Informaciones Generales</label>
+                <input type="text" class="form-control" name="telefono_informaciones_generales" value="<?php echo ($datos)?$datos->telefono_informaciones_generales:''; ?>" />
+                
+                <label>Teléfono Reservas Alojamiento</label>
+                <input type="text" class="form-control" name="reservas_alojamiento" value="<?php echo ($datos)?$datos->reservas_alojamiento:''; ?>" />
+
+                <label>Email Consultas Generales</label>
+                <input type="text" class="form-control validate[custom[email]]" name="mail_consultas_generales" value="<?php echo ($datos)?$datos->mail_consultas_generales:''; ?>" />
+            </div>
+        </div>
             
         <!-- oficina chillan -->
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
@@ -111,6 +132,9 @@
                 
                 <label>Youtube</label>
                 <input type="text" class="form-control" name="youtube" value="<?php echo ($datos)?$datos->youtube:''; ?>" />
+
+                <label>Tik Tok</label>
+                <input type="text" class="form-control" name="tik_tok" value="<?php echo ($datos)?$datos->tik_tok:''; ?>" />
              
              </div>
             
