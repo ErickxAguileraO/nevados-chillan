@@ -80,23 +80,23 @@
         <div class="linea-contenido-footer"></div>
         <div>
           <p>Emergencias montaña</p>
-          <span>9 8293 2784</span>
+          <span><?php echo($generales->telefono_emergencias_montana)?></span>
         </div>
 
         <div>
           <p>Informaciones generales</p>
-          <span>9 8293 2784</span>
+          <span><?php echo($generales->telefono_informaciones_generales)?></span>
         </div>
 
 
         <div>
           <p>Reservas alojamiento</p>
-          <span>9 8293 2784</span>
+          <span><?php echo($generales->reservas_alojamiento)?></span>
         </div>
 
         <div>
           <p>Informaciones generales</p>
-          <span>9 8293 2784</span>
+          <span><?php echo($generales->telefono_informaciones_generales)?></span>
         </div>
 
       </div>
@@ -106,33 +106,33 @@
         <div class="linea-contenido-footer"></div>
         <div>
           <p>Mail reserva</p>
-          <p>reserva@nevadosdechillan.cl</p>
+          <p><?php echo($generales->reserva_email)?></p>
         </div>
 
         <div>
           <p>Mail consultas generales</p>
-          <p>consultas@nevadosdechillan.cl</p>
+          <p><?php echo($generales->mail_consultas_generales)?></p>
         </div>
       </div>
 
       <div class="contenido-footer-nuevo-n div-margin">
         <h4>Cómo llegar</h4>
         <div class="linea-contenido-footer"></div>
-        <a href="">Parque de agua</a>
-        <a href="">Valle Hermoso</a>
+        <a href="/parque-de-agua">Parque de agua</a>
+        <a href="/valle-hermoso">Valle Hermoso</a>
         <a href="">Plaza Tata</a>
         <a href="">Plaza Willy</a>
-        <a href="">Hotel Nevados</a>
-        <a href="">Alto Nevados</a>
+        <a href="/alojamiento/hotel-nevados">Hotel Nevados</a>
+        <a href="/alojamiento/hotel-alto-nevados">Alto Nevados</a>
       </div>
 
       <div class="contenido-footer-nuevo-n div-margin">
         <h4>Información corporativa</h4>
         <div class="linea-contenido-footer"></div>
-        <a href="">Trabaja con nosotros</a>
+        <a href="/necesitas-ayuda/trabaja-con-nosotros/">Trabaja con nosotros</a>
         <a href="">Términos y condiciones</a>
-        <a href="">Preguntas frecuentes</a>
-        <a href="">Contacto</a>
+        <a href="/necesitas-ayuda/faqs/">Preguntas frecuentes</a>
+        <a href="/necesitas-ayuda/contacto/">Contacto</a>
         <a href="">Conoce a nuestros auspiciadores</a>
       </div>
 
@@ -140,12 +140,16 @@
         <h4>Idiomas</h4>
         <div class="linea-contenido-footer"></div>
         <a href="" class="bandera-idioma" style="width: 90px;">
-          <img src="/imagenes/template/bandera-inglaterra.svg" alt="">
+          <img src="/imagenes/template/bandera-inglaterra.svg" alt="" href="#googtrans(en)">
           <p>Inglés</p>
         </a>
         <a href="" class="bandera-idioma" style="width: 115px;">
-          <img src="/imagenes/template/bandera-portugal.svg" alt="">
+          <img src="/imagenes/template/bandera-portugal.svg" alt="" href="#googtrans(pt)" >
           <p>Portugués</p>
+        </a>
+        <a href="" class="bandera-idioma" style="width: 115px;">
+          <img src="/imagenes/template/bandera-portugal.svg" alt="" href="#googtrans(en)" >
+          <p>Español</p>
         </a>
       </div>
 
@@ -158,11 +162,11 @@
     <div class="pie-footer-nuevo">
       <img width="142px" src="/imagenes/template/Logo_Nevados_Blanco_2.png" alt="">
       <div>
-        <a href="https://www.instagram.com/nevadosdechillan/" target="_blank"><img src="/imagenes/template/i-insta.svg" alt=""></a>
-        <a href="https://www.facebook.com/nevadosdechillan/" target="_blank"><img src="/imagenes/template/i-face.svg" alt=""></a>
-        <a href="" target="_blank"><img src="/imagenes/template/i-tiktok.svg" alt=""></a>
-        <a href="https://www.youtube.com/channel/UCai0b2vM5thJK3Gt74rUupQ?view_as=subscriber" target="_blank"><img src="/imagenes/template/i-yt.svg" alt=""></a>
-        <a href="https://twitter.com/nevadosski" target="_blank"><img src="/imagenes/template/i-tw.svg" alt=""></a>
+        <a href="<?php echo($generales->instagram)?>" target="_blank"><img src="/imagenes/template/i-insta.svg" alt=""></a>
+        <a href="<?php echo($generales->facebook)?>" target="_blank"><img src="/imagenes/template/i-face.svg" alt=""></a>
+        <a href="<?php echo($generales->tik_tok)?>" target="_blank"><img src="/imagenes/template/i-tiktok.svg" alt=""></a>
+        <a href="<?php echo($generales->youtube)?>" target="_blank"><img src="/imagenes/template/i-yt.svg" alt=""></a>
+        <a href="<?php echo($generales->twitter)?>" target="_blank"><img src="/imagenes/template/i-tw.svg" alt=""></a>
       </div>
       <div class="txt-pie-footer-nuevo">
         <p>© 2023 | Nevados de Chillán</p>

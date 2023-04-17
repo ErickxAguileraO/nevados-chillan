@@ -99,6 +99,8 @@ class Layout {
         $this->obj->ws->order("aus_orden");
         $auspiciadores = $this->obj->ws->listar(40,"aus_estado = 1");
 
+
+
         foreach($auspiciadores as $aux){
             if($aux->link){
                 $url = $aux->link;
@@ -112,6 +114,9 @@ class Layout {
 
        $data['auspiciadores']  = $auspiciadores;
 
+       $data['datos_generales']  = $datos_generales;
+
+       
 
         #template
         $this->block_replace = true;
