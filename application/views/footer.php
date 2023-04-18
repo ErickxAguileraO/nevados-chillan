@@ -136,21 +136,58 @@
         <a href="">Conoce a nuestros auspiciadores</a>
       </div>
 
-      <div class="contenido-footer-nuevo-n">
-        <h4>Idiomas</h4>
-        <div class="linea-contenido-footer"></div>
-        <a href="" class="bandera-idioma" style="width: 90px;">
-          <img src="/imagenes/template/bandera-inglaterra.svg" alt="" href="#googtrans(en)">
+      <div class="contenido-footer-nuevo-n" id="idioma">
+      <h4>Idiomas</h4>
+      <div class="linea-contenido-footer"></div>
+        <?php if($this->session->userdata('idioma') == 'en') {?>
+        <a href="#googtrans(en)" class="bandera-idioma"  lang="en" alt="English" style="display:none;">
+          <img src="/imagenes/template/bandera-inglaterra.svg" alt="" >
           <p>Inglés</p>
         </a>
-        <a href="" class="bandera-idioma" style="width: 115px;">
-          <img src="/imagenes/template/bandera-portugal.svg" alt="" href="#googtrans(pt)" >
-          <p>Portugués</p>
+        <?php }else{?>
+        
+        <a href="#googtrans(en)" class="bandera-idioma footer-bandera" id="en" lang="en" alt="English" style="width: 90px;">
+          <img src="/imagenes/template/bandera-inglaterra.svg" alt="" >
+          <p>Inglés</p>
         </a>
-        <a href="" class="bandera-idioma" style="width: 115px;">
-          <img src="/imagenes/template/bandera-chile.svg" alt="" href="#googtrans(en)" >
+        <?php }?>
+        <?php if($this->session->userdata('idioma') == 'es' || !$this->session->userdata('idioma')) {?>
+        <a href="#googtrans(en)" class="bandera-idioma"  lang="es" alt="Bandera Chilena" style="display:none;">
+          <img src="/imagenes/template/bandera-chile.svg" alt=""  >
           <p>Español</p>
         </a>
+        <?php } else{?>
+        <a href="#googtrans(en)" class="bandera-idioma footer-bandera" id="es" lang="es" alt="Bandera Chilena" style="width: 115px;">
+          <img src="/imagenes/template/bandera-chile.svg" alt=""  >
+          <p>Español</p>
+        </a>
+        <?php }?>
+        <?php if($this->session->userdata('idioma') == 'pt') {?>
+        <a href="#googtrans(pt)" class="bandera-idioma" lang="pt" alt="Portuguese" style="display:none;">
+          <img src="/imagenes/template/bandera-portugal.svg" alt=""  >
+          <p>Portugués</p>
+        </a>
+        <?php } else{?>
+        <a href="#googtrans(pt)" class="bandera-idioma footer-bandera" id="pt" lang="pt" alt="Portuguese" style="width: 115px;">
+          <img src="/imagenes/template/bandera-portugal.svg" alt=""  >
+          <p>Portugués</p>
+        </a>
+        <?php }?>
+<!--         
+        <h4>Idiomas</h4>
+        <div class="linea-contenido-footer"></div>
+        <a href="#googtrans(en)" class="bandera-idioma" id="en" lang="en" style="width: 90px;">
+          <img src="/imagenes/template/bandera-inglaterra.svg" alt="" >
+          <p>Inglés</p>
+        </a>
+        <a href="#googtrans(pt)" class="bandera-idioma" id="pt" lang="pt" style="width: 115px;">
+          <img src="/imagenes/template/bandera-portugal.svg" alt=""  >
+          <p>Portugués</p>
+        </a>
+        <a href="#googtrans(en)" class="bandera-idioma" id="es" lang="es" style="width: 115px;">
+          <img src="/imagenes/template/bandera-chile.svg" alt=""  >
+          <p>Español</p>
+        </a> -->
       </div>
 
       <div class="contenido-footer-nuevo-n">
