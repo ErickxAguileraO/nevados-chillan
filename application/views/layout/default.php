@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script>
     $(document).ready(function() {
-        $('#idioma li a ,#idioma2 li a').click(function () {
+        $('#idioma li a ,#idioma2 li a, .footer-bandera').click(function () {
             var id = $(this).attr('id');
             $.ajax({
                 url: '/inicio',
