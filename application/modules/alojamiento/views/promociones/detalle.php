@@ -101,7 +101,7 @@
           
         </li>
         <li class="dos">
-          <label for="adultos">Adultos</label>
+          <label for="adultos">Adultos (13 y más)</label>
           <br />
           <!-- <input name="ADULTOS" id="adultos" type="text" value="2" /> -->
           <select name="ADULTOS" id="adultos_r">
@@ -119,7 +119,7 @@
           </select>
         </li>
         <li>
-          <label for="ninos">Niños</label>
+          <label for="ninos">Niños (12-6 años)</label>
           <br />
           <!-- <input id="ninos" name="CHILDREN" type="text" value="" placeholder="6 a 12 años" /> -->
           <select name="CHILDREN" id="ninos_r">
@@ -138,7 +138,7 @@
           </select>
         </li>
         <li>
-          <label for="infantes">Infantes</label>
+          <label for="infantes">Infantes (0-5 años)</label>
           <br />
           <!-- <input id="infantes" name="INFANTES" type="text" value="" placeholder="0 a 5 años" /> -->
           <select name="INFANTES" id="infantes_r">
