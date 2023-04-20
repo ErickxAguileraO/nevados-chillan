@@ -128,7 +128,7 @@
         <a href="/necesitas-ayuda/condiciones/">Términos y condiciones</a>
         <a href="/necesitas-ayuda/faqs/">Preguntas frecuentes</a>
         <a href="/necesitas-ayuda/contacto/">Contacto</a>
-        <a href="">Conoce a nuestros auspiciadores</a>
+        <a>Conoce a nuestros auspiciadores</a>
       </div>
 
       <div class="contenido-footer-nuevo-n" id="idioma">
