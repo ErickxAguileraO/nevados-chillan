@@ -181,17 +181,17 @@ endforeach;
 
 
 <div class="center" style="display: flex; flex-direction: column; justify-content: center;">
-    <h1 class="text-center" style="padding-top:40px;">Nuestras Redes Sociales</h2>
+    <h1 class="text-center" style="padding-top:40px;">Conócenos en imágenes</h2>
     <!-- Opcion 1 -->
     <iframe src="https://snapwidget.com/embed/1029012" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; height:850px"></iframe>
     <!-- Opcion 2 -->
-    <div class="grid-instagram">
+    <!-- <div class="grid-instagram">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CqGgsaMPWIv/"></blockquote>
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CqBUwf6PNVv/"></blockquote>
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cpz2jEesLgm/"></blockquote>
 
       <script async src="//www.instagram.com/embed.js"></script>
-    </div>
+    </div> -->
 </div>
 <!-- fin contenedor -->
 <?php /*?><style>

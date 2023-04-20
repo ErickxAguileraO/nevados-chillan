@@ -69,7 +69,7 @@
 <footer class="footer-nuevo">
     <div class="suscribirse-nuevo">
       <h3>Suscríbete para recibir alertas y novedades</h3>
-      <a href="" class="btn-suscribirse"><p>Suscribirse</p></a>
+      <a href="https://qcfvxkx6.sibpages.com/" class="btn-suscribirse" target="_blank"><p>Suscribirse</p></a>
     </div>
 
     <div class="linea-footer-nuevo"></div>
@@ -94,11 +94,6 @@
           <span><?php echo($generales->reservas_alojamiento)?></span>
         </div>
 
-        <div>
-          <p>Informaciones generales</p>
-          <span><?php echo($generales->telefono_informaciones_generales)?></span>
-        </div>
-
       </div>
 
       <div class="contenido-footer-nuevo-n">
@@ -118,19 +113,19 @@
       <div class="contenido-footer-nuevo-n div-margin">
         <h4>Cómo llegar</h4>
         <div class="linea-contenido-footer"></div>
-        <a href="/parque-de-agua">Parque de agua</a>
-        <a href="/valle-hermoso">Valle Hermoso</a>
-        <a href="">Plaza Tata</a>
-        <a href="">Plaza Willy</a>
-        <a href="/alojamiento/hotel-nevados">Hotel Nevados</a>
-        <a href="/alojamiento/hotel-alto-nevados">Alto Nevados</a>
+        <a href="https://goo.gl/maps/t76m6tiiS64YfuTu9" target="_blank" >Parque de agua</a>
+        <a href="https://goo.gl/maps/Fa9i9ZjpjQpGbqb67" target="_blank">Valle Hermoso</a>
+        <a href="https://goo.gl/maps/NUPzhxsqBTsAVZhFA" target="_blank">Plaza Tata</a>
+        <a href="https://goo.gl/maps/MZhguJhcSDkwu8UL6" target="_blank">Plaza Willy</a>
+        <a href="https://goo.gl/maps/jNCF3w9heG8ngXZt5" target="_blank">Hotel Nevados</a>
+        <a href="https://goo.gl/maps/Qfz8MY9UYr39S1qk7" target="_blank">Alto Nevados</a>
       </div>
 
       <div class="contenido-footer-nuevo-n div-margin">
         <h4>Información corporativa</h4>
         <div class="linea-contenido-footer"></div>
         <a href="/necesitas-ayuda/trabaja-con-nosotros/">Trabaja con nosotros</a>
-        <a href="">Términos y condiciones</a>
+        <a href="/necesitas-ayuda/condiciones/">Términos y condiciones</a>
         <a href="/necesitas-ayuda/faqs/">Preguntas frecuentes</a>
         <a href="/necesitas-ayuda/contacto/">Contacto</a>
         <a href="">Conoce a nuestros auspiciadores</a>
