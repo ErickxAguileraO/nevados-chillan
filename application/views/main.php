@@ -8,7 +8,7 @@
       <a href="/" title="Inicio: Tecla de Acceso 0" accesskey="0"><img src="/imagenes/template/Logo_Nevados_Blanco_2.png" alt="Centro de Ski, Resort de montaña y thermal spa |Nevados de Chillán" /></a>
       <?php } ?>
     </div>
-    
+    <p class="txt-menu-bar-responsivo">MENÚ</p>
     <!-- [MENU] -->    
     <div class="nav" id="nav">
       <ul class="menu">
@@ -103,7 +103,7 @@
               </select>
             </li>
             <li>
-              <label for="adultos_r">Adultos</label>
+              <label for="adultos_r">Adultos <br>(13 y más)</label>
               <br />
               <!-- <input name="ADULTOS" id="adultos_r" type="text" value="2" /> -->
               <select name="ADULTOS" id="adultos_r">
@@ -121,7 +121,7 @@
               </select>
             </li>
             <li>
-              <label for="ninos_r">Niños</label>
+              <label for="ninos_r">Niños <br>(12-6 años)</label>
               <br />
               <!-- <input name="CHILDREN" type="text" id="ninos_r" value="" placeholder="6 a 12 años" /> -->
               <select name="CHILDREN" id="ninos_r">
@@ -140,7 +140,7 @@
               </select>
             </li>
             <li>
-              <label for="infantes_r">Infantes</label>
+              <label for="infantes_r">Infantes <br>(0-5 años)</label>
               <br />
               <!-- <input name="INFANTES" type="text" id="infantes_r" value="" placeholder="0 a 5 años" /> -->
               <select name="INFANTES" id="infantes_r">

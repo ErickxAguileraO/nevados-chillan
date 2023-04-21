@@ -81,6 +81,13 @@ class Datos_generales extends CI_Controller {
             $datos['dag_instagram'] = $this->input->post('instagram');
             $datos['dag_twitter'] = $this->input->post('twitter');
             $datos['dag_youtube'] = $this->input->post('youtube');
+            $datos['dag_tik_tok'] = $this->input->post('tik_tok');
+
+            #datos generales
+            $datos['dag_telefono_emergencias_montana'] = $this->input->post('telefono_emergencias_montana');
+            $datos['dag_telefono_informaciones_generales'] = $this->input->post('telefono_informaciones_generales');
+            $datos['dag_reservas_alojamiento'] = $this->input->post('reservas_alojamiento');
+            $datos['dag_mail_consultas_generales'] = $this->input->post('mail_consultas_generales');
             
             if($codigo = $this->input->post('codigo'))
                 $this->ws->actualizar($this->modulo,$datos,"dag_codigo = $codigo");
