@@ -1,4 +1,5 @@
 ﻿<?php
+//aca estaba el boton del error
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Layout {
