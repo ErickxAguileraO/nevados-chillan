@@ -61,7 +61,7 @@ class Inicio extends CI_Controller {
 
 		//Accesos Directos
 	  $this->ws->order('acd_orden ASC');
-		$this->ws->limit(5);
+		$this->ws->limit(8);
 	  $data['accesosDirectos'] = $this->ws->listar(39,'acd_estado = 1');
 
 		//Calendario Actividades
@@ -72,6 +72,9 @@ class Inicio extends CI_Controller {
 	  $data['popup'] = $this->ws->obtener(78,"p_codigo = 1");
 
 	  $data['textoSlider'] = $this->ws->obtener(79, "tex_codigo = 1");
+
+
+	  
 	  
 	//   print_array($data['popup']); die;
 		// print_array($data['textoSlider']); die;
