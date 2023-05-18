@@ -6,6 +6,11 @@ $route['404_override'] = '';
 #Descubrenos
 $route['descubrenos/valle-las-trancas'] = 'descubrenos/valle_las_trancas';
 
+#Montaña
+$route['montana/mapa-de-pistas'] = 'invierno/mapa_de_pistas';
+$route['montana/infornieve'] = 'invierno/infonieve';
+$route['montana/info-ski'] = 'montana/info_ski';
+
 #ALOJAMIENTO
 $route['alojamiento/hotel-nevados'] = 'alojamiento';
 $route['alojamiento/hotel-alto-nevados'] = 'alojamiento';
@@ -14,6 +19,7 @@ $route['alojamiento/promociones'] = 'alojamiento/promociones';
 $route['alojamiento/promocion/(:any)'] = 'alojamiento/promociones/detalle_promocion';
 $route['alojamiento/promocion/descargar_archivo/(:num)'] = 'alojamiento/promociones/descargar_archivo';
 $route['alojamiento/(:any)/descargarcalendario'] = 'alojamiento/descargarcalendario';
+
 #PARQUE DE AGUA
 $route['parque-de-agua'] = 'parque_de_agua';
 #VALLE HERMOSO
@@ -44,8 +50,6 @@ $route['calendario/(:any)'] = 'verano/detalle_calendario';
 $route['calendario'] = 'verano/calendario';
 
 /* Invierno */
-$route['invierno/mapa-de-pistas'] = 'invierno/mapa_de_pistas';
-$route['invierno/infornieve'] = 'invierno/infonieve';
 $route['invierno/backcountry'] = 'invierno/freeride';
 $route['invierno/rental'] = 'invierno/rental';
 $route['invierno/escuela'] = 'invierno/escuela';

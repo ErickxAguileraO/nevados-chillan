@@ -12,7 +12,15 @@
     <!-- [MENU] -->    
     <div class="nav" id="nav">
       <ul class="menu">
-        <li><a href="/descubrenos/" title="Descúbrenos: Tecla de Acceso 1" accesskey="1">Descúbrenos</a></li>
+        <!--<li><a href="/descubrenos/" title="Descúbrenos: Tecla de Acceso 1" accesskey="1">Descúbrenos</a></li>-->
+        
+        <li><a href="#" title="MONTAÑA">MONTAÑA</a>
+          <ul class="submenu">
+            <li><a href="/montana/mapa-de-pistas">Mapa de pistas</a></li>
+            <li><a href="/montana/infonieve">Reporte de Montaña</a></li>
+            <li><a href="/montana/info-ski">Info Ski</a></li>
+          </ul>
+        </li>
         <li><a href="/experiencias/" title="Experiencias: Tecla de Acceso 2" accesskey="2">Experiencias</a></li>
         <li><a href="/descubrenos/#hoteles" title="Alojamiento: Tecla de Acceso 3" accesskey="3">Hoteles</a>
           <ul class="submenu">
@@ -25,8 +33,6 @@
         <li><a href="#" title="Actividades de invierno">Invierno</a>
           <ul class="submenu">
             <li><a href="/invierno/">Centro de Ski</a></li>
-            <li><a href="/invierno/mapa-de-pistas">Mapa de pistas</a></li>
-            <li><a href="/invierno/infonieve">Reporte de Montaña</a></li>
             <li><a href="/invierno/escuela/">Escuela Ski</a></li>
             <li><a href="/invierno/backcountry">Backcountry</a></li>
             <li><a href="/zona_debutantes/">Zona Debutantes</a></li>
