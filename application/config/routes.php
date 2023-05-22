@@ -7,6 +7,11 @@ $route['404_override'] = '';
 $route['descubrenos/historia'] = 'descubrenos/historia';
 $route['descubrenos/valle-las-trancas'] = 'descubrenos/valle_las_trancas';
 
+#Montaña
+$route['montana/mapa-de-pistas'] = 'invierno/mapa_de_pistas';
+$route['montana/infornieve'] = 'invierno/infonieve';
+$route['montana/info-ski'] = 'montana/info_ski';
+
 #ALOJAMIENTO
 $route['alojamiento/hotel-nevados'] = 'alojamiento';
 //$route['alojamiento/hotel-nevados/(:any)'] = 'alojamiento/index/$1';
@@ -50,8 +55,6 @@ $route['calendario/(:any)'] = 'verano/detalle_calendario';
 $route['calendario'] = 'verano/calendario';
 
 /* Invierno */
-$route['invierno/mapa-de-pistas'] = 'invierno/mapa_de_pistas';
-$route['invierno/infornieve'] = 'invierno/infonieve';
 $route['invierno/backcountry'] = 'invierno/freeride';
 $route['invierno/rental'] = 'invierno/rental';
 $route['invierno/escuela'] = 'invierno/escuela';
