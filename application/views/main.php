@@ -17,7 +17,7 @@
         <li><a href="#" title="MONTAÑA">MONTAÑA</a>
           <ul class="submenu">
             <li><a href="/montana/mapa-de-pistas">Mapa de pistas</a></li>
-            <li><a href="/montana/infonieve">Reporte de Montaña</a></li>
+            <li><a href="/montana/reporte">Reporte de Montaña</a></li>
             <li><a href="/montana/info-ski">Info Ski</a></li>
           </ul>
         </li>
