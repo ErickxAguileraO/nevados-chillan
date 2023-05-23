@@ -13,12 +13,15 @@ class montana extends CI_Controller {
     public function index() {
 
         #Title
-        $this->layout->title('Zona Montaña');
+        $this->layout->title('Mapa de pistas');
 
         #Metas
         $this->layout->setMeta('title', 'Montaña');
         $this->layout->setMeta('description', 'Montaña');
         $this->layout->setMeta('keywords', 'Montaña');
+		
+		#CSS
+        $this->layout->css('/css/reportes.css');
 
         #WebFont
         $this->layout->css('/css/webfont/stylesheet.css');
@@ -28,7 +31,7 @@ class montana extends CI_Controller {
         $data["programas"] = $programas;
 		
         #Nav
-        $this->layout->nav(array("Zona Debutantes" => "/"));
+        $this->layout->nav(array("Mapa de pistas" => "/"));
 
         #La vista siempre,  debe ir cargada al final de la función
         $this->layout->view('index', $data);
@@ -37,12 +40,15 @@ class montana extends CI_Controller {
     public function reporte() {
 
         #Title
-        $this->layout->title('Zona Montaña');
+        $this->layout->title('Reportes');
 
         #Metas
         $this->layout->setMeta('title', 'Montaña');
         $this->layout->setMeta('description', 'Montaña');
         $this->layout->setMeta('keywords', 'Montaña');
+		
+		#CSS
+        $this->layout->css('/css/reportes.css');
 
         #WebFont
         $this->layout->css('/css/webfont/stylesheet.css');
@@ -60,5 +66,36 @@ class montana extends CI_Controller {
 
         #La vista siempre,  debe ir cargada al final de la función
         $this->layout->view('reporte', $data);
+    }
+
+    public function Info_ski() {
+
+        #Title
+        $this->layout->title('Reportes');
+
+        #Metas
+        $this->layout->setMeta('title', 'Montaña');
+        $this->layout->setMeta('description', 'Montaña');
+        $this->layout->setMeta('keywords', 'Montaña');
+		
+		#CSS
+        $this->layout->css('/css/reportes.css');
+
+        #WebFont
+        $this->layout->css('/css/webfont/stylesheet.css');
+		
+		#Tabs
+        $this->layout->css('/js/jquery/tabs/tabs.css');
+        $this->layout->js('/js/jquery/tabs/index.js');
+
+
+        //Contenido
+        $data["programas"] = $programas;
+		
+        #Nav
+        $this->layout->nav(array("Reportes" => "/"));
+
+        #La vista siempre,  debe ir cargada al final de la función
+        $this->layout->view('info_ski', $data);
     }
 }

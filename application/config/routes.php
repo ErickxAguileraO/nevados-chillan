@@ -8,7 +8,7 @@ $route['descubrenos/historia'] = 'descubrenos/historia';
 $route['descubrenos/valle-las-trancas'] = 'descubrenos/valle_las_trancas';
 
 #Montaña
-$route['montana/mapa-de-pistas'] = 'invierno/mapa_de_pistas';
+$route['montana/mapa-de-pistas'] = 'montana/index';
 $route['montana/reporte'] = 'montana/reporte';
 $route['montana/info-ski'] = 'montana/info_ski';
 
