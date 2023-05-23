@@ -9,7 +9,7 @@ $route['descubrenos/valle-las-trancas'] = 'descubrenos/valle_las_trancas';
 
 #Montaña
 $route['montana/mapa-de-pistas'] = 'invierno/mapa_de_pistas';
-$route['montana/infornieve'] = 'invierno/infonieve';
+$route['montana/reporte'] = 'montana/reporte';
 $route['montana/info-ski'] = 'montana/info_ski';
 
 #ALOJAMIENTO
@@ -22,8 +22,10 @@ $route['alojamiento/promociones'] = 'alojamiento/promociones';
 $route['alojamiento/promocion/descargar_archivo/(:num)'] = 'alojamiento/promociones/descargar_archivo/$1';
 $route['alojamiento/promocion/(:any)'] = 'alojamiento/promociones/detalle_promocion';
 $route['alojamiento/(:any)/descargarcalendario'] = 'alojamiento/descargarcalendario';
+
 #PARQUE DE AGUA
 $route['parque-de-agua'] = 'parque_de_agua';
+
 #VALLE HERMOSO
 $route['valle-hermoso'] = 'valle_hermoso';
 //$route['valle-hermoso/($any)'] = 'valle_hermoso/index/$1';
@@ -55,6 +57,8 @@ $route['calendario/(:any)'] = 'verano/detalle_calendario';
 $route['calendario'] = 'verano/calendario';
 
 /* Invierno */
+/*$route['invierno/mapa-de-pistas'] = 'invierno/mapa_de_pistas';*/
+/*$route['invierno/infornieve'] = 'invierno/infonieve';*/
 $route['invierno/backcountry'] = 'invierno/freeride';
 $route['invierno/rental'] = 'invierno/rental';
 $route['invierno/escuela'] = 'invierno/escuela';
