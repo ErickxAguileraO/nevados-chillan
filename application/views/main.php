@@ -18,7 +18,7 @@
           <ul class="submenu">
             <li><a href="/montana/mapa-de-pistas">Mapa de pistas</a></li>
             <li><a href="/montana/reporte">Reporte de Montaña</a></li>
-            <li><a href="/montana/info-ski">Info Ski</a></li>
+            <li><a href="/montana/info-ski">Clima</a></li>
           </ul>
         </li>
         <li><a href="/experiencias/" title="Experiencias: Tecla de Acceso 2" accesskey="2">Experiencias</a></li>
