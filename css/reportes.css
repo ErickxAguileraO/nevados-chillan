@@ -127,9 +127,7 @@
 	grid-gap: 24px;
 	grid-template-columns: repeat(3, 1fr);
 }
-.listado-noticias.camaras{
-	grid-template-columns: repeat(2, 1fr);
-}
+.listado-noticias.camaras { grid-template-columns: repeat(2, 1fr);}
 }
 
 .listado-noticias { margin-bottom: 28px;}
@@ -197,11 +195,63 @@
 	height:auto;
 }
 .txt-block-contenido a.ver-mas { background-color: #C95D2A;}
-.contenedor.cont-secciones .txt-block-contenido {
-	padding:0;
+.contenedor.cont-secciones .txt-block-contenido { padding:0;}
+
+.cont-tabla-resumen { overflow:auto; margin-bottom:80px;}
+.cont-tabla-resumen table { min-width: 900px;}
+.cont-tabla-resumen caption { padding-bottom: 48px; }
+.cont-tabla-resumen caption span{
+	color:#FFF;
+	font-size: 40px;
+	line-height: 28px;
+	text-align: left;
+	display: block;
+	background-color: #033E6C;
+	padding: 30px 28px;
+	border-radius: 12px;
 }
+.cont-tabla-resumen th{
+	font-size: 40px;
+	line-height: 1;
+	text-align: left;
+}
+.cont-tabla-resumen th sub{ font-size: 16px;}
+.cont-tabla-resumen td{
+	font-size: 18px;
+	line-height: 20px;
+}
+.pronostico {
+	background-color: #EFF8FF;
+	border-radius: 12px;
+	padding: 30px;
+}
+.pronostico .time {
+	list-style-type: none;
+	justify-content: space-between;
+	width: 100%;
+	display: grid;
+	grid-gap: 24px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 18px;
+}
+.pronostico .time li, .pronostico .etiqueta{ font-size: 18px; line-height: 20px;}
+.pronostico .time li:last-child { text-align: right;}
+.pronostico .etiqueta { display:block;}
 
-
+.cont-tabla-resumen table .cont-clima {
+	margin: 38px 0;
+}
+.cont-tabla-resumen table .cont-clima table {
+	min-width: 220px;
+	margin: auto;
+}
+.cont-tabla-resumen table .cont-clima .img-clima { vertical-align: middle; padding-right: 30px;}
+.ptrbl { padding: 5px 10px 5px 90px;}
+.cont-tabla-resumen th.vb { vertical-align: bottom;}
+.cont-tabla-resumen td.vt { vertical-align: top;}
+.float-sub{ float: right; margin-top: 14px;}
+.cont-tabla-resumen th sub img { vertical-align: middle; margin-right: 8px;}
+.coolicon { margin-left: 6px; vertical-align: middle;}
 
 /********** RESPONSIVE **********/
 
@@ -212,6 +262,9 @@ h1 { font-size: 30px;}
 	top: 40%;
 	left: 3%;
 	bottom: auto;
+}
+.ptrbl {
+  padding: 5px 5px 5px 50px;
 }
 }
 @media (max-width: 800px) {

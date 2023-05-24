@@ -72,44 +72,47 @@
     </div>
     <div class="tab_content" id="tab2">
       <div class="cont-tabla-reporte">
-          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width: 780px;">
-            <thead>
-              <tr>
-                <th scope="col">Nombre de la pista</th>
-                <th scope="col">Condición</th>
-                <th scope="col">Dificultad</th>
-                <th scope="col">Condición</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Pista 1</td>
-                <td><span class="est-abierto">Abierto</span></td>
-                <td class="white-space"><span class="label">Aficionado</span> <span class="icon-circle"></span></td>
-                <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/nieve.png" width="16" height="16" alt="Nieve" /></figure> 
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width: 780px;">
+          <thead>
+            <tr>
+              <th scope="col">Nombre de la pista</th>
+              <th scope="col">Condición</th>
+              <th scope="col">Dificultad</th>
+              <th scope="col">Condición</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pista 1</td>
+              <td><span class="est-abierto">Abierto</span></td>
+              <td class="white-space"><span class="label">Aficionado</span> <span class="icon-circle"></span></td>
+              <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/nieve.png" width="16" height="16" alt="Nieve" /></figure>
                 Fabricación de nieve</td>
-              </tr>
-              <tr>
-                <td>Pista 2</td>
-                <td><span class="est-cerrado">Cerrado</span></td>
-                <td class="white-space"><span class="label">Intermedio</span> <span class="icon-cube"></span></td>
-                <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/nieve.png" width="16" height="16" alt="Nieve" /></figure> Fabricación de nieve</td>
-              </tr>
-              <tr>
-                <td>Pista 3</td>
-                <td><span class="est-agendado">Agendado</span></td>
-                <td class="white-space"><span class="label">Avanzado</span> <span class="icon-diamond"></span></td>
-                <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/transporte.png" width="16" height="16" alt="Transporte" /></figure> Pisado</td>
-              </tr>
-              <tr>
-                <td>Pista 4</td>
-                <td><span class="est-espera">En espera</span></td>
-                <td><span class="label">Experto</span> <span class="icon-diamond"></span> <span class="icon-diamond"></span></td>
-                <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/transporte.png" width="16" height="16" alt="Transporte" /></figure> Pisado</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            </tr>
+            <tr>
+              <td>Pista 2</td>
+              <td><span class="est-cerrado">Cerrado</span></td>
+              <td class="white-space"><span class="label">Intermedio</span> <span class="icon-cube"></span></td>
+              <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/nieve.png" width="16" height="16" alt="Nieve" /></figure>
+                Fabricación de nieve</td>
+            </tr>
+            <tr>
+              <td>Pista 3</td>
+              <td><span class="est-agendado">Agendado</span></td>
+              <td class="white-space"><span class="label">Avanzado</span> <span class="icon-diamond"></span></td>
+              <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/transporte.png" width="16" height="16" alt="Transporte" /></figure>
+                Pisado</td>
+            </tr>
+            <tr>
+              <td>Pista 4</td>
+              <td><span class="est-espera">En espera</span></td>
+              <td><span class="label">Experto</span> <span class="icon-diamond"></span> <span class="icon-diamond"></span></td>
+              <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/transporte.png" width="16" height="16" alt="Transporte" /></figure>
+                Pisado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   <h1 class="text-center clear" style=" margin-bottom: 46px;">También puede interesarte</h1>

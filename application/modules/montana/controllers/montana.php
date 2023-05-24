@@ -93,7 +93,7 @@ class montana extends CI_Controller {
         $data["programas"] = $programas;
 		
         #Nav
-        $this->layout->nav(array("Reportes" => "/"));
+        $this->layout->nav(array("Info Ski" => "/"));
 
         #La vista siempre,  debe ir cargada al final de la función
         $this->layout->view('info_ski', $data);
