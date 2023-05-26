@@ -248,7 +248,7 @@
 	vertical-align: top;
 }
 
-.block-col-grid { display: table; width: 100%; margin-bottom: 80px;}
+.block-col-grid { display: table; width: 100%; margin-bottom:50px;}
 .block-col-grid .col-grid{
 	vertical-align: middle;
 	display: table-cell;
