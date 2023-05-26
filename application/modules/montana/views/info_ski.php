@@ -64,9 +64,6 @@
       <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
         <span class="txt-td">Altura helada</span></div>
     </div>
-  </div>
-  
-  <div class="cont-tabla-resumen">
     <h3 class="txt-caption">Reporte del tiempo - SEMANA</h3>
     <div class="block-col-grid">
       <div class="col-grid">
@@ -95,7 +92,6 @@
       <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
         <span class="txt-td">Altura helada</span></div>
     </div>
-    
     <div class="block-col-grid">
       <div class="col-grid">
         <div class="pronostico">
@@ -123,7 +119,6 @@
       <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
         <span class="txt-td">Altura helada</span></div>
     </div>
-    
     <div class="block-col-grid">
       <div class="col-grid">
         <div class="pronostico">
@@ -151,7 +146,6 @@
       <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
         <span class="txt-td">Altura helada</span></div>
     </div>
-    
     <div class="block-col-grid">
       <div class="col-grid">
         <div class="pronostico">
@@ -179,7 +173,6 @@
       <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
         <span class="txt-td">Altura helada</span></div>
     </div>
-    
     <div class="block-col-grid">
       <div class="col-grid">
         <div class="pronostico">
@@ -207,7 +200,6 @@
       <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
         <span class="txt-td">Altura helada</span></div>
     </div>
-    
     <div class="block-col-grid">
       <div class="col-grid">
         <div class="pronostico">
@@ -236,7 +228,7 @@
         <span class="txt-td">Altura helada</span></div>
     </div>
   </div>
-
+  
   <!--<div class="cont-tabla-resumen">
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
       <caption>
