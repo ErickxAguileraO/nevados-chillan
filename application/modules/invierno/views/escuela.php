@@ -66,6 +66,66 @@
     <?php } ?>
   </div><?php */?>
 </div>
+
+<!-- inicio Seccion Valores -->
+<div class="valores-seccion" id="valores" >
+<!-- <h2>Programas y Valores</h2> -->
+<div class="block-table">
+      <div class="center">
+      <h2>Programas y Valores</h2>
+        <?php if($programas){           
+            foreach($programas as $pro) {           
+          ?>
+          <div class="block-tr">
+            <div class="block-th">
+              <h3><?=$pro->titulo?></h3>
+              <ul>
+                <li><?=$pro->bajada_uno?></li>
+                <li><?=$pro->bajada_dos?></li>
+              </ul>
+            </div>
+
+              <?php foreach($pro->opciones as $op ){ ?>
+            <div class="block-td">
+              <h4><?=$op->nombre?></h4>
+              <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
+            </div>
+              <?php } ?>
+
+          </div>
+          <?php
+            }
+          }
+          
+          ?>
+
+      </div>
+    </div>
+  
+  <?php /*?><div class="center valores">
+    <?php $cant = explode("<table",$valores->contenido); $cant = count($cant)-1;
+    if($cant == 1){
+      echo '<style>
+      .valores-seccion table{width:99% !important;}
+      </style>';
+    }
+    if($cant == 2){
+      echo '<style>
+      .valores-seccion table{width:49% !important;}
+      </style>';
+    }
+    if($cant == 3){
+      echo '<style>
+      .valores-seccion table{width:32% !important;}
+      </style>';
+    }
+    ?>
+    <?=$valores->contenido?>
+    <div class="clear"></div>
+  </div><?php */?>
+</div>
+<!-- Fin Valores -->
+
 <div class="clear"></div>
 <!-- inicio secciones -->
 <?php if(count($secciones)>0){ ?>
@@ -259,63 +319,7 @@
 <?php endforeach; ?>
 <?php }?>
 <!-- Fin Secciones --> 
-<!-- inicio Seccion Valores -->
-<div class="valores-seccion" id="valores" >
-<h2>Programas y Valores</h2>
-<div class="block-table">
-      <div class="center">
-        <?php if($programas){           
-            foreach($programas as $pro) {           
-          ?>
-          <div class="block-tr">
-            <div class="block-th">
-              <h3><?=$pro->titulo?></h3>
-              <ul>
-                <li><?=$pro->bajada_uno?></li>
-                <li><?=$pro->bajada_dos?></li>
-              </ul>
-            </div>
 
-              <?php foreach($pro->opciones as $op ){ ?>
-            <div class="block-td">
-              <h4><?=$op->nombre?></h4>
-              <span class="valor">$<?=$op->monto?></span> <span class="condiciones"><?=$op->resumen?></span> 
-            </div>
-              <?php } ?>
-
-          </div>
-          <?php
-            }
-          }
-          
-          ?>
-
-      </div>
-    </div>
-  
-  <?php /*?><div class="center valores">
-    <?php $cant = explode("<table",$valores->contenido); $cant = count($cant)-1;
-    if($cant == 1){
-      echo '<style>
-      .valores-seccion table{width:99% !important;}
-      </style>';
-    }
-    if($cant == 2){
-      echo '<style>
-      .valores-seccion table{width:49% !important;}
-      </style>';
-    }
-    if($cant == 3){
-      echo '<style>
-      .valores-seccion table{width:32% !important;}
-      </style>';
-    }
-    ?>
-    <?=$valores->contenido?>
-    <div class="clear"></div>
-  </div><?php */?>
-</div>
-<!-- Fin Valores -->
 <script type="text/javascript">
 $(document).ready(function(){
     $('.venobox').venobox();
