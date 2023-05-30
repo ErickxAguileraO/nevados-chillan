@@ -22,36 +22,214 @@
     <div class="child"> <span class="info">N/A</span><br />
       <span class="etiqueta">Uso de cadenas</span> </div>
   </div>
-  <div class="cont-tabla-resumen">
-    <table width="100%" border="0" cellpadding="0" cellspacing="0">
-      <caption>
-      <span>Reporte de nieve</span>
-      </caption>
-      <thead>
-        <tr>
-          <th class="txt-th" scope="col">Powder</th>
-          <th class="txt-th" scope="col">0<sub>cm</sub></th>
-          <th class="txt-th" scope="col">0<sub>cm</sub></th>
-          <th class="txt-th" scope="col">0<sub>cm</sub></th>
-          <th class="txt-th" scope="col">0<sub>cm</sub></th>
-          <th class="txt-th" scope="col">0<sub>cm</sub></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Resumen de condiciones<br />
-            de nieve</td>
-          <td>En las últimas 24 horas</td>
-          <td>En las últimas 48 horas</td>
-          <td>En los últimos 7 días</td>
-          <td>Profundidad de la base</td>
-          <td>Total de nieve caída<br />
-            en la temporada</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="cont-resumen">
+    <h3 class="txt-caption">Reporte de nieve</h3>
+    <ul>
+      <li><span>Powder</span> Resumen de condiciones<br />
+        de nieve</li>
+      <li><span>0<sub>cm</sub></span>En las últimas 24 horas</li>
+      <li><span>0<sub>cm</sub></span>En las últimas 48 horas</li>
+      <li><span>0<sub>cm</sub></span>En los últimos 7 días</li>
+      <li><span>0<sub>cm</sub></span>Profundidad de la base</li>
+      <li><span>0<sub>cm</sub></span>Total de nieve caída<br />
+        en la temporada</li>
+    </ul>
   </div>
   <div class="cont-tabla-resumen">
+    <h3 class="txt-caption">Reporte del tiempo - HOY</h3>
+    <div class="block-col-grid">
+      <div class="col-grid">
+        <div class="pronostico">
+          <ul class="time">
+            <li>9 de mayo</li>
+            <li>15:27</li>
+          </ul>
+          <div class="cont-clima">
+            <table border="0" style="min-width:220px; margin:auto;">
+              <tr>
+                <td rowspan="2" class="img-clima"><img src="/imagenes/sitio/n-lluvia1.png" width="70" height="62" alt="LLuvia" /></td>
+                <td>18º C</td>
+              </tr>
+              <tr>
+                <td>Nevados de Chillán</td>
+              </tr>
+            </table>
+          </div>
+          <span class="etiqueta">Última actualización: 15:25 <img class="coolicon" src="/imagenes/sitio/coolicon.png" width="15" height="15" alt="Actualizado" /></span> </div>
+      </div>
+      <div class="col-grid"><span class="txt-th" style="border-bottom: 1px solid #C95D2A; width: 190px; padding:20px 2px;">1°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Max" /> max</sub></span><br />
+        <span class="txt-th" style="width: 190px; padding:20px 2px;">-7°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Min" /> min</sub></span></div>
+      <div class="col-grid text-center"><span class="txt-th">10 <sub>Km/h</sub></span><br />
+        <span class="txt-td "><img src="/imagenes/sitio/a-right.png" width="14" height="14" alt="Viento" /> Viento</span></div>
+      <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
+        <span class="txt-td">Altura helada</span></div>
+    </div>
+    <h3 class="txt-caption">Reporte del tiempo - SEMANA</h3>
+    <div class="block-col-grid">
+      <div class="col-grid">
+        <div class="pronostico">
+          <ul class="time">
+            <li>9 de mayo</li>
+            <li>15:27</li>
+          </ul>
+          <div class="cont-clima">
+            <table border="0" style="min-width:220px; margin:auto;">
+              <tr>
+                <td rowspan="2" class="img-clima"><img src="/imagenes/sitio/n-lluvia1.png" width="70" height="62" alt="LLuvia" /></td>
+                <td>18º C</td>
+              </tr>
+              <tr>
+                <td>Nevados de Chillán</td>
+              </tr>
+            </table>
+          </div>
+          <span class="etiqueta">Última actualización: 15:25 <img class="coolicon" src="/imagenes/sitio/coolicon.png" width="15" height="15" alt="Actualizado" /></span> </div>
+      </div>
+      <div class="col-grid"><span class="txt-th" style="border-bottom: 1px solid #C95D2A; width: 190px; padding:20px 2px;">1°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Max" /> max</sub></span><br />
+        <span class="txt-th" style="width: 190px; padding:20px 2px;">-7°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Min" /> min</sub></span></div>
+      <div class="col-grid text-center"><span class="txt-th">10 <sub>Km/h</sub></span><br />
+        <span class="txt-td "><img src="/imagenes/sitio/a-right.png" width="14" height="14" alt="Viento" /> Viento</span></div>
+      <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
+        <span class="txt-td">Altura helada</span></div>
+    </div>
+    <div class="block-col-grid">
+      <div class="col-grid">
+        <div class="pronostico">
+          <ul class="time">
+            <li>10 de mayo</li>
+            <li>15:27</li>
+          </ul>
+          <div class="cont-clima">
+            <table border="0" style="min-width:220px; margin:auto;">
+              <tr>
+                <td rowspan="2" class="img-clima"><img src="/imagenes/sitio/n-sol.png" width="72" height="70" alt="LLuvia" /></td>
+                <td>18º C</td>
+              </tr>
+              <tr>
+                <td>Nevados de Chillán</td>
+              </tr>
+            </table>
+          </div>
+          <span class="etiqueta">Última actualización: 15:25 <img class="coolicon" src="/imagenes/sitio/coolicon.png" width="15" height="15" alt="Actualizado" /></span> </div>
+      </div>
+      <div class="col-grid"><span class="txt-th" style="border-bottom: 1px solid #C95D2A; width: 190px; padding:20px 2px;">1°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Max" /> max</sub></span><br />
+        <span class="txt-th" style="width: 190px; padding:20px 2px;">-7°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Min" /> min</sub></span></div>
+      <div class="col-grid text-center"><span class="txt-th">10 <sub>Km/h</sub></span><br />
+        <span class="txt-td "><img src="/imagenes/sitio/a-right.png" width="14" height="14" alt="Viento" /> Viento</span></div>
+      <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
+        <span class="txt-td">Altura helada</span></div>
+    </div>
+    <div class="block-col-grid">
+      <div class="col-grid">
+        <div class="pronostico">
+          <ul class="time">
+            <li>11 de mayo</li>
+            <li>15:27</li>
+          </ul>
+          <div class="cont-clima">
+            <table border="0" style="min-width:220px; margin:auto;">
+              <tr>
+                <td rowspan="2" class="img-clima"><img src="/imagenes/sitio/n-nieve.png" width="70" height="70" alt="LLuvia" /></td>
+                <td>18º C</td>
+              </tr>
+              <tr>
+                <td>Nevados de Chillán</td>
+              </tr>
+            </table>
+          </div>
+          <span class="etiqueta">Última actualización: 15:25 <img class="coolicon" src="/imagenes/sitio/coolicon.png" width="15" height="15" alt="Actualizado" /></span> </div>
+      </div>
+      <div class="col-grid"><span class="txt-th" style="border-bottom: 1px solid #C95D2A; width: 190px; padding:20px 2px;">1°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Max" /> max</sub></span><br />
+        <span class="txt-th" style="width: 190px; padding:20px 2px;">-7°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Min" /> min</sub></span></div>
+      <div class="col-grid text-center"><span class="txt-th">10 <sub>Km/h</sub></span><br />
+        <span class="txt-td "><img src="/imagenes/sitio/a-right.png" width="14" height="14" alt="Viento" /> Viento</span></div>
+      <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
+        <span class="txt-td">Altura helada</span></div>
+    </div>
+    <div class="block-col-grid">
+      <div class="col-grid">
+        <div class="pronostico">
+          <ul class="time">
+            <li>12 de mayo</li>
+            <li>15:27</li>
+          </ul>
+          <div class="cont-clima">
+            <table border="0" style="min-width:220px; margin:auto;">
+              <tr>
+                <td rowspan="2" class="img-clima"><img src="/imagenes/sitio/n-lluvia.png" width="82" height="70" alt="LLuvia" /></td>
+                <td>18º C</td>
+              </tr>
+              <tr>
+                <td>Nevados de Chillán</td>
+              </tr>
+            </table>
+          </div>
+          <span class="etiqueta">Última actualización: 15:25 <img class="coolicon" src="/imagenes/sitio/coolicon.png" width="15" height="15" alt="Actualizado" /></span> </div>
+      </div>
+      <div class="col-grid"><span class="txt-th" style="border-bottom: 1px solid #C95D2A; width: 190px; padding:20px 2px;">1°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Max" /> max</sub></span><br />
+        <span class="txt-th" style="width: 190px; padding:20px 2px;">-7°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Min" /> min</sub></span></div>
+      <div class="col-grid text-center"><span class="txt-th">10 <sub>Km/h</sub></span><br />
+        <span class="txt-td "><img src="/imagenes/sitio/a-right.png" width="14" height="14" alt="Viento" /> Viento</span></div>
+      <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
+        <span class="txt-td">Altura helada</span></div>
+    </div>
+    <div class="block-col-grid">
+      <div class="col-grid">
+        <div class="pronostico">
+          <ul class="time">
+            <li>13 de mayo</li>
+            <li>15:27</li>
+          </ul>
+          <div class="cont-clima">
+            <table border="0" style="min-width:220px; margin:auto;">
+              <tr>
+                <td rowspan="2" class="img-clima"><img src="/imagenes/sitio/n-trueno.png" width="74" height="70" alt="LLuvia" /></td>
+                <td>18º C</td>
+              </tr>
+              <tr>
+                <td>Nevados de Chillán</td>
+              </tr>
+            </table>
+          </div>
+          <span class="etiqueta">Última actualización: 15:25 <img class="coolicon" src="/imagenes/sitio/coolicon.png" width="15" height="15" alt="Actualizado" /></span> </div>
+      </div>
+      <div class="col-grid"><span class="txt-th" style="border-bottom: 1px solid #C95D2A; width: 190px; padding:20px 2px;">1°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Max" /> max</sub></span><br />
+        <span class="txt-th" style="width: 190px; padding:20px 2px;">-7°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Min" /> min</sub></span></div>
+      <div class="col-grid text-center"><span class="txt-th">10 <sub>Km/h</sub></span><br />
+        <span class="txt-td "><img src="/imagenes/sitio/a-right.png" width="14" height="14" alt="Viento" /> Viento</span></div>
+      <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
+        <span class="txt-td">Altura helada</span></div>
+    </div>
+    <div class="block-col-grid">
+      <div class="col-grid">
+        <div class="pronostico">
+          <ul class="time">
+            <li>14 de mayo</li>
+            <li>15:27</li>
+          </ul>
+          <div class="cont-clima">
+            <table border="0" style="min-width:220px; margin:auto;">
+              <tr>
+                <td rowspan="2" class="img-clima"><img src="/imagenes/sitio/n-viento.png" width="82" height="66" alt="LLuvia" /></td>
+                <td>18º C</td>
+              </tr>
+              <tr>
+                <td>Nevados de Chillán</td>
+              </tr>
+            </table>
+          </div>
+          <span class="etiqueta">Última actualización: 15:25 <img class="coolicon" src="/imagenes/sitio/coolicon.png" width="15" height="15" alt="Actualizado" /></span> </div>
+      </div>
+      <div class="col-grid"><span class="txt-th" style="border-bottom: 1px solid #C95D2A; width: 190px; padding:20px 2px;">1°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Max" /> max</sub></span><br />
+        <span class="txt-th" style="width: 190px; padding:20px 2px;">-7°C <sub class="float-sub"><img src="/imagenes/sitio/a-up.png" width="14" height="14" alt="Min" /> min</sub></span></div>
+      <div class="col-grid text-center"><span class="txt-th">10 <sub>Km/h</sub></span><br />
+        <span class="txt-td "><img src="/imagenes/sitio/a-right.png" width="14" height="14" alt="Viento" /> Viento</span></div>
+      <div class="col-grid text-center"><span class="txt-th">3900<sub>cm</sub></span><br />
+        <span class="txt-td">Altura helada</span></div>
+    </div>
+  </div>
+  
+  <!--<div class="cont-tabla-resumen">
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
       <caption>
       <span>Reporte del tiempo - HOY</span>
@@ -286,7 +464,7 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </div>-->
   <section style="padding-top: 30px;">
     <h1 class="text-center clear" style=" margin-bottom: 46px;">Cámaras en vivo</h1>
     <div class="listado-noticias camaras" style="margin-bottom: 50px;">

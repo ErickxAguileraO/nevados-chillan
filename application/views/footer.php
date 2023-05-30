@@ -7,7 +7,7 @@
       position: fixed;
       z-index: 100;
       bottom: 1.48rem;
-      left: 25.48rem;
+      left: 7.3rem;
       width: 180px;
       height: 48px;
       border-radius: 50px;
@@ -17,14 +17,32 @@
       box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
       gap: 5px;
     }
+    .wspp-fixed{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      z-index: 100;
+      bottom: 1.48rem;
+      left: 1.48rem;
+      width: 48px;
+      height: 48px;
+      background: #25d366;
+      border-radius: 48px;
+      box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    }
     .reserva-aqui p{
       margin-top: 3px;
       font-weight: 700;
     }
     @media (max-width: 500px) {
       .reserva-aqui{
-        bottom: 7rem;
-        left: 1.48rem;
+        right: 7.3rem;
+        left: auto;
+      }
+      .wspp-fixed{
+        right: 1.48rem;
+        left: auto;
       }
     }
   </style>
@@ -32,6 +50,12 @@
     <img src="/imagenes/template/reserva.png" width="24px" height="24px"/>
     <p>Reserva Aquí</p>
   </a>
+
+  <a href="https://wa.me/message/QMRFXVHVW6B6D1" target="blank_" class="wspp-fixed">
+    <img src="/imagenes/wspp.png" width="24px" height="24px"/>
+  </a>
+
+
   <?php if(($home_indicador)){ ?>
   <!-- Inicio Auspiciadores -->
   <?php if(count($auspiciadores)>0){ ?>
