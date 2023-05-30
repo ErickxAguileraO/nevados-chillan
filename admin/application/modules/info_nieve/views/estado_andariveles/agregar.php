@@ -8,7 +8,14 @@
         	<div class="col-md-5">
             	<label>Nombre andarivel (*) </label>
                 <input type="text" class="form-control validate[required]" name="nombre" />
-                
+
+				<label>Horas (*) </label>
+				<span style="font-size: smaller; font-style: italic;">Ejemplo: 08:00 - 17:00</span>
+                <input type="text" class="form-control validate[required]" name="horas" />
+
+				<label>Tipos (*) </label>
+                <input type="text" class="form-control validate[required]" name="tipos" />
+
                 <label>Estado de andarivel</label>
 				<select class="form-control validate[required]" name="estado_andarivel">
 				    <option value="1">Abierto</option>
