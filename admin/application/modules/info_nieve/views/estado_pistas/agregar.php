@@ -17,6 +17,13 @@
 				    <option value="1">Abierta</option>
 				    <option value="0">Cerrada</option>
 				</select>
+
+                <label>Condición</label>
+				<select class="form-control validate[required]" name="condicion">
+                    <option value="">Selecciona...</option>
+				    <option value="1">Fabricación de nieve</option>
+				    <option value="2">Pisado</option>
+				</select>
                 
                 <label>Orden</label>
                 <input type="number" min="0" class="form-control validate[numeric]" name="orden" />
