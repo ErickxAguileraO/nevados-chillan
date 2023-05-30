@@ -58,14 +58,21 @@ class montana extends CI_Controller {
         $this->layout->js('/js/jquery/tabs/index.js');
 
 
-        //Contenido
-        $data["programas"] = $programas;
-		
-        #Nav
-        $this->layout->nav(array("Reportes" => "/"));
+        #Andariveles
+                
+        #contenido
+        $this->ws->order("eda_orden ASC");
+        
+        $data["andariveles"] = $this->ws->listar(49);
+        $data['andarivelesAbiertos'] = count($this->ws->listar(49, 'eda_estado_andarivel = 1'));
+        $data['pagination'] = $this->pagination->create_links();
 
-        #La vista siempre,  debe ir cargada al final de la función
-        $this->layout->view('reporte', $data);
+        #Nav
+        $this->layout->nav(array("Reportes" => '/'));
+
+        #view
+        $this->layout->view('montana/reporte', $data);
+
     }
 
     public function Info_ski() {

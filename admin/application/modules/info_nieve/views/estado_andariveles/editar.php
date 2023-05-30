@@ -8,11 +8,19 @@
         	<div class="col-md-5">
             	<label>Nombre andarivel (*) </label>
                 <input type="text" class="form-control validate[required]" name="nombre" value="<?php echo $estado->nombre; ?>" />
+
+				<label>Horario (*) </label>
+                <input type="text" class="form-control validate[required]" name="horario" value="<?php echo $estado->horario; ?>" />
+
+				<label>Tipo (*) </label>
+                <input type="text" class="form-control validate[required]" name="tipo" value="<?php echo $estado->tipo; ?>" />
                 
                 <label>Estado de andarivel</label>
 				<select class="form-control validate[required]" name="estado_andarivel">
 				    <option <?php if($estado->estado_andarivel) echo 'selected'; ?> value="1">Abierta</option>
 				    <option <?php if(!$estado->estado_andarivel) echo 'selected'; ?> value="0">Cerrada</option>
+					<option <?php if($estado->estado_andarivel) echo 'selected'; ?> value="2">Agendado</option>
+				    <option <?php if(!$estado->estado_andarivel) echo 'selected'; ?> value="3">En espera</option>
 				</select>
                 
                 <label>Orden</label>

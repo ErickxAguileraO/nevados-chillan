@@ -16,7 +16,7 @@ $db['default']['username'] = 'root';
 
 $db['default']['password'] = '';
 
-$db['default']['database'] = 'nevados';
+$db['default']['database'] = 'nevado';
 
 
 
