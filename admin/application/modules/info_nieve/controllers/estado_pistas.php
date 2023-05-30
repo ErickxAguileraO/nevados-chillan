@@ -55,6 +55,7 @@ class Estado_pistas extends CI_Controller {
 			$this->form_validation->set_rules('nombre','Nombre pista','required');
 			$this->form_validation->set_rules('dificultad','Dificultad','required');
 			$this->form_validation->set_rules('estado_pista','Estado de pista','required');
+			$this->form_validation->set_rules('condicion','Condición','required');
 			
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_error_delimiters('<div>','</div>');
@@ -71,11 +72,12 @@ class Estado_pistas extends CI_Controller {
             $datos['edp_nombre'] = $this->input->post('nombre');
             $datos['edp_dificultad'] = $this->input->post('dificultad');
             $datos['edp_estado_pista'] = $this->input->post('estado_pista');
+            $datos['edp_condicion'] = $this->input->post('condicion');
             $datos['edp_orden'] = $this->input->post('orden');
             $datos['edp_url'] = slug($this->input->post('nombre'));
             $datos['edp_estado'] = 1;
             
-            $this->ws->insertar($this->modulo,$datos);
+            $this->ws->insertar($this->modulo, $datos);
             
             echo json_encode(array("result"=>true));
             
@@ -109,6 +111,7 @@ class Estado_pistas extends CI_Controller {
 			$this->form_validation->set_rules('nombre','Nombre pista','required');
 			$this->form_validation->set_rules('dificultad','Dificultad','required');
 			$this->form_validation->set_rules('estado_pista','Estado de pista','required');
+			$this->form_validation->set_rules('condicion','Condición','required');
 			
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_error_delimiters('<div>','</div>');
@@ -125,6 +128,7 @@ class Estado_pistas extends CI_Controller {
             $datos['edp_nombre'] = $this->input->post('nombre');
             $datos['edp_dificultad'] = $this->input->post('dificultad');
             $datos['edp_estado_pista'] = $this->input->post('estado_pista');
+            $datos['edp_condicion'] = $this->input->post('condicion');
             $datos['edp_orden'] = $this->input->post('orden');
             $datos['edp_url'] = slug($this->input->post('nombre'));
             $datos['edp_estado'] = 1;
@@ -150,7 +154,7 @@ class Estado_pistas extends CI_Controller {
     		$this->layout->nav(array("Estado de Pistas" => '/info-nieve/estado-pistas/', "Editar Estado de Pista" => "/"));
     		
     		#view
-    		$this->layout->view('estado_pistas/editar',$contenido);
+    		$this->layout->view('estado_pistas/editar', $contenido);
         }
 	}
     

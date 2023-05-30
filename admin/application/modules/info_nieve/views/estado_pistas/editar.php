@@ -17,6 +17,12 @@
 				    <option <?php if($estado->estado_pista) echo 'selected'; ?> value="1">Abierta</option>
 				    <option <?php if(!$estado->estado_pista) echo 'selected'; ?> value="0">Cerrada</option>
 				</select>
+
+                <label>Condición</label>
+				<select class="form-control validate[required]" name="condicion">
+				    <option <?= $estado->condicion == 1 ? 'selected' : ''; ?> value="1">Fabricación de nieve</option>
+				    <option <?= $estado->condicion == 2 ? 'selected' : ''; ?> value="2">Pisado</option>
+				</select>
                 
                 <label>Orden</label>
                 <input type="number" min="0" class="form-control validate[numeric]" name="orden" value="<?php echo $estado->orden; ?>" />
