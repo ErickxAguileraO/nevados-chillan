@@ -18,13 +18,13 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'development');
-	#define('ENVIRONMENT', 'production');
+	#define('ENVIRONMENT', 'development');
+	define('ENVIRONMENT', 'production');
 
 	#URL ADMINISTRACION
-	define('URL_ADMINISTRACION', 'http://admin.nevados.aeurus.cl');
-	define('URL_ADMIN', 'http://admin.nevados.aeurus.cl');
-    define('URL_SITIO', 'https://nevados.aeurus.cl');
+	define('URL_ADMINISTRACION', 'http://admin.nevadoschillan.test');
+	define('URL_ADMIN', 'http://admin.nevadoschillan.test');
+    define('URL_SITIO', 'https://nevadoschillan.test');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

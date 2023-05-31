@@ -18,7 +18,9 @@
   <div class="tab_container">
     <div class="tab_content" id="tab1">
       <div class="reporte-estado">
-        <div class="child"><span>12</span>
+        <div class="child"><span>
+          <?= $andarivelesAbiertos ?>
+        </span>
           <h3> Andariveles abiertos</h3>
         </div>
         <div class="child">
@@ -37,7 +39,32 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <?php if($andariveles){ ?>
+                  <?php foreach($andariveles as $andarivel){ ?>
+                      <tr> 
+                          <td><?= $andarivel->nombre; ?></td>
+                          <td><?= $andarivel->horario; ?></td>
+                          <td><?= $andarivel->tipo; ?></td>
+                          <td>
+                          <?php if ($andarivel->estado_andarivel == 1) { ?>
+                              <span class="est-abierto">Abierto</span>
+                          <?php } elseif ($andarivel->estado_andarivel == 0) { ?>
+                              <span class="est-cerrado">Cerrado</span>
+                          <?php } elseif ($andarivel->estado_andarivel == 2) { ?>
+                              <span class="est-agendado">Agendado</span>
+                          <?php } elseif ($andarivel->estado_andarivel == 3) { ?>
+                              <span class="est-espera">En espera</span>
+                          <?php } ?>
+                        </td>
+                      </tr>
+                  <?php } ?>
+              <?php } else{ ?>
+                  <tr>
+                      <td colspan="4" style="text-align: center;"><i>No hay registros</i></td>
+                  </tr>
+              <?php } ?>
+
+            <!-- <tr>
               <td>Dato 1</td>
               <td>08:00 - 12:00</td>
               <td>Silla triple</td>
@@ -66,7 +93,7 @@
               <td>16:00 - 18:00</td>
               <td>Arrastre</td>
               <td><span class="est-abierto">Abierto</span></td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
       </div>

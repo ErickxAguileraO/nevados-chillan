@@ -23,7 +23,19 @@
                 <?php foreach($estados as $aux){ ?>
                     <tr> 
                         <td><?php echo $aux->nombre; ?></td>
-                        <td><?php echo ($aux->estado_andarivel)?'Abierto':'Cerrado'; ?></td>
+                        <td>
+                            <?php
+                                if ($aux->estado_andarivel == 1) {
+                                    echo 'Abierto';
+                                } elseif ($aux->estado_andarivel == 0) {
+                                    echo 'Cerrado';
+                                } elseif ($aux->estado_andarivel == 2) {
+                                    echo 'Agendado';
+                                } elseif ($aux->estado_andarivel == 3) {
+                                    echo 'En espera';
+                                }
+                            ?>
+                        </td>
                         <td><?php echo $aux->orden; ?></td>
 						<td class="text-center">
                             <a href="/info-nieve/estado-andariveles/editar/<?php echo $aux->codigo; ?>/"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>

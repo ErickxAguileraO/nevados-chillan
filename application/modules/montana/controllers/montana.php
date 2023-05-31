@@ -60,7 +60,15 @@ class montana extends CI_Controller {
 
         //Contenido
         $data["programas"] = $programas;
-		
+
+        #Andariveles
+                
+        #contenido
+        $this->ws->order("eda_orden ASC");
+        
+        $data["andariveles"] = $this->ws->listar(49);
+        $data['andarivelesAbiertos'] = count($this->ws->listar(49, 'eda_estado_andarivel = 1'));
+        $data['pagination'] = $this->pagination->create_links();
 
         /**
          * Obtención de datos de pistas
@@ -72,12 +80,13 @@ class montana extends CI_Controller {
 
         $data['pistas'] = $pistas;
         $data['cantidadPistasAbiertas'] = $cantidadPistasAbiertas;
-
+        
         #Nav
-        $this->layout->nav(array("Reportes" => "/"));
+        $this->layout->nav(array("Reportes" => '/'));
 
-        #La vista siempre,  debe ir cargada al final de la función
-        $this->layout->view('reporte', $data);
+        #view
+        $this->layout->view('montana/reporte', $data);
+
     }
 
     public function Info_ski() {

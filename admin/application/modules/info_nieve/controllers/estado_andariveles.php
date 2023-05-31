@@ -54,6 +54,8 @@ class Estado_andariveles extends CI_Controller {
 			#validaciones
 			$this->form_validation->set_rules('nombre','Nombre andarivel','required');
             $this->form_validation->set_rules('estado_andarivel','Estado de andarivel','required');
+            $this->form_validation->set_rules('horario','Horarios','required');
+            $this->form_validation->set_rules('tipo','Tipos','required');
 			
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_error_delimiters('<div>','</div>');
@@ -69,6 +71,8 @@ class Estado_andariveles extends CI_Controller {
             
             $datos['eda_nombre'] = $this->input->post('nombre');
             $datos['eda_estado_andarivel'] = $this->input->post('estado_andarivel');
+            $datos['eda_tipo'] = $this->input->post('tipo');
+            $datos['eda_horario'] = $this->input->post('horario');
             $datos['eda_orden'] = $this->input->post('orden');
             $datos['eda_url'] = slug($this->input->post('nombre'));
             $datos['eda_estado'] = 1;
@@ -106,6 +110,8 @@ class Estado_andariveles extends CI_Controller {
 			#validaciones
 			$this->form_validation->set_rules('nombre','Nombre andarivel','required');
 			$this->form_validation->set_rules('estado_andarivel','Estado de andarivel','required');
+            $this->form_validation->set_rules('horario','Horarios','required');
+            $this->form_validation->set_rules('tipo','Tipos','required');
 			
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_error_delimiters('<div>','</div>');
@@ -121,6 +127,8 @@ class Estado_andariveles extends CI_Controller {
             
             $datos['eda_nombre'] = $this->input->post('nombre');
             $datos['eda_estado_andarivel'] = $this->input->post('estado_andarivel');
+            $datos['eda_tipo'] = $this->input->post('tipo');
+            $datos['eda_horario'] = $this->input->post('horario');
             $datos['eda_orden'] = $this->input->post('orden');
             $datos['eda_url'] = slug($this->input->post('nombre'));
             $datos['eda_estado'] = 1;

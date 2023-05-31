@@ -7,7 +7,7 @@ class Ws{
     public function __construct(){
         
         $this->key = 'd821dae9a321eecfc252932d6089d283';
-        $this->url_base = 'http://admin.nevados.aeurus.cl/webservice/api/';
+        $this->url_base = 'http://nevadoschillan.test/admin/webservice/api/';
     }
     
     #campos
