@@ -58,6 +58,9 @@ class montana extends CI_Controller {
         $this->layout->js('/js/jquery/tabs/index.js');
 
 
+        //Contenido
+        $data["programas"] = $programas;
+
         #Andariveles
                 
         #contenido
@@ -67,6 +70,17 @@ class montana extends CI_Controller {
         $data['andarivelesAbiertos'] = count($this->ws->listar(49, 'eda_estado_andarivel = 1'));
         $data['pagination'] = $this->pagination->create_links();
 
+        /**
+         * Obtención de datos de pistas
+         */
+        $pistas = $this->ws->listar(48);
+        $cantidadPistasAbiertas = count($this->ws->listar(48, 'edp_estado_pista = 1'));
+        $pistas = PistaService::generarEstadoPista($pistas);
+        $pistas = PistaService::generarDificultad($pistas);
+
+        $data['pistas'] = $pistas;
+        $data['cantidadPistasAbiertas'] = $cantidadPistasAbiertas;
+        
         #Nav
         $this->layout->nav(array("Reportes" => '/'));
 

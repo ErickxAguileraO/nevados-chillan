@@ -23,8 +23,9 @@
         </span>
           <h3> Andariveles abiertos</h3>
         </div>
-        <div class="child"><span>42</span>
-          <h3>Pistas abiertos</h3>
+        <div class="child">
+          <span><?= $cantidadPistasAbiertas; ?></span>
+          <h3>Pistas abiertas</h3>
         </div>
       </div>
       <div class="cont-tabla-reporte">
@@ -103,40 +104,39 @@
           <thead>
             <tr>
               <th scope="col">Nombre de la pista</th>
-              <th scope="col">Condición</th>
+              <th scope="col">Estado</th>
               <th scope="col">Dificultad</th>
               <th scope="col">Condición</th>
             </tr>
           </thead>
           <tbody>
+            <?php 
+            
+            foreach ($pistas as $pista): ?>
+          
             <tr>
-              <td>Pista 1</td>
-              <td><span class="est-abierto">Abierto</span></td>
-              <td class="white-space"><span class="label">Aficionado</span> <span class="icon-circle"></span></td>
-              <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/nieve.png" width="16" height="16" alt="Nieve" /></figure>
-                Fabricación de nieve</td>
+              <td><?= $pista->nombre ?></td>
+              <td><span class="<?= $pista->clase_estado_pista ?>"><?= $pista->texto_estado_pista ?></span></td>
+              <td class="white-space">
+                <span class="label"><?= $pista->dificultad ?></span> 
+                <span class="<?= $pista->icono_dificultad ?>"></span>
+
+                <?php if ($pista->dificultad == 'Experto'): ?>
+                <span class="<?= $pista->icono_dificultad ?>"></span>
+                <?php endif; ?>
+
+              </td>
+              <td class="white-space">
+                <figure class="icon-blue">
+                  <img src=<?= $pista->condicion == 1 ? '/imagenes/sitio/nieve.png' : '/imagenes/sitio/transporte.png'; ?> 
+                  width="16" height="16" />
+                </figure>
+                <?= $pista->condicion == 1 ? 'Fabricación nieve' : 'Pisado'; ?>
+              </td>
             </tr>
-            <tr>
-              <td>Pista 2</td>
-              <td><span class="est-cerrado">Cerrado</span></td>
-              <td class="white-space"><span class="label">Intermedio</span> <span class="icon-cube"></span></td>
-              <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/nieve.png" width="16" height="16" alt="Nieve" /></figure>
-                Fabricación de nieve</td>
-            </tr>
-            <tr>
-              <td>Pista 3</td>
-              <td><span class="est-agendado">Agendado</span></td>
-              <td class="white-space"><span class="label">Avanzado</span> <span class="icon-diamond"></span></td>
-              <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/transporte.png" width="16" height="16" alt="Transporte" /></figure>
-                Pisado</td>
-            </tr>
-            <tr>
-              <td>Pista 4</td>
-              <td><span class="est-espera">En espera</span></td>
-              <td><span class="label">Experto</span> <span class="icon-diamond"></span> <span class="icon-diamond"></span></td>
-              <td class="white-space"><figure class="icon-blue"><img src="/imagenes/sitio/transporte.png" width="16" height="16" alt="Transporte" /></figure>
-                Pisado</td>
-            </tr>
+
+            <?php endforeach; ?>
+
           </tbody>
         </table>
       </div>
