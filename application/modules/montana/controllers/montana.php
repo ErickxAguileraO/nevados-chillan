@@ -61,6 +61,18 @@ class montana extends CI_Controller {
         //Contenido
         $data["programas"] = $programas;
 		
+
+        /**
+         * Obtención de datos de pistas
+         */
+        $pistas = $this->ws->listar(48);
+        $cantidadPistasAbiertas = count($this->ws->listar(48, 'edp_estado_pista = 1'));
+        $pistas = PistaService::generarEstadoPista($pistas);
+        $pistas = PistaService::generarDificultad($pistas);
+
+        $data['pistas'] = $pistas;
+        $data['cantidadPistasAbiertas'] = $cantidadPistasAbiertas;
+
         #Nav
         $this->layout->nav(array("Reportes" => "/"));
 
