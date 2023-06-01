@@ -511,8 +511,8 @@ $route['valle-las-trancas/secciones/eliminar-imagen-adjunta'] = "valle_trancas/s
 
 #FIN VALLE LAS TRANCAS
 
-
-
+#ENCABEZADO
+$route['encabezado/modificar'] = "encabezados/encabezado/modificar/";
 
 #INVIERNO
 
