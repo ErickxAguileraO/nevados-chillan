@@ -1,11 +1,6 @@
 <div class="col-sm-10 text-left marg-fix">
   	<div class="titulo-btn">
-        <h1>Mapa de Pistas</h1>
-    </div>
-
-    <div class="subtitulo-btn">
-    	<h2>&nbsp;</h2>
-        <a class="btn btn-default" href="/invierno/mapa-pistas/agregar/">Agregar mapa</a>
+        <h1>Agregar mapa</h1>
     </div>
 
     <form action="#" method="post" id="form-agregar" enctype="multipart/form-data" >
@@ -14,6 +9,12 @@
             	<label>Nombre (*) </label>
                 <input type="text" class="form-control validate[required]" name="nombre" value="<?php echo ($mapa)?$mapa->nombre:''; ?>" />
 
+                <label>Descripción</label>
+                <textarea class="form-control" rows="3"  id="descripcion" name="descripcion"></textarea>
+
+                <label>Archivo Adjunto</label>
+                <input type="file" class="form-control" name="archivo" />
+                
                 <label>Imagen adjunta. Tamaño mínimo <?php echo $this->img->ancho_min_1; ?>px ancho</label>
                 <input type="file" class="form-control" name="imagen" />
                 
