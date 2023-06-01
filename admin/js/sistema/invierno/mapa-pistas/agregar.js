@@ -16,7 +16,7 @@ $(document).ready(function () {
         			fondo: '<div id="fondo" style=" position: fixed; top:0; height: 100%; width:100%; background-color: rgba(60, 56, 56, 0.38); display:block;z-index: 9999;"></div>'
         		});
                 $("#descripcion").val(CKEDITOR.instances['descripcion'].getData());
-                var formData = new FormData(document.getElementById("form-agregar"));
+                let formData = new FormData(document.getElementById("form-agregar"));
         		$.ajax({
         			url: '/invierno/mapa-pistas/agregar/',
         			type: 'post',
@@ -26,7 +26,7 @@ $(document).ready(function () {
                     contentType: false,
                     processData: false,
         			success: function (result){
-                        var json = jQuery.parseJSON(result);
+                        let json = jQuery.parseJSON(result);
         				if(json.result){
         				    
         					noty({
@@ -37,7 +37,7 @@ $(document).ready(function () {
         					});
                             
         					setTimeout(function () {
-        						window.location.reload();
+        						window.location.href = '/invierno/mapa-pistas/';
         					}, 1000);
         				}else{
         				    
