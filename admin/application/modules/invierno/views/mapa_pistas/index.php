@@ -3,7 +3,7 @@
         <h1>Mapa de Pistas</h1>
     </div>
     
-    <form action="#" method="post" id="form-agregar" >
+    <form action="#" method="post" id="form-agregar" enctype="multipart/form-data" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
         	<div class="col-md-10">
                 
@@ -23,4 +23,8 @@
 			</div>
         </div>
     </form>
+    <div class="subtitulo-btn">
+    	<h2>&nbsp;</h2>
+        <a class="btn btn-default" href="/invierno/mapa-pistas/agregar/">Agregar mapa</a>
+    </div>
 </div>

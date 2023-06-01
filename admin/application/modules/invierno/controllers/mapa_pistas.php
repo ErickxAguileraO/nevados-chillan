@@ -114,6 +114,12 @@ class Mapa_pistas extends CI_Controller {
             
             echo json_encode(array("result"=>true));
             
+        } else {
+            $this->layout->title('Agregar mapa');
+            $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
+            $this->layout->js('/js/sistema/invierno/mapa-pistas/agregar.js');
+            $this->layout->nav(array("Agregar mapa" => '/invierno/mapa-pistas/agregar', "Agregar mapa" => "/"));
+		    $this->layout->view('mapa_pistas/agregar');
         }
 	}
 }
