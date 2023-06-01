@@ -3,25 +3,22 @@
         <h1>Mapa de Pistas</h1>
     </div>
     
-    <form action="#" method="post" id="form-agregar" enctype="multipart/form-data" >
+    <form action="#" method="post" id="form-agregar" >
         <div class="row" style="margin-top:30px; margin-bottom:30px;">
-        	<div class="col-md-5">
-            	<label>Nombre (*) </label>
-                <input type="text" class="form-control validate[required]" name="nombre" value="<?php echo ($mapa)?$mapa->nombre:''; ?>" />
+        	<div class="col-md-10">
+                
+                <h4>Encabezado</h4>
+                <br>
+                <textarea class="form-control" rows="3"  id="descripcion" name="descripcion"><?= ($encabezado)?$encabezado->texto:''; ?></textarea>
+                
+            </div>
+        </div>
 
-                <label>Imagen adjunta. Tamaño mínimo <?php echo $this->img->ancho_min_1; ?>px ancho</label>
-                <input type="file" class="form-control" name="imagen" />
-                
-                <?php if($mapa && $mapa->imagen_adjunta){ ?>
-                    <img width="292" style="height: auto; margin-top:10px;" src="<?php echo $mapa->imagen_adjunta; ?>" />
-                <?php } ?>
-                
-        	</div>
-            
-            <input type="hidden" name="codigo" value="<?php echo ($mapa)?$mapa->codigo:''; ?>" />
+        <input type="hidden" name="codigo" value="<?php echo ($encabezado)?$encabezado->codigo:''; ?>" />
+        <div class="row" >
 			<div class="col-xs-12">
 				<div class="text-left" style="margin-top:20px;">
-					<button type="submit" class="btn btn-primary">Guardar</button>
+					<button type="submit" class="btn btn-primary">Actualizar</button>
                 </div>
 			</div>
         </div>

@@ -17,12 +17,15 @@ class Mapa_pistas extends CI_Controller {
         
 		#Title
 		$this->layout->title('Mapa de Pistas');
-		
+
+        #JS - Editor
+        $this->layout->js('/js/jquery/ckeditor-standard/ckeditor.js');
+        
         #js
         $this->layout->js('/js/sistema/invierno/mapa-pistas/index.js');
         
 		#contenido
-		$contenido["mapa"] = $this->ws->obtener($this->modulo,"map_codigo = 1");
+        $contenido["encabezado"] = $informacion = $this->ws->obtener(80, "enc_seccion = 'mapa_pista'");
         
 		#Nav
 		$this->layout->nav(array("Mapa de Pistas" => '/'));

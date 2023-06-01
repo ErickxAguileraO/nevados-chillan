@@ -16,9 +16,10 @@ $(document).ready(function () {
         			fondo: '<div id="fondo" style=" position: fixed; top:0; height: 100%; width:100%; background-color: rgba(60, 56, 56, 0.38); display:block;z-index: 9999;"></div>'
         		});
                 
+				$("#descripcion").val(CKEDITOR.instances['descripcion'].getData());
                 var formData = new FormData(document.getElementById("form-agregar"));
         		$.ajax({
-        			url: '/invierno/mapa-pistas/agregar/',
+        			url: '/encabezado/modificar/',
         			type: 'post',
         			dataType: 'html',
         			data: formData,
@@ -53,4 +54,8 @@ $(document).ready(function () {
         	}
         }
     });
+	    
+    //editor
+    CKEDITOR.replace('descripcion');
+
 });

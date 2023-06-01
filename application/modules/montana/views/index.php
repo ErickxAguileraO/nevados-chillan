@@ -7,8 +7,7 @@
   <?=$this->layout->getNav();?>
   <section class="intro">
     <h1>Mapa de pistas</h1>
-    <p>El BikePark funciona desde las 10:00 hasta las 16:45. La apertura parte siempre por el andarivel Tata y progresivamente el resto. El cierre parte por el andarivel Refugio y luego progresivamente el resto.<br />
-      <strong>*Disclosure</strong>: Las condiciones climáticas como visibilidad, viento, lluvia y tipo de nevada pueden cambiar drásticamente, en pocos minutos, y no quedar reflejadas, en un cierto intervalo, en este reporte. Más acá.</p>
+    <?= $encabezadoMapaPista->texto ?>
   </section>
   <div class="contenedor cont-secciones">
     <figure class="picture"> <img src="/imagenes/borrar/mapa.jpg" width="679" height="408" alt="Mapa" /> </figure>

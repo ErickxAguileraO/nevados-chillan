@@ -28,8 +28,8 @@ class montana extends CI_Controller {
 
 
         //Contenido
-        $data["programas"] = $programas;
-		
+        //$data["programas"] = $programas;
+		$data['encabezadoMapaPista'] = $this->ws->obtener(80, "enc_seccion = 'mapa_pista'");
         #Nav
         $this->layout->nav(array("Mapa de pistas" => "/"));
 
