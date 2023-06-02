@@ -43,7 +43,7 @@
                     <tr> 
                         <td><?= $mapa->nombre; ?></td>
 						<td class="text-center">
-                            <a href="invierno/mapa-pistas/editar/<?= $mapa->codigo; ?>/">
+                            <a href="/invierno/mapa-pistas/editar/<?= $mapa->codigo; ?>/">
                                 <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                             </a>
                         </td>
