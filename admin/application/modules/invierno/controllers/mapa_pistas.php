@@ -26,7 +26,24 @@ class Mapa_pistas extends CI_Controller {
         
 		#contenido
         $contenido["encabezado"] = $informacion = $this->ws->obtener(80, "enc_seccion = 'mapa_pista'");
+
+        // Listado de mapas
+        $url = count($_GET) > 0 ? '?'.http_build_query($_GET, '', "&") : '';
+
+		$config['uri_segment'] = 3;
+		$config['base_url'] = '/invierno/mapa-pistas/';
+		$config['per_page'] = 10;
+		$config['total_rows'] = count($this->ws->listar(45));
+        $config['suffix'] = '/'.$url;
+        $config['first_url'] = $config['base_url'].$url;
+		$this->pagination->initialize($config);
         
+        $this->ws->order("map_codigo DESC");
+        $pagina = ($this->uri->segment($config['uri_segment']))?$this->uri->segment($config['uri_segment'])-1:0;
+        $this->ws->limit($config['per_page'], ($config['per_page'] * $pagina));
+
+        $contenido["mapas"] = $this->ws->listar(45);
+        $contenido['pagination'] = $this->pagination->create_links();
 		#Nav
 		$this->layout->nav(array("Mapa de Pistas" => '/'));
 		
@@ -97,7 +114,40 @@ class Mapa_pistas extends CI_Controller {
                     $datos['map_imagen_adjunta'] = $upload_dir.$nombre_grande;
         		}
             }
+
+            if(isset($_FILES['archivo']['name']) && $_FILES['archivo']['name']){
+                if($archivo = $_FILES['archivo']){
+                    $ruta = '/archivos/pdf/mapa-pista/';
+                    crear_directorio($ruta);
+                    
+                    #libreria upload
+                    $this->load->library('upload');
+                    
+                    $extension = array_pop(explode('.',$archivo['name']));
+                    $file_name = 'mapa-pista-'.time().'.'.$extension;
+                    
+                    #config archivo
+                    $config['upload_path'] = $_SERVER['DOCUMENT_ROOT'].$ruta;
+                    $config['allowed_types'] = '|pdf|';
+                    #$config['max_size']	= '100';
+                    $config['file_name'] = $file_name;
+                    $this->upload->initialize($config);
+                    
+                    if(!$this->upload->do_upload('archivo'))
+            		{
+            			//$error .= $this->upload->display_errors();
+            			$error .= "<div>* Ha ocurrido un error al subir el archivo. Compruebe que el tipo de archivo sea .pdf.</div>";
+            		}
+                    
+                    
+                    $datos['map_documento'] = $ruta.$file_name;
+                }
+            }
             
+            if(!$this->form_validation->run()) {
+                $error .= validation_errors();
+            }
+				
             if($error){
                 echo json_encode(array("result"=>false,"msg"=>$error));
                 exit;
@@ -105,6 +155,7 @@ class Mapa_pistas extends CI_Controller {
             
             $datos['map_nombre'] = $this->input->post('nombre');
             $datos['map_url'] = slug($this->input->post('nombre'));
+            $datos['map_descripcion'] = $this->input->post('descripcion');
             $datos['map_estado'] = 1;
             
             if($codigo = $this->input->post('codigo'))

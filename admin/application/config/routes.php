@@ -511,8 +511,8 @@ $route['valle-las-trancas/secciones/eliminar-imagen-adjunta'] = "valle_trancas/s
 
 #FIN VALLE LAS TRANCAS
 
-#ENCABEZADO
-$route['encabezado/modificar'] = "encabezados/encabezado/modificar/";
+
+
 
 #INVIERNO
 
@@ -557,6 +557,7 @@ $route['invierno/programas-valores/agregar'] = "invierno/programas_valores/agreg
 
 #mapa de pistas
 $route['invierno/mapa-pistas']         = "invierno/mapa_pistas";
+$route['invierno/mapa-pistas/(:num)']  = "invierno/mapa_pistas";
 $route['invierno/mapa-pistas/agregar'] = "invierno/mapa_pistas/agregar";
 
 #FIN INVIERNO
