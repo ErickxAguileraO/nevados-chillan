@@ -331,4 +331,13 @@ class Mapa_pistas extends CI_Controller {
         
         echo json_encode(array("result" => true));
     }
+
+    public function eliminar() {
+		try {
+			$this->ws->eliminar($this->modulo, "map_codigo = {$this->input->post('codigo')}");
+			echo json_encode(array("result" => true));
+		} catch (Exception $e) {
+			echo json_encode(array("result" => false, "msg" => "Ha ocurrido un error inesperado. Por favor, inténtelo nuevamente."));
+		}
+    }
 }
