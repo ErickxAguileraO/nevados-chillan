@@ -563,6 +563,7 @@ $route['invierno/mapa-pistas/editar/(:num)'] = "invierno/mapa_pistas/editar/$1";
 $route['invierno/mapa-pistas/descargar-archivo/(:num)'] = "invierno/mapa_pistas/descargarDocumento/$1";
 $route['invierno/mapa-pistas/eliminar-archivo'] = "invierno/mapa_pistas/eliminarDocumento";
 $route['invierno/mapa-pistas/eliminar-imagen'] = "invierno/mapa_pistas/eliminarImagen";
+$route['invierno/mapa-pistas/eliminar'] = "invierno/mapa_pistas/eliminar";
 
 #FIN INVIERNO
 
