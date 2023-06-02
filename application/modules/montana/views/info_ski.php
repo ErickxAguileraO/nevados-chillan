@@ -480,12 +480,19 @@
         <span class="ver-mas"><a href="#">Ver más</a></span> </article>
     </div>
   </section>
+
   <div class="contenedor cont-secciones" style="border-top: 1px solid #C95D2A; padding-top:50px;">
-    <figure class="picture"> <img src="/imagenes/borrar/mapa.jpg" width="679" height="408" alt="Mapa" /> </figure>
-    <div class="txt-block-contenido center-home">
-      <h1>Valle Hermoso</h1>
-      <p>Se encuentra ubicado a 80 km de la ciudad de Chillán y es el primer recinto del grupo Nevados de Chillán.</p>
-      <p>Situado en un lugar excepcional rodeado de naturaleza y a la sombra de un bosque. Ofrece 3 piscinas termales al aire libre, un restaurante, un mini-market, sectores habilitados para asados y picnic y departamentos completamente equipados, lo que lo convierte en una opción segura y preferida para aquellos que buscan experiencias termales familiares.</p>
-      <a class="ver-mas" href="#">Descargar PDF</a> </div>
+  <?php if($noticiaClima){ ?>
+        <figure class="picture"> <img src="/admin<?= $imagenNoticiaClima->ruta_interna ?>" width="679" height="408" alt="Mapa" /> </figure>
+        <div class="txt-block-contenido center-home">
+        <h1><?= end($noticiaClima)->titulo ?></h1>
+        <p><?= end($noticiaClima)->descripcion ?></p>
+        <a class="ver-mas" href="<?= end($noticiaClima)->enlace ?>">Ver más</a> </div>
+  <?php } else{ ?>
+        <tr>
+            <td colspan="4" style="text-align: center;"><i>No hay noticias</i></td>
+        </tr>
+  <?php } ?>
+    
   </div>
 </div>

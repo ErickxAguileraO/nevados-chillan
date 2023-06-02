@@ -144,23 +144,22 @@
   </div>
   <h1 class="text-center clear" style=" margin-bottom: 46px;">También puede interesarte</h1>
   <div class="listado-noticias">
-    <article>
-      <figure><img src="/imagenes/borrar/noticias.jpg" alt="Título de la noticia" width="440" height="200" /></figure>
-      <h3>Título de la noticia</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. assa mi. Aliquam in hendrerit urna.<br />
-        Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
-      <span class="ver-mas"><a href="#">Ver más</a></span> </article>
-    <article>
-      <figure><img src="/imagenes/borrar/noticias.jpg" alt="Título de la noticia" width="440" height="200" /></figure>
-      <h3>Título de la noticia</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. assa mi. Aliquam in hendrerit urna.<br />
-        Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
-      <span class="ver-mas"><a href="#">Ver más</a></span> </article>
-    <article>
-      <figure><img src="/imagenes/borrar/noticias.jpg" alt="Título de la noticia" width="440" height="200" /></figure>
-      <h3>Título de la noticia</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. assa mi. Aliquam in hendrerit urna.<br />
-        Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
-      <span class="ver-mas"><a href="#">Ver más</a></span> </article>
+
+      <?php if($noticiaReporte){ ?>
+        <?php foreach($noticiaReporte as $key => $noticia){ ?>
+            <article>
+                <figure><img src="/admin<?= $imagenNoticiaReporte[$key]->ruta_interna ?>" alt="Título de la noticia" width="440" height="200" /></figure>
+                <h3><?= $noticia->titulo ?></h3>
+                <p>
+                    <?= $noticia->descripcion ?>
+                </p>
+                <span class="ver-mas"><a href="<?= $noticia->enlace ?>">Ver más</a></span> 
+            </article>
+        <?php } ?>
+    <?php } else{ ?>
+        <tr>
+            <td colspan="4" style="text-align: center;"><i>No hay noticias</i></td>
+        </tr>
+    <?php } ?>
   </div>
 </div>

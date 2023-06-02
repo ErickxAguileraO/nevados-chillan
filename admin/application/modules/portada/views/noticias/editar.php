@@ -32,6 +32,9 @@
                         <?php } ?>
                     <?php } ?>
 				</select>
+
+                <label>Enlace (*) </label>
+                <input type="text" class="form-control validate[required]" name="enlace" value="<?php echo $noticia->enlace; ?>" />
                 
                 <label>Estado</label>
 				<select class="form-control validate[required]" name="estado">
