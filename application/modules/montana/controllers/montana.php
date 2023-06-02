@@ -57,6 +57,20 @@ class montana extends CI_Controller {
         $this->layout->css('/js/jquery/tabs/tabs.css');
         $this->layout->js('/js/jquery/tabs/index.js');
 
+        //Noticias
+        $idNoticia = [];
+        $idCategoria = $this->ws->obtener(30, "can_url = 'reporte-montana'")->codigo;
+        $this->ws->order("not_codigo DESC");
+        $this->ws->limit(3);
+        $data["noticiaReporte"] = $this->ws->listar(37, "not_categoria = " . $idCategoria);
+        foreach ($data["noticiaReporte"] as $noticia) {
+            $imagenes = $this->ws->listar(38, "noti_noticia = ". $noticia->codigo);
+            foreach ($imagenes as $imagen) {
+                $idNoticia[] = $imagen;
+            }
+        } 
+        $data["imagenNoticiaReporte"] = $idNoticia;
+
 
         //Contenido
         $data["programas"] = $programas;
@@ -110,8 +124,11 @@ class montana extends CI_Controller {
         $this->layout->js('/js/jquery/tabs/index.js');
 
 
-        //Contenido
-        $data["programas"] = $programas;
+        //Noticias
+        $idCategoria = $this->ws->obtener(30, "can_url = 'clima'")->codigo;
+        $data["noticiaClima"] = $this->ws->listar(37, "not_categoria = " . $idCategoria);
+        $idNoticiaClima = end($this->ws->listar(37, "not_categoria = " . $idCategoria))->codigo;
+        $data["imagenNoticiaClima"] = $this->ws->obtener(38, "noti_noticia = ".$idNoticiaClima);
 		
         #Nav
         $this->layout->nav(array("Info Ski" => "/"));

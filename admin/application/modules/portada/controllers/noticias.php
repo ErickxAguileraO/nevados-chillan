@@ -70,6 +70,7 @@ class Noticias extends CI_Controller {
             
 			#validaciones
 			$this->form_validation->set_rules('titulo','Título','required');
+            $this->form_validation->set_rules('enlace','Enlace','required');
 			
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_error_delimiters('<div>','</div>');
@@ -88,6 +89,7 @@ class Noticias extends CI_Controller {
             $datos['not_descripcion'] = $this->input->post('descripcion');
             $datos['not_resumen'] = $this->input->post('resumen');
             $datos['not_categoria'] = $this->input->post('categoria');
+            $datos['not_enlace'] = $this->input->post('enlace');
             $datos['not_url'] = slug($this->input->post('titulo'));
             $datos['not_estado'] = $this->input->post('estado');
             
@@ -150,6 +152,7 @@ class Noticias extends CI_Controller {
             
 			#validaciones
 			$this->form_validation->set_rules('titulo','Título','required');
+            $this->form_validation->set_rules('enlace','Enlace','required');
 			
             $this->form_validation->set_message('required', '* %s es obligatorio');
             $this->form_validation->set_error_delimiters('<div>','</div>');
@@ -168,6 +171,7 @@ class Noticias extends CI_Controller {
             $datos['not_descripcion'] = $this->input->post('descripcion');
             $datos['not_resumen'] = $this->input->post('resumen');
             $datos['not_categoria'] = $this->input->post('categoria');
+            $datos['not_enlace'] = $this->input->post('enlace');
             $datos['not_url'] = slug($this->input->post('titulo'));
             $datos['not_estado'] = $this->input->post('estado');
             

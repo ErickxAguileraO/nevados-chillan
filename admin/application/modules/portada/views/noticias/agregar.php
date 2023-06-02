@@ -33,6 +33,9 @@
                     <?php } ?>
 				</select>
                 
+                <label>Enlace (*) </label>
+                <input type="text" class="form-control validate[required]" name="enlace" />
+
                 <label>Estado</label>
 				<select class="form-control validate[required]" name="estado">
 				    <option value="1">Activo</option>
