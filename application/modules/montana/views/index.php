@@ -16,7 +16,7 @@
     <div class="txt-block-contenido center-home">
       <h1><?= $mapa->nombre ?></h1>
       <p><?= $mapa->descripcion ?></p>
-      <a class="ver-mas" href="<?= URL_ADMIN . '/invierno/mapa-pistas/descargar-archivo/' . $mapa->codigo ?>">Descargar PDF</a> 
+      <a class="ver-mas" href="<?= '/montana/mapa-pistas/descargar-archivo/' . $mapa->codigo ?>">Descargar PDF</a> 
     </div>
   </div>
   <?php endforeach; ?>
