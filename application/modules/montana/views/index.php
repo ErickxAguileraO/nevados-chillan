@@ -22,19 +22,27 @@
   <?php endforeach; ?>
   
  
-  <section style="padding-top: 80px;">
-    <h1 class="text-center clear" style=" margin-bottom: 46px;">Cámaras en vivo</h1>
-    <div class="listado-noticias camaras">
-      <article>
-        <figure><img src="/imagenes/borrar/noticias.jpg" alt="Título de la noticia" width="440" height="200"></figure>
-        <h3>Cámara 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
-        <span class="ver-mas"><a href="#">Ver más</a></span> </article>
-      <article>
-        <figure><img src="/imagenes/borrar/noticias.jpg" alt="Título de la noticia" width="440" height="200"></figure>
-        <h3>Cámara 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
-        <span class="ver-mas"><a href="#">Ver más</a></span> </article>
-    </div>
-  </section>
+  <<!-- Camara en vivo -->
+  <div class="center">
+      <?=$this->layout->getNav();?>
+      <div class="intro">
+        <h2>Cámaras en vivo</h2>
+        <p>Mira lo que pasa en vivo</p>
+      </div>
+        <?php  $i=0;
+          foreach($camaras as $item):
+            if($i%2==0){ ?>
+            <div class="camara float-left wow fadeInLeft">
+            <?php
+            }else{ ?>
+          <div class="camara float-right wow fadeInRight">
+            <?php } ?>
+            <h3><?=$item->nombre?></h3>
+            <p><?=$item->descripcion?></p>
+            <iframe width="587" height="550" src="<?=$item->iframe?>"></iframe>
+          </div>
+        <?php  $i++;
+        endforeach; ?>
+      <div class="clear"></div>
+  </div>
 </div>
