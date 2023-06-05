@@ -11,6 +11,7 @@ $route['descubrenos/valle-las-trancas'] = 'descubrenos/valle_las_trancas';
 $route['montana/mapa-de-pistas'] = 'montana/index';
 $route['montana/reporte'] = 'montana/reporte';
 $route['montana/info-ski'] = 'montana/info_ski';
+$route['montana/mapa-pistas/descargar-archivo/(:num)'] = "montana/descargarDocumentoMapa/$1";
 
 #ALOJAMIENTO
 $route['alojamiento/hotel-nevados'] = 'alojamiento';
@@ -65,6 +66,7 @@ $route['invierno/escuela'] = 'invierno/escuela';
 $route['invierno/bikepark'] = 'verano/bikepark';
 $route['invierno/calendario'] = 'verano/calendario';
 $route['invierno/descargar_archivo'] = 'invierno/descargar_archivo';
+
 
 /**EXPERIENCIAS */
 #CAMBIO DE NOMBRE DE "PROGRAMAS" A "EXPERIENCIAS" HECHO EL 07/06/2021
