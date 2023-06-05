@@ -453,6 +453,9 @@ $route['invierno/cafeterias/eliminar-imagen']  = "invierno/cafeterias/eliminar_i
 $route['invierno/programas-valores']         = "invierno/programas_valores";
 $route['invierno/programas-valores/agregar'] = "invierno/programas_valores/agregar";
 
+#encabezados
+$route['encabezado/modificar'] = "encabezados/encabezado/modificar";
+
 #mapa de pistas
 $route['invierno/mapa-pistas'] = "invierno/mapa_pistas";
 $route['invierno/mapa-pistas/(:num)']  = "invierno/mapa_pistas";
