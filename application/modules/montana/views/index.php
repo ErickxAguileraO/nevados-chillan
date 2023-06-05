@@ -9,38 +9,19 @@
     <h1>Mapa de pistas</h1>
     <?= $encabezadoMapaPista->texto ?>
   </section>
+
+  <?php foreach ($mapas as $mapa): ?>
   <div class="contenedor cont-secciones">
-    <figure class="picture"> <img src="/imagenes/borrar/mapa.jpg" width="679" height="408" alt="Mapa" /> </figure>
+    <figure class="picture"> <img src="<?= '/admin' . $mapa->imagen_adjunta ?>" width="679" height="408" alt="Mapa" /> </figure>
     <div class="txt-block-contenido center-home">
-      <h1>Valle Hermoso</h1>
-      <p>Se encuentra ubicado a 80 km de la ciudad de Chillán y es el primer recinto del grupo Nevados de Chillán.</p>
-      <p>Situado en un lugar excepcional rodeado de naturaleza y a la sombra de un bosque. Ofrece 3 piscinas termales al aire libre, un restaurante, un mini-market, sectores habilitados para asados y picnic y departamentos completamente equipados, lo que lo convierte en una opción segura y preferida para aquellos que buscan experiencias termales familiares.</p>
-      <a class="ver-mas" href="#">Descargar PDF</a> </div>
+      <h1><?= $mapa->nombre ?></h1>
+      <p><?= $mapa->descripcion ?></p>
+      <a class="ver-mas" href="<?= URL_ADMIN . '/invierno/mapa-pistas/descargar-archivo/' . $mapa->codigo ?>">Descargar PDF</a> 
+    </div>
   </div>
-  <div class="contenedor cont-secciones">
-    <figure class="picture"> <img src="/imagenes/borrar/mapa.jpg" width="679" height="408" alt="Mapa" /> </figure>
-    <div class="txt-block-contenido center-home">
-      <h1>Valle Hermoso</h1>
-      <p>Se encuentra ubicado a 80 km de la ciudad de Chillán y es el primer recinto del grupo Nevados de Chillán.</p>
-      <p>Situado en un lugar excepcional rodeado de naturaleza y a la sombra de un bosque. Ofrece 3 piscinas termales al aire libre, un restaurante, un mini-market, sectores habilitados para asados y picnic y departamentos completamente equipados, lo que lo convierte en una opción segura y preferida para aquellos que buscan experiencias termales familiares.</p>
-      <a class="ver-mas" href="#">Descargar PDF</a> </div>
-  </div>
-  <div class="contenedor cont-secciones">
-    <figure class="picture"> <img src="/imagenes/borrar/mapa.jpg" width="679" height="408" alt="Mapa" /> </figure>
-    <div class="txt-block-contenido center-home">
-      <h1>Valle Hermoso</h1>
-      <p>Se encuentra ubicado a 80 km de la ciudad de Chillán y es el primer recinto del grupo Nevados de Chillán.</p>
-      <p>Situado en un lugar excepcional rodeado de naturaleza y a la sombra de un bosque. Ofrece 3 piscinas termales al aire libre, un restaurante, un mini-market, sectores habilitados para asados y picnic y departamentos completamente equipados, lo que lo convierte en una opción segura y preferida para aquellos que buscan experiencias termales familiares.</p>
-      <a class="ver-mas" href="#">Descargar PDF</a> </div>
-  </div>
-  <div class="contenedor cont-secciones">
-    <figure class="picture"> <img src="/imagenes/borrar/mapa.jpg" width="679" height="408" alt="Mapa" /> </figure>
-    <div class="txt-block-contenido center-home">
-      <h1>Valle Hermoso</h1>
-      <p>Se encuentra ubicado a 80 km de la ciudad de Chillán y es el primer recinto del grupo Nevados de Chillán.</p>
-      <p>Situado en un lugar excepcional rodeado de naturaleza y a la sombra de un bosque. Ofrece 3 piscinas termales al aire libre, un restaurante, un mini-market, sectores habilitados para asados y picnic y departamentos completamente equipados, lo que lo convierte en una opción segura y preferida para aquellos que buscan experiencias termales familiares.</p>
-      <a class="ver-mas" href="#">Descargar PDF</a> </div>
-  </div>
+  <?php endforeach; ?>
+  
+ 
   <section style="padding-top: 80px;">
     <h1 class="text-center clear" style=" margin-bottom: 46px;">Cámaras en vivo</h1>
     <div class="listado-noticias camaras">
