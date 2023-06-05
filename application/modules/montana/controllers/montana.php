@@ -26,6 +26,10 @@ class montana extends CI_Controller {
         #WebFont
         $this->layout->css('/css/webfont/stylesheet.css');
 
+        #CamarasVIVO
+        $this->ws->order('camv_orden ASC');
+        $data['camaras'] = $this->ws->listar(31,'camv_estado = 1');
+
 
         //Contenido
         //$data["programas"] = $programas;
@@ -104,7 +108,6 @@ class montana extends CI_Controller {
     }
 
     public function Info_ski() {
-
         #Title
         $this->layout->title('Reportes');
 
@@ -123,6 +126,9 @@ class montana extends CI_Controller {
         $this->layout->css('/js/jquery/tabs/tabs.css');
         $this->layout->js('/js/jquery/tabs/index.js');
 
+        #CamarasVIVO
+        $this->ws->order('camv_orden ASC');
+        $data['camaras'] = $this->ws->listar(31,'camv_estado = 1');
 
         //Noticias
         $idCategoria = $this->ws->obtener(30, "can_url = 'clima'")->codigo;
