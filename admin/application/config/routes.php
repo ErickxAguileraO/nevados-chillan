@@ -204,69 +204,6 @@ $route['parque-agua/banners/cargar-imagen']         = "parque_agua/banners/carga
 $route['parque-agua/banners/cortar-imagen']         = "parque_agua/banners/cortar_imagen";
 $route['parque-agua/banners/eliminar-imagen']       = "parque_agua/banners/eliminar_imagen";
 
-
-#FIN PARQUE DE AGUA
-
-
-
-#VALLE HERMOSO
-/*
-#slider
-$route['valle-hermoso/slider']                  = "valle_hermoso/slider";
-$route['valle-hermoso/slider/(:num)']           = "valle_hermoso/slider";
-$route['valle-hermoso/slider/agregar']          = "valle_hermoso/slider/agregar";
-$route['valle-hermoso/slider/editar/(:num)']    = "valle_hermoso/slider/editar/$1";
-$route['valle-hermoso/slider/eliminar']         = "valle_hermoso/slider/eliminar";
-$route['valle-hermoso/slider/cargar-imagen']    = "valle_hermoso/slider/cargar_imagen";
-$route['valle-hermoso/slider/cortar-imagen']    = "valle_hermoso/slider/cortar_imagen";
-$route['valle-hermoso/slider/eliminar-imagen']  = "valle_hermoso/slider/eliminar_imagen";
-
-#habitaciones
-$route['valle-hermoso/habitaciones']                    = "valle_hermoso/habitaciones";
-$route['valle-hermoso/habitaciones/(:num)']             = "valle_hermoso/habitaciones";
-$route['valle-hermoso/habitaciones/agregar']            = "valle_hermoso/habitaciones/agregar";
-$route['valle-hermoso/habitaciones/editar/(:num)']      = "valle_hermoso/habitaciones/editar/$1";
-$route['valle-hermoso/habitaciones/eliminar']           = "valle_hermoso/habitaciones/eliminar";
-$route['valle-hermoso/habitaciones/cargar-imagen']      = "valle_hermoso/habitaciones/cargar_imagen";
-$route['valle-hermoso/habitaciones/cortar-imagen']      = "valle_hermoso/habitaciones/cortar_imagen";
-$route['valle-hermoso/habitaciones/eliminar-imagen']    = "valle_hermoso/habitaciones/eliminar_imagen";
-
-#actividades
-$route['valle-hermoso/actividades']                 = "valle_hermoso/actividades";
-$route['valle-hermoso/actividades/(:num)']          = "valle_hermoso/actividades";
-$route['valle-hermoso/actividades/agregar']         = "valle_hermoso/actividades/agregar";
-$route['valle-hermoso/actividades/editar/(:num)']   = "valle_hermoso/actividades/editar/$1";
-$route['valle-hermoso/actividades/eliminar']        = "valle_hermoso/actividades/eliminar";
-$route['valle-hermoso/actividades/cargar-imagen']   = "valle_hermoso/actividades/cargar_imagen";
-$route['valle-hermoso/actividades/cortar-imagen']   = "valle_hermoso/actividades/cortar_imagen";
-$route['valle-hermoso/actividades/eliminar-imagen'] = "valle_hermoso/actividades/eliminar_imagen";
-
-#secciones
-$route['valle-hermoso/secciones']                   = "valle_hermoso/secciones";
-$route['valle-hermoso/secciones/(:num)']            = "valle_hermoso/secciones";
-$route['valle-hermoso/secciones/agregar']           = "valle_hermoso/secciones/agregar";
-$route['valle-hermoso/secciones/editar/(:num)']     = "valle_hermoso/secciones/editar/$1";
-$route['valle-hermoso/secciones/eliminar']          = "valle_hermoso/secciones/eliminar";
-$route['valle-hermoso/secciones/cargar-imagen']     = "valle_hermoso/secciones/cargar_imagen";
-$route['valle-hermoso/secciones/cortar-imagen']     = "valle_hermoso/secciones/cortar_imagen";
-$route['valle-hermoso/secciones/eliminar-imagen']   = "valle_hermoso/secciones/eliminar_imagen";
-
-#banners
-$route['valle-hermoso/banners']                 = "valle_hermoso/banners";
-$route['valle-hermoso/banners/(:num)']          = "valle_hermoso/banners";
-$route['valle-hermoso/banners/agregar']         = "valle_hermoso/banners/agregar";
-$route['valle-hermoso/banners/editar/(:num)']   = "valle_hermoso/banners/editar/$1";
-$route['valle-hermoso/banners/eliminar']        = "valle_hermoso/banners/eliminar";
-$route['valle-hermoso/banners/cargar-imagen']   = "valle_hermoso/banners/cargar_imagen";
-$route['valle-hermoso/banners/cortar-imagen']   = "valle_hermoso/banners/cortar_imagen";
-$route['valle-hermoso/banners/eliminar-imagen'] = "valle_hermoso/banners/eliminar_imagen";
-*/
-#FIN VALLE HERMOSO
-
-
-
-#CONFIGURACION
-
 #administradores
 $route['configuracion/administradores']                  = "configuracion/administradores";
 $route['configuracion/administradores/(:num)']           = "configuracion/administradores";
@@ -475,45 +412,6 @@ $route['historia/secciones/eliminar-imagen-adjunta'] = "historia/secciones/elimi
 
 #FIN NUESTRA HISTORIA
 
-
-
-
-#VALLE LAS TRANCAS
-
-/*
-//se comenta sección  05-03-21
-#slider
-$route['valle-las-trancas/slider']                  = "valle_trancas/slider";
-$route['valle-las-trancas/slider/(:num)']           = "valle_trancas/slider";
-$route['valle-las-trancas/slider/agregar']          = "valle_trancas/slider/agregar";
-$route['valle-las-trancas/slider/editar/(:num)']    = "valle_trancas/slider/editar/$1";
-$route['valle-las-trancas/slider/eliminar']         = "valle_trancas/slider/eliminar";
-$route['valle-las-trancas/slider/cargar-imagen']    = "valle_trancas/slider/cargar_imagen";
-$route['valle-las-trancas/slider/cortar-imagen']    = "valle_trancas/slider/cortar_imagen";
-$route['valle-las-trancas/slider/eliminar-imagen']  = "valle_trancas/slider/eliminar_imagen";
-
-#introduccion
-$route['valle-las-trancas/introduccion']                  = "valle_trancas/introduccion";
-$route['valle-las-trancas/introduccion/agregar']          = "valle_trancas/introduccion/agregar";
-
-#secciones
-$route['valle-las-trancas/secciones']                  = "valle_trancas/secciones";
-$route['valle-las-trancas/secciones/(:num)']           = "valle_trancas/secciones";
-$route['valle-las-trancas/secciones/agregar']          = "valle_trancas/secciones/agregar";
-$route['valle-las-trancas/secciones/editar/(:num)']    = "valle_trancas/secciones/editar/$1";
-$route['valle-las-trancas/secciones/eliminar']         = "valle_trancas/secciones/eliminar";
-$route['valle-las-trancas/secciones/cargar-imagen']    = "valle_trancas/secciones/cargar_imagen";
-$route['valle-las-trancas/secciones/cortar-imagen']    = "valle_trancas/secciones/cortar_imagen";
-$route['valle-las-trancas/secciones/eliminar-imagen']  = "valle_trancas/secciones/eliminar_imagen";
-$route['valle-las-trancas/secciones/eliminar-imagen-adjunta'] = "valle_trancas/secciones/eliminar_imagen_adjunta";
-
-*/
-
-#FIN VALLE LAS TRANCAS
-
-
-
-
 #INVIERNO
 
 #slider
@@ -556,9 +454,14 @@ $route['invierno/programas-valores']         = "invierno/programas_valores";
 $route['invierno/programas-valores/agregar'] = "invierno/programas_valores/agregar";
 
 #mapa de pistas
-$route['invierno/mapa-pistas']         = "invierno/mapa_pistas";
+$route['invierno/mapa-pistas'] = "invierno/mapa_pistas";
 $route['invierno/mapa-pistas/(:num)']  = "invierno/mapa_pistas";
 $route['invierno/mapa-pistas/agregar'] = "invierno/mapa_pistas/agregar";
+$route['invierno/mapa-pistas/editar/(:num)'] = "invierno/mapa_pistas/editar/$1";
+$route['invierno/mapa-pistas/descargar-archivo/(:num)'] = "invierno/mapa_pistas/descargarDocumento/$1";
+$route['invierno/mapa-pistas/eliminar-archivo'] = "invierno/mapa_pistas/eliminarDocumento";
+$route['invierno/mapa-pistas/eliminar-imagen'] = "invierno/mapa_pistas/eliminarImagen";
+$route['invierno/mapa-pistas/eliminar'] = "invierno/mapa_pistas/eliminar";
 
 #FIN INVIERNO
 

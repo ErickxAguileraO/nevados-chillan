@@ -34,6 +34,7 @@ class montana extends CI_Controller {
         //Contenido
         //$data["programas"] = $programas;
 		$data['encabezadoMapaPista'] = $this->ws->obtener(80, "enc_seccion = 'mapa_pista'");
+        $data['mapas'] = $this->ws->listar(45);
         #Nav
         $this->layout->nav(array("Mapa de pistas" => "/"));
 
@@ -141,5 +142,16 @@ class montana extends CI_Controller {
 
         #La vista siempre,  debe ir cargada al final de la función
         $this->layout->view('info_ski', $data);
+    }
+
+    public function descargarDocumentoMapa($codigo) 
+    {
+        $mapa = $this->ws->obtener(45, "map_codigo = $codigo");
+        
+        $this->load->helper('download');
+        $nombreDocumento = basename($mapa->documento);
+        $data = file_get_contents(URL_ADMINISTRACION . $mapa->documento);
+        
+        force_download($nombreDocumento, $data);
     }
 }
