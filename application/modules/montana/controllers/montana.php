@@ -99,6 +99,7 @@ class montana extends CI_Controller {
 
         $data['pistas'] = $pistas;
         $data['cantidadPistasAbiertas'] = $cantidadPistasAbiertas;
+        $data['montana'] = $this->ws->obtener(81, 'mon_codigo = (SELECT MAX(mon_codigo) FROM montana)');
         
         #Nav
         $this->layout->nav(array("Reportes" => '/'));

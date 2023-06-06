@@ -576,7 +576,9 @@ $route['invierno/programas/agregar']          = "invierno/programas/agregar";
 $route['invierno/programas/editar/(:num)']    = "invierno/programas/editar/$1";
 $route['invierno/programas/eliminar']         = "invierno/programas/eliminar";
 
-
+// Montaña
+$route['montana'] = "invierno/montana/index";
+$route['montana/modificar'] = "invierno/montana/modificar";
 
 
 
