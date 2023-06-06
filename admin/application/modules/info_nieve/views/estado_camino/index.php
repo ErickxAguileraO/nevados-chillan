@@ -22,6 +22,12 @@
                 <label>Uso de cadenas</label>
                 <input type="text" class="form-control" name="uso_de_cadenas" value="<?php echo ($estado)?$estado->uso_de_cadenas:''; ?>" />
                 
+                <label>Nombre campo personalizado</label>
+                <input type="text" class="form-control" name="nombreCampoPersonalizado" value="<?= $estado->nombre_campo_personalizado ?>" />
+
+                <label>Valor campo personalizado</label>
+                <input type="text" class="form-control" name="valorCampoPersonalizado" value="<?= $estado->valor_campo_personalizado ?>" />
+
                 <label>Horarios</label>
                 <textarea class="form-control" rows="3"  id="horarios" name="horarios"><?php echo ($estado)?$estado->horarios:''; ?></textarea>
                 
