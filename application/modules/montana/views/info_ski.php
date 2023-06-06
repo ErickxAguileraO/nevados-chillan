@@ -25,13 +25,13 @@
   <div class="cont-resumen">
     <h3 class="txt-caption">Reporte de nieve</h3>
     <ul>
-      <li><span>Powder</span> Resumen de condiciones<br />
+      <li><span><?= $nieve->resumen_condiciones_nieve ?></span> Resumen de condiciones<br />
         de nieve</li>
-      <li><span>0<sub>cm</sub></span>En las últimas 24 horas</li>
-      <li><span>0<sub>cm</sub></span>En las últimas 48 horas</li>
-      <li><span>0<sub>cm</sub></span>En los últimos 7 días</li>
-      <li><span>0<sub>cm</sub></span>Profundidad de la base</li>
-      <li><span>0<sub>cm</sub></span>Total de nieve caída<br />
+      <li><span><?= $nieve->nieve_caida_24h ?></span>En las últimas 24 horas</li>
+      <li><span><?= $nieve->nieve_caida_48h ?></span>En las últimas 48 horas</li>
+      <li><span><?= $nieve->ultimos_siete_dias ?></span>En los últimos 7 días</li>
+      <li><span><?= $nieve->profundidad_base ?></span>Profundidad de la base</li>
+      <li><span><?= $nieve->nieve_acumulada ?></span>Total de nieve caída<br />
         en la temporada</li>
     </ul>
   </div>

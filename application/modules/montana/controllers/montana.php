@@ -139,6 +139,7 @@ class montana extends CI_Controller {
 		
         // Estado del camino
         $data['estadoCamino'] = $this->ws->obtener(46, 'edc_codigo = (SELECT MAX(edc_codigo) FROM estado_de_camino)');
+        $data['nieve'] = $this->ws->obtener(47, 'niv_codigo = (SELECT MAX(niv_codigo) FROM nieve)');
         #Nav
         $this->layout->nav(array("Info Ski" => "/"));
 

@@ -36,12 +36,12 @@ class Nieve extends CI_Controller {
                 exit;
             }
             
-            $datos['niv_nieve_acumulada'] = $this->input->post('nieve_acumulada');
-            $datos['niv_nieve_caida_24h'] = $this->input->post('nieve_caida_24h');
-            $datos['niv_nieve_caida_48h'] = $this->input->post('nieve_caida_48h');
-            $datos['niv_nieve_pisada_canchas'] = $this->input->post('nieve_pisada_canchas');
-            $datos['niv_calidad_nieve'] = $this->input->post('calidad_nieve');
-            $datos['niv_velocidad_viento'] = $this->input->post('velocidad_viento');
+            $datos['niv_resumen_condiciones_nieve'] = $this->input->post('resumenCondiciones');
+            $datos['niv_nieve_caida_24h'] = $this->input->post('nieveCaida24h');
+            $datos['niv_nieve_caida_48h'] = $this->input->post('nieveCaida48h');
+            $datos['niv_ultimos_siete_dias'] = $this->input->post('nieveCaidaSieteDias');
+            $datos['niv_profundidad_base'] = $this->input->post('profundidadBase');
+            $datos['niv_nieve_acumulada'] = $this->input->post('totalNieveCaidaTemporada');
             
             if($codigo = $this->input->post('codigo'))
                 $this->ws->actualizar($this->modulo,$datos,"niv_codigo = $codigo");
