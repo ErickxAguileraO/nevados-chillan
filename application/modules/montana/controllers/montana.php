@@ -137,6 +137,8 @@ class montana extends CI_Controller {
         $idNoticiaClima = end($this->ws->listar(37, "not_categoria = " . $idCategoria))->codigo;
         $data["imagenNoticiaClima"] = $this->ws->obtener(38, "noti_noticia = ".$idNoticiaClima);
 		
+        // Estado del camino
+        $data['estadoCamino'] = $this->ws->obtener(46, 'edc_codigo = (SELECT MAX(edc_codigo) FROM estado_de_camino)');
         #Nav
         $this->layout->nav(array("Info Ski" => "/"));
 

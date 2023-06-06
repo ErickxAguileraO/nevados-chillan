@@ -7,20 +7,20 @@
   <?=$this->layout->getNav();?>
   <div class="intro">
     <h1>Horarios operación</h1>
-    <p>El BikePark funciona desde las 10:00 hasta las 16:45. La apertura parte siempre por el andarivel Tata y progresivamente el resto. El cierre parte por el andarivel Refugio y luego progresivamente el resto.<br />
-      <strong>*Disclosure</strong>: Las condiciones climáticas como visibilidad, viento, lluvia y tipo de nevada pueden cambiar drásticamente, en pocos minutos, y no quedar reflejadas, en un cierto intervalo, en este reporte. Más acá.</p>
+    <p><?= $estadoCamino->horarios ?><br />
+    <?= $estadoCamino->observaciones ?></p>
   </div>
   <div class="reporte-tiempo-block">
-    <div class="child"> <span class="info">ABIERTO</span><br />
+    <div class="child"> <span class="info"><?= $estadoCamino->estado_de_camino == 1 ? 'ABIERTO' : 'CERRADO' ?></span><br />
       <span class="etiqueta">Estado del camino</span> </div>
-    <div class="child"> <span class="info">NORMAL</span><br />
+    <div class="child"> <span class="info"><?= $estadoCamino->transito ?></span><br />
       <span class="etiqueta">Tránsito</span> </div>
-    <div class="child"> <span class="info">N/A</span><br />
+    <div class="child"> <span class="info"><?= $estadoCamino->porte_de_cadenas ?></span><br />
       <span class="etiqueta">Porte de cadenas</span> </div>
-    <div class="child"> <span class="info">N/A</span><br />
+    <div class="child"> <span class="info"><?= $estadoCamino->uso_de_cadenas ?></span><br />
       <span class="etiqueta">Uso de cadenas</span> </div>
-    <div class="child"> <span class="info">N/A</span><br />
-      <span class="etiqueta">Uso de cadenas</span> </div>
+    <div class="child"> <span class="info"><?= $estadoCamino->valor_campo_personalizado ?></span><br />
+      <span class="etiqueta"><?= $estadoCamino->nombre_campo_personalizado ?></span> </div>
   </div>
   <div class="cont-resumen">
     <h3 class="txt-caption">Reporte de nieve</h3>
