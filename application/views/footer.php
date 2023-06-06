@@ -35,16 +35,7 @@
       margin-top: 3px;
       font-weight: 700;
     }
-    @media (max-width: 500px) {
-      .reserva-aqui{
-        right: 7.3rem;
-        left: auto;
-      }
-      .wspp-fixed{
-        right: 1.48rem;
-        left: auto;
-      }
-    }
+    
   </style>
   <a href="https://contenidos.nevadosdechillan.art2fly.com/cgi-bin/paso1.cgi" target="blank_" class="reserva-aqui">
     <img src="/imagenes/template/reserva.png" width="24px" height="24px"/>

@@ -280,7 +280,10 @@ foreach($secciones_menu as $aux){
             <!-- freeride -->
             <li>
     			<a href="/freeride/">Backcountry</a>
-    		</li>            
+    		</li>   
+            <li>
+    			<a href="/montana/">Montaña</a>
+    		</li>          
             <li><a style="background: #fff;"></a></li>
         
         

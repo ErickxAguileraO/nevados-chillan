@@ -6,10 +6,9 @@
 </div>
 <div class="center">
   <?=$this->layout->getNav();?>
-  <div class="intro"> <span class="label">Última actualización: 10/05/2023 - 15:07</span>
-    <h1>Reporte</h1>
-    <p>El BikePark funciona desde las 10:00 hasta las 16:45. La apertura parte siempre por el andarivel Tata y progresivamente el resto. El cierre parte por el andarivel Refugio y luego progresivamente el resto.<br />
-      <strong>*Disclosure</strong>: Las condiciones climáticas como visibilidad, viento, lluvia y tipo de nevada pueden cambiar drásticamente, en pocos minutos, y no quedar reflejadas, en un cierto intervalo, en este reporte. Más acá.</p>
+  <div class="intro"> <span class="label">Última actualización: <?= $montana->ultima_actualizacion ?></span>
+    <h1><?= $montana->titulo ?></h1>
+    <p><?= $montana->introduccion ?></p>
   </div>
   <ul class="tabs">
     <li class="active"><a href="#tab1">Andariveles</a></li>
