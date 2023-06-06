@@ -43,6 +43,8 @@ class Estado_camino extends CI_Controller {
             $datos['edc_transito'] = $this->input->post('transito');
             $datos['edc_porte_de_cadenas'] = $this->input->post('porte_de_cadenas');
             $datos['edc_uso_de_cadenas'] = $this->input->post('uso_de_cadenas');
+            $datos['edc_nombre_campo_personalizado'] = $this->input->post('nombreCampoPersonalizado');
+            $datos['edc_valor_campo_personalizado'] = $this->input->post('valorCampoPersonalizado');
             $datos['edc_horarios'] = $this->input->post('horarios');
             $datos['edc_observaciones'] = $this->input->post('observaciones');
             
