@@ -229,14 +229,40 @@
     </div>
   </div> -->
 
-  <!-- Widget clima -->
+
+  <!-- Clima -->
+  <div class="clima-nevados">
+    <iframe src="https://www.meteoblue.com/es/tiempo/widget/daily/nevados-de-chill%c3%a1n_chile_3895086?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&windgust=1&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&pressure=0&layout=light"  
+    frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>
+    <h3 class="titulo-clima">Reporte del tiempo SEMANAL</h3>
+  </div>
+
+  <!-- <style>
+    #wf-weatherfeed{
+      width: 100% !important;
+    }
+    #wf-weatherfeed iframe{
+      width: 100% !important;  
+    }
+    #wf-location {
+      display: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      background-color: #033E6C !important;
+      height: 129px !important;
+    }
+    #wf-weatherfeed, table#wf-table {
+      font-family: 'Terminal Dosis', sans-serif !important;
+      width: 100% !important;
+    }
+  </style>
   <link href="//es.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" />
   <div id="wf-weatherfeed">
     <iframe allowtransparency="true" frameborder="0" height="272" marginheight="0" marginwidth="0" scrolling="no" 
     src="//es.snow-forecast.com/resorts/Chillan/forecasts/feed/mid/m" style="overflow:hidden;border:none;" width="469">
     <p>Su navegador no da soporte a iframes</p>
     </iframe>
-  </div>
+  </div> -->
 
     <!-- Camara en vivo -->
     <div class="center">
