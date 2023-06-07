@@ -154,7 +154,7 @@ class montana extends CI_Controller {
         
         $this->load->helper('download');
         $nombreDocumento = basename($mapa->documento);
-        $data = file_get_contents(URL_ADMINISTRACION . $mapa->documento);
+        $data = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/admin' . $mapa->documento);
         
         force_download($nombreDocumento, $data);
     }
