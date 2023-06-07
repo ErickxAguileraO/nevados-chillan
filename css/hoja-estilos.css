@@ -3347,7 +3347,9 @@ footer .informacion .coll-footer ul li:last-child {
     display: block;
 }
 h2, .calendario h2, .noticias h2, .redes-sociales h2, .intro h2, .texto-habitaciones h2, .serv-compl h2, .calendario-diario h2, .cont-act h2, .testimonios h2, .valle-hermoso-act h2, .ofertas h2, .valores-seccion h2, .texto-info h2, .calendario-bikepark h2, .info-contacto h2, .form-trabajo h2, .condiciones h2, .texto-detalle h2, .texto-detalle2 h2, .galeria-noticias h2, .instalaciones h2 { font-size: 60px;}
-
+.tabs2{
+	display: flex;
+}
 .formulario-reserva { width: 590px;}
 .formulario-reserva ul li { width: 90px;}
 .formulario-reserva ul li.ancho-calendar { width: 128px;}

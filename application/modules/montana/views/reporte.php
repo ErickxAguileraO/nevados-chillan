@@ -10,7 +10,7 @@
     <h1><?= $montana->titulo ?></h1>
     <p><?= $montana->introduccion ?></p>
   </div>
-  <ul class="tabs">
+  <ul class="tabs tabs2">
     <li class="active"><a href="#tab1">Andariveles</a></li>
     <li><a href="#tab2">Pistas</a></li>
   </ul>
